@@ -65,7 +65,7 @@ var html =
 				<li>\
 					DJZebro collected these all for you. It&#39;s not like he wanted to or anything, just take it! <a href="//tinyurl.ru/g2l0" target="_blank">DJZebro_Pack1</a>, <a href="//tinyurl.ru/gknk" target="_blank">DJZebro_Pack2</a>, <a href="//tinyurl.ru/gtc5" target="_blank"> DystopiaGroundPack</a></li>\
 				<li>\
-					Denwa has uploaded some animu on youtube: <a href="//tinyurl.ru/g2mc" target="_blank">Denwa&#39;s Channel</a></li>\
+					Denwa has uploaded some animu on youtube: <a href="//youtube.com/user/BlkRockShooter" target="_blank">Denwa&#39;s Channel</a></li>\
 				<li>\
 					Live vn wiki: <a href="//livevn.wikia.com" target="_blank"> livevn.wikia.com</a></li>\
 				<li>\
