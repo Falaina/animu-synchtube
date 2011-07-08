@@ -47,7 +47,7 @@ var ignore = function(fn) {
     try{
 	fn()
     } catch (err) {
-	log("Ignoring error:" + err);
+	log("Ignoring error:\n\t" + err);
     }
 }
 
