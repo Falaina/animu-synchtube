@@ -10,7 +10,7 @@ var html =
 <img src="//nodocchi.com/face/Hidamari%20Sketch.png" width="100%" class="first" alt="wideface banner"/>\
 <img src="//nodocchi.com/face/Ika%20Musume.png" width="100%" alt="ika musume banner"/>\
 <img src="//nodocchi.com/face/Kizuna%20Aikawa.png" width="100%" alt="aikawa banner"/>\
-<img src="//nodocchi.com/face/Kore%20wa%20Zombie%20Desu%20ka.png" width="100%" alt="kore wa zombie banner""/>\
+<img src="//nodocchi.com/face/Kore%20wa%20Zombie%20Desu%20ka.png" width="100%" alt="kore wa zombie banner"/>\
 <img src="//nodocchi.com/face/Mikoto%20Misaka%20Alt.png" width="100%" alt="mikoto banner"/>\
 <img src="//nodocchi.com/face/Nodochi.png" width="100%" alt="nodochi banner"/>\
 <img src="//nodocchi.com/face/Pomf.png" width="100%" alt="POMP=3 banner"/>\
