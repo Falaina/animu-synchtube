@@ -20,6 +20,11 @@ var word_filters = [ // Filtered words
 	{pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, new : 'Ban me for spammer!'}
 ];
 
+// Convenience function for logging
+var log = function() {
+    window.console && console.log && console.log(arguments);
+}
+
 
 // Convenience function for hooking a javascript function
 var instrumentFn = function(fn, pre) {
@@ -34,6 +39,16 @@ var instrumentFn = function(fn, pre) {
     newFn.restore = function() {return fn;}
     newFn.instrumented = true;
     return newFn;
+}
+
+// Convenience function for invoking a function
+// that may fail
+var ignore = function(fn) {
+    try{
+	fn()
+    } catch (err) {
+	log("Ignoring error:" + err);
+    }
 }
 
 var wordFilter = function(usr, msg, wat) {
@@ -55,9 +70,13 @@ var replaceModvatars = function () {
     }
 }
 
+var replaceChatHandler = function() {
+    chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
+}
+
 var doit = function (){
     replaceModvatars();
-    chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
+    ignore(replaceChatHandler);
     $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
         $('.slideshow').cycle({
             fx: 'fade',
