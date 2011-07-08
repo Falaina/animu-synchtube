@@ -5,7 +5,8 @@ var modvatars = [ //Replacement avatars
     { mod : 'RAILGUN',   url : '//oi56.tinypic.com/714eqh.jpg'},
     { mod : 'Xiox',      url : '//i.imgur.com/pWCYo.gif'},
     { mod : 'Tofutoshi', url : '//i.imgur.com/pOBRZ.gif'},
-    { mod : 'AnimuXD',   url : '//i.imgur.com/t1YlE.gif'}
+    { mod : 'AnimuXD',   url : '//i.imgur.com/t1YlE.gif'},
+    { mod : 'Denwa',   url : '//i.imgur.com/imHKi.gif'}
 ];    
 var word_filters = [ // Filtered words
     {pat : /madoka/ig,       new : 'meduca'},
