@@ -1,4 +1,3 @@
-
 // This is a javascript document, the HTML is represented as one very long javascript string.
 // As such, if you want to insert newlines into it, you have to use a line continuation character
 // '\' after every newline.
@@ -38,7 +37,7 @@ var html =
 <!-- FalconLunch -->\
 <img src="//i.imgur.com/UzMe3.png" width="100%">\
 <!-- Goships -->\
-<img src="//i.imgur.com/Rs03U.png" width="100%">\
+<img src="//i.imgur.com/gx8v1.png" width="100%">\
 <!-- Denwa -->\
 </div>\
 <br />\<br />\
