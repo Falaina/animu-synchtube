@@ -17,6 +17,7 @@ var word_filters = [ // Filtered words
     {pat : /everyone/ig,        new : 'everynyan'},
     {pat : /plan/ig,       new : 'keikaku'},
     {pat : /keikaku/ig,       new : 'plan'},
+    {pat : /www.synchtube.com\/r\/E34fag/ig, new : 'POMF =3'}
 ];
 
 
