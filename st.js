@@ -10,7 +10,6 @@ var modvatars = [ //Replacement avatars
 ];    
 var word_filters = [ // Filtered words
     {pat : /madoka/ig,       new : 'meduca'},
-    {pat : /(QB|kyuubey)/ig,  new : 'coobie'},
     {pat : /homura/ig,       new : 'hameru'},
     {pat : /mami/ig,         new : 'mumi'},
     {pat : /kyoko/ig,        new : 'kyaku'},
@@ -20,7 +19,8 @@ var word_filters = [ // Filtered words
     {pat : /plan/ig,         new : 'keikaku'},
     {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    new : 'Ban me for spammer!'},
     {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, new : 'Ban me for spammer!'},
-    {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     new : 'Ban me for spammer!'}
+    {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     new : 'Ban me for spammer!'},
+    {pat : /(QB|kyuubey|kyubey|kyubei)/ig,  new : 'coobie'}
 ];
 
 // Convenience function for logging
