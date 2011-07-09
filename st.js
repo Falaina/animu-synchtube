@@ -20,7 +20,9 @@ var word_filters = [ // Filtered words
     {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    new : 'Ban me for spammer!'},
     {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, new : 'Ban me for spammer!'},
     {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     new : 'Ban me for spammer!'},
-    {pat : /(QB|kyuubey|kyubey|kyubei)/ig,  new : 'coobie'}
+    {pat : /(kyuubey|kyubey|kyubei)/ig,  new : 'coobie'}
+    {pat : /(QB)/ig,  new : '／人◕ ‿‿ ◕人＼'}
+
 ];
 
 // Convenience function for logging
