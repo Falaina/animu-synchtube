@@ -5,7 +5,7 @@
 var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div>\
 \
-<link href="//nodocchi.com/nodo" rel="stylesheet" />\
+<link href="//nodocchi.com/nodocch" rel="stylesheet" />\
 <link href="//raw.github.com/Falaina/animu-synchtube/master/animu.css" rel="stylesheet" />\
 \
 <div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block;">\
