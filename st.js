@@ -82,7 +82,7 @@ var doit = function (){
     $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
         $('.slideshow').cycle({
             fx: 'fade',
-            random: 1,
+   
             timeout: 10000,
             next: '.slideshow',
             pause: 1
