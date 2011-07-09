@@ -41,6 +41,8 @@ var html =
 <!-- Goships -->\
 <img src="//i.imgur.com/gx8v1.png" width="100%" alt="miku banner"/>\
 <!-- Denwa -->\
+<img src="//i.imgur.com/tNzc3.jpg" width="100%" alt="bark banner"/>\
+<!-- BinaryHeap -->\
 </div>\
 <br />\<br />\
 <div id="ie-test">\
