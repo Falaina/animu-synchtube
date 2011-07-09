@@ -7,7 +7,7 @@ var html =
 \
 <link href="//nodocchi.com/nodo" rel="stylesheet" />\
 <link href="//raw.github.com/Falaina/animu-synchtube/master/animu.css" rel="stylesheet" />\
-
+\
 <div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block;">\
 <img src="//nodocchi.com/face/Hidamari%20Sketch.png" width="100%" class="first" alt="wideface banner"/>\
 <img src="//nodocchi.com/face/Ika%20Musume.png" width="100%" alt="ika musume banner"/>\
