@@ -10,6 +10,7 @@ var modvatars = [ //Replacement avatars
 ];    
 var word_filters = [ // Filtered words
     {pat : /madoka/ig,       new : 'meduca'},
+    {pat : /(QB|kyuubey)/ig  new : 'coobie'},
     {pat : /homura/ig,       new : 'hameru'},
     {pat : /mami/ig,         new : 'mumi'},
     {pat : /kyoko/ig,        new : 'kyaku'},
