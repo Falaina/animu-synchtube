@@ -17,7 +17,7 @@ var word_filters = [ // Filtered words
     {pat : /(binaryheap)/ig, target : '$1-senpai'},
     {pat : /everyone/ig,     target : 'everynyan'},
     {pat : /plan/ig,         target : 'keikaku'},
-    {pat : /(QB)/ig,         target : '／人◕ ‿‿ ◕人＼'}
+    {pat : /(QB)/ig,         target : '／人◕ ‿‿ ◕人＼'},
     {pat : /(kyuubey|kyubey|kyubei)/ig,              target : 'coobie'},
     {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    target : 'Ban me for spammer!'},
     {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, target : 'Ban me for spammer!'},
