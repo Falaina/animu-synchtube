@@ -1,7 +1,8 @@
 // This is a javascript document, the HTML is represented as one very long javascript string.
 // As such, if you want to insert newlines into it, you have to use a line continuation character
 // '\' after every newline.
-
+var doc_doit = function() 
+{
 var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div>\
 \
@@ -96,6 +97,7 @@ var html =
 <br />\
 <p>\
 	<marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b></marquee></p>\
-'
+';
 
-var doc_doit = function() {$(".tv-descr-text").html(html);}
+$(".tv-descr-text").html(html);
+}
