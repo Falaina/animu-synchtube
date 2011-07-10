@@ -122,9 +122,9 @@ var whiteList = function(usr, msg, wat)
 			return [usr, msg, wat];
 		    }
 		}
+		msg = msg.replace(str_Alert[i].pat, str_Alert[i].new);
+		break;
 	    }
-	    msg = msg.replace(str_Alert[i].pat, str_Alert[i].new);
-	    break;
 	}
 	return [usr, msg, wat];
 };
@@ -134,6 +134,7 @@ var whiteList = function(usr, msg, wat)
 
 // Instrument the synchtube chat message handler with the word filter
 var replaceChatHandler = function() {
+    wordFilter        = instrumentFn(wordFilter, whiteList, true);
     chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
 }
 
