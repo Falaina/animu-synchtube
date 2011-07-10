@@ -92,7 +92,7 @@ var wordFilter = function(usr, msg, wat) {
 
 //___nigger_rigging
 
-//var str_Alert = [
+var str_Alert = [
         {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig,         new: '[censored: $1]'}
 ];
 
