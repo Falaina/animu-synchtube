@@ -6,5 +6,5 @@
  .slideshow img{ display: none; height:116px;}
  .slideshow img.first {display:block;}
  .user-mod .user_name {color:rgb(76,76,166) !important}    
- .room-tag, .tag_name {background-color:rgb(76,76,166)}
+ .room-tag, .tag_name {background-color:#eef2ff !important}    
 </style>
