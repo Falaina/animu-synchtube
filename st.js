@@ -50,7 +50,7 @@ var instrumentFn = function(fn, pre) {
 	// If this function has been instrumented, restore it before applying
 	// so we don't get a situation where we recursively hook it for every
 	// banner save.
-        if(fn.instrumented) {fn = fn.restore(); fn.instrumented = false;}
+//        if(fn.instrumented) {fn = fn.restore(); fn.instrumented = false;}
 	// Apply the original function
 	return fn.apply(this, arguments)
     };
