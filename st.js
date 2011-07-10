@@ -26,6 +26,8 @@ var word_filters = [ // Filtered words
     {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     target : 'Ban me for spammer!'}
 ];
 
+
+
 // Convenience function for logging
 var log = function() {
     window.console && console.log && console.log(arguments);
@@ -85,6 +87,39 @@ var wordFilter = function(usr, msg, wat) {
     }
     return [usr, msg, wat];
 }
+
+//___nigger_rigging
+
+var str_Alert = [
+	{pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, 	new: '[censored]' , test:$1},
+];
+
+var approved_Chans = [
+	{par : /animu/ig },
+	{pat : /science/ig },
+	{pat : /chiruno/ig },
+	{pat : /binaryheap/ig },
+	];
+	
+
+var whiteList = function(usr, msg, wat,){
+	for(i in word_Alert)
+	{
+		var str;
+		var output;
+	
+		str = str_Alert[i].test;
+		for (st in approved_Chans)
+		{
+			return[usr, msg, wat]
+		}
+	//check end with approved channels
+	
+	msg = msg.replace(word_Alert[i].pat, word_Alert[i].new);
+	}
+	return [usr, output, wat];
+}
+//____
 
 
 // Instrument the synchtube chat message handler with the word filter
