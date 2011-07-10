@@ -7,4 +7,7 @@
  .slideshow img.first {display: block;}
  .user-mod .user_name {color:rgb(76,76,166) !important;}    
  .room-tag, .tag_name {background-color:rgb(76,76,166)}
+ .room-tag:hover{background-color:rgb(209,225,250); color:rgb(76,76,166)}
+ #panelBanner{}
+ #panelTabs{}
 </style>
