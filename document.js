@@ -44,6 +44,8 @@ var html =
 <!-- Denwa -->\
 <img src="//i.imgur.com/tNzc3.jpg" width="100%" alt="bark banner"/>\
 <!-- BinaryHeap -->\
+<img src="//i.imgur.com/3S7lg.jpg" width="100%" alt="cirno"/>\
+<!-- TheSoftest -->\
 </div>\
 <br />\<br />\
 <div id="ie-test">\
