@@ -115,7 +115,7 @@ var whiteList = function(usr, msg, wat){
 	//	}
 	//check end with approved channels
 	
-	output = msg.replace(word_Alert[i].pat, word_Alert[i].new);
+	output = msg.replace(str_Alert[i].pat, str_Alert[i].new);
 	}
 	return [usr, output, wat];
 };
