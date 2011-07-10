@@ -91,7 +91,7 @@ var wordFilter = function(usr, msg, wat) {
 //___nigger_rigging
 
 var str_Alert = [
-	{pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, 	new: '[censored: $1]'}
+	{pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, 	new: '[censored: $1]', }
 ];
 
 var approved_Chans = [
@@ -124,8 +124,8 @@ var whiteList = function(usr, msg, wat){
 
 // Instrument the synchtube chat message handler with the word filter
 var replaceChatHandler = function() {
-//    chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
-      chat.writeMessage = instrumentFn(chat.writeMessage, whiteList, true);
+    chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
+//      chat.writeMessage = instrumentFn(chat.writeMessage, whiteList, true);
 }
 
 
