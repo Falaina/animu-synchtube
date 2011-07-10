@@ -10,6 +10,7 @@ var modvatars = [ //Replacement avatars
 ];    
 var word_filters = [ // Filtered words
     {pat : /madoka/ig,       target : 'meduca'},
+    {pat : /magica/ig,       target : 'meguca'},
     {pat : /homura/ig,       target : 'hameru'},
     {pat : /mami/ig,         target : 'mumi'},
     {pat : /kyoko/ig,        target : 'kyaku'},
