@@ -9,20 +9,19 @@ var modvatars = [ //Replacement avatars
     { mod : 'Denwa',     url : '//i.imgur.com/imHKi.gif'}
 ];    
 var word_filters = [ // Filtered words
-    {pat : /madoka/ig,       new : 'meduca'},
-    {pat : /homura/ig,       new : 'hameru'},
-    {pat : /mami/ig,         new : 'mumi'},
-    {pat : /kyoko/ig,        new : 'kyaku'},
-    {pat : /sayaka/ig,       new : 'sayaku'},
-    {pat : /(binaryheap)/ig, new : '$1-senpai'},
-    {pat : /everyone/ig,     new : 'everynyan'},
-    {pat : /plan/ig,         new : 'keikaku'},
-    {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    new : 'Ban me for spammer!'},
-    {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, new : 'Ban me for spammer!'},
-    {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     new : 'Ban me for spammer!'},
-    {pat : /(kyuubey|kyubey|kyubei)/ig,  new : 'coobie'},
-    {pat : /(QB)/ig,  new : '／人◕ ‿‿ ◕人＼'}
-
+    {pat : /madoka/ig,       target : 'meduca'},
+    {pat : /homura/ig,       target : 'hameru'},
+    {pat : /mami/ig,         target : 'mumi'},
+    {pat : /kyoko/ig,        target : 'kyaku'},
+    {pat : /sayaka/ig,       target : 'sayaku'},
+    {pat : /(binaryheap)/ig, target : '$1-senpai'},
+    {pat : /everyone/ig,     target : 'everynyan'},
+    {pat : /plan/ig,         target : 'keikaku'},
+    {pat : /(QB)/ig,         target : '／人◕ ‿‿ ◕人＼'}
+    {pat : /(kyuubey|kyubey|kyubei)/ig,              target : 'coobie'},
+    {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    target : 'Ban me for spammer!'},
+    {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, target : 'Ban me for spammer!'},
+    {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     target : 'Ban me for spammer!'}
 ];
 
 // Convenience function for logging
@@ -58,7 +57,7 @@ var ignore = function(fn) {
 
 var wordFilter = function(usr, msg, wat) {
     for(p in word_filters) {
-	msg = msg.replace(word_filters[p].pat, word_filters[p].new);
+	msg = msg.replace(word_filters[p].pat, word_filters[p].target);
     }
     return [usr, msg, wat];
 }
