@@ -50,7 +50,7 @@ var instrumentFn = function(fn, pre) {
 	// If this function has been instrumented, restore it before applying
 	// so we don't get a situation where we recursively hook it for every
 	// banner save.
-//        if(fn.instrumented) {fn = fn.restore(); fn.instrumented = false;}
+        if(fn.instrumented) {fn = fn.restore();}
 	// Apply the original function
 	return fn.apply(this, arguments)
     };
@@ -84,6 +84,10 @@ var replaceModvatars = function () {
 }
 
 var wordFilter = function(usr, msg, wat) {
+    var ret = whiteList(usr, msg, wat);
+    usr = ret[0];
+    msg = ret[1];
+    wat = ret[2];
     for(p in word_filters) {
 	msg = msg.replace(word_filters[p].pat, word_filters[p].target);
     }
@@ -130,7 +134,6 @@ var whiteList = function(usr, msg, wat)
 
 // Instrument the synchtube chat message handler with the word filter
 var replaceChatHandler = function() {
-    chat.writeMessage = instrumentFn(chat.writeMessage, whiteList, true);
     chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
 }
 
