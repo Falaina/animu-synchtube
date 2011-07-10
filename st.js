@@ -23,7 +23,9 @@ var word_filters = [ // Filtered words
     {pat : /magica/ig,       target : 'meguca'},
     {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    target : 'Ban me for spammer!'},
     {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, target : 'Ban me for spammer!'},
-    {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     target : 'Ban me for spammer!'}
+    {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     target : 'Ban me for spammer!'},
+//deleteme
+    {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, target : 'keii'},
 ];
 
 
@@ -90,8 +92,8 @@ var wordFilter = function(usr, msg, wat) {
 
 //___nigger_rigging
 
-var str_Alert = [
-	{pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, 	new: '[censored: $1]', }
+//var str_Alert = [
+//	{pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, 	new: '[censored: $1]', }
 ];
 
 var approved_Chans = [
