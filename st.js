@@ -102,7 +102,7 @@ var approved_Chans = [
 	];
 	
 
-var whiteList = function(usr, msg, wat,){
+var whiteList = function(usr, msg, wat){
 	for(i in str_Alert)
 	{
 		var str;
