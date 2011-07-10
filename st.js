@@ -20,10 +20,12 @@ var word_filters = [ // Filtered words
     {pat : /plan/ig,         target : 'keikaku'},
     {pat : /(QB)/ig,         target : '／人◕ ‿‿ ◕人＼'},
     {pat : /(kyuubey|kyubey|kyubei)/ig,              target : 'coobie'},
-    {pat : /magica/ig,       target : 'meguca'},
-    {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    target : 'Ban me for spammer!'},
-    {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, target : 'Ban me for spammer!'},
-    {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     target : 'Ban me for spammer!'},
+    {pat : /magica/ig,       target : 'meguca'}
+//   {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    target : 'Ban me for spammer!'},
+//    {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, target : 'Ban me for spammer!'},
+//    {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     target : 'Ban me for spammer!'},
+//deleteme
+//    {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, target : 'keii'}
 ];
 
 
@@ -90,7 +92,7 @@ var wordFilter = function(usr, msg, wat) {
 
 //___nigger_rigging
 var str_Alert = [
-	{pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, 	new: '[censored: $1]'}
+        {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig,         new: '[censored: $1]'}
 ];
 
 var approved_Chans = [
@@ -98,8 +100,7 @@ var approved_Chans = [
 	{pat : /science/ig },
 	{pat : /chiruno/ig },
 	{pat : /binaryheap/ig }
-	];
-	
+];
 
 var whiteList = function(usr, msg, wat)
 {
@@ -112,7 +113,7 @@ var whiteList = function(usr, msg, wat)
 		log(chan);
 		for(j in approved_Chans) {
 		    log(approved_Chans[j]);
-		    if(chan == approved_Chans[j].pat) {
+		    if(approved_Chans[j].pat.exec(chan)) {
 			log("Approved");
 			return [usr, msg, wat];
 		    }
@@ -123,6 +124,7 @@ var whiteList = function(usr, msg, wat)
 	}
 	return [usr, msg, wat];
 };
+
 //____
 
 
