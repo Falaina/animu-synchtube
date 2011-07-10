@@ -1,3 +1,4 @@
+
 // This is a javascript document, the HTML is represented as one very long javascript string.
 // As such, if you want to insert newlines into it, you have to use a line continuation character
 // '\' after every newline.
@@ -49,6 +50,7 @@ var html =
 	<!-- TheSoftest -->\
 	</div>\
 </div>\
+<br /><br />
 <div id="panelTabs">\
 	<div id="ie-test">\
 		<ul class="group" id="boxLinks">\
