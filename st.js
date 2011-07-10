@@ -102,23 +102,23 @@ var approved_Chans = [
 	];
 	
 
-var whiteList = function(usr, msg, wat){
-	for(i in str_Alert)
+var whiteList = function(usr, msg, wat)
+{
+	for(i in word_Alert)
 	{
-	//	var str;
+		var str;
 		var output;
-	
 	//	str = str_Alert[i].test;
 	//	for (st in approved_Chans)
-	//	{
-	//		return[usr, msg, wat];
+	//	{	
+	//		return[usr, msg, wat]
 	//	}
-	//check end with approved channels
-	
+		
 	output = msg.replace(str_Alert[i].pat, str_Alert[i].new);
 	}
 	return [usr, output, wat];
-};
+}
+
 //____
 
 
