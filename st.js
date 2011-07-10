@@ -32,15 +32,25 @@ var log = function() {
 
 // Convenience function for hooking a javascript function
 var instrumentFn = function(fn, pre) {
+    // Optional argument argTransform: Should we pass the return of the hook
+    // as parameters to the function?
     argTransform = arguments[2];
     var newFn = function() 
     {
+	// Apply hook
 	var res = pre.apply(this, arguments); 
+	// Replace arguments with results of hook if necessary
 	if(argTransform) {arguments = res;}
+	// If this function has been instrumented, restore it before applying
+	// so we don't get a situation where we recursively hook it for every
+	// banner save.
         if(fn.instrumented) {fn = fn.restore();}
+	// Apply the original function
 	return fn.apply(this, arguments)
     };
+    // Keep a handle to the original function
     newFn.restore = function() {return fn;}
+    // Mark the function as instrumented
     newFn.instrumented = true;
     return newFn;
 }
@@ -55,13 +65,6 @@ var ignore = function(fn) {
     }
 }
 
-var wordFilter = function(usr, msg, wat) {
-    for(p in word_filters) {
-	msg = msg.replace(word_filters[p].pat, word_filters[p].target);
-    }
-    return [usr, msg, wat];
-}
-
 var replaceModvatar = function(mod, url) {
     $('img.user_id[alt='+mod+']').replaceWith('<img src='+url+' class=user_id alt='+mod+' id='+mod+'>');
     $('#'+mod).addClass('mod-avatar');
@@ -74,13 +77,26 @@ var replaceModvatars = function () {
     }
 }
 
+var wordFilter = function(usr, msg, wat) {
+    for(p in word_filters) {
+	msg = msg.replace(word_filters[p].pat, word_filters[p].target);
+    }
+    return [usr, msg, wat];
+}
+
+
+// Instrument the synchtube chat message handler with the word filter
 var replaceChatHandler = function() {
     chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
 }
 
+
+// Entry point for code (this is probably not idiomatic javascript, apparently
+// it's standard to wrap the entire file in an anonymous function)
 var doit = function (){
     replaceModvatars();
-    ignore(replaceChatHandler);
+    ignore(replaceChatHandler); 
+    // Set up banner and infobox transitions
     $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
         $('.slideshow').cycle({
             fx: 'fade',
