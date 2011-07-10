@@ -98,7 +98,7 @@ var approved_Chans = [
 	{par : /animu/ig },
 	{pat : /science/ig },
 	{pat : /chiruno/ig },
-	{pat : /binaryheap/ig },
+	{pat : /binaryheap/ig }
 	];
 	
 
