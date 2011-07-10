@@ -122,9 +122,9 @@ var whiteList = function(usr, msg, wat)
 			return [usr, msg, wat];
 		    }
 		}
-		msg = msg.replace(str_Alert[i].pat, str_Alert[i].new);
-		break;
 	    }
+	    msg = msg.replace(str_Alert[i].pat, str_Alert[i].new);
+	    break;
 	}
 	return [usr, msg, wat];
 };
