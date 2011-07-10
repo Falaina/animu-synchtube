@@ -99,7 +99,8 @@ var doit = function (){
             var activeTab = $(this).find('a').attr('href');
             $(activeTab).fadeIn();
             return false;
-        });
+        });	
+	$(".slideshow").css("visibility", "visible");
     });
 };
 
