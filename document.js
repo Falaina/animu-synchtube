@@ -6,6 +6,8 @@ var html =
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div>\
 \
 <link href="//nodocchi.com/nodocch" rel="stylesheet" />\
+<link href="//raw.github.com/Falaina/animu-synchtube/master/animu.css" rel="stylesheet" />\
+\
 <div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block;">\
 <img src="//nodocchi.com/face/Hidamari%20Sketch.png" width="100%" class="first" alt="wideface banner"/>\
 <img src="//nodocchi.com/face/Ika%20Musume.png" width="100%" alt="ika musume banner"/>\
@@ -39,6 +41,8 @@ var html =
 <!-- Goships -->\
 <img src="//i.imgur.com/gx8v1.png" width="100%" alt="miku banner"/>\
 <!-- Denwa -->\
+<img src="//i.imgur.com/tNzc3.jpg" width="100%" alt="bark banner"/>\
+<!-- BinaryHeap -->\
 </div>\
 <br />\<br />\
 <div id="ie-test">\
@@ -79,7 +83,9 @@ var html =
 				<li>\
 					Our <a href="//steamcommunity.com/groups/naitofiyah/" target="_blank">streamGroup</a></li>\
 				<li>\
-					We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft</li>\
+					We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft, Terraria</li>\
+				<li>\
+					Come join us in Terraria: falaina.dlinkddns.com</li>\
 				<li>\
 					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/72h7D.png/" target="_blank"> click!</a></li>\
 			</ul>\
