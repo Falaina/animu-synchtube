@@ -24,8 +24,6 @@ var word_filters = [ // Filtered words
     {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    target : 'Ban me for spammer!'},
     {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, target : 'Ban me for spammer!'},
     {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     target : 'Ban me for spammer!'},
-//deleteme
-    {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, target : 'keii'}
 ];
 
 
@@ -91,9 +89,8 @@ var wordFilter = function(usr, msg, wat) {
 }
 
 //___nigger_rigging
-/*
-//var str_Alert = [
-//	{pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, 	new: '[censored: $1]', }
+var str_Alert = [
+	{pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, 	new: '[censored: $1]', }
 ];
 
 var approved_Chans = [
@@ -106,28 +103,33 @@ var approved_Chans = [
 
 var whiteList = function(usr, msg, wat)
 {
-	for(i in word_Alert)
+	for(i in str_Alert)
 	{
-		var str;
-		var output;
-	//	str = str_Alert[i].test;
-	//	for (st in approved_Chans)
-	//	{	
-	//		return[usr, msg, wat]
-	//	}
-		
-	output = msg.replace(str_Alert[i].pat, str_Alert[i].new);
+	    var match = str_Alert[i].pat.exec(msg);
+	    if(match) {
+		log(match);
+		var chan = match[1];
+		log(chan);
+		for(j in approved_Chans) {
+		    log(approved_Chans[j]);
+		    if(chan == approved_Chans[j].pat) {
+			log("Approved");
+			return [usr, msg, wat];
+		    }
+		}
+		msg = msg.replace(str_Alert[i].pat, str_Alert[i].new);
+		break;
+	    }
 	}
-	return [usr, output, wat];
-}
-*/
+	return [usr, msg, wat];
+};
 //____
 
 
 // Instrument the synchtube chat message handler with the word filter
 var replaceChatHandler = function() {
+    wordFilter        = instrumentFn(wordFilter, whiteList, true);
     chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
-//      chat.writeMessage = instrumentFn(chat.writeMessage, whiteList, true);
 }
 
 
