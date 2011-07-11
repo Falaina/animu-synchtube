@@ -32,8 +32,8 @@ var Deployer = function() {
     ];
     var deployCmd = deploy.join('; ');
     var testFiles = [
-	'document.js',
-	'st.js'
+	'document.js'
+//	'st.js'
     ];
     var testCmd = 'java -jar jslint4java.jar ' + testFiles.join(' ');
     var testResultFile = 'README.md';
