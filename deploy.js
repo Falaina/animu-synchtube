@@ -115,12 +115,8 @@ var Deployer = function() {
 
     this.deploy = function() {
 	needsDeploy = true;
+	banner("Requesting new deploy");
 	self.emit(newDeploy);
-	if(status == waiting) {
-	    console.log("Waiting for previous test to end.");
-	    needsDeploy = true;
-	}
-	return self.retrieveFiles();
     }
     
     // Set up internal listeners
