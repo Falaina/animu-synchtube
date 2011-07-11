@@ -24,8 +24,6 @@ var word_filters = [ // Filtered words
 //   {pat : /[^ ]*www.synchtube.com\/r\/E34fag/ig,    target : 'Ban me for spammer!'},
 //    {pat : /[^ ]*www.synchtube.com\/r\/4chanLive/ig, target : 'Ban me for spammer!'},
 //    {pat : /[^ ]*www.synchtube.com\/r\/Babby/ig,     target : 'Ban me for spammer!'},
-//deleteme
-//    {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, target : 'keii'}
 ];
 
 
