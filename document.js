@@ -1,13 +1,14 @@
 // This is a javascript document, the HTML is represented as one very long javascript string.
 // As such, if you want to insert newlines into it, you have to use a line continuation character
 // '\' after every newline.
+
 var doc_doit = function() 
 {
 var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div>\
 \
 <link href="//nodocchi.com/nodocch" rel="stylesheet" />\
-<link href="https://raw.github.com/Falaina/animu-synchtube/master/animu.css" rel="stylesheet" />\
+<link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />\
 \
 <div id="panelBanner">\
 	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">\
@@ -112,6 +113,7 @@ var html =
 ';
 
 $(".tv-descr-text").html(html);
+
 
 $("#div2").insertAfter("#div3");
 $(".slideshow").prependTo(".");
