@@ -129,7 +129,7 @@ var Deployer = function() {
 		var POST =  qs.parse(body);
 		console.log(POST);
             });
-	    deployFiles();
+	    self.deployFiles();
 	} else if(req.method=='GET') {
             var url_parts = url.parse(req.url,true);
             console.log(url_parts.query);
