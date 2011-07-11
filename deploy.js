@@ -32,10 +32,10 @@ var Deployer = function() {
     ];
     var deployCmd = deploy.join('; ');
     var testFiles = [
-	'document.js'
-//	'st.js'
+	'document.js',
+	'st.js'
     ];
-    var testCmd = 'java -jar jslint4java.jar ' + testFiles.join(' ');
+    var testCmd = 'java -jar jslint4java.jar --encoding UTF-8 ' + testFiles.join(' ');
     var testResultFile = 'README.md';
 
     // Events
