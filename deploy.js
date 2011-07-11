@@ -157,7 +157,7 @@ var Deployer = function() {
             req.on('end',function(){                
 		var POST =  qs.parse(body);
 		var payload = JSON.parse(POST.payload);		
-		console.log.commits(payload);
+		console.log(payload.commits);
 		for(var i; i < payload.commits.length; i++) {
 		    console.log("Examining: " + payload.commits[i]);
 		    // Only deploy commits that aren't ours
