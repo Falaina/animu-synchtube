@@ -17,15 +17,15 @@ var Deployer = function() {
     // Private members
     var retrieve = [
 	'git checkout master',
-	'git pull',
+	'git pull'
+    ];
+    var retrieveCmd = retrieve.join('; ');
+    var deploy =  [
 	'git checkout gh-pages',
 	'rm document.js',
 	'git checkout origin/master document.js',
 	'rm st.js',
 	'git checkout origin/master st.js',
-    ];
-    var retrieveCmd = retrieve.join('; ');
-    var deploy =  [
 	'git commit -a -m "deploy hook"',
 	'git pull',
 	'git push'
@@ -139,7 +139,6 @@ sys.inherits(Deployer, events.EventEmitter);
 if(process.argv[2] === "--manual-run") {
     console.log("*** Starting manual run ***");
     var deployer = new Deployer();
-    console.log(deployer);
     deployer.deploy();
     deployer.addListener('finished', process.exit);
 }
