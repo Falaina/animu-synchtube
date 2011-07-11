@@ -1,6 +1,2 @@
-[Deployment Status] Last attempt: Mon Jul 11 2011 15:48:15 GMT-0700 (PDT)
-DEPLOY FAILED - Errors below must be fixed before deploy: 
-jslint returned Error: Command failed: 
-jslint:document.js:106:3:Mixed spaces and tabs.
-
-
+[Deployment Status] Last attempt: Mon Jul 11 2011 15:50:45 GMT-0700 (PDT)
+Deploy successful.
