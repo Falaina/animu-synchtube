@@ -7,11 +7,22 @@ sys = require('sys');
 // We will "deploy" changes by switching to the gh-pages
 // branch, removing the previous js files, pulling
 // the master's js files, then pushing to github's gh-pages
-var deployCmd = ' git co master; git pull; git co gh-pages;';
-deployCmd    += ' rm document.js; git co origin/master document.js;';
-deployCmd    += ' rm st.js; git co origin/master st.js;';
-deployCmd    += ' git commit -a -m "deploy hook";';
-deployCmd    += ' git pull; git push';
+var deploy = [
+    'git checkout master',
+    'git pull',
+    'git checkout gh-pages',
+    'rm document.js',
+    'git checkout origin/master document.js',
+    'rm st.js',
+    'git checkout origin/master st.js',
+    'git commit -a -m "deploy hook"',
+    'git pull',
+    'git push'
+];
+
+    
+
+var deployCmd = deploy.join('; ');
 console.log(deployCmd);
 
 var server = http.createServer(function(req, res) {
