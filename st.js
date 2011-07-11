@@ -24,12 +24,10 @@ var word_filters = [ // Filtered words
 ];
 
 
-
 // Convenience function for logging
 var log = function() {
     window.console && console.log && console.log(arguments);
 }
-
 
 // Convenience function for hooking a javascript function
 // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
@@ -72,7 +70,6 @@ var replaceModvatar = function(mod, url) {
     $('#'+mod).addClass('mod-avatar');
 }
 
-
 var replaceModvatars = function () {
     for(i in modvatars) {
         replaceModvatar(modvatars[i].mod, modvatars[i].url);
@@ -86,7 +83,6 @@ var wordFilter = function(usr, msg, wat) {
     return [usr, msg, wat];
 }
 
-//___nigger_rigging
 var str_Alert = [
         {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig,         new: '[censored: $1]'}
 ];
@@ -121,15 +117,11 @@ var whiteList = function(usr, msg, wat)
 	return [usr, msg, wat];
 };
 
-//____
-
-
 // Instrument the synchtube chat message handler with the word filter
 var replaceChatHandler = function() {
     wordFilter        = instrumentFn(wordFilter, whiteList, true);
     chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
 }
-
 
 // Entry point for code (this is probably not idiomatic javascript, apparently
 // it's standard to wrap the entire file in an anonymous function)
@@ -159,4 +151,3 @@ var doit = function (){
 	$(".slideshow").css("visibility", "visible");
     });
 };
-
