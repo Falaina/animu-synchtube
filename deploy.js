@@ -73,8 +73,9 @@ var Deployer = function() {
 
     this.runTests = function() {
 	console.log("Running Tests");
-	var test_out = "Deploy Status:\n";
+	var test_out = "[Deployment Status]\n";
 	child = exec(testCmd, function(err, stdout, stderr) {
+	    test_out += '['+new Date()+']';
 	    if(stdout) sys.print('stdout: ' + stdout);
 	    if(stderr) sys.print('stderr: ' + stderr);
 	    
@@ -106,10 +107,8 @@ var Deployer = function() {
     self.addListener(deployed,    function() {self.emit(finished)});
     self.addListener(testsFailed, function() {self.emit(finished)});
     // On testsSucceeded, deploy files.
-//    self.addListener(testsSucceeded, deployFiles);
+    self.addListener(testsSucceeded, self.deployFiles);
     
-
-
     // Start the HTTP server github POSTS to
     var server = http.createServer(function(req, res) {
 	req.setEncoding("utf8");
