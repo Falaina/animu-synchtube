@@ -26,8 +26,10 @@ var word_filters = [ // Filtered words
 
 // Convenience function for logging
 var log = function() {
-    window.console && console.log && console.log(arguments);
-}
+    if(window.console && window.console.log) {
+	console.log(arguments);
+    }
+};
 
 // Convenience function for hooking a javascript function
 // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
@@ -41,50 +43,53 @@ var instrumentFn = function(fn, pre) {
     }
     var newFn = function() 
     {
+	var fnArgs = arguments;
 	// Apply hook
 	var res = pre.apply(this, arguments); 
 	// Replace arguments with results of hook if necessary
-	if(argTransform) {arguments = res;}
+	if(argTransform) {fnArgs = res;}
 	// Apply the original function
-	return fn.apply(this, arguments)
+	return fn.apply(this, fnArgs);
     };
     // Keep a handle to the original function
-    newFn.restore = function() {return fn;}
+    newFn.restore = function() {return fn;};
     // Mark the function as instrumented
     newFn.instrumented = true;
     return newFn;
-}
+};
 
 // Convenience function for invoking a function
 // that may fail
 var ignore = function(fn) {
     try{
-	fn()
+	fn();
     } catch (err) {
 	log("Ignoring error:\n\t" + err);
     }
-}
+};
 
 var replaceModvatar = function(mod, url) {
     $('img.user_id[alt='+mod+']').replaceWith('<img src='+url+' class=user_id alt='+mod+' id='+mod+'>');
     $('#'+mod).addClass('mod-avatar');
-}
+};
 
 var replaceModvatars = function () {
-    for(i in modvatars) {
+    var i;
+    for(i=0; i < modvatars.length; i++) {
         replaceModvatar(modvatars[i].mod, modvatars[i].url);
     }
-}
+};
 
 var wordFilter = function(usr, msg, wat) {
-    for(p in word_filters) {
-	msg = msg.replace(word_filters[p].pat, word_filters[p].target);
+    var i;
+    for(i=0; i < word_filters.length; i++) {
+	msg = msg.replace(word_filters[i].pat, word_filters[i].target);
     }
     return [usr, msg, wat];
-}
+};
 
 var str_Alert = [
-        {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig,         new: '[censored: $1]'}
+        {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, target: '[censored: $1]'}
 ];
 
 var approved_Chans = [
@@ -96,32 +101,33 @@ var approved_Chans = [
 
 var whiteList = function(usr, msg, wat)
 {
-	for(i in str_Alert)
-	{
-	    var match = str_Alert[i].pat.exec(msg);
-	    if(match) {
-		log(match);
-		var chan = match[1];
-		log(chan);
-		for(j in approved_Chans) {
-		    log(approved_Chans[j]);
-		    if(approved_Chans[j].pat.exec(chan)) {
-			log("Approved");
-			return [usr, msg, wat];
-		    }
+    var i;
+    for( i=0; i < str_Alert.length; i++) {
+	var match = str_Alert[i].pat.exec(msg);
+	if(match) {
+	    var j;
+	    log(match);
+	    var chan = match[1];
+	    log(chan);
+	    for(i=0; i < approved_Chans.length; i++) {
+		log(approved_Chans[j]);
+		if(approved_Chans[j].pat.exec(chan)) {
+		    log("Approved");
+		    return [usr, msg, wat];
 		}
 	    }
-	    msg = msg.replace(str_Alert[i].pat, str_Alert[i].new);
+	    msg = msg.replace(str_Alert[i].pat, str_Alert[i].target);
 	    break;
 	}
-	return [usr, msg, wat];
+    }
+    return [usr, msg, wat];
 };
 
 // Instrument the synchtube chat message handler with the word filter
 var replaceChatHandler = function() {
     wordFilter        = instrumentFn(wordFilter, whiteList, true);
     chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
-}
+};
 
 // Entry point for code (this is probably not idiomatic javascript, apparently
 // it's standard to wrap the entire file in an anonymous function)
