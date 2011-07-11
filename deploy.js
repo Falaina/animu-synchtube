@@ -115,6 +115,7 @@ var Deployer = function() {
 
     this.deploy = function() {
 	needsDeploy = true;
+	banner("Requesting new deploy");
 	self.emit(newDeploy);
     }
     
