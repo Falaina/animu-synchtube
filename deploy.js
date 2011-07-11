@@ -77,7 +77,7 @@ var Deployer = function() {
 
     this.runTests = function() {
 	banner("Running Tests");
-	var test_out = "[Deployment Status]\n";
+	var test_out = "[Deployment Status] ";
 	child = exec(testCmd, function(err, stdout, stderr) {
 	    test_out += 'Last attempt: '+new Date()+'\n';
 	    if(stdout) sys.print('stdout: ' + stdout);
