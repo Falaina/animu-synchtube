@@ -94,8 +94,10 @@ var Deployer = function() {
 	    }
 	    // Write results of tests and let everyone know tests are done.
 	    fs.writeFileSync(testResultFile, test_out);
-	    if(err) self.emit(testsFailed);
-	    else self.emit(testsSucceeded);
+	    child = exec('git pull; git commit -a -m "Test Hook"; git push', function() {
+		if(err) self.emit(testsFailed);
+		else self.emit(testsSucceeded);
+	    });
 	});
     }
 
