@@ -113,6 +113,7 @@ var html =
 
 $(".tv-descr-text").html(html);
 
+
 $("#div2").insertAfter("#div3");
 $(".slideshow").prependTo(".");
 }
