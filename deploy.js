@@ -128,8 +128,10 @@ var Deployer = function() {
     // Set up internal listeners
     // A new deploy has been requested
     self.addListener(newDeploy, function() {
-	if((status == waiting) && needsDeploy) 
+	if((status == waiting) && needsDeploy)  {
+	    needsDeploy = false;
 	    self.retrieveFiles();
+	}
     });
     self.addListener(finished, function () {
 	status = waiting;
