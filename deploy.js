@@ -49,8 +49,8 @@ var Deployer = function() {
     // as the callback to exec. emits event when
     // finished.
     var execAndEmit = function(cmd, event) {
-	console.log(retrieveCmd);
-	child = exec(retrieveCmd, function(err, stdout, stderr) {
+	console.log(cmd);
+	child = exec(cmd, function(err, stdout, stderr) {
 	    sys.print('stdout: ' + stdout);
 	    sys.print('stderr: ' + stderr);
 	    if(err != null) {
@@ -61,18 +61,22 @@ var Deployer = function() {
 	});
     };
 
+    // Text banner for import log messages
+    var banner = function(msg) {console.log("*** "+msg+" ***");}
+
     // Public methods
     this.retrieveFiles = function () {
-	console.log("Retrieving files");
+	banner("Retrieving files");
 	execAndEmit(retrieveCmd, filesRetrieved);
     }
 
     this.deployFiles = function () { 
+	banner("Deploying files");
 	execAndEmit(deployCmd, deployed);	
     }
 
     this.runTests = function() {
-	console.log("Running Tests");
+	banner("Running Tests");
 	var test_out = "[Deployment Status]\n";
 	child = exec(testCmd, function(err, stdout, stderr) {
 	    test_out += '['+new Date()+']';
