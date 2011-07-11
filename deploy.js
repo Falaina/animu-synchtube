@@ -160,11 +160,12 @@ var Deployer = function() {
 		console.log(payload);
 		for(var i; i < payload.commits.length; i++) {
 		    // Only deploy commits that aren't ours
-		    if((payload.commits[i].message.indexOf(testHookPrefix) == -1) &&
-		       (payload.commits[i].message.indexOf(deployHookPrefix) == -1)) {
-			self.deploy();
+		    if((payload.commits[i].message.indexOf(testHookPrefix) != -1) &&
+		       (payload.commits[i].message.indexOf(deployHookPrefix) != -1)) {
+			return;
 		    }
 		}
+		self.deploy();
 	    });
 
 	} else if(req.method=='GET') {
