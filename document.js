@@ -116,7 +116,4 @@ $(".tv-descr-text").html(html);
 $(".tv-descr-text").css("max-height", "");
 $(".tv-descr-ct").css("height", "");
 $(".box").css("height", "");
-
-$("#div2").insertAfter("#div3");
-$(".slideshow").prependTo(".");
 }
