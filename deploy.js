@@ -78,6 +78,7 @@ var Deployer = function() {
     this.runTests = function() {
 	banner("Running Tests");
 	var test_out = "[Deployment Status] ";
+	var commit_msg = "Test Hook - ";
 	child = exec(testCmd, function(err, stdout, stderr) {
 	    test_out += 'Last attempt: '+new Date()+'\n';
 	    if(stdout) sys.print('stdout: ' + stdout);
@@ -89,12 +90,14 @@ var Deployer = function() {
 		test_out += err + "\n";		
 		test_out += stdout;
 		test_out += stderr;
+		commit_msg += "Test failure. Not deploying.";
 	    } else {
 		test_out += "Deploy successful.\n";
+		commit_msg += "Tests passed. Attempting to deploy.";
 	    }
 	    // Write results of tests and let everyone know tests are done.
 	    fs.writeFileSync(testResultFile, test_out);
-	    child = exec('git pull; git commit -a -m "Test Hook"; git push', function() {
+	    child = exec('git pull; git commit -a -m "'+commit_msg+'"; git push', function() {
 		if(err) self.emit(testsFailed);
 		else self.emit(testsSucceeded);
 	    });
