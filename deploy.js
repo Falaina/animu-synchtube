@@ -158,7 +158,7 @@ var Deployer = function() {
 		var POST =  qs.parse(body);
 		var payload = JSON.parse(POST.payload);		
 		console.log(payload.commits);
-		for(var i; i < payload.commits.length; i++) {
+		for(var i=0; i < payload.commits.length; i++) {
 		    console.log("Examining: " + payload.commits[i]);
 		    // Only deploy commits that aren't ours
 		    if((payload.commits[i].message.indexOf(testHookPrefix) != -1) ||
