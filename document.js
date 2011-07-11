@@ -95,7 +95,7 @@ var html =
 					<li>\
 						We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft, Terraria</li>\
 					<li>\
-						Come play terraria at us: falaina.dlinkddns.com \
+						Come play terraria with us: falaina.dlinkddns.com \
                                                 (Need to be whitelisted to join. Ask Fukkireta, BinaryHeap, or Keii to be\
                                                 whitelisted.) </li>\
 					<li>\
