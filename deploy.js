@@ -158,10 +158,10 @@ var Deployer = function() {
 		var POST =  qs.parse(body);
 		var payload = JSON.parse(POST.payload);		
 		console.log(payload);
-		for(var i; i < payload.length; i++) {
+		for(var i; i < payload.commits.length; i++) {
 		    // Only deploy commits that aren't ours
-		    if((payload[i].message.indexOf(testHookPrefix) == -1) &&
-		       (payload[i].message.indexOf(deployHookPrefix) == -1)) {
+		    if((payload.commits[i].message.indexOf(testHookPrefix) == -1) &&
+		       (payload.commits[i].message.indexOf(deployHookPrefix) == -1)) {
 			self.deploy();
 		    }
 		}
