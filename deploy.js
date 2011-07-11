@@ -159,9 +159,11 @@ var Deployer = function() {
 		var payload = JSON.parse(POST.payload);		
 		console.log(payload);
 		for(var i; i < payload.commits.length; i++) {
+		    console.log("Examining: " + payload.commits[i]);
 		    // Only deploy commits that aren't ours
-		    if((payload.commits[i].message.indexOf(testHookPrefix) != -1) &&
+		    if((payload.commits[i].message.indexOf(testHookPrefix) != -1) ||
 		       (payload.commits[i].message.indexOf(deployHookPrefix) != -1)) {
+			banner("Ignoring hook commit");
 			return;
 		    }
 		}
