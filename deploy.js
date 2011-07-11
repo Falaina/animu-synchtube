@@ -9,9 +9,10 @@ sys = require('sys');
 // the master's js files, then pushing to github's gh-pages
 var deployCmd = ' git co master; git pull; git co gh-pages;';
 deployCmd    += ' rm document.js; git co origin/master document.js;';
-deployCmd    += ' rm st.js; git co origin/master st.js';
+deployCmd    += ' rm st.js; git co origin/master st.js;';
 deployCmd    += ' git commit -a -m "deploy hook";';
 deployCmd    += ' git pull; git push';
+console.log(deployCmd);
 
 var server = http.createServer(function(req, res) {
     req.setEncoding("utf8");
