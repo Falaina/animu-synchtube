@@ -44,6 +44,13 @@ var Deployer = function() {
     var filesRetrieved  = 'files-retrieved';
     var deployed        = 'deployed';
     var finished        = 'finished';
+    var newDeploy       = 'deploy-requested';
+
+    // The current status. Don't try and run concurrent tests.
+    var waiting = 'waiting';
+    var busy    = 'busy';
+    var status  = waiting;
+    var needsDeploy;
 
     // Simplified exec call, prints stdout and stderr
     // as the callback to exec. emits event when
@@ -66,6 +73,7 @@ var Deployer = function() {
 
     // Public methods
     this.retrieveFiles = function () {
+	status = busy;
 	banner("Retrieving files");
 	execAndEmit(retrieveCmd, filesRetrieved);
     }
@@ -106,10 +114,26 @@ var Deployer = function() {
     }
 
     this.deploy = function() {
-	return this.retrieveFiles();
+	needsDeploy = true;
+	self.emit(newDeploy);
+	if(status == waiting) {
+	    console.log("Waiting for previous test to end.");
+	    needsDeploy = true;
+	}
+	return self.retrieveFiles();
     }
     
     // Set up internal listeners
+    // A new deploy has been requested
+    self.addListener(newDeploy, function() {
+	if((status == waiting) && needsDeploy) 
+	    self.retrieveFiles();
+    });
+    self.addListener(finished, function () {
+	status = waiting;
+	self.emit(newDeploy);
+    });
+
     // After retrieving committed versions, run tests
     self.addListener(filesRetrieved, self.runTests);
     // For manual runs, either deployed or tests failed events
