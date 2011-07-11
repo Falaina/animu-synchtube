@@ -140,10 +140,9 @@ var Deployer = function() {
     self.emit('test');
 }
 sys.inherits(Deployer, events.EventEmitter);
-
+var deployer = new Deployer();
 if(process.argv[2] === "--manual-run") {
-    console.log("*** Starting manual run ***");
-    var deployer = new Deployer();
+    console.log("*** Starting manual run ***"); 
     deployer.deploy();
     deployer.addListener('finished', process.exit);
-}
+};
