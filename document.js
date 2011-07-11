@@ -47,6 +47,8 @@ var html =
 	<!-- BinaryHeap -->\
 	<img src="//i.imgur.com/3S7lg.jpg" width="100%" alt="cirno"/>\
 	<!-- TheSoftest -->\
+	<img src="//i.imgur.com/p9knC.png" width="100%" alt="cirno"/>\
+	<!-- DukeNukem-->\
 	</div>\
 </div>\
 <br /><br />\
