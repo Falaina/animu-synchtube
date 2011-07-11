@@ -80,10 +80,6 @@ var replaceModvatars = function () {
 }
 
 var wordFilter = function(usr, msg, wat) {
-    var ret = whiteList(usr, msg, wat);
-    usr = ret[0];
-    msg = ret[1];
-    wat = ret[2];
     for(p in word_filters) {
 	msg = msg.replace(word_filters[p].pat, word_filters[p].target);
     }
@@ -130,6 +126,7 @@ var whiteList = function(usr, msg, wat)
 
 // Instrument the synchtube chat message handler with the word filter
 var replaceChatHandler = function() {
+    wordFilter        = instrumentFn(wordFilter, whiteList, true);
     chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
 }
 
