@@ -51,8 +51,8 @@ var Deployer = function() {
     var execAndEmit = function(cmd, event) {
 	console.log(cmd);
 	child = exec(cmd, function(err, stdout, stderr) {
-	    sys.print('stdout: ' + stdout);
-	    sys.print('stderr: ' + stderr);
+	    if(stdout) sys.print('stdout: ' + stdout);
+	    if(stderr) sys.print('stderr: ' + stderr);
 	    if(err != null) {
 		console.log('exec error: ' + err);
 	    }
@@ -80,6 +80,7 @@ var Deployer = function() {
 	var test_out = "[Deployment Status] ";
 	var commit_msg = "Test Hook - ";
 	child = exec(testCmd, function(err, stdout, stderr) {
+	    console.log(testCmd);
 	    test_out += 'Last attempt: '+new Date()+'\n';
 	    if(stdout) sys.print('stdout: ' + stdout);
 	    if(stderr) sys.print('stderr: ' + stderr);
