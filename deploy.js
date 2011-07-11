@@ -13,8 +13,14 @@ sys		= require('sys');
 var Deployer = function() {
     events.EventEmitter.call(this);
     var self = this;
-
     // Private members
+    // Prefix for all hook messages. It's important to use this
+    // as this is how we determined if we should attempt to deploy
+    // a commit (and we don't want to deploy our own commits)
+    // TODO: Give hook its own account
+    var testHookPrefix   = '[TEST HOOK]';
+    var deployHookPrefix = '[DEPLOY HOOK]';
+
     var retrieve = [
 	'git checkout master',
 	'git pull'
@@ -26,7 +32,7 @@ var Deployer = function() {
 	'git checkout origin/master document.js',
 	'rm st.js',
 	'git checkout origin/master st.js',
-	'git commit -a -m "deploy hook"',
+	'git commit -a -m "'+deployHookPrefix+'"',
 	'git pull',
 	'git push'
     ];
@@ -51,13 +57,6 @@ var Deployer = function() {
     var busy    = 'busy';
     var status  = waiting;
     var needsDeploy;
-
-    // Prefix for all hook messages. It's important to use this
-    // as this is how we determined if we should attempt to deploy
-    // a commit (and we don't want to deploy our own commits)
-    // TODO: Give hook its own account
-    var testHookPrefix   = '[TEST HOOK]';
-    var deployHookPrefix = '[DEPLOY HOOK]';
 
     // Simplified exec call, prints stdout and stderr
     // as the callback to exec. emits event when
@@ -93,7 +92,7 @@ var Deployer = function() {
     this.runTests = function() {
 	banner("Running Tests");
 	var test_out = "[Deployment Status] ";
-	var commit_msg = "Test Hook - ";
+	var commit_msg = testHookPrefix;
 	child = exec(testCmd, function(err, stdout, stderr) {
 	    console.log(testCmd);
 	    test_out += 'Last attempt: '+new Date()+'\n';
@@ -182,5 +181,5 @@ var deployer = new Deployer();
 if(process.argv[2] === "--manual-run") {
     console.log("*** Starting manual run ***"); 
     deployer.deploy();
-    deployer.addListener('finished', process.exit);
+//    deployer.addListener('finished', process.exit);
 };
