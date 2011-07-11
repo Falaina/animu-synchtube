@@ -94,8 +94,7 @@ var html =
 						Our <a href="//steamcommunity.com/groups/naitofiyah/" target="_blank">streamGroup</a></li>\
 					<li>\
 						We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft, Terraria</li>\
-					<li>\
-						Come join us in Terraria: falaina.dlinkddns.com</li>\
+
 					<li>\
 						Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/72h7D.png/" target="_blank"> click!</a></li>\
 				</ul>\
