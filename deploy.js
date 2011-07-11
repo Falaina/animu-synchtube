@@ -36,7 +36,7 @@ var Deployer = function() {
 	'st.js'
     ];
     var testCmd = 'java -jar jslint4java.jar --encoding UTF-8 ' + testFiles.join(' ');
-    var testResultFile = 'README.md';
+    var testResultFile = 'README';
 
     // Events
     var testsSucceeded  = 'tests-success';
