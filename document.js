@@ -95,6 +95,10 @@ var html =
 					<li>\
 						We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft, Terraria</li>\
 					<li>\
+						Come play terraria at us: (ip: falaina.dlinkddns.com, port: 7777)\
+                                                Need to be whitelisted to join. Ask Fukkireta, BinaryHeap, or Keii to be\
+                                                whitelisted. </li>\
+					<li>\
 						Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/72h7D.png/" target="_blank"> click!</a></li>\
 				</ul>\
 			</div>\
