@@ -52,6 +52,13 @@ var Deployer = function() {
     var status  = waiting;
     var needsDeploy;
 
+    // Prefix for all hook messages. It's important to use this
+    // as this is how we determined if we should attempt to deploy
+    // a commit (and we don't want to deploy our own commits)
+    // TODO: Give hook its own account
+    var testHookPrefix   = '[TEST HOOK]';
+    var deployHookPrefix = '[DEPLOY HOOK]';
+
     // Simplified exec call, prints stdout and stderr
     // as the callback to exec. emits event when
     // finished.
@@ -148,12 +155,19 @@ var Deployer = function() {
             req.on('data', function (data) {
 		body +=data;
             });
-            req.on('end',function(){
-                
+            req.on('end',function(){                
 		var POST =  qs.parse(body);
-		console.log(POST);
-            });
-	    self.deploy();
+		var payload = JSON.parse(POST.payload);		
+		console.log(payload);
+		for(var i; i < payload.length; i++) {
+		    // Only deploy commits that aren't ours
+		    if((payload[i].message.indexOf(testHookPrefix) == -1) &&
+		       (payload[i].message.indexOf(deployHookPrefix) == -1)) {
+			self.deploy();
+		    }
+		}
+	    });
+
 	} else if(req.method=='GET') {
             var url_parts = url.parse(req.url,true);
             console.log(url_parts.query);
