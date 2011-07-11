@@ -37,20 +37,21 @@ var log = function() {
 
 
 // Convenience function for hooking a javascript function
+// A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
 var instrumentFn = function(fn, pre) {
     // Optional argument argTransform: Should we pass the return of the hook
     // as parameters to the function?
     argTransform = arguments[2];
+    // Remove any previous hooks
+    if(fn.instrumented) {
+	fn = fn.restore();
+    }
     var newFn = function() 
     {
 	// Apply hook
 	var res = pre.apply(this, arguments); 
 	// Replace arguments with results of hook if necessary
 	if(argTransform) {arguments = res;}
-	// If this function has been instrumented, restore it before applying
-	// so we don't get a situation where we recursively hook it for every
-	// banner save.
-        //if(fn.instrumented) {fn = fn.restore();}
 	// Apply the original function
 	return fn.apply(this, arguments)
     };
