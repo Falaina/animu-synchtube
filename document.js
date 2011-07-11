@@ -47,8 +47,10 @@ var html =
 	<!-- BinaryHeap -->\
 	<img src="//i.imgur.com/3S7lg.jpg" width="100%" alt="cirno"/>\
 	<!-- TheSoftest -->\
-	<img src="//i.imgur.com/p9knC.png" width="100%" alt="cirno"/>\
+	<img src="//i.imgur.com/p9knC.png" width="100%" alt="NIGHT OF FIYA"/>\
 	<!-- DukeNukem-->\
+        <img src="//i.imgur.com/pU23W.png" width="100%" alt="dango"/>\
+	<!-- RAILGUN-->\
 	</div>\
 </div>\
 <br /><br />\
