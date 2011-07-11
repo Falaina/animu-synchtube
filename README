@@ -1,0 +1,5 @@
+[Deployment Status] Last attempt: Mon Jul 11 2011 15:23:27 GMT-0700 (PDT)
+DEPLOY FAILED - Errors below must be fixed before deploy: 
+jslint returned Error: Command failed: Unable to access jarfile jslint4java.jar
+
+Unable to access jarfile jslint4java.jar
