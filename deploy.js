@@ -25,6 +25,28 @@ var deploy = [
 var deployCmd = deploy.join('; ');
 console.log(deployCmd);
 
+var testFiles = [
+    'document.js',
+    'st.js'
+];
+
+var test = function() {
+    var readme_out = "Deploy Status:\n";
+    var status = 1;
+    var out_txt; 
+    if(status == 0) {
+	readme_out += "Deploy successful.\n";
+    }else {
+	readme_out += "DEPLOY FAILED: jslint returned status: ";
+	readme_out += status + "\n";
+	readme_out += out_txt;
+    }
+}
+
+	
+
+}
+
 var server = http.createServer(function(req, res) {
     req.setEncoding("utf8");
     req.content = '';
