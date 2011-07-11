@@ -11,7 +11,7 @@ var html =
 <link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />\
 \
 <div id="panelBanner">\
-	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">\
+	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; ">\
 	<img src="//nodocchi.com/face/Hidamari%20Sketch.png" width="100%" class="first" alt="wideface banner"/>\
 	<img src="//nodocchi.com/face/Ika%20Musume.png" width="100%" alt="ika musume banner"/>\
 	<img src="//nodocchi.com/face/Kizuna%20Aikawa.png" width="100%" alt="aikawa banner"/>\
