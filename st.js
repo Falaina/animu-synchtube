@@ -109,7 +109,7 @@ var whiteList = function(usr, msg, wat)
 	    log(match);
 	    var chan = match[1];
 	    log(chan);
-	    for(i=0; i < approved_Chans.length; i++) {
+	    for(j=0; j < approved_Chans.length; j++) {
 		log(approved_Chans[j]);
 		if(approved_Chans[j].pat.exec(chan)) {
 		    log("Approved");
