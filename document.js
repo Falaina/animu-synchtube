@@ -65,73 +65,13 @@ var html =
 '		<div id="box">' +
 '			<div class="box" id="box1">' +
 '				<ul>' +
-'<table class="defeatedList">'+
-'<tr>'+
-'	<th><b>Defeated</b></th>'+
-'</tr>'+
-'<tr>'+
-'	<td><b>Loops</b></td>'+
-'	<td>'+
-'		<ul>'+
-'			<li>&bull; FUKKIRETA 10 hours</li>'+
-'			<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
-'			<li>&bull; FUKKIRETA 10 hours</li>'+
-'			<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
-'		</ul>'+
-'	</td>'+
-'</tr>'+
-'<tr>'+
-'	<td><b>Series</b></td>'+
-'	<td>'+
-'		<ul>'+
-'			<li>&bull; Cromartie Highschool dub</li>'+
-'			<li>&bull; Nyoron Churuya san</li>'+
-'			<li>&bull; Di Gi Charat</li>'+
-'			<li>&bull; The Melancholy of Haruhi-Chan</li>'+
-'			<li>&bull; Battle Programmer Shirase</li>'+
-'			<li>&bull; Hokago no Pleiades</li>'+
-'			<li>&bull; REC</li>'+
-'			<li>&bull; Mars of Destruction</li>'+
-'			<li>&bull; Black Rock Shooter OVA </li>'+
-'			<li>&bull; Cosmos: A Personal Voyage</li>'+
-'			<li>&bull; 24 hour tag</li>'+
-'			<li>&bull; Gaki No Tsukai Yugawara Part</li>'+
-'			<li>&bull; The Legend of Koizumi</li>'+
-'			<li>&bull; High School of The Dead</li>'+
-'			<li>&bull; Bakemonogatari</li>'+
-'			<li>&bull; Toradora!</li>'+
-'			<li>&bull; Majokko Tsukune-Chan</li>'+
-'			<li>&bull; Clannad</li>'+
-'			<li>&bull; Seitokai Yakuindomo</li>'+
-'			<li>&bull; .Hack//Quantum</li>'+
-'			<li>&bull; Panty &amp; Stocking with Garterbelt</li>'+
-'			<li>&bull; Dokuro-Chan</li>'+
-'			<li>&bull; Rozen Maiden S1</li>'+
-'		</ul>'+
-'	</td>'+
-'</tr>'+
-'<tr>'+
-'	<td><b>movies</b></td>'+
-'	<td>'+
-'		<ul>'+
-'			<li>&bull; The Disappearance Of Haruhi Suzumiya</li>'+
-'			<li>&bull; Fate/Stay night UBW </li>'+
-'			<li>&bull; Girl who leapt through time  </li>'+
-'			<li>&bull; Fate/Stay night UBW </li>'+
-'			<li>&bull; Interstella 5555 </li>'+
-'			<li>&bull; Kikujiro</li>'+
-'			<li>&bull; Kara no Kyoukai</li>'+
-'			<li>&bull; Fist of the North Star Movie Remastered</li>'+
-'			<li>&bull; Funky Forest: The First Contact</li>'+
-'			<li>&bull; Eve no Jikan</li>'+
-'			<li>&bull; Ah! My Goddess: The Movie</li>'+
-'			<li>&bull; Akira</li>'+
-'			<li>&bull; Paprika</li>'+
-'			<li>&bull; Millennium Actress</li>'+
-'		</ul>'+
-'	</td>'+
-'</tr>'+
-'</table>'+
+'				<br />' +
+'					<b>Defeated:</b> <span style="color:#ff0000; font-weight:bold"> FUKKIRETA 10 hours </span> &#149;' +
+'					<span style="color:#ff0000; font-weight:bold"> Cosmos: A Personal Voyage</span> &#149;' +
+'					<span style="color:#ff0000; font-weight:bold">Night of Fire ft. Korikki 10 HOURS LONG</span> &#149;  <br />' +
+'					<span style="color:#ff0000; font-weight:bold">(touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG </span>' +
+'					&bull; Cromartie Highschool dub &bull; Nyoron Churuya san &bull; Di Gi Charat &bull; The Melancholy of Haruhi-Chan &bull; Battle Programmer Shirase &bull; Hokago no Pleiades &bull; REC &bull; The Disappearance Of Haruhi Suzumiya &bull; Fate/Stay night UBW &bull; Girl who leapt through time &bull; 24 hour tag &bull; Mars of Destruction &bull; Black Rock Shooter OVA &bull; Interstella 5555 &bull; Kikujiro &bull; Kara no Kyoukai &bull; Fist of the North Star Movie Remastered &bull; The Legend of Koizumi &bull; High School of The Dead &bull; Bakemonogatari &bull; Toradora! &bull; Majokko Tsukune-Chan &bull; Funky Forest: The First Contact &bull; Clannad &bull; Seitokai Yakuindomo &bull; Eve no Jikan &bull; .Hack//Quantum &bull; Panty &amp; Stocking with Garterbelt &bull; Dokuro-Chan &bull; Ah! My Goddess: The Movie &bull; Akira &bull; Rozen Maiden S1 &bull; Paprika &bull; Millennium Actress<br />' +
+'					<br />' +
 '					Animu we are watching: Denpa Onna (to ep 9), Aria (to ep 5), Minami-Ke (to ep 7), Astro Fighter Sunred (Ep 1)<br />' +
 '					<br />' +
 '					<b>Submit your own animu banner. 1000x116 size, .png file, with these font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a><br />' +
