@@ -14,7 +14,7 @@ var word_filters = [ // Filtered words
     {pat : /homura/ig,       target : 'hameru'},
     {pat : /mami/ig,         target : 'mumi'},
     {pat : /kyoko/ig,        target : 'kyaku'},
-    {pat : /sayaka/ig,       target : 'sayaku'},
+    {pat : /sayaka/ig,       target : 'seyiku'},
     {pat : /(binaryheap)/ig, target : '$1-senpai'},
     {pat : /everyone/ig,     target : 'everynyan'},
     {pat : /plan/ig,         target : 'keikaku'},
