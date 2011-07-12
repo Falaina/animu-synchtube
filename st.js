@@ -132,5 +132,28 @@ var replaceChatHandler = function() {
 // Entry point for code (this is probably not idiomatic javascript, apparently
 // it's standard to wrap the entire file in an anonymous function)
 var doit = function (){
-
+    replaceModvatars();
+    ignore(replaceChatHandler); 
+    // Set up banner and infobox transitions
+    $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
+        $('.slideshow').cycle({
+            fx: 'fade',
+            random: 1,
+            timeout: 10000,
+            next: '.slideshow',
+            pause: 1
+        });
+        $('.box').hide();
+        $('ul.group li:first').addClass('active').show();
+        $('.box:first').show();
+        $('ul.group li').click(function () {
+            $('ul.group li').removeClass('active');
+            $(this).addClass('active');
+            $('.box').hide();
+            var activeTab = $(this).find('a').attr('href');
+            $(activeTab).fadeIn();
+            return false;
+        });	
+	$(".slideshow").css("visibility", "visible");
+    });
 };
