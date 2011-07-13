@@ -150,10 +150,10 @@ var html =
 '					<br />' +
 '					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/72h7D.png/" target="_blank"> click!</a>' +
 '					<br />' +
-'					<b>Submit your own animu banner. 1000x116 size, .png file, with these font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a><br />' +
-'					<b>Submitted banners</b> <a href="//animusynchtube.imgur.com/banners" target="_blank">Click here!</a>' +
+'					<b>Submit your own animu banner. 1000x116 size, .png file, with this font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a>' +
+'					<a href="//animusynchtube.imgur.com/banners" target="_blank">Submitted banners!</a>' +
 '					<br />' +
-'					Next Movie on 8 PM EST: Summer Wars' +
+'					Next Movie on 13-7-2011 8 PM EST: Summer Wars' +
 '				</ul>' +
 '			</div>' +
 '			<div class="box" id="box2">' +
