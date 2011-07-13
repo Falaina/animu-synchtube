@@ -148,8 +148,12 @@ var html =
 '					<br />' +
 '					Animu we are watching: Denpa Onna (to ep 9), Aria (to ep 5), Minami-Ke (to ep 7), Astro Fighter Sunred (Ep 1)<br />' +
 '					<br />' +
+'					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/72h7D.png/" target="_blank"> click!</a>' +
+'					<br />' +
 '					<b>Submit your own animu banner. 1000x116 size, .png file, with these font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a><br />' +
 '					<b>Submitted banners</b> <a href="//animusynchtube.imgur.com/banners" target="_blank">Click here!</a>' +
+'					<br />' +
+'					Next Movie on 13-7-2011 8 PM EST: Summer Wars' +
 '				</ul>' +
 '			</div>' +
 '			<div class="box" id="box2">' +
@@ -172,8 +176,6 @@ var html =
 '						Come play terraria with us: falaina.dlinkddns.com ' +
 '                                                (Need to be whitelisted to join. email your ip to Fukkireta( fukireta@gmail.com ) to be ' +
 '                                                whitelisted.) </li>' +
-'					<li>' +
-'						Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/72h7D.png/" target="_blank"> click!</a></li>' +
 '				</ul>' +
 '			</div>' +
 '		</div>' +
