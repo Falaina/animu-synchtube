@@ -1,7 +1,2 @@
-[Deployment Status] Last attempt: Tue Jul 12 2011 23:15:26 GMT-0700 (PDT)
-DEPLOY FAILED - Errors below must be fixed before deploy: 
-jslint returned Error: Command failed: 
-jslint:document.js:86:23:Unclosed string.
-jslint:document.js:86:23:Stopping.  (44% scanned).
-
-
+[Deployment Status] Last attempt: Tue Jul 12 2011 23:17:10 GMT-0700 (PDT)
+Deploy successful.
