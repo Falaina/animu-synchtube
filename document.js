@@ -83,7 +83,7 @@ var html =
 '</div>'+
 '<h4 class="trigger "><a href="#">Watched series</a></h4>'+
 '<div class="toggle_container open">'+
-'	<div class="block">'+'
+'	<div class="block">'+
 '		<table class="defeatedList">'+
 '			<tr>'+
 '				<td>'+
