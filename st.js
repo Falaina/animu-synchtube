@@ -108,20 +108,23 @@ var animu_synchtube = (function() {
     ];
 
     var approved_Chans = [
-	{pat : /animu/i },
-	{pat : /science/i },
-	{pat : /chiruno/i },
-	{pat : /binaryheap/i }
+	{pat : /animu/ig },
+	{pat : /science/ig },
+	{pat : /chiruno/ig },
+	{pat : /binaryheap/ig }
     ];
 
     self.whiteList = function(usr, msg, wat)
     {
-	var i, j, chan, match;
+	var i, j, match;
 	for( i=0; i < str_Alert.length; i++) {
+	    console.log(i);
 	    str_Alter[i].pat.lastIndex = 0;
 	    match = str_Alert[i].pat.exec(msg);
+	    console.log(match);
 	    if(match && match[1]) {
 		for(j=0; j < approved_Chans.length; j++) {
+		    console.log(approved_Chans[j].pat);;
 		    if(approved_Chans[j].pat.exec(match[1])) {
 			return [usr, msg, wat];
 		    }
