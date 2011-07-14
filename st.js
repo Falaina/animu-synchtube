@@ -50,7 +50,7 @@ var animu_synchtube = {
     custom_commands : [
 	{ pat : /^\s*\/link/, 
 	  fn  : function(msg) {
-	      linkify();
+	      this.linkify();
 	  }}
     ],
 
@@ -134,16 +134,16 @@ var animu_synchtube = {
     // according to this.modvatars
     replaceModvatars : function () {
 	var i;
-	for(i=0; i < modvatars.length; i++) {
-            replaceModvatar(modvatars[i].mod, modvatars[i].url);
+	for(i=0; i < this.modvatars.length; i++) {
+            this.replaceModvatar(this.modvatars[i].mod, this.modvatars[i].url);
 	}
     },
 
     ///////////////////////////// Word filters ////////////////////////////////
     wordFilter : function(usr, msg, wat) {
 	var i;
-	for(i=0; i < word_filters.length; i++) {
-	    msg = msg.replace(word_filters[i].pat, word_filters[i].target);
+	for(i=0; i < this.word_filters.length; i++) {
+	    msg = msg.replace(this.word_filters[i].pat, this.word_filters[i].target);
 	}
 	return [usr, msg, wat];
     },
@@ -161,16 +161,16 @@ var animu_synchtube = {
 
     whiteList : function(usr, msg, wat) {
 	var i, j;
-	for(i=0; i < str_Alert.length; i++) {
-	    var match = str_Alert[i].pat.exec(msg);
+	for(i=0; i < this.str_Alert.length; i++) {
+	    var match = this.str_Alert[i].pat.exec(msg);
 	    if(match && match[1]) {
-		for(j=0; j < approved_Chans.length; j++) {
-		    if(approved_Chans[j].pat.exec(match[1])) {
+		for(j=0; j < this.approved_Chans.length; j++) {
+		    if(this.approved_Chans[j].pat.exec(match[1])) {
 			log("Approved");
 			return [usr, msg, wat];
 		    }
 		}
-		msg = msg.replace(str_Alert[i].pat, str_Alert[i].target);
+		msg = msg.replace(this.str_Alert[i].pat, this.str_Alert[i].target);
 		break;
 	    }
 	}
@@ -180,9 +180,9 @@ var animu_synchtube = {
 
     processSay : function (msg) {
 	var i;
-	for(i=0; i < custom_commands; i++) {
-	    if(msg.match(custom_commands[i].pat)) {
-		custom_commands[i].fn(msg);
+	for(i=0; i < this.custom_commands; i++) {
+	    if(msg.match(this.custom_commands[i].pat)) {
+		custom_this.commands[i].fn(msg);
 		return true;
 	    }
 	}
