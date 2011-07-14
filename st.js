@@ -120,6 +120,8 @@ var animu_synchtube = (function() {
 	log("Whitelisting");
 	for( i=0; i < str_Alert.length; i++) {
 	    match = str_Alert[i].pat.exec(msg);
+	    log("Got whitelist: ");
+	    log(match);
 	    if(match) {
 		chan = match[1];
 		for(j=0; j < approved_Chans.length; j++) {
