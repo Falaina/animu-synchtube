@@ -1,5 +1,10 @@
 var animu_synchtube = (function() {
-    this.modvatars = [ //Replacement avatars
+    ////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////// PUBLIC INTERFACE ////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////
+
+    // Replacement images used by replaceModvatars
+    this.modvatars = [
 	{ mod : 'Keii',      url : '//i.imgur.com/zJqJI.gif'}, 
 	{ mod : 'DJZebro',   url : '//i.imgur.com/N5DR0.gif'}, 
 	{ mod : 'Nodocchi',  url : '//nodocchi.com/nodocchi'},
@@ -9,7 +14,11 @@ var animu_synchtube = (function() {
 	{ mod : 'AnimuXD',   url : '//i.imgur.com/t1YlE.gif'},
 	{ mod : 'Denwa',     url : '//i.imgur.com/imHKi.gif'}
     ];    
-    this.word_filters = [ // Word filters which use a simple regex replacement
+
+    // Word filters used during wordFilter (runs before chat.writeMessage)
+    // word_filters in this list must be a simple regex replacement.
+    // see word_filters_fn for more complex replacement
+    this.word_filters = [ 
 	{pat : /madoka/ig,       target : 'meduca'},
 	{pat : /magica/ig,       target : 'meguca'},
 	{pat : /homura/ig,       target : 'hameru'},
@@ -28,34 +37,27 @@ var animu_synchtube = (function() {
 	{pat : /magica/ig,       target : 'meguca'}
     ];
 
-    // Create the opening tag for a link
-    var openA = function(url) {
-	return '<a href="'+url+'">';
-    };
-
+    // Word filters used during wordFilter (runs before chat.writeMessage)
+    // wordFilter will pass an entire message to the functions in this thread
+    // and use the returned value as the new message. these are run after.
+    // the simple replacements above.
     this.word_filters_fns = [// Word filters which provide a function for replacement
     ];
 
-    // Convert every playlist entry into a clickable link
-    this.linkify = function() {
-	var vids = st.collections.videos, vid;
-	var YT_BASE = "http://www.youtube.com/watch?v=";	
-	for(vid in vids) {
-	    if(vids.hasOwnProperty(vid) &&
-	       vids[vid] && (!vids[vid].linked)) { 
-		var id = vids[vid].id;
-		var cur = $("#"+id+" .title");
-		var vidHtml = cur.html();
-		if(vidHtml) {
-		    var ytUrl =  YT_BASE + vids[vid].vid;
-		    vidHtml = vidHtml.replace(/.*/, openA(ytUrl)+"$&"+"</a>");
-		    cur.html(vidHtml);
-		    console.log(cur.html());
-		    vids[vid].linked = true;
-		}
-	    }
-	}
-    };
+    // Custom commands. These are run during processSay (runs before chat.beforeSay)
+    // If the contents of the chat input matches a pat in custom_commands, the
+    // associated function is called with the value. Afterwards the chat input is 
+    // cleared.
+    this.custom_commands = [
+	{ pat : /^\s*\/link/, 
+	  fn  : function(msg) {
+	      linkify();
+	  }}
+    ];
+
+    ////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////// UTILITY FUNCTIONS ///////////////////////////
+    ////////////////////////////////////////////////////////////////////////////
 
     // Convenience function for logging
     this.log = function() {
@@ -94,13 +96,35 @@ var animu_synchtube = (function() {
     // Convenience function for invoking a function
     // that may fail
     this.ignore = function(fn) {
-	try{
-	    fn();
-	} catch (err) {
-	    log("Ignoring error:\n\t" + err);
+	try{ fn(); } 
+	catch (err) { log("Ignoring error:\n\t" + err); }
+    };
+    // Create the opening tag for a link
+    var openA = function(url) { return '<a href="'+url+'">'; };
+    
+    ///////////////////////////// Playist modifications ////////////////////////
+    // Convert every playlist entry into a clickable link
+    this.linkify = function() {
+	var vids = st.collections.videos, vid;
+	var YT_BASE = "http://www.youtube.com/watch?v=";	
+	for(vid in vids) {
+	    if(vids.hasOwnProperty(vid) &&
+	       vids[vid] && (!vids[vid].linked)) { 
+		var id = vids[vid].id;
+		var cur = $("#"+id+" .title");
+		var vidHtml = cur.html();
+		if(vidHtml) {
+		    var ytUrl =  YT_BASE + vids[vid].vid;
+		    vidHtml = vidHtml.replace(/.*/, openA(ytUrl)+"$&"+"</a>");
+		    cur.html(vidHtml);
+		    console.log(cur.html());
+		    vids[vid].linked = true;
+		}
+	    }
 	}
     };
     
+    ///////////////////////////// Mod bar modifications ////////////////////////
     // Replace an image in the banner's mod list
     this.replaceModvatar = function(mod, url) {
 	$('img.user_id[alt='+mod+']').replaceWith('<img src='+url+' class=user_id alt='+mod+' id='+mod+'>');
@@ -116,6 +140,7 @@ var animu_synchtube = (function() {
 	}
     };
 
+    ///////////////////////////// Word filters ////////////////////////////////
     this.wordFilter = function(usr, msg, wat) {
 	var i;
 	for(i=0; i < word_filters.length; i++) {
@@ -153,10 +178,29 @@ var animu_synchtube = (function() {
 	return [usr, msg, wat];
     };
 
-    // Instrument the synchtube chat message handler with the word filter
+
+    this.processSay = function (msg) {
+	var i;
+	for(i=0; i < custom_commands; i++) {
+	    if(msg.match(custom_commands[i].pat)) {
+		custom_commands[i].fn(msg);
+		return true;
+	    }
+	}
+	return false;
+    };
+
+    // Instrument synchtube handlers with our own hooks.
     this.replaceChatHandler = function() {
+	// We want the call  chat.writeMessage(args) to be equivalent to
+	// chat.writeMessage(wordFilter(whiteList(args). We achieve this via
+	// hooking wordFilter with whiteList, and hooking chat.writeMesasge
+	// with the hooked wordFilter
 	wordFilter        = instrumentFn(wordFilter, whiteList, true);
 	chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
+
+	// Instrument chat.beforeSay so we can make a few custom commands.
+	// chat.beforeSay    = instrumentFn(chat.beforeSay, customCommand, true);
     };
 
     // Entry point for code (this is probably not idiomatic javascript, apparently
