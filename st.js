@@ -195,7 +195,7 @@ var animu_synchtube = {
 	// chat.writeMessage(wordFilter(whiteList(args). We achieve this via
 	// hooking wordFilter with whiteList, and hooking chat.writeMesasge
 	// with the hooked wordFilter
-	anime_synchtube.wordFilter   = 
+	animu_synchtube.wordFilter   = 
 	    animu_synchtube.instrumentFn(animu_synchtube.wordFilter, animu_synchtube.whiteList, true);
 	chat.writeMessage = 
 	    animu_synchtube.instrumentFn(chat.writeMessage, animu_synchtube.wordFilter, true);
