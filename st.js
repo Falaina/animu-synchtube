@@ -96,6 +96,10 @@ var animu_synchtube = (function() {
     };
 
     self.wordFilter = function(usr, msg, wat) {
+	var i;
+	for(i=0; i < word_filters.length; i++) {
+	    msg = msg.replace(word_filters[i].pat, word_filters[i].target);
+	}
 	return [usr, msg, wat];
     };
 
@@ -136,7 +140,7 @@ var animu_synchtube = (function() {
 
     // Instrument the synchtube chat message handler with the word filter
     var replaceChatHandler = function() {
-//	self.wordFilter   = instrumentFn(self, self.wordFilter,   self.whiteList, true);
+	self.wordFilter   = instrumentFn(self, self.wordFilter,   self.whiteList, true);
 	chat.writeMessage = instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
     };
 
