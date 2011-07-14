@@ -145,7 +145,7 @@ var animu_synchtube = (function() {
 
     // Entry point for code (this is probably not idiomatic javascript, apparently
     // it's standard to wrap the entire file in an anonymous function)
-    var doit = function (){
+    self.doit = function (){
 	replaceModvatars();
 	ignore(replaceChatHandler); 
 	// Set up banner and infobox transitions
