@@ -154,8 +154,6 @@ var html =
 '					<br />' +
 '					<b>Submit your own animu banner. 1000x116 size, .png file, with this font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a>' +
 '					<a href="//animusynchtube.imgur.com/banners" target="_blank">Submitted banners!</a>' +
-'					<br />' +
-'					Next Movie on 8 PM EST: Summer Wars' +
 '				</ul>' +
 '			</div>' +
 '			<div class="box" id="box2">' +
