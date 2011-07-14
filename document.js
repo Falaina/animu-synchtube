@@ -111,6 +111,7 @@ var html =
 '						<li>&bull; Panty &amp; Stocking with Garterbelt</li>'+
 '						<li>&bull; Dokuro-Chan</li>'+
 '						<li>&bull; Rozen Maiden S1</li>'+
+'						<li>&bull; Gaki No Tsukai Yugawara</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -139,6 +140,7 @@ var html =
 '						<li>&bull; Paprika</li>'+
 '						<li>&bull; Millennium Actress</li>'+
 '						<li>&bull; Princess Arete</li>'+
+'						<li>&bull; Summer Wars</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
