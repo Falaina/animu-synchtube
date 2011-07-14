@@ -68,7 +68,7 @@ var animu_synchtube = (function() {
 	}
     };
 
-    var wordFilter = function(usr, msg, wat) {
+    self.wordFilter = function(usr, msg, wat) {
 	var i;
 	for(i=0; i < word_filters.length; i++) {
 	    msg = msg.replace(word_filters[i].pat, word_filters[i].target);
