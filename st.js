@@ -119,7 +119,7 @@ var animu_synchtube = (function() {
 	var i, j, match;
 	for( i=0; i < str_Alert.length; i++) {
 	    console.log(i);
-	    str_Altert[i].pat.lastIndex = 0;
+	    str_Alert[i].pat.lastIndex = 0;
 	    match = str_Alert[i].pat.exec(msg);
 	    console.log(match);
 	    if(match && match[1]) {
