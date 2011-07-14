@@ -58,6 +58,33 @@ var animu_synchtube = (function() {
 	catch (err) { log("Ignoring error:\n\t" + err); }
     };
 
+    // Convenience function for hooking a javascript function
+    // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
+    var instrumentFn = function(context, fn, hook, transformArgs) {
+	// Remove any previous hooks
+	if(fn.instrumented) {
+	    fn = fn.restore();
+	}
+	var newFn = function() 
+	{
+	    var fnArgs = arguments;
+	    // Apply hook
+	    var results = pre.apply(context, arguments); 
+	    // Replace arguments with results of hook if necessary
+	    if(transformArgs) {
+		fnArgs = results;
+	    }
+	    // Apply the original function
+	    return fn.apply(context, fnArgs);
+	};
+	// Keep a handle to the original function
+	newFn.restore = function() {return fn;};
+	// Mark the function as instrumented
+	newFn.instrumented = true;
+	return newFn;
+    };
+
+
     var replaceModvatars = function () {
 	var i, mod, url;
 	for(i=0; i < modvatars.length; i++) {
@@ -117,37 +144,11 @@ var animu_synchtube = (function() {
 	chat.writeMessage = instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
     };
 
-    // Convenience function for hooking a javascript function
-    // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
-    self.instrumentFn = function(context, fn, hook, transformArgs) {
-	// Remove any previous hooks
-	if(fn.instrumented) {
-	    fn = fn.restore();
-	}
-	var newFn = function() 
-	{
-	    var fnArgs = arguments;
-	    // Apply hook
-	    var results = pre.apply(context, arguments); 
-	    // Replace arguments with results of hook if necessary
-	    if(transformArgs) {
-		fnArgs = results;
-	    }
-	    // Apply the original function
-	    return fn.apply(context, fnArgs);
-	};
-	// Keep a handle to the original function
-	newFn.restore = function() {return fn;};
-	// Mark the function as instrumented
-	newFn.instrumented = true;
-	return newFn;
-    };
-
     // Entry point for code (this is probably not idiomatic javascript, apparently
     // it's standard to wrap the entire file in an anonymous function)
     self.doit = function (){
 	replaceModvatars();
-	ignore.apply(self, [self, replaceChatHandler]); 
+	ignore(self, replaceChatHandler); 
 	// Set up banner and infobox transitions
 	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
             $('.slideshow').cycle({
