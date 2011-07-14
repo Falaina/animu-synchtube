@@ -117,10 +117,10 @@ var animu_synchtube = (function() {
     self.whiteList = function(usr, msg, wat)
     {
 	var i, j, chan, match;
-	log("Whitelisting");
+	log("Whitelisting?" + msg);
 	for( i=0; i < str_Alert.length; i++) {
 	    match = str_Alert[i].pat.exec(msg);
-	    log("Got whitelist: ");
+	    log("Got whitelist: " + str_Alert[i].pat);
 	    log(match);
 	    if(match) {
 		chan = match[1];
