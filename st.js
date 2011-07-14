@@ -1,10 +1,11 @@
 var animu_synchtube = (function() {
+    var self = animu_synchtube;
     ////////////////////////////////////////////////////////////////////////////
     ////////////////////////////// PUBLIC INTERFACE ////////////////////////////
     ////////////////////////////////////////////////////////////////////////////
 
     // Replacement images used by replaceModvatars
-    this.modvatars = [
+    self.modvatars = [
 	{ mod : 'Keii',      url : '//i.imgur.com/zJqJI.gif'}, 
 	{ mod : 'DJZebro',   url : '//i.imgur.com/N5DR0.gif'}, 
 	{ mod : 'Nodocchi',  url : '//nodocchi.com/nodocchi'},
@@ -18,7 +19,7 @@ var animu_synchtube = (function() {
     // Word filters used during wordFilter (runs before chat.writeMessage)
     // word_filters in this list must be a simple regex replacement.
     // see word_filters_fn for more complex replacement
-    this.word_filters = [ 
+    self.word_filters = [ 
 	{pat : /madoka/ig,       target : 'meduca'},
 	{pat : /magica/ig,       target : 'meguca'},
 	{pat : /homura/ig,       target : 'hameru'},
@@ -41,14 +42,14 @@ var animu_synchtube = (function() {
     // wordFilter will pass an entire message to the functions in this thread
     // and use the returned value as the new message. these are run after.
     // the simple replacements above.
-    this.word_filters_fns = [// Word filters which provide a function for replacement
+    self.word_filters_fns = [// Word filters which provide a function for replacement
     ];
 
     // Custom commands. These are run during processSay (runs before chat.beforeSay)
     // If the contents of the chat input matches a pat in custom_commands, the
     // associated function is called with the value. Afterwards the chat input is 
     // cleared.
-    this.custom_commands = [
+    self.custom_commands = [
 	{ pat : /^\s*\/link/, 
 	  fn  : function(msg) {
 	      linkify();
@@ -60,7 +61,7 @@ var animu_synchtube = (function() {
     ////////////////////////////////////////////////////////////////////////////
 
     // Convenience function for logging
-    this.log = function() {
+    self.log = function() {
 	if(window.console && window.console.log) {
 	    window.console.log(arguments);
 	}
@@ -68,7 +69,7 @@ var animu_synchtube = (function() {
 
     // Convenience function for hooking a javascript function
     // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
-    this.instrumentFn = function(fn, pre) {
+    self.instrumentFn = function(fn, pre) {
 	// Optional argument argTransform: Should we pass the return of the hook
 	// as parameters to the function?
 	argTransform = arguments[2];
@@ -95,7 +96,7 @@ var animu_synchtube = (function() {
 
     // Convenience function for invoking a function
     // that may fail
-    this.ignore = function(fn) {
+    self.ignore = function(fn) {
 	try{ fn(); } 
 	catch (err) { log("Ignoring error:\n\t" + err); }
     };
@@ -104,7 +105,7 @@ var animu_synchtube = (function() {
     
     ///////////////////////////// Playist modifications ////////////////////////
     // Convert every playlist entry into a clickable link
-    this.linkify = function() {
+    self.linkify = function() {
 	var vids = st.collections.videos, vid;
 	var YT_BASE = "http://www.youtube.com/watch?v=";	
 	for(vid in vids) {
@@ -126,14 +127,14 @@ var animu_synchtube = (function() {
     
     ///////////////////////////// Mod bar modifications ////////////////////////
     // Replace an image in the banner's mod list
-    this.replaceModvatar = function(mod, url) {
+    self.replaceModvatar = function(mod, url) {
 	$('img.user_id[alt='+mod+']').replaceWith('<img src='+url+' class=user_id alt='+mod+' id='+mod+'>');
 	$('#'+mod).addClass('mod-avatar');
     };
     
     // Replaces images in the banner's mod list 
-    // according to this.modvatars
-    this.replaceModvatars = function () {
+    // according to self.modvatars
+    self.replaceModvatars = function () {
 	var i;
 	for(i=0; i < modvatars.length; i++) {
             replaceModvatar(modvatars[i].mod, modvatars[i].url);
@@ -141,7 +142,7 @@ var animu_synchtube = (function() {
     };
 
     ///////////////////////////// Word filters ////////////////////////////////
-    this.wordFilter = function(usr, msg, wat) {
+    self.wordFilter = function(usr, msg, wat) {
 	var i;
 	for(i=0; i < word_filters.length; i++) {
 	    msg = msg.replace(word_filters[i].pat, word_filters[i].target);
@@ -149,18 +150,18 @@ var animu_synchtube = (function() {
 	return [usr, msg, wat];
     };
 
-    this.str_Alert = [
+    self.str_Alert = [
         {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, target: '[censored: $1]'}
     ];
 
-    this.approved_Chans = [
+    self.approved_Chans = [
 	{pat : /animu/ig },
 	{pat : /science/ig },
 	{pat : /chiruno/ig },
 	{pat : /binaryheap/ig }
     ];
 
-    this.whiteList = function(usr, msg, wat) {
+    self.whiteList = function(usr, msg, wat) {
 	var i, j;
 	for(i=0; i < str_Alert.length; i++) {
 	    var match = str_Alert[i].pat.exec(msg);
@@ -179,7 +180,7 @@ var animu_synchtube = (function() {
     };
 
 
-    this.processSay = function (msg) {
+    self.processSay = function (msg) {
 	var i;
 	for(i=0; i < custom_commands; i++) {
 	    if(msg.match(custom_commands[i].pat)) {
@@ -191,7 +192,7 @@ var animu_synchtube = (function() {
     };
 
     // Instrument synchtube handlers with our own hooks.
-    this.replaceChatHandler = function() {
+    self.replaceChatHandler = function() {
 	// We want the call  chat.writeMessage(args) to be equivalent to
 	// chat.writeMessage(wordFilter(whiteList(args). We achieve this via
 	// hooking wordFilter with whiteList, and hooking chat.writeMesasge
@@ -205,7 +206,7 @@ var animu_synchtube = (function() {
 
     // Entry point for code (this is probably not idiomatic javascript, apparently
     // it's standard to wrap the entire file in an anonymous function)
-    this.run = function (){
+    self.run = function (){
 	replaceModvatars();
 	ignore(replaceChatHandler); 
 	// Set up banner and infobox transitions
@@ -240,7 +241,7 @@ var animu_synchtube = (function() {
 	    });
 	});
     };
-    return this;
+    return self;
 }());
 // Remove this eventually, just keeping for fear of breaking.
 var doit = animu_synchtube.run;
