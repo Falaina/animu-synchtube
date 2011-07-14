@@ -117,7 +117,7 @@ var animu_synchtube = (function() {
     self.whiteList = function(usr, msg, wat)
     {
 	var i, j, chan, match;
-	log("Whitlisting");
+	log("Whitelisting");
 	for( i=0; i < str_Alert.length; i++) {
 	    match = str_Alert[i].pat.exec(msg);
 	    if(match) {
@@ -133,7 +133,7 @@ var animu_synchtube = (function() {
 		return [usr, msg, wat];
 	    }
 	}
-
+	return [usr, msg, wat];
     };
 
     // Instrument the synchtube chat message handler with the word filter
