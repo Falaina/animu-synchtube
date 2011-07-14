@@ -1,7 +1,2 @@
-[Deployment Status] Last attempt: Thu Jul 14 2011 12:12:23 GMT-0700 (PDT)
-DEPLOY FAILED - Errors below must be fixed before deploy: 
-jslint returned Error: Command failed: 
-
-jslint:st.js:210:20:Expected an operator and instead saw '{'.
-jslint:st.js:210:20:Stopping.  (85% scanned).
-
+[Deployment Status] Last attempt: Thu Jul 14 2011 12:14:25 GMT-0700 (PDT)
+Deploy successful.
