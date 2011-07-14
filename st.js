@@ -97,8 +97,8 @@ var animu_synchtube = (function() {
 
     self.wordFilter = function(usr, msg, wat) {
 	var i;
-	for(i=0; i < word_filters.length; i++) {
-	    msg = msg.replace(word_filters[i].pat, word_filters[i].target);
+	for(i=0; i < self.word_filters.length; i++) {
+	    msg = msg.replace(self.word_filters[i].pat, self.word_filters[i].target);
 	}
 	return [usr, msg, wat];
     };
