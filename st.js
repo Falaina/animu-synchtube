@@ -87,7 +87,7 @@ var animu_synchtube = (function() {
 	{pat : /binaryheap/ig }
     ];
 
-    var whiteList = function(usr, msg, wat)
+    self.whiteList = function(usr, msg, wat)
     {
 	var i;
 	for( i=0; i < str_Alert.length; i++) {
@@ -113,8 +113,8 @@ var animu_synchtube = (function() {
 
     // Instrument the synchtube chat message handler with the word filter
     var replaceChatHandler = function() {
-	wordFilter        = instrumentFn(self, wordFilter, whiteList, true);
-	chat.writeMessage = instrumentFn(chat, chat.writeMessage, wordFilter, true);
+	self.wordFilter   = instrumentFn(self, self.wordFilter,   self.whiteList, true);
+	chat.writeMessage = instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
     };
 
     // Convenience function for hooking a javascript function
