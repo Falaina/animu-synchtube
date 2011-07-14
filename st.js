@@ -53,10 +53,37 @@ var animu_synchtube = (function() {
 
     // Convenience function for invoking a function
     // that may fail
-    var ignore = function(fn) {
-	try {fn();} 
+    var ignore = function(context, fn) {
+	try {fn.apply(context);} 
 	catch (err) { log("Ignoring error:\n\t" + err); }
     };
+
+    // Convenience function for hooking a javascript function
+    // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
+    var instrumentFn = function(context, fn, hook, transformArgs) {
+	// Remove any previous hooks
+	if(fn.instrumented) {
+	    fn = fn.restore();
+	}
+	var newFn = function() 
+	{
+	    var fnArgs = arguments;
+	    // Apply hook
+	    var results = hook.apply(context, arguments); 
+	    // Replace arguments with results of hook if necessary
+	    if(transformArgs) {
+		fnArgs = results;
+	    }
+	    // Apply the original function
+	    return fn.apply(context, fnArgs);
+	};
+	// Keep a handle to the original function
+	newFn.restore = function() {return fn;};
+	// Mark the function as instrumented
+	newFn.instrumented = true;
+	return newFn;
+    };
+
 
     var replaceModvatars = function () {
 	var i, mod, url;
@@ -89,23 +116,19 @@ var animu_synchtube = (function() {
 
     self.whiteList = function(usr, msg, wat)
     {
-	var i;
+	var i, j, match;
 	for( i=0; i < str_Alert.length; i++) {
-	    var match = str_Alert[i].pat.exec(msg);
-	    if(match) {
-		var j;
-		log(match);
-		var chan = match[1];
-		log(chan);
+	    str_Alert[i].pat.lastIndex = 0;
+	    match = str_Alert[i].pat.exec(msg);
+	    if(match && match[1]) {
 		for(j=0; j < approved_Chans.length; j++) {
-		    log(approved_Chans[j]);
-		    if(approved_Chans[j].pat.exec(chan)) {
-			log("Approved");
+		    approved_Chans[j].pat.lastIndex = 0;
+		    if(approved_Chans[j].pat.exec(match[1])) {
 			return [usr, msg, wat];
 		    }
 		}
 		msg = msg.replace(str_Alert[i].pat, str_Alert[i].target);
-		break;
+		return [usr, msg, wat];
 	    }
 	}
 	return [usr, msg, wat];
@@ -113,41 +136,15 @@ var animu_synchtube = (function() {
 
     // Instrument the synchtube chat message handler with the word filter
     var replaceChatHandler = function() {
-//	wordFilter   = self.instrumentFn(self, self.wordFilter,   self.whiteList, true);
-//	chat.writeMessage = self.instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
-    };
-
-    // Convenience function for hooking a javascript function
-    // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
-    self.instrumentFn = function(context, fn, hook, transformArgs) {
-	// Remove any previous hooks
-	if(fn.instrumented) {
-	    fn = fn.restore();
-	}
-	var newFn = function() 
-	{
-	    var fnArgs = arguments;
-	    // Apply hook
-	    var results = pre.apply(context, arguments); 
-	    // Replace arguments with results of hook if necessary
-	    if(transformArgs) {
-		fnArgs = results;
-	    }
-	    // Apply the original function
-	    return fn.apply(context, fnArgs);
-	};
-	// Keep a handle to the original function
-	newFn.restore = function() {return fn;};
-	// Mark the function as instrumented
-	newFn.instrumented = true;
-	return newFn;
+	self.wordFilter   = instrumentFn(self, self.wordFilter,   self.whiteList, true);
+	chat.writeMessage = instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
     };
 
     // Entry point for code (this is probably not idiomatic javascript, apparently
     // it's standard to wrap the entire file in an anonymous function)
     self.doit = function (){
 	replaceModvatars();
-	ignore(replaceChatHandler); 
+	replaceChatHandler(); 
 	// Set up banner and infobox transitions
 	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
             $('.slideshow').cycle({
