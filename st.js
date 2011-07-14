@@ -206,7 +206,7 @@ var animu_synchtube = {
     // it's standard to wrap the entire file in an anonymous function)
     run : function (){
 	this.replaceModvatars();
-	ignore(this.replaceChatHandler); 
+	this.ignore(this.replaceChatHandler); 
 	// Set up banner and infobox transitions
 	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
             $('.slideshow').cycle({
