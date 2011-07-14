@@ -195,4 +195,4 @@ var animu_synchtube = (function() {
     };
 }());
 
-var doit = anime_synchtube.run;
+var doit = animu_synchtube.run;
