@@ -1,11 +1,10 @@
-var animu_synchtube = (function() {
-    var self = {};
+var animu_synchtube = {
     ////////////////////////////////////////////////////////////////////////////
     ////////////////////////////// PUBLIC INTERFACE ////////////////////////////
     ////////////////////////////////////////////////////////////////////////////
 
     // Replacement images used by replaceModvatars
-    self.modvatars = [
+    modvatars : [
 	{ mod : 'Keii',      url : '//i.imgur.com/zJqJI.gif'}, 
 	{ mod : 'DJZebro',   url : '//i.imgur.com/N5DR0.gif'}, 
 	{ mod : 'Nodocchi',  url : '//nodocchi.com/nodocchi'},
@@ -14,12 +13,12 @@ var animu_synchtube = (function() {
 	{ mod : 'Tofutoshi', url : '//i.imgur.com/pOBRZ.gif'},
 	{ mod : 'AnimuXD',   url : '//i.imgur.com/t1YlE.gif'},
 	{ mod : 'Denwa',     url : '//i.imgur.com/imHKi.gif'}
-    ];    
+    ],
 
     // Word filters used during wordFilter (runs before chat.writeMessage)
     // word_filters in this list must be a simple regex replacement.
     // see word_filters_fn for more complex replacement
-    self.word_filters = [ 
+    word_filters : [ 
 	{pat : /madoka/ig,       target : 'meduca'},
 	{pat : /magica/ig,       target : 'meguca'},
 	{pat : /homura/ig,       target : 'hameru'},
@@ -36,40 +35,39 @@ var animu_synchtube = (function() {
 	{pat : /(simper)/ig,       target : '(￣ー￣)'},
 	{pat : /(kyuubey|kyubey|kyubei)/ig,              target : 'coobie'},
 	{pat : /magica/ig,       target : 'meguca'}
-    ];
+    ],
 
     // Word filters used during wordFilter (runs before chat.writeMessage)
     // wordFilter will pass an entire message to the functions in this thread
     // and use the returned value as the new message. these are run after.
     // the simple replacements above.
-    self.word_filters_fns = [// Word filters which provide a function for replacement
-    ];
+    word_filters_fns : [ ],
 
     // Custom commands. These are run during processSay (runs before chat.beforeSay)
     // If the contents of the chat input matches a pat in custom_commands, the
     // associated function is called with the value. Afterwards the chat input is 
     // cleared.
-    self.custom_commands = [
+    custom_commands : [
 	{ pat : /^\s*\/link/, 
 	  fn  : function(msg) {
 	      linkify();
 	  }}
-    ];
+    ],
 
     ////////////////////////////////////////////////////////////////////////////
     ////////////////////////////// UTILITY FUNCTIONS ///////////////////////////
     ////////////////////////////////////////////////////////////////////////////
 
     // Convenience function for logging
-    self.log = function() {
+    log : function() {
 	if(window.console && window.console.log) {
 	    window.console.log(arguments);
 	}
-    };
+    },
 
     // Convenience function for hooking a javascript function
     // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
-    self.instrumentFn = function(fn, pre) {
+    instrumentFn : function(fn, pre) {
 	// Optional argument argTransform: Should we pass the return of the hook
 	// as parameters to the function?
 	argTransform = arguments[2];
@@ -92,20 +90,20 @@ var animu_synchtube = (function() {
 	// Mark the function as instrumented
 	newFn.instrumented = true;
 	return newFn;
-    };
+    },
 
     // Convenience function for invoking a function
     // that may fail
-    self.ignore = function(fn) {
+    ignore : function(fn) {
 	try{ fn(); } 
 	catch (err) { log("Ignoring error:\n\t" + err); }
-    };
+    },
     // Create the opening tag for a link
-    var openA = function(url) { return '<a href="'+url+'">'; };
+    openA : function(url) { return '<a href="'+url+'">'; },
     
     ///////////////////////////// Playist modifications ////////////////////////
     // Convert every playlist entry into a clickable link
-    self.linkify = function() {
+    linkify : function() {
 	var vids = st.collections.videos, vid;
 	var YT_BASE = "http://www.youtube.com/watch?v=";	
 	for(vid in vids) {
@@ -123,45 +121,45 @@ var animu_synchtube = (function() {
 		}
 	    }
 	}
-    };
+    },
     
     ///////////////////////////// Mod bar modifications ////////////////////////
     // Replace an image in the banner's mod list
-    self.replaceModvatar = function(mod, url) {
+    replaceModvatar : function(mod, url) {
 	$('img.user_id[alt='+mod+']').replaceWith('<img src='+url+' class=user_id alt='+mod+' id='+mod+'>');
 	$('#'+mod).addClass('mod-avatar');
-    };
+    },
     
     // Replaces images in the banner's mod list 
     // according to self.modvatars
-    self.replaceModvatars = function () {
+    replaceModvatars : function () {
 	var i;
 	for(i=0; i < modvatars.length; i++) {
             replaceModvatar(modvatars[i].mod, modvatars[i].url);
 	}
-    };
+    },
 
     ///////////////////////////// Word filters ////////////////////////////////
-    self.wordFilter = function(usr, msg, wat) {
+    wordFilter : function(usr, msg, wat) {
 	var i;
 	for(i=0; i < word_filters.length; i++) {
 	    msg = msg.replace(word_filters[i].pat, word_filters[i].target);
 	}
 	return [usr, msg, wat];
-    };
+    },
 
-    self.str_Alert = [
+    str_Alert : [
         {pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, target: '[censored: $1]'}
-    ];
+    ],
 
-    self.approved_Chans = [
+    approved_Chans : [
 	{pat : /animu/ig },
 	{pat : /science/ig },
 	{pat : /chiruno/ig },
 	{pat : /binaryheap/ig }
-    ];
+    ],
 
-    self.whiteList = function(usr, msg, wat) {
+    whiteList : function(usr, msg, wat) {
 	var i, j;
 	for(i=0; i < str_Alert.length; i++) {
 	    var match = str_Alert[i].pat.exec(msg);
@@ -177,10 +175,10 @@ var animu_synchtube = (function() {
 	    }
 	}
 	return [usr, msg, wat];
-    };
+    },
 
 
-    self.processSay = function (msg) {
+    processSay : function (msg) {
 	var i;
 	for(i=0; i < custom_commands; i++) {
 	    if(msg.match(custom_commands[i].pat)) {
@@ -189,26 +187,26 @@ var animu_synchtube = (function() {
 	    }
 	}
 	return false;
-    };
+    },
 
     // Instrument synchtube handlers with our own hooks.
-    self.replaceChatHandler = function() {
+    replaceChatHandler : function() {
 	// We want the call  chat.writeMessage(args) to be equivalent to
 	// chat.writeMessage(wordFilter(whiteList(args). We achieve this via
 	// hooking wordFilter with whiteList, and hooking chat.writeMesasge
 	// with the hooked wordFilter
-	wordFilter        = instrumentFn(wordFilter, whiteList, true);
-	chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true);
+	self.wordFilter   = instrumentFn(self.wordFilter,   self.whiteList, true);
+	chat.writeMessage = instrumentFn(chat.writeMessage, self.wordFilter, true);
 
 	// Instrument chat.beforeSay so we can make a few custom commands.
 	// chat.beforeSay    = instrumentFn(chat.beforeSay, customCommand, true);
-    };
+    },
 
     // Entry point for code (this is probably not idiomatic javascript, apparently
     // it's standard to wrap the entire file in an anonymous function)
-    self.run = function (){
-	replaceModvatars();
-	ignore(replaceChatHandler); 
+    run : function (){
+	self.replaceModvatars();
+	ignore(self.replaceChatHandler); 
 	// Set up banner and infobox transitions
 	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
             $('.slideshow').cycle({
@@ -240,8 +238,7 @@ var animu_synchtube = (function() {
 		return false; //Prevent the browser jump to the link anchor
 	    });
 	});
-    };
-    return self;
-}());
+    }};
+
 // Remove this eventually, just keeping for fear of breaking.
 var doit = animu_synchtube.run;
