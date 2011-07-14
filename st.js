@@ -131,7 +131,7 @@ var animu_synchtube = {
     },
     
     // Replaces images in the banner's mod list 
-    // according to self.modvatars
+    // according to this.modvatars
     replaceModvatars : function () {
 	var i;
 	for(i=0; i < modvatars.length; i++) {
@@ -195,8 +195,8 @@ var animu_synchtube = {
 	// chat.writeMessage(wordFilter(whiteList(args). We achieve this via
 	// hooking wordFilter with whiteList, and hooking chat.writeMesasge
 	// with the hooked wordFilter
-	self.wordFilter   = instrumentFn(self.wordFilter,   self.whiteList, true);
-	chat.writeMessage = instrumentFn(chat.writeMessage, self.wordFilter, true);
+	this.wordFilter   = instrumentFn(this.wordFilter,   this.whiteList, true);
+	chat.writeMessage = instrumentFn(chat.writeMessage, this.wordFilter, true);
 
 	// Instrument chat.beforeSay so we can make a few custom commands.
 	// chat.beforeSay    = instrumentFn(chat.beforeSay, customCommand, true);
@@ -205,8 +205,8 @@ var animu_synchtube = {
     // Entry point for code (this is probably not idiomatic javascript, apparently
     // it's standard to wrap the entire file in an anonymous function)
     run : function (){
-	self.replaceModvatars();
-	ignore(self.replaceChatHandler); 
+	this.replaceModvatars();
+	ignore(this.replaceChatHandler); 
 	// Set up banner and infobox transitions
 	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
             $('.slideshow').cycle({
