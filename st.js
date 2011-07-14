@@ -69,7 +69,7 @@ var animu_synchtube = (function() {
 	{
 	    var fnArgs = arguments;
 	    // Apply hook
-	    var results = pre.apply(context, arguments); 
+	    var results = hook.apply(context, arguments); 
 	    // Replace arguments with results of hook if necessary
 	    if(transformArgs) {
 		fnArgs = results;
