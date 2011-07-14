@@ -53,8 +53,8 @@ var animu_synchtube = (function() {
 
     // Convenience function for invoking a function
     // that may fail
-    var ignore = function(fn) {
-	try {fn();} 
+    var ignore = function(context, fn) {
+	try {fn.apply(context);} 
 	catch (err) { log("Ignoring error:\n\t" + err); }
     };
 
