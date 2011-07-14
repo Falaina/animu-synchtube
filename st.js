@@ -182,7 +182,7 @@ var animu_synchtube = {
 	var i;
 	for(i=0; i < this.custom_commands.length; i++) {
 	    if(msg.match(this.custom_commands[i].pat)) {
-		custom_this.commands[i].fn(msg);
+		this.custom_commands[i].fn(msg);
 		return true;
 	    }
 	}
