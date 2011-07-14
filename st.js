@@ -195,8 +195,8 @@ var animu_synchtube = {
 	// chat.writeMessage(wordFilter(whiteList(args). We achieve this via
 	// hooking wordFilter with whiteList, and hooking chat.writeMesasge
 	// with the hooked wordFilter
-	this.wordFilter   = instrumentFn(this.wordFilter,   this.whiteList, true);
-	chat.writeMessage = instrumentFn(chat.writeMessage, this.wordFilter, true);
+	this.wordFilter   = this.instrumentFn(this.wordFilter,   this.whiteList, true);
+	chat.writeMessage = this.instrumentFn(chat.writeMessage, this.wordFilter, true);
 
 	// Instrument chat.beforeSay so we can make a few custom commands.
 	// chat.beforeSay    = instrumentFn(chat.beforeSay, customCommand, true);
