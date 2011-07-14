@@ -195,8 +195,10 @@ var animu_synchtube = {
 	// chat.writeMessage(wordFilter(whiteList(args). We achieve this via
 	// hooking wordFilter with whiteList, and hooking chat.writeMesasge
 	// with the hooked wordFilter
-	this.wordFilter   = this.instrumentFn(this.wordFilter,   this.whiteList, true);
-	chat.writeMessage = this.instrumentFn(chat.writeMessage, this.wordFilter, true);
+	anime_synchtube.wordFilter   = 
+	    animu_synchtube.instrumentFn(animu_synchtube.wordFilter, animu_synchtube.whiteList, true);
+	chat.writeMessage = 
+	    animu_synchtube.instrumentFn(chat.writeMessage, animu_synchtube.wordFilter, true);
 
 	// Instrument chat.beforeSay so we can make a few custom commands.
 	// chat.beforeSay    = instrumentFn(chat.beforeSay, customCommand, true);
@@ -206,7 +208,7 @@ var animu_synchtube = {
     // it's standard to wrap the entire file in an anonymous function)
     run : function (){
 	this.replaceModvatars();
-	this.ignore(this.replaceChatHandler); 
+	this.ignore(animu_synchtube.replaceChatHandler); 
 	// Set up banner and infobox transitions
 	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
             $('.slideshow').cycle({
