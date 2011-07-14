@@ -201,7 +201,7 @@ var animu_synchtube = {
 	    animu_synchtube.instrumentFn(chat.writeMessage, animu_synchtube.wordFilter, true);
 
 	// Instrument chat.beforeSay so we can make a few custom commands.
-	chat.beforeSay    = instrumentFn(chat.beforeSay, animu_synchtube.customCommand, true);
+	chat.beforeSay    = animu_synchtube.instrumentFn(chat.beforeSay, animu_synchtube.customCommand, true);
     },
 
     // Entry point for code (this is probably not idiomatic javascript, apparently
