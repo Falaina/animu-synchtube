@@ -96,7 +96,7 @@ var animu_synchtube = {
     // that may fail
     ignore : function(fn) {
 	try{ fn(); } 
-	catch (err) { log("Ignoring error:\n\t" + err); }
+	catch (err) { this.log("Ignoring error:\n\t" + err); }
     },
     // Create the opening tag for a link
     openA : function(url) { return '<a href="'+url+'">'; },
@@ -116,7 +116,7 @@ var animu_synchtube = {
 		    var ytUrl =  YT_BASE + vids[vid].vid;
 		    vidHtml = vidHtml.replace(/.*/, openA(ytUrl)+"$&"+"</a>");
 		    cur.html(vidHtml);
-		    console.log(cur.html());
+		    this.log(cur.html());
 		    vids[vid].linked = true;
 		}
 	    }
@@ -166,7 +166,7 @@ var animu_synchtube = {
 	    if(match && match[1]) {
 		for(j=0; j < this.approved_Chans.length; j++) {
 		    if(this.approved_Chans[j].pat.exec(match[1])) {
-			log("Approved");
+			this.log("Approved");
 			return [usr, msg, wat];
 		    }
 		}
