@@ -108,26 +108,21 @@ var animu_synchtube = (function() {
     ];
 
     var approved_Chans = [
-	{pat : /animu/ig },
-	{pat : /science/ig },
-	{pat : /chiruno/ig },
-	{pat : /binaryheap/ig }
+	{pat : /animu/i },
+	{pat : /science/i },
+	{pat : /chiruno/i },
+	{pat : /binaryheap/i }
     ];
 
     self.whiteList = function(usr, msg, wat)
     {
 	var i, j, chan, match;
-	log("Whitelisting?" + msg);
 	for( i=0; i < str_Alert.length; i++) {
+	    str_Alter[i].pat.lastIndex = 0;
 	    match = str_Alert[i].pat.exec(msg);
-	    log("Got whitelist: " + str_Alert[i].pat);
-	    log(match);
-	    if(match) {
-		chan = match[1];
+	    if(match && match[1]) {
 		for(j=0; j < approved_Chans.length; j++) {
-		    log(approved_Chans[j]);
-		    if(approved_Chans[j].pat.exec(chan)) {
-			log("Approved");
+		    if(approved_Chans[j].pat.exec(match[1])) {
 			return [usr, msg, wat];
 		    }
 		}
