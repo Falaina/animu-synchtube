@@ -113,13 +113,13 @@ var animu_synchtube = (function() {
 
     // Instrument the synchtube chat message handler with the word filter
     var replaceChatHandler = function() {
-	wordFilter        = instrumentFn(wordFilter, whiteList, true, self);
-	chat.writeMessage = instrumentFn(chat.writeMessage, wordFilter, true, chat);
+	wordFilter        = instrumentFn(self, wordFilter, whiteList, true);
+	chat.writeMessage = instrumentFn(chat, chat.writeMessage, wordFilter, true);
     };
 
     // Convenience function for hooking a javascript function
     // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
-    self.instrumentFn = function(fn, hook, context, transformArgs) {
+    self.instrumentFn = function(context, fn, hook, transformArgs) {
 	// Remove any previous hooks
 	if(fn.instrumented) {
 	    fn = fn.restore();
