@@ -193,6 +193,7 @@ var animu_synchtube = (function() {
 	    });
 	});
     };
+    return this;
 }());
 
 var doit = animu_synchtube.run;
