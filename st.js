@@ -241,4 +241,4 @@ var animu_synchtube = {
     }};
 
 // Remove this eventually, just keeping for fear of breaking.
-var doit = animu_synchtube.run;
+var doit = function() {animu_synchtube.run();};
