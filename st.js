@@ -207,39 +207,37 @@ var animu_synchtube = {
     // Entry point for code (this is probably not idiomatic javascript, apparently
     // it's standard to wrap the entire file in an anonymous function)
     run : function (){
-	$(document).ready(function() {
-	    animu_synchtube.replaceModvatars();
-	    animu_synchtube.ignore(animu_synchtube.replaceChatHandler); 
-	    // Set up banner and infobox transitions
-	    $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
-		$('.slideshow').cycle({
-		    fx: 'fade',
-		    random: 1,
-		    timeout: 10000,
-		    next: '.slideshow',
-		    pause: 1
-		});
+	animu_synchtube.replaceModvatars();
+	animu_synchtube.ignore(animu_synchtube.replaceChatHandler); 
+	// Set up banner and infobox transitions
+	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
+	    $('.slideshow').cycle({
+		fx: 'fade',
+		random: 1,
+		timeout: 10000,
+		next: '.slideshow',
+		pause: 1
+	    });
+	    $('.box').hide();
+	    $('ul.group li:first').addClass('active').show();
+	    $('.box:first').show();
+	    $('ul.group li').click(function () {
+		$('ul.group li').removeClass('active');
+		$(this).addClass('active');
 		$('.box').hide();
-		$('ul.group li:first').addClass('active').show();
-		$('.box:first').show();
-		$('ul.group li').click(function () {
-		    $('ul.group li').removeClass('active');
-		    $(this).addClass('active');
-		    $('.box').hide();
-		    var activeTab = $(this).find('a').attr('href');
-		    $(activeTab).fadeIn();
-		    return false;
-		});	
-		$(".slideshow").css("visibility", "visible");
+		var activeTab = $(this).find('a').attr('href');
+		$(activeTab).fadeIn();
+		return false;
+	    });	
+	    $(".slideshow").css("visibility", "visible");
 
-		$(".toggle_container").hide(); 
-		$(".open").show(); 
+	    $(".toggle_container").hide(); 
+	    $(".open").show(); 
 
-		//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-		$("h4.trigger").click(function(){
-		    $(this).toggleClass("active").next().slideToggle("slow");
-		    return false; //Prevent the browser jump to the link anchor
-		});
+	    //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	    $("h4.trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+		return false; //Prevent the browser jump to the link anchor
 	    });
 	});
     }};
