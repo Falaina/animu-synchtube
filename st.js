@@ -50,7 +50,7 @@ var animu_synchtube = {
     custom_commands : [
 	{ pat : /^\s*\/link/, 
 	  fn  : function(msg) {
-	      this.linkify();
+	      animu_synchtube.linkify();
 	  }}
     ],
 
@@ -180,7 +180,7 @@ var animu_synchtube = {
 
     processSay : function (msg) {
 	var i;
-	for(i=0; i < this.custom_commands; i++) {
+	for(i=0; i < this.custom_commands.length; i++) {
 	    if(msg.match(this.custom_commands[i].pat)) {
 		custom_this.commands[i].fn(msg);
 		return true;
