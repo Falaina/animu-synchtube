@@ -116,14 +116,12 @@ var animu_synchtube = (function() {
 
     self.whiteList = function(usr, msg, wat)
     {
-	var i;
+	var i, j, chan, match;
+	log("Whitlisting");
 	for( i=0; i < str_Alert.length; i++) {
-	    var match = str_Alert[i].pat.exec(msg);
+	    match = str_Alert[i].pat.exec(msg);
 	    if(match) {
-		var j;
-		log(match);
-		var chan = match[1];
-		log(chan);
+		chan = match[1];
 		for(j=0; j < approved_Chans.length; j++) {
 		    log(approved_Chans[j]);
 		    if(approved_Chans[j].pat.exec(chan)) {
@@ -132,10 +130,10 @@ var animu_synchtube = (function() {
 		    }
 		}
 		msg = msg.replace(str_Alert[i].pat, str_Alert[i].target);
-		break;
+		return [usr, msg, wat];
 	    }
 	}
-	return [usr, msg, wat];
+
     };
 
     // Instrument the synchtube chat message handler with the word filter
