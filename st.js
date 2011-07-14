@@ -207,9 +207,9 @@ var animu_synchtube = {
     // Entry point for code (this is probably not idiomatic javascript, apparently
     // it's standard to wrap the entire file in an anonymous function)
     run : function (){
-	$(document).ready(){function() {
-	    this.replaceModvatars();
-	    this.ignore(animu_synchtube.replaceChatHandler); 
+	$(document).ready(function() {
+	    animu_synchtube.replaceModvatars();
+	    animu_synchtube.ignore(animu_synchtube.replaceChatHandler); 
 	    // Set up banner and infobox transitions
 	    $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
 		$('.slideshow').cycle({
@@ -241,6 +241,5 @@ var animu_synchtube = {
 		    return false; //Prevent the browser jump to the link anchor
 		});
 	    });
-	}
+	});
     }};
-};
