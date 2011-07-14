@@ -147,7 +147,7 @@ var animu_synchtube = (function() {
     // it's standard to wrap the entire file in an anonymous function)
     self.doit = function (){
 	replaceModvatars();
-	self.ignore(self, replaceChatHandler); 
+	ignore(self, replaceChatHandler); 
 	// Set up banner and infobox transitions
 	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
             $('.slideshow').cycle({
