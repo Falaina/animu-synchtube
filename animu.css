@@ -3,11 +3,22 @@
 <style type="text/css">
  #truemiddle {background: none repeat scroll 0 0 #eef2ff;}
  .slideshow{ border: 1px solid #ccc; height:116px; padding:0; margin-bottom:0px;}
- .slideshow img{ display: none; height:116px; visibility:visible;}
+ .slideshow img{ display: none; height:116px;}
  .slideshow img.first {display: block;}
  .user-mod .user_name {color:rgb(76,76,166) !important;}    
  .room-tag, .tag_name {background-color:rgb(76,76,166)}
  .room-tag:hover{background-color:rgb(209,225,250); color:rgb(76,76,166)}
- #panelBanner{}
- #panelTabs{}
+ .tv-descr-ct{height:500px;}
+ .pl-even{}
+ #panelBanner{position:relative;}
+ #panelTabs{position:relative;}
+
+.defeatedList li{display:inline;}
+.defeatedList li:hover{background-color:#eef2ff;}
+.slidingDiv {padding:5px; border-bottom:5px solid #3399FF;}
+h4 a{text-decoration: none;padding:1 1 1 1;width:100%; color:black; font-weight:bolder; border-bottom:2px;color:#4C4CA6;}
+h4 a:hover{text-decoration: none; color:eef2ff;}
+.toggle_container{ padding-top:2px; border-top:#CCC solid 2px;}
+.show_hide {display:none;}
+h4{margin:0;}
 </style>
