@@ -19,10 +19,15 @@ var html =
 '	<img src="//nodocchi.com/face/Nodochi.png" width="100%" alt="nodochi banner"/>' +
 '	<img src="//nodocchi.com/face/Pomf.png" width="100%" alt="POMP=3 banner"/>' +
 '	<img src="//nodocchi.com/face/Uesugi%20Kenshin.png" width="100%" alt="Uesugi Kenshin banner"/>' +
+'	<!-- DJZebro-->' +
 '	<img src="//nodocchi.com/face/Miku%20Alt.png" width="100%" alt="miku banner"/>' +
+'	<!-- DJZebro-->' +
 '	<img src="//nodocchi.com/face/Madoka.png" width="100%" alt="Madoka banner"/>' +
+'	<!-- Goship-->' +
 '	<img src="//nodocchi.com/face/World%20Order.png" width="100%" alt="World order banner"/>' +
+'	<!-- Goship-->' +
 '	<img src="//nodocchi.com/face/Multi%20Track%20Drifting.png" width="100%" alt="MultiTrackDrifting banner"/>' +
+'	<!-- Goship-->' +
 '	<img src="//nodocchi.com/face/T Shirt.png" width="100%" alt="t-shirt banner"/>' +
 '	<!-- DukeNuKem t-shirts-->' +
 '	<img src="//nodocchi.com/face/Fukkireta.png" width="100%" alt="fukkireta banner"/>' +
@@ -31,11 +36,11 @@ var html =
 '	<!-- Youmufag youmu -->' +
 '	<img src="//nodocchi.com/face/Sound%20the%20GONG.png" width="100%" alt="Sound the GONG banner"/>' +
 '	<!-- Youmufag Sound the GONG -->' +
-'	<img src="//nodocchi.com/face/Amagami.png" width="100%" alt="Amagami banner"//>' +
+'	<img src="//nodocchi.com/face/Amagami.png" width="100%" alt="Amagami banner"/>' +
 '	<!-- Khaaaan\'s amagami -->' +
-'	<img src="//i.imgur.com/Af3ng.png" width="100%" alt="boku banner"//>' +
+'	<img src="//i.imgur.com/Af3ng.png" width="100%" alt="boku banner"/>' +
 '	<!-- Youmufag -->' +
-'	<img src="//i.imgur.com/Ry3O7.png" width="100%" alt="black rock shooter banner"//>' +
+'	<img src="//i.imgur.com/Ry3O7.png" width="100%" alt="black rock shooter banner"/>' +
 '	<!-- Goships -->' +
 '	<img src="//i.imgur.com/Rs03U.png" width="100%" alt="banjo banner"/>' +
 '	<!-- FalconLunch -->' +
@@ -49,7 +54,7 @@ var html =
 '	<!-- TheSoftest -->' +
 '	<img src="//i.imgur.com/p9knC.png" width="100%" alt="NIGHT OF FIYA"/>' +
 '	<!-- DukeNukem-->' +
-'        <img src="//i.imgur.com/pU23W.png" width="100%" alt="dango"/>' +
+'   <img src="//i.imgur.com/pU23W.png" width="100%" alt="dango"/>' +
 '	<!-- RAILGUN-->' +
 '	</div>' +
 '</div>' +
