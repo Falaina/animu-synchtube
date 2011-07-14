@@ -38,7 +38,7 @@ var animu_synchtube = (function() {
 
     // Convert every playlist entry into a clickable link
     this.linkify = function() {
-	var vids = st.collections.videos, vid, vidInfo;
+	var vids = st.collections.videos, vid;
 	var YT_BASE = "http://www.youtube.com/watch?v=";	
 	for(vid in vids) {
 	    if(vids.hasOwnProperty(vid) &&
@@ -47,7 +47,7 @@ var animu_synchtube = (function() {
 		var cur = $("#"+id+" .title");
 		var vidHtml = cur.html();
 		if(vidHtml) {
-		    var ytUrl =  YT_BASE + vidInfo.vid;
+		    var ytUrl =  YT_BASE + vids[vid].vid;
 		    vidHtml = vidHtml.replace(/.*/, openA(ytUrl)+"$&"+"</a>");
 		    cur.html(vidHtml);
 		    console.log(cur.html());
@@ -100,12 +100,15 @@ var animu_synchtube = (function() {
 	    log("Ignoring error:\n\t" + err);
 	}
     };
-
+    
+    // Replace an image in the banner's mod list
     this.replaceModvatar = function(mod, url) {
 	$('img.user_id[alt='+mod+']').replaceWith('<img src='+url+' class=user_id alt='+mod+' id='+mod+'>');
 	$('#'+mod).addClass('mod-avatar');
     };
-
+    
+    // Replaces images in the banner's mod list 
+    // according to this.modvatars
     this.replaceModvatars = function () {
 	var i;
 	for(i=0; i < modvatars.length; i++) {
@@ -195,5 +198,5 @@ var animu_synchtube = (function() {
     };
     return this;
 }());
-
+// Remove this eventually, just keeping for fear of breaking.
 var doit = animu_synchtube.run;
