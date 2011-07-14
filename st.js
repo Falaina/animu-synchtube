@@ -114,7 +114,7 @@ var animu_synchtube = {
 		var vidHtml = cur.html();
 		if(vidHtml) {
 		    var ytUrl =  YT_BASE + vids[vid].vid;
-		    vidHtml = vidHtml.replace(/.*/, openA(ytUrl)+"$&"+"</a>");
+		    vidHtml = vidHtml.replace(/.*/, this.openA(ytUrl)+"$&"+"</a>");
 		    cur.html(vidHtml);
 		    this.log(cur.html());
 		    vids[vid].linked = true;
