@@ -158,27 +158,37 @@ var animu_synchtube = (function() {
 	return [usr, msg, wat];
     };
 
-    self.processSay = function(msg) {
+    
+    // Custom beforeSay handler
+    var genBeforeSay = function(oldHandler, oldHandlerCtx) {
 	var i, curCom;
-	// Wrap in a try so we don't break the chat handler if we error out.
-	try {
-	    for(i=0; i< custom_commands.length; i++) {
-		curCom = custom_commands[i];
-		if(msg.match(curCom.pat)) {
-		    curCom.fn(msg);
+	// Return closure over the oldHandler.
+	return function(msg) {
+	    // Wrap in a try so we don't break the chat handler if we error out.
+	    try {
+		for(i=0; i< custom_commands.length; i++) {
+		    curCom = custom_commands[i];
+		    if(msg.match(curCom.pat)) {
+			curCom.fn(msg);
+			return;
+		    }
 		}
+	    } catch (err) {
+		self.log("Failure in processSay, ignoring" + err);
 	    }
-	} catch (err) {
-	    self.log("Failure in processSay, ignoring" + err);
-	}
+	    oldHandler.apply(oldHandlerCtx, arguments);
+	};
     };
 
     // Instrument the synchtube chat message handler with the word filter
     var replaceChatHandler = function() {
+	// Save the old beforeSay handler
+	var savedHandler = chat.beforeSay;
 	self.wordFilter   = instrumentFn(self, self.wordFilter,   self.whiteList, true);
 	chat.writeMessage = instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
-
-	chat.beforeSay    = instrumentFn(chat, chat.beforeSay,    self.processSay, false);
+	
+	// Install our new beforeSay handler
+	chat.beforeSay = genBeforeSay(savedHandler, chat);
     };
 
     // Entry point for code (this is probably not idiomatic javascript, apparently
