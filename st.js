@@ -45,7 +45,7 @@ var animu_synchtube = (function() {
     ];
 
     // Convert every playlist entry into a clickable link
-    var linkify = function() {
+    self.linkify = function() {
 	var vids = st.collections.videos, vid;
 	var YT_BASE = "http://www.youtube.com/watch?v=";	
 	for(vid in vids) {
