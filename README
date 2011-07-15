@@ -1,2 +1,8 @@
-[Deployment Status] Last attempt: Fri Jul 15 2011 13:35:16 GMT-0700 (PDT)
-Deploy successful.
+[Deployment Status] Last attempt: Fri Jul 15 2011 13:39:01 GMT-0700 (PDT)
+DEPLOY FAILED - Errors below must be fixed before deploy: 
+jslint returned Error: Command failed: 
+
+jslint:st.js:56:5:Expected ']' to match '[' from line 42 and instead saw '$'.
+jslint:st.js:57:5:Expected an identifier and instead saw ']'.
+jslint:st.js:57:5:Stopping.  (22% scanned).
+
