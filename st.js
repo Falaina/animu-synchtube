@@ -44,7 +44,7 @@ var animu_synchtube = (function() {
 	 fn  : function(msg) { animu_synchtube.linkify();}},
 	{pat : /^\s*\/debug/,
 	 fn  : function(msg) { 
-	     $("#debuglink").show();
+	     $("#debuglink").css("visibility", "visible");	     
 	     st.room.debug = true;
 	 }}
     ];
