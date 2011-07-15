@@ -44,6 +44,28 @@ var animu_synchtube = (function() {
 	 fn  : function(msg) { animu_synchtube.linkify();}}
     ];
 
+    // Convert every playlist entry into a clickable link
+    var linkify = function() {
+	var vids = st.collections.videos, vid;
+	var YT_BASE = "http://www.youtube.com/watch?v=";	
+	for(vid in vids) {
+	    if(vids.hasOwnProperty(vid) &&
+	       vids[vid] && (!vids[vid].linked)) { 
+		var id = vids[vid].id;
+		var cur = $("#"+id+" .title");
+		var vidHtml = cur.html();
+		if(vidHtml) {
+		    var ytUrl =  YT_BASE + vids[vid].vid;
+		    vidHtml = vidHtml.replace(/.*/, this.openA(ytUrl)+"$&"+"</a>");
+		    cur.html(vidHtml);
+		    this.log(cur.html());
+		    vids[vid].linked = true;
+		}
+	    }
+	}
+    };
+
+
     // Convenience function for logging
     var log = function() {
 	if(window.console && window.console.log) {
