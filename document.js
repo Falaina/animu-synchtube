@@ -202,8 +202,8 @@ $(".tv-descr-text").css("max-height", "");
 $(".tv-descr-ct").css("height", "");
 
 // Fix up debug box style
-$("#debug").css("height", "");
-$("#debug").css("width", "");
+$("#debug").css("height", "940px");
+$("#debug").css("width", "100%");
 
 $(".box").css("height", "");
 };
