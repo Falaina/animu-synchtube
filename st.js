@@ -159,8 +159,17 @@ var animu_synchtube = (function() {
     };
 
     self.processSay = function(msg) {
-	if(msg.match(/^\s*\/link/)) {
-	    self.linkify();
+	var i, curCom;
+	// Wrap in a try so we don't break the chat handler if we error out.
+	try {
+	    for(i=0; i< custom_commands.length; i++) {
+		curCom = custom_commands[i];
+		if(msg.match(curCom.pat)) {
+		    curCom.fn(msg);
+		}
+	    }
+	} catch (err) {
+	    self.log("Failure in processSay, ignoring" + err);
 	}
     };
 
