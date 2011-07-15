@@ -242,7 +242,7 @@ var animu_synchtube = (function() {
 		return false; //Prevent the browser jump to the link anchor
 	    });
 	});
-    }
+    };
 	
 
     // Entry point for code (this is probably not idiomatic javascript, apparently
