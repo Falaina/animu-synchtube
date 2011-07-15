@@ -61,7 +61,6 @@ var animu_synchtube = (function() {
 		    var ytUrl =  YT_BASE + vids[vid].vid;
 		    vidHtml = vidHtml.replace(/.*/, self.openA(ytUrl)+"$&"+"</a>");
 		    cur.html(vidHtml);
-		    self.log(cur.html());
 		    vids[vid].linked = true;
 		}
 	    }
