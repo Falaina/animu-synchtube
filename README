@@ -1,2 +1,6 @@
-[Deployment Status] Last attempt: Fri Jul 15 2011 14:02:20 GMT-0700 (PDT)
-Deploy successful.
+[Deployment Status] Last attempt: Fri Jul 15 2011 14:06:51 GMT-0700 (PDT)
+DEPLOY FAILED - Errors below must be fixed before deploy: 
+jslint returned Error: Command failed: 
+
+jslint:st.js:245:6:Expected ';' and instead saw 'self'.
+
