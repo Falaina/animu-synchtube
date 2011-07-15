@@ -25,7 +25,7 @@ var animu_synchtube = (function() {
 	{pat : /(binaryheap)/ig,		target : '$1-senpai'},
 	{pat : /everyone/ig,			target : 'everynyan'},
 	{pat : /plan/ig,			target : 'keikaku'},
-	{pat : /\b(QB)\b/ig,			target : '／人◕ ‿‿ ◕人＼'},
+	{pat : /(^| )+qb($| )+/ig,	        target : '／人◕ ‿‿ ◕人＼'},
 	{pat : /(kitaa)/ig,			target : 'キタ━━━(゜∀゜)━━━!!!!! '},
 	{pat : /(bu-n)/ig,			target : '⊂二二二（　＾ω＾）二⊃'},
 	{pat : /(grimace)/ig,			target : '(╬ ಠ益ಠ)'},
