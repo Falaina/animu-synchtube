@@ -139,7 +139,7 @@ var animu_synchtube = (function() {
 	for(i=0; i < word_filters.length; i++) {
 	    // Construct a regex that'll protect words
 	    newRegex = '(^| )+'+word_filters[i].pat+'($| )+';
-	    msg = msg.replace(newRegex, word_filters[i].target);
+	    msg = msg.replace(RegExp(newRegex, 'ig'), word_filters[i].target);
 	}
 	return [usr, msg, wat];
     };
