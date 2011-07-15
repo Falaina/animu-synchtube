@@ -1,9 +1,2 @@
-[Deployment Status] Last attempt: Thu Jul 14 2011 18:24:18 GMT-0700 (PDT)
-DEPLOY FAILED - Errors below must be fixed before deploy: 
-jslint returned Error: Command failed: 
-
-jslint:st.js:51:9:'self' is already defined.
-jslint:st.js:51:9:Expected ';' and instead saw '.'.
-jslint:st.js:51:9:Expected an identifier and instead saw '.'.
-jslint:st.js:51:9:Stopping.  (24% scanned).
-
+[Deployment Status] Last attempt: Thu Jul 14 2011 18:24:52 GMT-0700 (PDT)
+Deploy successful.
