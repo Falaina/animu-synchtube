@@ -41,7 +41,12 @@ var animu_synchtube = (function() {
     // Custom chat commands
     var custom_commands = [ 
 	{pat : /^\s*\/link/, 
-	 fn  : function(msg) { animu_synchtube.linkify();}}
+	 fn  : function(msg) { animu_synchtube.linkify();}},
+	{pat : /^\s*\/debug/,
+	 fn  : function(msg) { 
+	     $("#debuglink").show();
+	     st.room.debug = true;
+	 }}
     ];
 
     // Create the opening tag for a link
