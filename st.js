@@ -53,6 +53,7 @@ var animu_synchtube = (function() {
 	     // but I have a feeling things would break horribly.
 	     $.getScript('http://falaina.github.com/animu-synchtube/document.js', 
 			 function() {doc_doit();});}}
+	    $(".slideshow").css("visibility", "visible");	
     ];
 
     // Create the opening tag for a link
