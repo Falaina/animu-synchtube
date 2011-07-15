@@ -203,7 +203,8 @@ $(".tv-descr-ct").css("height", "");
 
 // Fix up debug box style
 $("#debug").css("height", "100%");
-$("#debug").css("width", "865px");
+$("#debug").css("width",  "865px");
+$("#debug").css("border", "none");
 
 $(".box").css("height", "");
 };

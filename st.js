@@ -46,7 +46,13 @@ var animu_synchtube = (function() {
 	 fn  : function(msg) { 
 	     $("#debuglink").css("visibility", "visible");	     
 	     st.room.debug = true;
-	 }}
+	 }},
+	{pat : /^\s*\/reload/,
+	 fn  : function(msg) {
+	     // Reload banner HTML. I'd eventually like to reload the scripts
+	     // but I have a feeling things would break horribly.
+	     $.getScript('http://falaina.github.com/animu-synchtube/document.js', 
+			 function() {doc_doit();});}}
     ];
 
     // Create the opening tag for a link
@@ -175,6 +181,8 @@ var animu_synchtube = (function() {
 		    curCom = custom_commands[i];
 		    if(msg.match(curCom.pat)) {
 			curCom.fn(msg);
+			// Clear message box
+			$("#message").val("");
 			return true;
 		    }
 		}
