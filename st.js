@@ -37,7 +37,7 @@ var animu_synchtube = (function() {
 
     // Function-based word filters
     var word_filters_fn = [ ];
-
+xo
     // Custom chat commands
     var custom_commands = [ 
 	{pat : /^\s*\/link/, 
@@ -175,6 +175,8 @@ var animu_synchtube = (function() {
 		    curCom = custom_commands[i];
 		    if(msg.match(curCom.pat)) {
 			curCom.fn(msg);
+			// Clear message box
+			$("#message").val("");
 			return true;
 		    }
 		}
