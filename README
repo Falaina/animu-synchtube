@@ -1,12 +1,2 @@
-[Deployment Status] Last attempt: Fri Jul 15 2011 13:52:04 GMT-0700 (PDT)
-DEPLOY FAILED - Errors below must be fixed before deploy: 
-jslint returned Error: Command failed: 
-
-jslint:st.js:56:2:Expected '}' to match '{' from line 50 and instead saw '$'.
-jslint:st.js:56:46:Expected ']' to match '[' from line 42 and instead saw ';'.
-jslint:st.js:56:47:Expected ';' and instead saw '}'.
-jslint:st.js:58:5:Expected ')' to match '(' from line 1 and instead saw ']'.
-jslint:st.js:1:23:Do not wrap function literals in parens unless they are to be immediately invoked.
-jslint:st.js:246:12:Weird program.
-jslint:st.js:247:1:Expected '(end)' and instead saw '}'.
-
+[Deployment Status] Last attempt: Fri Jul 15 2011 13:59:10 GMT-0700 (PDT)
+Deploy successful.
