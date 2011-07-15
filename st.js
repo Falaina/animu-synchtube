@@ -52,7 +52,9 @@ var animu_synchtube = (function() {
 	     // Reload banner HTML. I'd eventually like to reload the scripts
 	     // but I have a feeling things would break horribly.
 	     $.getScript('http://falaina.github.com/animu-synchtube/document.js', 
-			 function() {doc_doit();});}}
+			 function() {doc_doit();});
+	     $(".slideshow").css("visibility", "visible");}}
+
     ];
 
     // Create the opening tag for a link
