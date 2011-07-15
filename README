@@ -1,2 +1,7 @@
-[Deployment Status] Last attempt: Fri Jul 15 2011 13:25:13 GMT-0700 (PDT)
-Deploy successful.
+[Deployment Status] Last attempt: Fri Jul 15 2011 13:27:15 GMT-0700 (PDT)
+DEPLOY FAILED - Errors below must be fixed before deploy: 
+jslint returned Error: Command failed: 
+
+jslint:st.js:40:1:Expected an assignment or function call and instead saw an expression.
+jslint:st.js:40:3:Expected ';' and instead saw 'var'.
+
