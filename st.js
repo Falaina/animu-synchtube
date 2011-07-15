@@ -158,10 +158,18 @@ var animu_synchtube = (function() {
 	return [usr, msg, wat];
     };
 
+    self.processSay = function(msg) {
+	if(msg.match(/^\s*\/link/)) {
+	    self.linkify();
+	}
+    };
+
     // Instrument the synchtube chat message handler with the word filter
     var replaceChatHandler = function() {
 	self.wordFilter   = instrumentFn(self, self.wordFilter,   self.whiteList, true);
 	chat.writeMessage = instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
+
+	chat.beforeSay    = instrumentFn(chat, chat.beforeSay,    self.processSay, false);
     };
 
     // Entry point for code (this is probably not idiomatic javascript, apparently
