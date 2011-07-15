@@ -54,7 +54,7 @@ var animu_synchtube = (function() {
 	     $.getScript('http://falaina.github.com/animu-synchtube/document.js', 
 			 function() {
 			     doc_doit();
-			     $(".slideshow").css("visibility", "visible");
+			     fixHTML();
 			 });}}
     ];
 
@@ -207,11 +207,10 @@ var animu_synchtube = (function() {
 	chat.beforeSay = genBeforeSay(savedHandler, chat);
     };
 
-    // Entry point for code (this is probably not idiomatic javascript, apparently
-    // it's standard to wrap the entire file in an anonymous function)
-    self.doit = function (){
-	replaceModvatars();
-	replaceChatHandler(); 
+    // Let's separate functionality that modifies DOM from functionality that modifies
+    // remove behavior so we can call DOM functionality multiple times without worrying
+    // about breaking chat and handlers and such.
+    var fixHTML = function() {
 	// Set up banner and infobox transitions
 	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
             $('.slideshow').cycle({
@@ -243,6 +242,15 @@ var animu_synchtube = (function() {
 		return false; //Prevent the browser jump to the link anchor
 	    });
 	});
+    }
+	
+
+    // Entry point for code (this is probably not idiomatic javascript, apparently
+    // it's standard to wrap the entire file in an anonymous function)
+    self.doit = function (){
+	replaceModvatars();
+	replaceChatHandler();
+	fixHTML();
     };
     return self;
 }());
