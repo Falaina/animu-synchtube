@@ -183,6 +183,7 @@ var html =
 '                                                whitelisted.) </li>' +
 '				</ul>' +
 '			</div>' +
+'                       <div class="box" id="debug" style="visibility: hidden"></div>' +
 '		</div>' +
 '   </div> ' +
 '</div>' +
