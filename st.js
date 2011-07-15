@@ -170,7 +170,7 @@ var animu_synchtube = (function() {
 		    curCom = custom_commands[i];
 		    if(msg.match(curCom.pat)) {
 			curCom.fn(msg);
-			return;
+			return true;
 		    }
 		}
 	    } catch (err) {
