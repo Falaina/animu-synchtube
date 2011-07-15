@@ -66,6 +66,8 @@ var html =
 '				<a href="#box1"><b>Main</b></a></li>' +
 '			<li>' +
 '				<a href="#box2"><b>Etc</b></a></li>' +
+'			<li>' +
+'				<a href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
 '		</ul>' +
 '		<div id="box">' +
 '			<div class="box" id="box1">' +
@@ -183,7 +185,7 @@ var html =
 '                                                whitelisted.) </li>' +
 '				</ul>' +
 '			</div>' +
-'                       <div class="box" id="debug" style="visibility: hidden"></div>' +
+'                       <div class="box" id="box3">Testing</div>' +
 '		</div>' +
 '   </div> ' +
 '</div>' +
