@@ -45,7 +45,7 @@ var animu_synchtube = (function() {
     ];
 
     // Create the opening tag for a link
-    openA : function(url) { return '<a href="'+url+'">'; },
+    var openA = function(url) { return '<a href="'+url+'">'; },
 
     // Convert every playlist entry into a clickable link
     self.linkify = function() {
