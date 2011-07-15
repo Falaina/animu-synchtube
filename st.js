@@ -45,7 +45,7 @@ var animu_synchtube = (function() {
     ];
 
     // Create the opening tag for a link
-    var openA = function(url) { return '<a href="'+url+'">'; };
+    self.openA = function(url) { return '<a href="'+url+'">'; };
 
     // Convert every playlist entry into a clickable link
     self.linkify = function() {
@@ -59,9 +59,9 @@ var animu_synchtube = (function() {
 		var vidHtml = cur.html();
 		if(vidHtml) {
 		    var ytUrl =  YT_BASE + vids[vid].vid;
-		    vidHtml = vidHtml.replace(/.*/, openA(ytUrl)+"$&"+"</a>");
+		    vidHtml = vidHtml.replace(/.*/, self.openA(ytUrl)+"$&"+"</a>");
 		    cur.html(vidHtml);
-		    log(cur.html());
+		    self.log(cur.html());
 		    vids[vid].linked = true;
 		}
 	    }
