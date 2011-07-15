@@ -67,7 +67,7 @@ var html =
 '			<li>' +
 '				<a href="#box2"><b>Etc</b></a></li>' +
 '			<li>' +
-'				<a href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
+'				<a id="debuglink" href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
 '		</ul>' +
 '		<div id="box">' +
 '			<div class="box" id="box1">' +
@@ -203,7 +203,7 @@ $(".tv-descr-ct").css("height", "");
 
 // Fix up debug box style
 $("#debug").css("height", "100%");
-$("#debug").css("width", "940px");
+$("#debug").css("width", "865px");
 
 $(".box").css("height", "");
 };
