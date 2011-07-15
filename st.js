@@ -176,7 +176,7 @@ var animu_synchtube = (function() {
 	    } catch (err) {
 		self.log("Failure in processSay, ignoring" + err);
 	    }
-	    oldHandler.apply(oldHandlerCtx, arguments);
+	    return oldHandler.apply(oldHandlerCtx, arguments);
 	};
     };
 
