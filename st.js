@@ -26,11 +26,11 @@ var animu_synchtube = (function() {
 	{pat : /plan/ig,			target : 'keikaku'},
 	{pat : /qb/ig,	                        target : '／人◕ ‿‿ ◕人＼'},
 //	{pat : /^(\s*\S+\s*)$/,                 target : '$1 ~de geso'},
-	{pat : /(kitaa)/ig,			target : 'キタ━━━(゜∀゜)━━━!!!!! '},
-	{pat : /(bu-n)/ig,			target : '⊂二二二（　＾ω＾）二⊃'},
-	{pat : /(grimace)/ig,			target : '(╬ ಠ益ಠ)'},
-	{pat : /(simper)/ig,			target : '(￣ー￣)'},
-	{pat : /(kyuubey|kyubey|kyubei)/ig,     target : 'coobie'},
+	{pat : /kitaa/ig,			target : 'キタ━━━(゜∀゜)━━━!!!!! '},
+	{pat : /bu-n/ig,			target : '⊂二二二（　＾ω＾）二⊃'},
+	{pat : /grimace/ig,			target : '(╬ ಠ益ಠ)'},
+	{pat : /simper/ig,			target : '(￣ー￣)'},
+	{pat : /kyuubey|kyubey|kyubei/ig,     target : 'coobie'},
 	{pat : /magica/ig,			target : 'meguca'}
 
     ];
