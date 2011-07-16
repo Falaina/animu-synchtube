@@ -245,7 +245,6 @@ var animu_synchtube = (function() {
 		return false;
             });
 	    $(".slideshow").css("visibility", "visible");
-
 	    $(".toggle_container").hide(); 
 	    $(".open").show(); 
 
