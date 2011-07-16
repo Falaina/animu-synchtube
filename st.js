@@ -88,6 +88,11 @@ var animu_synchtube = (function() {
 	    console.log(arguments);
 	}
     };
+    var trace = function() {
+	if(window.console && window.console.trace) {
+	    console.trace();
+	}
+    };	
 
     // Convenience function for invoking a function
     // that may fail
@@ -99,27 +104,33 @@ var animu_synchtube = (function() {
     // Convenience function for hooking a javascript function
     // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
     var instrumentFn = function(context, fn, hook, transformArgs) {
-	// Remove any previous hooks
-	if(fn.instrumented) {
-	    fn = fn.restore();
-	}
-	var newFn = function() 
-	{
-	    var fnArgs = arguments;
-	    // Apply hook
-	    var results = hook.apply(context, arguments); 
-	    // Replace arguments with results of hook if necessary
-	    if(transformArgs) {
-		fnArgs = results;
+	try {
+	    // Remove any previous hooks
+	    if(fn.instrumented) {
+		fn = fn.restore();
 	    }
-	    // Apply the original function
-	    return fn.apply(context, fnArgs);
-	};
-	// Keep a handle to the original function
-	newFn.restore = function() {return fn;};
-	// Mark the function as instrumented
-	newFn.instrumented = true;
-	return newFn;
+	    var newFn = function() 
+	    {
+		var fnArgs = arguments;
+		// Apply hook
+		var results = hook.apply(context, arguments); 
+		// Replace arguments with results of hook if necessary
+		if(transformArgs) {
+		    fnArgs = results;
+		}
+		// Apply the original function
+		return fn.apply(context, fnArgs);
+	    };
+	    // Keep a handle to the original function
+	    newFn.restore = function() {return fn;};
+	    // Mark the function as instrumented
+	    newFn.instrumented = true;
+	    return newFn;
+	} catch (err) {
+	    log("Instrumentation failure:");
+	    trace();
+	}
+	return fn;
     };
 
 
