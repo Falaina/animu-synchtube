@@ -22,7 +22,6 @@ var animu_synchtube = (function() {
 	{pat : /mami/ig,			target : 'mumi'},
 	{pat : /kyoko/ig,			target : 'kyaku'},
 	{pat : /sayaka/ig,			target : 'seyiku'},
-	{pat : /(binaryheap)/ig,		target : '$1-senpai'},
 	{pat : /everyone/ig,			target : 'everynyan'},
 	{pat : /plan/ig,			target : 'keikaku'},
 	{pat : /qb/ig,	                        target : '／人◕ ‿‿ ◕人＼'},
@@ -138,8 +137,8 @@ var animu_synchtube = (function() {
 	var i, newRegex;
 	for(i=0; i < word_filters.length; i++) {
 	    // Construct a regex that'll protect words
-	    newRegex = '(^| )+'+word_filters[i].pat.source+'($| )+';
-	    msg = msg.replace(RegExp(newRegex, 'ig'), word_filters[i].target);
+	    newRegex = '(^| )'+word_filters[i].pat.source+'($| )';
+	    msg = msg.replace(RegExp(newRegex, 'ig'), "$1"+word_filters[i].target+"$2");
 	}
 	return [usr, msg, wat];
     };
