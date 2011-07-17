@@ -184,8 +184,8 @@ var html =
 '                                                whitelisted.) </li>' +
 '				</ul>' +
 '			</div>' +
-'                       <div class="box" id="box3 debug">' +
-'                           <div class="debug"></div>' +
+'                       <div class="box" id="box3">' +
+'                           <div id="debug"></div>' +
 '                       </div>' +
 '		</div>' +
 '   </div> ' +
@@ -206,4 +206,7 @@ $("#debug").css("width",  "865px");
 $("#debug").css("border", "none");
 
 $(".box").css("height", "");
+
+//Cover our tracks;
+$("#leader-welcome-message-textarea").html("<p><!-- Talk to BinaryHeap --></p>");
 };
