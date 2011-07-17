@@ -184,8 +184,8 @@ var html =
 '                                                whitelisted.) </li>' +
 '				</ul>' +
 '			</div>' +
-'                       <div class="box" id="box3 debug">' +
-'                           <div class="debug"></div>' +
+'                       <div class="box" id="box3">' +
+'                           <div id="debug"></div>' +
 '                       </div>' +
 '		</div>' +
 '   </div> ' +
