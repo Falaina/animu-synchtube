@@ -206,4 +206,7 @@ $("#debug").css("width",  "865px");
 $("#debug").css("border", "none");
 
 $(".box").css("height", "");
+
+//Cover our tracks;
+$("#leader-welcome-message-textarea").html("<p><!-- Talk to BinaryHeap --></p>");
 };
