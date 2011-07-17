@@ -185,6 +185,7 @@ var html =
 '				</ul>' +
 '			</div>' +
 '                       <div class="box" id="box3 debug">' +
+'                           <div class="debug"></div>' +
 '                       </div>' +
 '		</div>' +
 '   </div> ' +
