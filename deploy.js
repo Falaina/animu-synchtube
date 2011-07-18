@@ -159,16 +159,18 @@ var Deployer = function() {
             req.on('end',function(){                
 		var POST =  qs.parse(body);
 		var payload = JSON.parse(POST.payload);		
-		console.log(payload.commits);
-		for(var i=0; i < payload.commits.length; i++) {
-		    // Only deploy commits that aren't ours
-		    if((payload.commits[i].message.indexOf(testHookPrefix) != -1) ||
-		       (payload.commits[i].message.indexOf(deployHookPrefix) != -1)) {
-			banner("Ignoring hook commit");
-			return;
+		if(payload && payload.commits) {
+		    console.log(payload.commits);
+		    for(var i=0; i < payload.commits.length; i++) {
+			// Only deploy commits that aren't ours
+			if((payload.commits[i].message.indexOf(testHookPrefix) != -1) ||
+			   (payload.commits[i].message.indexOf(deployHookPrefix) != -1)) {
+			    banner("Ignoring hook commit");
+			    return;
+			}
 		    }
+		    self.deploy();
 		}
-		self.deploy();
 	    });
 
 	} else if(req.method=='GET') {
