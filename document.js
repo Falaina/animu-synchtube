@@ -118,6 +118,7 @@ var html =
 '						<li>&bull; Dokuro-Chan</li>'+
 '						<li>&bull; Rozen Maiden S1</li>'+
 '						<li>&bull; Gaki No Tsukai Yugawara</li>'+
+'                                               <li>&bull; Paranoia Agent</li>' +
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
