@@ -212,5 +212,5 @@ $(".box").css("height", "");
 $(document).ready(function(){$(".tv-descr-text").show(); } );
 
 //Cover our tracks;
-$("#leader-welcome-message-textarea").html("<p><!-- Talk to BinaryHeap --></p>");
+$("#leader-welcome-message-textarea").html($.trim($(".tv-descr-text").html()));
 };
