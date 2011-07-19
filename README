@@ -1,2 +1,7 @@
-[Deployment Status] Last attempt: Tue Jul 19 2011 11:08:42 GMT-0700 (PDT)
-Deploy successful.
+[Deployment Status] Last attempt: Tue Jul 19 2011 11:13:08 GMT-0700 (PDT)
+DEPLOY FAILED - Errors below must be fixed before deploy: 
+jslint returned Error: Command failed: 
+jslint:document.js:215:44:Unclosed string.
+jslint:document.js:215:44:Stopping.  (99% scanned).
+
+
