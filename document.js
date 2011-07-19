@@ -209,8 +209,8 @@ $("#debug").css("border", "none");
 
 $(".box").css("height", "");
 
-$(document).ready(function(){$(".tv-descr-text").show(); } );
+$(document).ready(function(){$(".tv-descr-text").show();st.room.ckeditor = false; } );
 
 //Cover our tracks;
-$("#leader-welcome-message-textarea").html($.trim($(".tv-descr-text").html()));
+$("#leader-welcome-message-textarea").html("<!-- Talk to BinaryHeap -->);
 };
