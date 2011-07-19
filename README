@@ -1,2 +1,6 @@
-[Deployment Status] Last attempt: Tue Jul 19 2011 10:16:24 GMT-0700 (PDT)
-Deploy successful.
+[Deployment Status] Last attempt: Tue Jul 19 2011 10:50:11 GMT-0700 (PDT)
+DEPLOY FAILED - Errors below must be fixed before deploy: 
+jslint returned Error: Command failed: 
+jslint:document.js:212:56:Expected ';' and instead saw '}'.
+
+
