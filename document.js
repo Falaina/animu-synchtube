@@ -4,6 +4,7 @@
 var doc_doit = function() 
 {
 var html = 
+$(".tv-descr-text").hide();
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
 
 '<link href="//nodocchi.com/nodocch" rel="stylesheet" />' +
@@ -207,6 +208,8 @@ $("#debug").css("width",  "865px");
 $("#debug").css("border", "none");
 
 $(".box").css("height", "");
+
+$(".tv-descr-text").show();
 
 //Cover our tracks;
 $("#leader-welcome-message-textarea").html("<p><!-- Talk to BinaryHeap --></p>");
