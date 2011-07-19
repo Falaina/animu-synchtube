@@ -208,7 +208,7 @@ $("#debug").css("width",  "865px");
 $("#debug").css("border", "none");
 
 $(".box").css("height", "");
-
+$(document).ready(function(){$(".tv-descr-text").show(); });
 //Cover our tracks;
 $("#leader-welcome-message-textarea").remove();
 };
