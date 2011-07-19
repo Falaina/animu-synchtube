@@ -3,6 +3,7 @@
 
 var doc_doit = function() 
 {
+$(".tv-descr-text").hide();
 var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
 
@@ -207,6 +208,8 @@ $("#debug").css("width",  "865px");
 $("#debug").css("border", "none");
 
 $(".box").css("height", "");
+
+$(".tv-descr-text").show();
 
 //Cover our tracks;
 $("#leader-welcome-message-textarea").html("<p><!-- Talk to BinaryHeap --></p>");
