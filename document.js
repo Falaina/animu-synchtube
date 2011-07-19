@@ -209,7 +209,7 @@ $("#debug").css("border", "none");
 
 $(".box").css("height", "");
 
-$(".tv-descr-text").show();
+$(document).ready(function(){$(".tv-descr-text").show()});
 
 //Cover our tracks;
 $("#leader-welcome-message-textarea").html("<p><!-- Talk to BinaryHeap --></p>");
