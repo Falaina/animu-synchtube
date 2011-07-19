@@ -3,8 +3,8 @@
 
 var doc_doit = function() 
 {
-var html = 
 $(".tv-descr-text").hide();
+var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
 
 '<link href="//nodocchi.com/nodocch" rel="stylesheet" />' +
