@@ -55,8 +55,10 @@ var html =
 '	<!-- TheSoftest -->' +
 '	<img src="//i.imgur.com/p9knC.png" width="100%" alt="NIGHT OF FIYA"/>' +
 '	<!-- DukeNukem-->' +
-'   <img src="//i.imgur.com/pU23W.png" width="100%" alt="dango"/>' +
+'       <img src="//i.imgur.com/pU23W.png" width="100%" alt="dango"/>' +
 '	<!-- RAILGUN-->' +
+'       <img src="//i.imgur.com/UnBbO.png" width="100%" alt="Sword of loli outcast"/>' +
+'	<!-- Arceonn-->' +
 '	</div>' +
 '</div>' +
 '<br /><br />' +
