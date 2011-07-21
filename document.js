@@ -60,6 +60,8 @@ var html =
 '	<!-- RAILGUN-->' +
 '       <img src="//i.imgur.com/UnBbO.png" width="100%" alt="Sword of loli outcast"/>' +
 '	<!-- Arceonn-->' +
+'       <img src="//i.imgur.com/eklAA.png" width="100%" alt="Momiji"/>' +
+'	<!-- Arceonn-->' +
 '	</div>' +
 '</div>' +
 '<br /><br />' +
