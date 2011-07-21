@@ -3,9 +3,7 @@
 
 var doc_doit = function() 
 {
-
-
-
+                            
 $(".tv-descr-text").hide();
 var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
