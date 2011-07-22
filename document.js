@@ -3,6 +3,8 @@
 
 var doc_doit = function() 
 {
+                            
+$(".tv-descr-text").hide();
 var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
 
@@ -54,8 +56,12 @@ var html =
 '	<!-- TheSoftest -->' +
 '	<img src="//i.imgur.com/p9knC.png" width="100%" alt="NIGHT OF FIYA"/>' +
 '	<!-- DukeNukem-->' +
-'   <img src="//i.imgur.com/pU23W.png" width="100%" alt="dango"/>' +
+'       <img src="//i.imgur.com/pU23W.png" width="100%" alt="dango"/>' +
 '	<!-- RAILGUN-->' +
+'       <img src="//i.imgur.com/UnBbO.png" width="100%" alt="Sword of loli outcast"/>' +
+'	<!-- Arceonn-->' +
+'       <img src="//i.imgur.com/eklAA.png" width="100%" alt="Momiji"/>' +
+'	<!-- Arceonn-->' +
 '	</div>' +
 '</div>' +
 '<br /><br />' +
@@ -118,6 +124,8 @@ var html =
 '						<li>&bull; Dokuro-Chan</li>'+
 '						<li>&bull; Rozen Maiden S1</li>'+
 '						<li>&bull; Gaki No Tsukai Yugawara</li>'+
+'                                               <li>&bull; Paranoia Agent</li>' +
+'                                               <li>&bull; Katanagatari</li>' +
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -206,7 +214,7 @@ $("#debug").css("width",  "865px");
 $("#debug").css("border", "none");
 
 $(".box").css("height", "");
-
+$(document).ready(function(){$(".tv-descr-text").show(); });
 //Cover our tracks;
-$("#leader-welcome-message-textarea").html("<p><!-- Talk to BinaryHeap --></p>");
+$("#leader-welcome-message-textarea").remove();
 };
