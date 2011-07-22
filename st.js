@@ -262,7 +262,7 @@ var animu_synchtube = (function() {
     self.doit = function (){
 	replaceModvatars();
 	replaceChatHandler();
-	$(document).ready(fixHTML);
+	fixHTML();
     };
     return self;
 }());
