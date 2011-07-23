@@ -62,6 +62,8 @@ var html =
 '	<!-- Arceonn-->' +
 '       <img src="//i.imgur.com/eklAA.png" width="100%" alt="Momiji"/>' +
 '	<!-- Arceonn-->' +
+'       <img src="//i.imgur.com/1MtZ2.png" width="100%" alt="Carlito"/>' +
+'	<!-- DukeNukem-->' +
 '	</div>' +
 '</div>' +
 '<br /><br />' +
