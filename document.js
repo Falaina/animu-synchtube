@@ -66,6 +66,8 @@ var html =
 '	<!-- DukeNukem-->' +
 '       <img src="//i.imgur.com/PN8AE.gif" width="100%" alt="Billy"/>' +
 '	<!-- DukeNukem-->' +
+'       <img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
+'	<!-- Arceonn-->' +
 '	</div>' +
 '</div>' +
 '<br /><br />' +
