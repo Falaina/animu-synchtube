@@ -163,6 +163,7 @@ var animu_synchtube = (function() {
 	{pat : /animu/ig },
 	{pat : /science/ig },
 	{pat : /chiruno/ig },
+        {pat : /mrchess/ig },
 	{pat : /binaryheap/ig }
     ];
 
