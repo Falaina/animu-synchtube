@@ -68,6 +68,8 @@ var html =
 '	<!-- DukeNukem-->' +
 '       <img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
 '	<!-- Arceonn-->' +
+'       <img src="//i.imgur.com/BcKQ5.jpg" width="100%" alt="steinsgate">' +
+'	<!-- FalconLunch-->' +
 '	</div>' +
 '</div>' +
 '<br /><br />' +
