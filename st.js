@@ -155,7 +155,7 @@ var animu_synchtube = (function() {
     };
 
     var str_Alert = [
-	{pat  : /[^ ]*www.synchtube.com\/r\/([^ ]+)/ig, target: '[censored: $1]'},
+	{pat  : /[^ ]*synchtube.com\/r\/([^ ]+)/ig, target: '[censored: $1]'},
         {pat  : /[^ ]*synchtu.be\/([^ ]+)/ig, target: '[censored: $1]'}
     ];
 
