@@ -213,10 +213,10 @@ var html =
 '	<marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></p>' +
 ' ';
 // Remove banner height restrictions
-$("#a").html(html);
-$("#a").css("max-height", "400px");
+$("#tv-descr-text").html(html);
+$("#tv-descr-text").css("max-height", "400px");
 //$(".tv-descr-ct").css("height", "");
-$(".tv-descr-text").html("");
+//$(".tv-descr-text").html("");
 
 // Fix up debug box style
 $("#debug").css("height", "100%");
