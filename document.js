@@ -215,7 +215,7 @@ var html =
 // Remove banner height restrictions
 $("#a").html(html);
 $("#a").css("max-height", "");
-//$(".tv-descr-ct").css("height", "");
+$(".tv-descr-ct").css("height", "");
 $(".tv-descr-text").html("");
 
 // Fix up debug box style
@@ -224,7 +224,7 @@ $("#debug").css("width",  "865px");
 $("#debug").css("border", "none");
 
 $(".box").css("height", "");
-$(document).ready(function(){$(".tv-descr-text").show(); });
+//$(document).ready(function(){$(".tv-descr-text").show(); });
 //Cover our tracks;
 $("#leader-welcome-message-textarea").remove();
 };
