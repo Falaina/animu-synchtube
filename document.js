@@ -213,7 +213,7 @@ var html =
 '	<marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></p>' +
 ' ';
 // Remove banner height restrictions
-$(".aaaac").html(html);
+$("#a").html(html);
 $(".tv-descr-text").css("max-height", "");
 $(".tv-descr-ct").css("height", "");
 
