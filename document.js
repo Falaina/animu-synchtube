@@ -214,8 +214,8 @@ var html =
 ' ';
 // Remove banner height restrictions
 $("#a").html(html);
-$("#a").css("max-height", "");
-$(".tv-descr-ct").css("height", "");
+$("#a").css("max-height", "400px");
+//$(".tv-descr-ct").css("height", "");
 $(".tv-descr-text").html("");
 
 // Fix up debug box style
