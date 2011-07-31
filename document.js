@@ -216,6 +216,7 @@ var html =
 $(".tv-descr-text").html(html);
 $(".tv-descr-text").css("max-height", "");
 $(".tv-descr-ct").css("height", "");
+$(".tv-descr-text").appendTo(".tv-descr-ct");
 
 // Fix up debug box style
 $("#debug").css("height", "100%");
