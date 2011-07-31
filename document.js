@@ -4,7 +4,7 @@
 var doc_doit = function() 
 {
                             
-//$(".tv-descr-text").hide();
+$(".tv-descr-text").hide();
 var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
 
@@ -213,10 +213,9 @@ var html =
 '	<marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></p>' +
 ' ';
 // Remove banner height restrictions
-$("#b").html(html);
-$("#b").css("max-height", "");
-//$(".tv-descr-ct").css("height", "");
-//$(".tv-descr-text").html("");
+$(".tv-descr-text").html(html);
+$(".tv-descr-text").css("max-height", "");
+$(".tv-descr-ct").css("height", "");
 
 // Fix up debug box style
 $("#debug").css("height", "100%");
@@ -224,7 +223,7 @@ $("#debug").css("width",  "865px");
 $("#debug").css("border", "none");
 
 $(".box").css("height", "");
-//$(document).ready(function(){$(".tv-descr-text").show(); });
+$(document).ready(function(){$(".tv-descr-text").show(); });
 //Cover our tracks;
 $("#leader-welcome-message-textarea").remove();
 };
