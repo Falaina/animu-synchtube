@@ -96,6 +96,7 @@ var html =
 '					<li>&bull; FUKKIRETA 10 hours</li>'+
 '					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
 '					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
+'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間/li>'+
 '				</ul>'+
 '			</td>'+
 '		</tr>'+
