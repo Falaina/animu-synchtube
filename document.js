@@ -68,10 +68,8 @@ var html =
 '	<!-- DukeNukem-->' +
 '       <img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
 '	<!-- Arceonn-->' +
-'       <img src="//i.imgur.com/dBO8Q.png" width="100%" alt="steinsgate">' +
+'       <img src="//i.imgur.com/BcKQ5.jpg" width="100%" alt="steinsgate">' +
 '	<!-- FalconLunch-->' +
-'       <img src="//i.imgur.com/UYFCo.png" width="100%" alt="idolmaster">' +
-'	<!-- HooinKyoma-->' +
 '	</div>' +
 '</div>' +
 '<br /><br />' +
@@ -98,7 +96,7 @@ var html =
 '					<li>&bull; FUKKIRETA 10 hours</li>'+
 '					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
 '					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
-'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間</li>'+
+'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間/li>'+
 '				</ul>'+
 '			</td>'+
 '		</tr>'+
@@ -230,6 +228,7 @@ $("#debug").css("border", "none");
 
 $(".box").css("height", "");
 $(document).ready(function(){$(".tv-descr-text").show(); });
+st.templates.poll.newpoll = '<div id="newpoll"><div class="newpoll-header">Create a Poll</div><div class="newpoll-title" maxlength="200">Title</div><div><input class="newpoll-title-input" type="text" /></div><div class="newpoll-choices">Choices <span class="newpoll-tip">(minimum 2)</span><span id="newpoll-additem">add choice</span></div><div class="newpoll-items"><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div></div><div class="newpoll-controlbar"><button class="newpoll-run basic-btn">Start</button></div></div>';
 //Cover our tracks;
 $("#leader-welcome-message-textarea").remove();
 };
