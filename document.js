@@ -228,7 +228,7 @@ $("#debug").css("border", "none");
 
 $(".box").css("height", "");
 $(document).ready(function(){$(".tv-descr-text").show(); });
-st.templates.poll.newpoll = '<div id="newpoll"><div class="newpoll-header">Create a Poll</div><div class="newpoll-title" maxlength="200">Title</div><div><input class="newpoll-title-input" type="text" /></div><div class="newpoll-choices">Choices <span class="newpoll-tip">(minimum 2)</span><span id="newpoll-additem">add choice</span></div><div class="newpoll-items"><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div></div><div class="newpoll-controlbar"><button class="newpoll-run basic-btn">Start</button></div></div>';
+st.templates.poll.newpoll = '<div id="newpoll"><div class="newpoll-header">Create a Poll</div><div class="newpoll-title" >Title</div><div><input class="newpoll-title-input" type="text" maxlength="200"/></div><div class="newpoll-choices">Choices <span class="newpoll-tip">(minimum 2)</span><span id="newpoll-additem">add choice</span></div><div class="newpoll-items"><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div></div><div class="newpoll-controlbar"><button class="newpoll-run basic-btn">Start</button></div></div>';
 //Cover our tracks;
 $("#leader-welcome-message-textarea").remove();
 };
