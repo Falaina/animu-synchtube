@@ -166,6 +166,7 @@ var html =
 '						<li>&bull; Summer Wars</li>'+
 '						<li>&bull; MD Geist</li>'+
 '						<li>&bull; Steamboy</li>'+
+'						<li>&bull; The Borrower Arrietty</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
