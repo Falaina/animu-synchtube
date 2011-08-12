@@ -1,2 +1,7 @@
-[Deployment Status] Last attempt: Fri Aug 12 2011 10:44:04 GMT-0700 (PDT)
-Deploy successful.
+[Deployment Status] Last attempt: Fri Aug 12 2011 10:44:47 GMT-0700 (PDT)
+DEPLOY FAILED - Errors below must be fixed before deploy: 
+jslint returned Error: Command failed: 
+
+jslint:st.js:262:1:Expected '{' and instead saw '$'.
+jslint:st.js:264:1:Expected '{' and instead saw '$'.
+
