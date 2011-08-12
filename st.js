@@ -259,9 +259,16 @@ var animu_synchtube = (function() {
          //Turn the Youtube player 180 degree when you click on the marquee background
          $("marquee").click(function(){
 	       if($("#showcase").hasClass("upSideDown"))
-		$("#showcase").removeClass("upSideDown");
+		  $("#showcase").removeClass("upSideDown");
 	       else
-		$("#showcase").addClass("upSideDown");
+		  $("#showcase").addClass("upSideDown");
+         });
+         //Mirror the Youtube player when dubbleclick on the marquee background
+         $("marquee").dblclick(function(){
+	       if($("#showcase").hasClass("mirorIt"))
+		  $("#showcase").removeClass("mirorIt");
+	       else
+		  $("#showcase").addClass("mirorIt");
          });
 	});
     };
