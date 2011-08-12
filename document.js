@@ -214,7 +214,7 @@ var html =
 '<br />' +
 '<br />' +
 '<p>' +
-'	<marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></p>' +
+'	<ul class="turnIt"><marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();</ul>" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></p>' +
 ' ';
 // Remove banner height restrictions
 $(".tv-descr-text").appendTo(".tv-descr-ct");
