@@ -265,7 +265,7 @@ var animu_synchtube = (function() {
          });
 		 
 	//Mirror the Youtube player when you click on the modavatar
-         $("descr-mods").click(function(){
+         $("img.user_id .mod-avatar").click(function(){
 	       if($("#showcase").hasClass("mirorIt"))
 		  $("#showcase").removeClass("mirorIt");
 	       else
