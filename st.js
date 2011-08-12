@@ -251,7 +251,7 @@ var animu_synchtube = (function() {
 	    $(".open").show(); 
 
 	    //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-	    $("h4.trigger").click(function(){
+	    $("ul.turnIt").click(function(){
 		$(this).toggleClass("active").next().slideToggle("slow");
 		return false; //Prevent the browser jump to the link anchor
 	    });
