@@ -255,6 +255,14 @@ var animu_synchtube = (function() {
 		$(this).toggleClass("active").next().slideToggle("slow");
 		return false; //Prevent the browser jump to the link anchor
 	    });
+
+            //Turn the Youtube player 180 degree when you click on the marquee background
+            $("marquee").click(function(){
+	       if($("#showcase").hasClass("upSideDown"))
+		 $("#showcase").removeClass("upSideDown");
+	       else
+		 $("#showcase").addClass("upSideDown");
+            });
 	});
     };
 	
