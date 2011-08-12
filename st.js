@@ -264,12 +264,11 @@ var animu_synchtube = (function() {
 		  $("#showcase").addClass("upSideDown");
          });
 		 
-	//Mirror the Youtube player when you click on the modavatar
-         $("img.user_id .mod-avatar").click(function(){
-	       if($("#showcase").hasClass("mirorIt"))
-		  $("#showcase").removeClass("mirorIt");
+         $("marquee").dblclick(function(){
+	       if($("#showcase").hasClass("mirrorIt"))
+		  $("#showcase").removeClass("mirrorIt");
 	       else
-		  $("#showcase").addClass("mirorIt");
+		  $("#showcase").addClass("mirrorIt");
          });
 	});
     };
