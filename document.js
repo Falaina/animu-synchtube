@@ -10,7 +10,11 @@ var html =
 
 '<link href="//nodocchi.com/nodocch" rel="stylesheet" />' +
 '<link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />' +
+<<<<<<< HEAD
 '<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />' +
+=======
+//'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />' +
+>>>>>>> 36c25b11eedf24fb950fe449d6a54cf0df6bbfbc
 
 '<div id="panelBanner">' +
 '	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">' +
