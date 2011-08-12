@@ -7,9 +7,7 @@
  .room-tag:hover{background-color:rgb(209,225,250); color:rgb(76,76,166)}
  .tv-descr-ct{height:500px;}
  .pl-even{}
- #showcase{
--webkit-transform: rotate(-90deg);
--moz-transform: rotate(-90deg);}
+ #showcase{ -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); }
  #panelBanner{position:relative;}
  #panelTabs{position:relative;}
 
