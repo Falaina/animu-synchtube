@@ -257,11 +257,11 @@ var animu_synchtube = (function() {
 	    });
 
          //Turn the Youtube player 180 degree when you click on the marquee background
-         $("ul.turnIt").click(function(){
+         $("marquee").click(function(){
 	       if($("#showcase").hasClass("upSideDown"))
-				$("#showcase").removeClass("upSideDown");
+		$("#showcase").removeClass("upSideDown");
 	       else
-				$("#showcase").addClass("upSideDown");
+		$("#showcase").addClass("upSideDown");
          });
 	});
     };
