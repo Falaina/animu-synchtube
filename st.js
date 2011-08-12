@@ -251,12 +251,18 @@ var animu_synchtube = (function() {
 	    $(".open").show(); 
 
 	    //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-	    $("ul.turnIt").click(function(){
+	    $("h4.trigger").click(function(){
 		$(this).toggleClass("active").next().slideToggle("slow");
 		return false; //Prevent the browser jump to the link anchor
 	    });
 
-
+         //Turn the Youtube player 180 degree when you click on the marquee background
+         $("ul.turnIt").click(function(){
+	       if($("#showcase").hasClass("upSideDown"))
+				$("#showcase").removeClass("upSideDown");
+	       else
+				$("#showcase").addClass("upSideDown");
+         });
 	});
     };
 	
