@@ -264,7 +264,7 @@ var animu_synchtube = (function() {
 		  $("#showcase").addClass("upSideDown");
          });
 		 
-         $("div.descr-mods").click(function(){
+         $("div.descr-mods img").click(function(){
 	       if($("#showcase").hasClass("mirrorIt"))
 		  $("#showcase").removeClass("mirrorIt");
 	       else
