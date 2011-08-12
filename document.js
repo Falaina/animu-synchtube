@@ -10,6 +10,7 @@ var html =
 
 '<link href="//nodocchi.com/nodocch" rel="stylesheet" />' +
 '<link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />' +
+'<link href="//raw.github.com/Falaina/animu-synchtube/master/animu.css" rel="stylesheet" />' +
 
 '<div id="panelBanner">' +
 '	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">' +
@@ -96,7 +97,7 @@ var html =
 '					<li>&bull; FUKKIRETA 10 hours</li>'+
 '					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
 '					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
-'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間/li>'+
+'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間 </li>'+
 '				</ul>'+
 '			</td>'+
 '		</tr>'+
@@ -166,6 +167,10 @@ var html =
 '						<li>&bull; Summer Wars</li>'+
 '						<li>&bull; MD Geist</li>'+
 '						<li>&bull; Steamboy</li>'+
+<<<<<<< HEAD
+=======
+'						<li>&bull; The Borrower Arrietty</li>'+
+>>>>>>> 6f396b63098aad252cc67b22a0cdf7ed0e1c6706
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
