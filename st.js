@@ -263,6 +263,14 @@ var animu_synchtube = (function() {
 	       else
 		  $("#showcase").addClass("upSideDown");
          });
+		 
+	//Mirror the Youtube player when you double click on the marquee
+         $("marquee").dblclick(function(){
+	       if($("#showcase").hasClass("mirorIt"))
+		  $("#showcase").removeClass("mirorIt");
+	       else
+		  $("#showcase").addClass("mirorIt");
+         });
 	});
     };
 	
