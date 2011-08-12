@@ -10,7 +10,7 @@ var html =
 
 '<link href="//nodocchi.com/nodocch" rel="stylesheet" />' +
 '<link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />' +
-'<link href="//raw.github.com/Falaina/animu-synchtube/master/animu.css" rel="stylesheet" />' +
+'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />' +
 
 '<div id="panelBanner">' +
 '	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">' +
@@ -167,10 +167,7 @@ var html =
 '						<li>&bull; Summer Wars</li>'+
 '						<li>&bull; MD Geist</li>'+
 '						<li>&bull; Steamboy</li>'+
-<<<<<<< HEAD
-=======
 '						<li>&bull; The Borrower Arrietty</li>'+
->>>>>>> 6f396b63098aad252cc67b22a0cdf7ed0e1c6706
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
