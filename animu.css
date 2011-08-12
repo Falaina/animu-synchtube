@@ -1,13 +1,13 @@
+/* ORIGINAL /a/'s SYNCHTUBE CSS THEME CODE */
  #truemiddle {background: none repeat scroll 0 0 #eef2ff;}
  .slideshow{ border: 1px solid #ccc; height:116px; padding:0; margin-bottom:0px;}
- .slideshow img{ display: none; height:116px;}
- .slideshow img.first {display: block;}
+ .slideshow img{ display: none; height:116px; }
+ .slideshow img.first {display: block; }
  .user-mod .user_name {color:rgb(76,76,166) !important;}    
  .room-tag, .tag_name {background-color:rgb(76,76,166)}
  .room-tag:hover{background-color:rgb(209,225,250); color:rgb(76,76,166)}
  .tv-descr-ct{height:500px;}
  .pl-even{}
- #showcase{ -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); }
  #panelBanner{position:relative;}
  #panelTabs{position:relative;}
 
@@ -19,3 +19,9 @@ h4 a:hover{text-decoration: none; color:eef2ff;}
 .toggle_container{ padding-top:2px; border-top:#CCC solid 2px;}
 .show_hide {display:none;}
 h4{margin:0;}
+
+.title a{color:black;} 
+
+.upSideDown{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); transform:rotate(180deg); 
+-ms-transform:rotate(180deg); -o-transform:rotate(180deg); 
+}
