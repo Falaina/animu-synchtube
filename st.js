@@ -263,8 +263,9 @@ var animu_synchtube = (function() {
 	       else
 		  $("#showcase").addClass("upSideDown");
          });
-         //Mirror the Youtube player when dubbleclick on the marquee background
-         $("marquee").dblclick(function(){
+		 
+	//Mirror the Youtube player when you click on the modavatar
+         $("img.mod-avatar").click(function(){
 	       if($("#showcase").hasClass("mirorIt"))
 		  $("#showcase").removeClass("mirorIt");
 	       else
