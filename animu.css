@@ -15,7 +15,7 @@
 
 .defeatedList li:hover{background-color:#eef2ff; color:#A00000; }
 .slidingDiv {padding:5px; border-bottom:5px solid #3399FF;}
-h4 a{text-decoration: none;padding:1 1 1 1;width:100%; color:black; font-weight:bolder; border-bottom:2px;color:#4C4CA6;-webkit-transition: color 0.5s;}
+h4 a{text-decoration: none;padding:1 1 1 1;width:100%; color:black; font-weight:bolder; border-bottom:2px;color:#4C4CA6;-webkit-transition: color 0.5s;-moz-transition: color 0.5s; transition:color 0.5s; -ms-transition:color 0.5s; -o-transition:color 0.5s;}
 h4 a:hover{text-decoration: none; color:#A00000;}
 .toggle_container{ padding-top:2px; border-top:#CCC solid 2px;}
 .show_hide {display:none;}
