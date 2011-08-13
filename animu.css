@@ -11,14 +11,18 @@
  #panelBanner{position:relative;}
  #panelTabs{position:relative;}
 
-.defeatedList li{display:inline;}
-.defeatedList li:hover{background-color:#eef2ff;}
+.defeatedList li{display:inline;-webkit-transition: background-color  1s, color 1s; -moz-transition: background-color  1s, color 1s; transition:background-color  1s, color 1s; -ms-transition:background-color  1s, color 1s; -o-transition:background-color  1s, color 1s;}
+
+.defeatedList li:hover{background-color:#eef2ff; color:#A00000; }
 .slidingDiv {padding:5px; border-bottom:5px solid #3399FF;}
-h4 a{text-decoration: none;padding:1 1 1 1;width:100%; color:black; font-weight:bolder; border-bottom:2px;color:#4C4CA6;}
-h4 a:hover{text-decoration: none; color:eef2ff;}
+h4 a{text-decoration: none;padding:1 1 1 1;width:100%; color:black; font-weight:bolder; border-bottom:2px;color:#4C4CA6;-webkit-transition: color 0.5s;}
+h4 a:hover{text-decoration: none; color:#A00000;}
 .toggle_container{ padding-top:2px; border-top:#CCC solid 2px;}
 .show_hide {display:none;}
 h4{margin:0;}
+
+marquee b{-webkit-transition: color 1s ease-in; -moz-transition: color 1s ease-in, font 1s ; transition:color 1s ease-in; -ms-transition:color 1s ease-in; -o-transition:color 1s ease-in;}
+marquee b:hover{ color:#A00000;}
 
 .title a{color:black;} 
 
