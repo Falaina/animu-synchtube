@@ -94,10 +94,10 @@ var html =
 '		<tr>'+
 '			<td>'+
 '				<ul>'+
+'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間 </li>'+
 '					<li>&bull; FUKKIRETA 10 hours</li>'+
 '					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
 '					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
-'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間 </li>'+
 '				</ul>'+
 '			</td>'+
 '		</tr>'+
@@ -152,7 +152,7 @@ var html =
 '						<li>&bull; The Disappearance Of Haruhi Suzumiya</li>'+
 '						<li>&bull; Fate/Stay night UBW </li>'+
 '						<li>&bull; Girl who leapt through time</li>'+
-'						<li>&bull; Fate/Stay night UBW </li>'+
+'						<li>&bull; 5 Centimeters Per Second</li>'+
 '						<li>&bull; Interstella 5555 </li>'+
 '						<li>&bull; Kikujiro</li>'+
 '						<li>&bull; Kara no Kyoukai</li>'+
