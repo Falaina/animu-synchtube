@@ -11,7 +11,7 @@ var html =
 '<link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />' +
 '<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />' +
 '<div id="panelBanner">' +
-'	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">' +
+'	<div class="slideshow">' +
 '       <img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
 '	<!-- Arceonn-->' +
 '	<!-- Khaaaan\'s amagami -->' +
