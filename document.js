@@ -7,7 +7,6 @@ var doc_doit = function()
 $(".description").hide();
 var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
-
 '<link href="//nodocchi.com/nodocch" rel="stylesheet" />' +
 '<link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />' +
 '<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />' +
