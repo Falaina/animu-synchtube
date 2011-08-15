@@ -255,22 +255,7 @@ var animu_synchtube = (function() {
 		$(this).toggleClass("active").next().slideToggle("slow");
 		return false; //Prevent the browser jump to the link anchor
 	    });
-
-         // //Turn the Youtube player 180 degree when you click on the marquee background
-         // $("marquee").click(function(){
-	 //       if($("#showcase").hasClass("upSideDown"))
-	 // 	 $("#showcase").removeClass("upSideDown");
-	 //       else
-	 // 	  $("#showcase").addClass("upSideDown");
-         // });
-		 
-	//Mirror the Youtube player when you click on the modavatar
-         $("img.mod-avatar").click(function(){
-	       if($("#showcase").hasClass("mirorIt"))
-		  $("#showcase").removeClass("mirorIt");
-	       else
-		  $("#showcase").addClass("mirorIt");
-         });
+ 
 	});
     };
 	

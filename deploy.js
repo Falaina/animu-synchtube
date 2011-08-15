@@ -39,7 +39,7 @@ var Deployer = function() {
     var deployCmd = deploy.join('; ');
     var testFiles = [
 	'document.js',
-	'st.js'
+//	'st.js'
     ];
     var testCmd = 'java -jar jslint4java.jar --encoding UTF-8 ' + testFiles.join(' ');
     var testResultFile = 'README';
