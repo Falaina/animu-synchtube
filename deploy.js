@@ -32,6 +32,7 @@ var Deployer = function() {
 	'git checkout origin/master document.js',
 	'rm st.js',
 	'git checkout origin/master st.js',
+	'git checkout origin/master animu.css',
 	'git commit -a -m "'+deployHookPrefix+'"',
 	'git pull',
 	'git push'

@@ -1,7 +1,2 @@
-[Deployment Status] Last attempt: Fri Aug 12 2011 10:40:25 GMT-0700 (PDT)
-DEPLOY FAILED - Errors below must be fixed before deploy: 
-jslint returned Error: Command failed: 
-jslint:document.js:13:1:Expected an identifier and instead saw '<<'.
-jslint:document.js:13:1:Stopping.  (5% scanned).
-
-
+[Deployment Status] Last attempt: Mon Aug 15 2011 01:29:27 GMT-0700 (PDT)
+Deploy successful.
