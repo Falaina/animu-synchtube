@@ -3,11 +3,7 @@
  .slideshow{ border: 1px solid #ccc; height:116px; padding:0; margin-bottom:0px;}
  .slideshow img{ display: none; height:116px; }
  .slideshow img.first {display: block; }
-<<<<<<< HEAD
  .user-mod .user_name {color:rgb(76,76,166) !important;}    
-=======
- div.m {color:rgb(76,76,166) !important;}    
->>>>>>> 51fc0161e98e1a85b96ab076653ae352b09256db
  .room-tag, .tag_name {background-color:rgb(76,76,166)}
  .room-tag:hover{background-color:rgb(209,225,250); color:rgb(76,76,166)}
  .tv-descr-ct{height:500px;}
