@@ -10,10 +10,10 @@ var html =
 '<link href="//nodocchi.com/nodocch" rel="stylesheet" />' +
 '<link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />' +
 //'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />' +
-'       <img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
-'	<!-- Arceonn-->' +
 '<div id="panelBanner">' +
 '	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">' +
+'       <img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
+'	<!-- Arceonn-->' +
 '	<!-- Khaaaan\'s amagami -->' +
 '	<img src="//i.imgur.com/Af3ng.png" width="100%" alt="boku banner"/>' +
 '	<!-- Youmufag -->' +
