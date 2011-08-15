@@ -9,8 +9,9 @@ var html =
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
 '<link href="//nodocchi.com/nodocch" rel="stylesheet" />' +
 '<link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />' +
-'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />' +
-
+//'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />' +
+'       <img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
+'	<!-- Arceonn-->' +
 '<div id="panelBanner">' +
 '	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">' +
 '	<!-- Khaaaan\'s amagami -->' +
@@ -40,8 +41,6 @@ var html =
 '	<!-- DukeNukem-->' +
 '       <img src="//i.imgur.com/PN8AE.gif" width="100%" alt="Billy"/>' +
 '	<!-- DukeNukem-->' +
-'       <img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
-'	<!-- Arceonn-->' +
 '       <img src="//i.imgur.com/BcKQ5.jpg" width="100%" alt="steinsgate">' +
 '	<!-- FalconLunch-->' +
 '	</div>' +
