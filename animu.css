@@ -3,7 +3,7 @@
  .slideshow{ border: 1px solid #ccc; height:116px; padding:0; margin-bottom:0px;}
  .slideshow img{ display: none; height:116px; }
  .slideshow img.first {display: block; }
- .m .b {color:rgb(76,76,166) !important;}    
+ div.m {color:rgb(76,76,166) !important;}    
  .room-tag, .tag_name {background-color:rgb(76,76,166)}
  .room-tag:hover{background-color:rgb(209,225,250); color:rgb(76,76,166)}
  .tv-descr-ct{height:500px;}
