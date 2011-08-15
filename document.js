@@ -14,7 +14,7 @@ var html =
 
 '<div id="panelBanner">' +
 '	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">' +
-'	<img src="//nodocchi.com/face/Hidamari%20Sketch.png" width="100%" class="first" alt="wideface banner"/>' +
+/*'	<img src="//nodocchi.com/face/Hidamari%20Sketch.png" width="100%" class="first" alt="wideface banner"/>' +
 '	<img src="//nodocchi.com/face/Ika%20Musume.png" width="100%" alt="ika musume banner"/>' +
 '	<img src="//nodocchi.com/face/Kizuna%20Aikawa.png" width="100%" alt="aikawa banner"/>' +
 '	<img src="//nodocchi.com/face/Kore%20wa%20Zombie%20Desu%20ka.png" width="100%" alt="kore wa zombie banner"/>' +
@@ -40,6 +40,7 @@ var html =
 '	<img src="//nodocchi.com/face/Sound%20the%20GONG.png" width="100%" alt="Sound the GONG banner"/>' +
 '	<!-- Youmufag Sound the GONG -->' +
 '	<img src="//nodocchi.com/face/Amagami.png" width="100%" alt="Amagami banner"/>' +
+*/
 '	<!-- Khaaaan\'s amagami -->' +
 '	<img src="//i.imgur.com/Af3ng.png" width="100%" alt="boku banner"/>' +
 '	<!-- Youmufag -->' +
