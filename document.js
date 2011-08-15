@@ -14,32 +14,6 @@ var html =
 
 '<div id="panelBanner">' +
 '	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">' +
-'	<img src="//nodocchi.com/face/Hidamari%20Sketch.png" width="100%" class="first" alt="wideface banner"/>' +
-'	<img src="//nodocchi.com/face/Ika%20Musume.png" width="100%" alt="ika musume banner"/>' +
-'	<img src="//nodocchi.com/face/Kizuna%20Aikawa.png" width="100%" alt="aikawa banner"/>' +
-'	<img src="//nodocchi.com/face/Kore%20wa%20Zombie%20Desu%20ka.png" width="100%" alt="kore wa zombie banner"/>' +
-'	<img src="//nodocchi.com/face/Mikoto%20Misaka%20Alt.png" width="100%" alt="mikoto banner"/>' +
-'	<img src="//nodocchi.com/face/Nodochi.png" width="100%" alt="nodochi banner"/>' +
-'	<img src="//nodocchi.com/face/Pomf.png" width="100%" alt="POMP=3 banner"/>' +
-'	<img src="//nodocchi.com/face/Uesugi%20Kenshin.png" width="100%" alt="Uesugi Kenshin banner"/>' +
-'	<!-- DJZebro-->' +
-'	<img src="//nodocchi.com/face/Miku%20Alt.png" width="100%" alt="miku banner"/>' +
-'	<!-- DJZebro-->' +
-'	<img src="//nodocchi.com/face/Madoka.png" width="100%" alt="Madoka banner"/>' +
-'	<!-- Goship-->' +
-'	<img src="//nodocchi.com/face/World%20Order.png" width="100%" alt="World order banner"/>' +
-'	<!-- Goship-->' +
-'	<img src="//nodocchi.com/face/Multi%20Track%20Drifting.png" width="100%" alt="MultiTrackDrifting banner"/>' +
-'	<!-- Goship-->' +
-'	<img src="//nodocchi.com/face/T Shirt.png" width="100%" alt="t-shirt banner"/>' +
-'	<!-- DukeNuKem t-shirts-->' +
-'	<img src="//nodocchi.com/face/Fukkireta.png" width="100%" alt="fukkireta banner"/>' +
-'	<!-- DukeNuKem fukkireta -->' +
-'	<img src="//nodocchi.com/face/Youmu.png" width="100%" alt="Youmu banner"/>' +
-'	<!-- Youmufag youmu -->' +
-'	<img src="//nodocchi.com/face/Sound%20the%20GONG.png" width="100%" alt="Sound the GONG banner"/>' +
-'	<!-- Youmufag Sound the GONG -->' +
-'	<img src="//nodocchi.com/face/Amagami.png" width="100%" alt="Amagami banner"/>' +
 '	<!-- Khaaaan\'s amagami -->' +
 '	<img src="//i.imgur.com/Af3ng.png" width="100%" alt="boku banner"/>' +
 '	<!-- Youmufag -->' +
@@ -98,6 +72,7 @@ var html =
 '					<li>&bull; FUKKIRETA 10 hours</li>'+
 '					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
 '					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
+'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間 </li>'+
 '				</ul>'+
 '			</td>'+
 '		</tr>'+

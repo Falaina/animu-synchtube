@@ -256,19 +256,20 @@ var animu_synchtube = (function() {
 		return false; //Prevent the browser jump to the link anchor
 	    });
 
-         //Turn the Youtube player 180 degree when you click on the marquee background
-         $("marquee").click(function(){
-	       if($("#showcase").hasClass("upSideDown"))
-		  $("#showcase").removeClass("upSideDown");
-	       else
-		  $("#showcase").addClass("upSideDown");
-         });
+         // //Turn the Youtube player 180 degree when you click on the marquee background
+         // $("marquee").click(function(){
+	 //       if($("#showcase").hasClass("upSideDown"))
+	 // 	 $("#showcase").removeClass("upSideDown");
+	 //       else
+	 // 	  $("#showcase").addClass("upSideDown");
+         // });
 		 
-         $("marquee b").click(function(){
-	       if($("#showcase").hasClass("mirrorIt"))
-		  $("#showcase").removeClass("mirrorIt");
+	//Mirror the Youtube player when you click on the modavatar
+         $("img.mod-avatar").click(function(){
+	       if($("#showcase").hasClass("mirorIt"))
+		  $("#showcase").removeClass("mirorIt");
 	       else
-		  $("#showcase").addClass("mirrorIt");
+		  $("#showcase").addClass("mirorIt");
          });
 	});
     };
