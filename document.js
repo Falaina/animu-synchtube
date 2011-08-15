@@ -4,7 +4,7 @@
 var doc_doit = function() 
 {
                             
-$(".tv-descr-text").hide();
+$(".description").hide();
 var html = 
 '<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
 
@@ -94,6 +94,7 @@ var html =
 '		<tr>'+
 '			<td>'+
 '				<ul>'+
+'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間 </li>'+
 '					<li>&bull; FUKKIRETA 10 hours</li>'+
 '					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
 '					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
@@ -152,7 +153,7 @@ var html =
 '						<li>&bull; The Disappearance Of Haruhi Suzumiya</li>'+
 '						<li>&bull; Fate/Stay night UBW </li>'+
 '						<li>&bull; Girl who leapt through time</li>'+
-'						<li>&bull; Fate/Stay night UBW </li>'+
+'						<li>&bull; 5 Centimeters Per Second</li>'+
 '						<li>&bull; Interstella 5555 </li>'+
 '						<li>&bull; Kikujiro</li>'+
 '						<li>&bull; Kara no Kyoukai</li>'+
@@ -214,12 +215,12 @@ var html =
 '<br />' +
 '<br />' +
 '<p>' +
-'	<marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></p>' +
+'	<ul class="turnIt"><marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></ul></p>' +
 ' ';
 // Remove banner height restrictions
-$(".tv-descr-text").appendTo(".tv-descr-ct");
-$(".tv-descr-text").html(html);
-$(".tv-descr-text").css("max-height", "");
+$(".description").appendTo(".tv-descr-ct");
+$(".description").html(html);
+$(".description").css("max-height", "");
 $(".tv-descr-ct").css("height", "");
 
 
@@ -229,8 +230,8 @@ $("#debug").css("width",  "865px");
 $("#debug").css("border", "none");
 
 $(".box").css("height", "");
-$(document).ready(function(){$(".tv-descr-text").show(); });
-st.templates.poll.newpoll = '<div id="newpoll"><div class="newpoll-header">Create a Poll</div><div class="newpoll-title" >Title</div><div><input class="newpoll-title-input" type="text" maxlength="199"/></div><div class="newpoll-choices">Choices <span class="newpoll-tip">(minimum 2)</span><span id="newpoll-additem">add choice</span></div><div class="newpoll-items"><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div></div><div class="newpoll-controlbar"><button class="newpoll-run basic-btn">Start</button></div></div>';
+$(document).ready(function(){$(".description").show(); });
+//st.templates.poll.newpoll = '<div id="newpoll"><div class="newpoll-header">Create a Poll</div><div class="newpoll-title" >Title</div><div><input class="newpoll-title-input" type="text" maxlength="199"/></div><div class="newpoll-choices">Choices <span class="newpoll-tip">(minimum 2)</span><span id="newpoll-additem">add choice</span></div><div class="newpoll-items"><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div></div><div class="newpoll-controlbar"><button class="newpoll-run basic-btn">Start</button></div></div>';
 //Cover our tracks;
-$("#leader-welcome-message-textarea").remove();
+//$("#leader-welcome-message-textarea").remove();
 };
