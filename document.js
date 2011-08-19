@@ -181,14 +181,14 @@ $("marquee").click(function(){
 		$("#media").removeClass("upSideDown");
 	else
 		$("#media").addClass("upSideDown");
-    });
+});
 		 
  //Turn the Youtube player 180 degree when you click on the marquee background
-    $("marquee").dblclick(function(){
-	     if($("#media").hasClass("mirrorIt"))
-			$("#media").removeClass("mirrorIt");
-	     else
+$("marquee b").click(function(){
+	 if($("#media").hasClass("mirrorIt"))
+		$("#media").removeClass("mirrorIt");
+     else
 		  $("#media").addClass("mirrorIt");
-    });
+});
 
 };
