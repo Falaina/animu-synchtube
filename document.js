@@ -5,8 +5,8 @@ var doc_doit = function()
 {
 	
 var html = 
-'<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
-'<link href="//dysto.dyndns.org/synchtube/animuTab.css" rel="stylesheet" />'+
+'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />'+
+'<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
@@ -174,5 +174,21 @@ $("h4.trigger").click(function()
 	$(this).toggleClass("active").next().slideToggle("slow");
 	return false; //Prevent the browser jump to the link anchor
 });
+
+//Turn the Youtube player 180 degree when you click on the marquee background
+$("marquee").click(function(){
+	if($("#media").hasClass("upSideDown"))
+		$("#media").removeClass("upSideDown");
+	else
+		$("#media").addClass("upSideDown");
+    });
+		 
+ //Turn the Youtube player 180 degree when you click on the marquee background
+    $("marquee").dblclick(function(){
+	     if($("#media").hasClass("mirrorIt"))
+			$("#media").removeClass("mirrorIt");
+	     else
+		  $("#media").addClass("mirrorIt");
+    });
 
 };
