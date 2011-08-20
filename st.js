@@ -152,12 +152,15 @@ self.wordFilter = function(rawMsg) {
   if(cmd !== '<') return rawMsg;
   msg = rawMsg[1];
   msg = msg[1];
+  log(rawMsg);
   for(i=0; i < word_filters.length; i++) {
         // Construct a regex that'll protect words
     newRegex = '(^| )'+word_filters[i].pat.source+'($| )';
     msg = msg.replace(RegExp(newRegex, 'ig'), "$1"+word_filters[i].target+"$2");
+    log(msg);
   }
   rawMsg[1][1] = msg;
+  log(rawMsg);
   return rawMsg;
 };
 
@@ -222,7 +225,7 @@ var genBeforeSay = function(oldHandler, oldHandlerCtx) {
 var replaceChatHandler = function() {
   // Save the old beforeSay handler
   var savedHandler = chat.beforeSay;
-  self.wordFilter   = instrumentFn(self, socket.pre_handle_message, self.wordFilter, true);
+  socket.pre_handle_message  = instrumentFn(socket, socket.pre_handle_message, self.wordFilter, true);
 //  chat.writeMessage = instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
   
   // Install our new beforeSay handler
