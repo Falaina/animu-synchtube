@@ -148,6 +148,12 @@ var replaceModvatars = function () {
 self.wordFilter = function(rawMsg) {
   var i, newRegex;
   var cmd, msg;
+  try {
+    rawMsg = JSON.parse(rawMsg);
+  } catch(err) {
+    return [rawMsg];
+  }
+
   cmd = rawMsg[0];
   log(rawMsg);
   log(cmd);
