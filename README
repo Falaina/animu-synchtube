@@ -1,4 +1,4 @@
-[Deployment Status] Last attempt: Thu Aug 18 2011 11:18:17 GMT-0700 (PDT)
+[Deployment Status] Last attempt: Fri Aug 19 2011 21:23:39 GMT-0700 (PDT)
 DEPLOY FAILED - Errors below must be fixed before deploy: 
 jslint returned Error: Command failed: 
 jslint:document.js:181:1:Expected '{' and instead saw '$'.
@@ -6,4 +6,7 @@ jslint:document.js:183:1:Expected '{' and instead saw '$'.
 jslint:document.js:189:1:Expected '{' and instead saw '$'.
 jslint:document.js:191:3:Expected '{' and instead saw '$'.
 
+jslint:st.js:27:67:Expected ']' to match '[' from line 18 and instead saw 'v'.
+jslint:st.js:27:68:Unclosed string.
+jslint:st.js:27:68:Stopping.  (9% scanned).
 
