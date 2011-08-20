@@ -149,7 +149,7 @@ self.wordFilter = function(rawMsg) {
   var i, newRegex;
   var cmd, msg;
   cmd = rawMsg[0];
-  if(cmd !== '<') return rawMsg;
+  if(cmd !== '<') return [rawMsg];
   msg = rawMsg[1];
   msg = msg[1];
   log(rawMsg);
