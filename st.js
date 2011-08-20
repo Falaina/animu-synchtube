@@ -149,6 +149,8 @@ self.wordFilter = function(rawMsg) {
   var i, newRegex;
   var cmd, msg;
   cmd = rawMsg[0];
+  log(rawMsg);
+  log(cmd);
   if(cmd !== '<') return [rawMsg];
   msg = rawMsg[1];
   msg = msg[1];
