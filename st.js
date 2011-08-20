@@ -148,19 +148,14 @@ var replaceModvatars = function () {
   self.wordFilter = function(cmd, data) {
   var i, newRegex;
     var cmd, rawMsg;
-  log(data);
-  log(cmd);
     if(cmd !== '<') return [cmd, data];
   msg = data[1];
-  log(rawMsg);
   for(i=0; i < word_filters.length; i++) {
         // Construct a regex that'll protect words
     newRegex = '(^| )'+word_filters[i].pat.source+'($| )';
     msg = msg.replace(RegExp(newRegex, 'ig'), "$1"+word_filters[i].target+"$2");
-    log(msg);
   }
   data[1] = msg;
-  log(rawMsg);
     return [cmd, data];
 };
 
