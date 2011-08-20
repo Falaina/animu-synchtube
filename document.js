@@ -3,49 +3,10 @@
 
 var doc_doit = function() 
 {
-                            
-$(".description").hide();
+	
 var html = 
-'<div style="visibility: hidden">Welcome to /a/\'s synchtube, enjoy your stay :3 </div> ' +
-'<link href="//nodocchi.com/nodocch" rel="stylesheet" />' +
-'<link href="//dysto.dyndns.org/test/gifhubroom.css" rel="stylesheet" />' +
-'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />' +
-'<div id="panelBanner">' +
-'	<div class="slideshow" style="border: 1px solid #ccc;margin-left:auto; margin-right:auto; display:block; visibility: hidden">' +
-'       <img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
-'	<!-- Arceonn-->' +
-'	<!-- Khaaaan\'s amagami -->' +
-'	<img src="//i.imgur.com/Af3ng.png" width="100%" alt="boku banner"/>' +
-'	<!-- Youmufag -->' +
-'	<img src="//i.imgur.com/Ry3O7.png" width="100%" alt="black rock shooter banner"/>' +
-'	<!-- Goships -->' +
-'	<img src="//i.imgur.com/Rs03U.png" width="100%" alt="banjo banner"/>' +
-'	<!-- FalconLunch -->' +
-'	<img src="//i.imgur.com/UzMe3.png" width="100%" alt="rolling gal banner"/>' +
-'	<!-- Goships -->' +
-'	<img src="//i.imgur.com/gx8v1.png" width="100%" alt="miku banner"/>' +
-'	<!-- Denwa -->' +
-'	<img src="//i.imgur.com/tNzc3.jpg" width="100%" alt="bark banner"/>' +
-'	<!-- BinaryHeap -->' +
-'	<img src="//i.imgur.com/3S7lg.jpg" width="100%" alt="cirno"/>' +
-'	<!-- TheSoftest -->' +
-'	<img src="//i.imgur.com/p9knC.png" width="100%" alt="NIGHT OF FIYA"/>' +
-'	<!-- DukeNukem-->' +
-'       <img src="//i.imgur.com/pU23W.png" width="100%" alt="dango"/>' +
-'	<!-- RAILGUN-->' +
-'       <img src="//i.imgur.com/UnBbO.png" width="100%" alt="Sword of loli outcast"/>' +
-'	<!-- Arceonn-->' +
-'       <img src="//i.imgur.com/eklAA.png" width="100%" alt="Momiji"/>' +
-'	<!-- Arceonn-->' +
-'       <img src="//i.imgur.com/1MtZ2.png" width="100%" alt="Carlito"/>' +
-'	<!-- DukeNukem-->' +
-'       <img src="//i.imgur.com/PN8AE.gif" width="100%" alt="Billy"/>' +
-'	<!-- DukeNukem-->' +
-'       <img src="//i.imgur.com/BcKQ5.jpg" width="100%" alt="steinsgate">' +
-'	<!-- FalconLunch-->' +
-'	</div>' +
-'</div>' +
-'<br /><br />' +
+'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />'+
+'<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
@@ -66,11 +27,10 @@ var html =
 '		<tr>'+
 '			<td>'+
 '				<ul>'+
-'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間 </li>'+
+'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間  </li>'+
 '					<li>&bull; FUKKIRETA 10 hours</li>'+
 '					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
 '					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
-'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間 </li>'+
 '				</ul>'+
 '			</td>'+
 '		</tr>'+
@@ -141,6 +101,7 @@ var html =
 '						<li>&bull; MD Geist</li>'+
 '						<li>&bull; Steamboy</li>'+
 '						<li>&bull; The Borrower Arrietty</li>'+
+'						<li>&bull; Red Line</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -178,9 +139,6 @@ var html =
 '                                                whitelisted.) </li>' +
 '				</ul>' +
 '			</div>' +
-'                       <div class="box" id="box3">' +
-'                           <div id="debug"></div>' +
-'                       </div>' +
 '		</div>' +
 '   </div> ' +
 '</div>' +
@@ -189,21 +147,48 @@ var html =
 '<p>' +
 '	<ul class="turnIt"><marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></ul></p>' +
 ' ';
-// Remove banner height restrictions
-$(".description").appendTo(".tv-descr-ct");
-$(".description").html(html);
-$(".description").css("max-height", "");
-$(".tv-descr-ct").css("height", "");
 
+$(" #description .description").html(html);
 
-// Fix up debug box style
-$("#debug").css("height", "100%");
-$("#debug").css("width",  "865px");
-$("#debug").css("border", "none");
+// Set up banner and infobox transitions
+$('.box').hide();
+$('ul.group li:first').addClass('active').show();
+$('.box:first').show();
+$('ul.group li').click(function () 
+{
+	$('ul.group li').removeClass('active');
+	$(this).addClass('active');
+	$('.box').hide();
+	var activeTab = $(this).find('a').attr('href');
+	$(activeTab).fadeIn();
+	return false;
+});
 
-$(".box").css("height", "");
-$(document).ready(function(){$(".description").show(); });
-//st.templates.poll.newpoll = '<div id="newpoll"><div class="newpoll-header">Create a Poll</div><div class="newpoll-title" >Title</div><div><input class="newpoll-title-input" type="text" maxlength="199"/></div><div class="newpoll-choices">Choices <span class="newpoll-tip">(minimum 2)</span><span id="newpoll-additem">add choice</span></div><div class="newpoll-items"><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div><div class="newpoll-item"><input class="newpoll-item-input" /></div></div><div class="newpoll-controlbar"><button class="newpoll-run basic-btn">Start</button></div></div>';
-//Cover our tracks;
-//$("#leader-welcome-message-textarea").remove();
+$(".slideshow").css("visibility", "visible");
+$(".toggle_container").hide(); 
+$(".open").show(); 
+
+//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+$("h4.trigger").click(function()
+{
+	$(this).toggleClass("active").next().slideToggle("slow");
+	return false; //Prevent the browser jump to the link anchor
+});
+
+//Turn the Youtube player 180 degree when you click on the marquee background
+$("marquee").click(function(){
+	if($("#media").hasClass("upSideDown"))
+		$("#media").removeClass("upSideDown");
+	else
+		$("#media").addClass("upSideDown");
+    });
+		 
+ //Turn the Youtube player 180 degree when you click on the marquee background
+    $("marquee").dblclick(function(){
+	     if($("#media").hasClass("mirrorIt"))
+			$("#media").removeClass("mirrorIt");
+	     else
+		  $("#media").addClass("mirrorIt");
+    });
+
 };
