@@ -161,7 +161,7 @@ self.wordFilter = function(rawMsg) {
   }
   rawMsg[1][1] = msg;
   log(rawMsg);
-  return rawMsg;
+  return [rawMsg];
 };
 
     var str_Alert = [
