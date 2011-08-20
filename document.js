@@ -163,7 +163,10 @@ $('ul.group li').click(function ()
 	$(activeTab).fadeIn();
 	return false;
 });
-
+$("#playlistactions").append('<div id="link" class="basic-btn pl-more basic-btn-btnbar-right round3">Test</div>');
+$('#link').click(function(){
+$('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
+});
 $(".slideshow").css("visibility", "visible");
 $(".toggle_container").hide(); 
 $(".open").show(); 
