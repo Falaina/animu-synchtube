@@ -145,21 +145,13 @@ var replaceModvatars = function () {
   }
 };
 
-self.wordFilter = function(rawMsg) {
+  self.wordFilter = function(cmd, data) {
   var i, newRegex;
-  var cmd, msg;
-  try {
-    rawMsg = JSON.parse(rawMsg);
-  } catch(err) {
-    return [rawMsg];
-  }
-
-  cmd = rawMsg[0];
-  log(rawMsg);
+    var cmd, rawMsg;
+  log(data);
   log(cmd);
-  if(cmd !== '<') return [rawMsg];
-  msg = rawMsg[1];
-  msg = msg[1];
+    if(cmd !== '<') return [cmd, data];
+  msg = data[1];
   log(rawMsg);
   for(i=0; i < word_filters.length; i++) {
         // Construct a regex that'll protect words
@@ -167,9 +159,9 @@ self.wordFilter = function(rawMsg) {
     msg = msg.replace(RegExp(newRegex, 'ig'), "$1"+word_filters[i].target+"$2");
     log(msg);
   }
-  rawMsg[1][1] = msg;
+  data[1] = msg;
   log(rawMsg);
-  return [rawMsg];
+    return [cmd, data];
 };
 
     var str_Alert = [
