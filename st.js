@@ -225,7 +225,7 @@ var genBeforeSay = function(oldHandler, oldHandlerCtx) {
 var replaceChatHandler = function() {
   // Save the old beforeSay handler
   var savedHandler = chat.beforeSay;
-  socket.pre_handle_message  = instrumentFn(socket, socket.pre_handle_message, self.wordFilter, true);
+  socket.handle_message  = instrumentFn(socket, socket.handle_message, self.wordFilter, true);
 //  chat.writeMessage = instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
   
   // Install our new beforeSay handler
