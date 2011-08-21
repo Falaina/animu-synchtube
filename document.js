@@ -16,6 +16,8 @@ var html =
 '				<a href="#box2"><b>Etc</b></a></li>' +
 '			<li>' +
 '				<a id="debuglink" href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
+'			<li>' +
+'				<a href="#box4"><b>Settings</b></a></li>' +
 '		</ul>' +
 '		<div id="box">' +
 '			<div class="box" id="box1">' +
@@ -139,6 +141,17 @@ var html =
 '                                                whitelisted.) </li>' +
 '				</ul>' +
 '			</div>' +
+'			<div class="box" id="box3">' +
+'				<div id="debug"></div>' +
+'			</div>' +
+'			<div class="box" id="box4">' +
+'				<div>Video Settings</div>' +
+'				<ul style="list-style-type: square; margin-left:16px">' +
+' 					<li class="rotate"><a href="#">rotate 180 degree</a></li>'+ 
+' 					<li class="mirrorX"><a href="#">mirror X</a></li>'+ 
+' 					<li class="mirrorY"><a href="#">mirror Y</a></li>'+ 
+' 				</ul>'+ 
+'			</div>' +
 '		</div>' +
 '   </div> ' +
 '</div>' +
@@ -163,7 +176,10 @@ $('ul.group li').click(function ()
 	$(activeTab).fadeIn();
 	return false;
 });
-
+//$("#playlistactions").append('<div id="link" class="basic-btn pl-more basic-btn-btnbar-right round3">Test</div>');
+//$('#link').click(function(){
+//$('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
+//});
 $(".slideshow").css("visibility", "visible");
 $(".toggle_container").hide(); 
 $(".open").show(); 
@@ -176,19 +192,26 @@ $("h4.trigger").click(function()
 });
 
 //Turn the Youtube player 180 degree when you click on the marquee background
-$("marquee").click(function(){
+$(".rotate").click(function(){
 	if($("#media").hasClass("upSideDown"))
 		$("#media").removeClass("upSideDown");
 	else
 		$("#media").addClass("upSideDown");
-});
+    });
 		 
- //Turn the Youtube player 180 degree when you click on the marquee background
-$("marquee b").click(function(){
-	 if($("#media").hasClass("mirrorIt"))
-		$("#media").removeClass("mirrorIt");
-     else
+ //Mirror Youtube player X
+    $(".X").dblclick(function(){
+	     if($("#media").hasClass("mirrorIt"))
+			$("#media").removeClass("mirrorIt");
+	     else
 		  $("#media").addClass("mirrorIt");
-});
-
+    });
+ //Mirror Youtube player Y
+    $(".Y").dblclick(function(){
+	     if($("#media").hasClass("mirrorY"))
+			$("#media").removeClass("mirrorY");
+	     else
+		  $("#media").addClass("mirrorY");
+    });
 };
+
