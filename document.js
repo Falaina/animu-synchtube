@@ -192,41 +192,26 @@ $("h4.trigger").click(function()
 });
 
 //Turn the Youtube player 180 degree when you click on the marquee background
-$(".rotate").click(function()
-{
+$(".rotate").click(function(){
 	if($("#media").hasClass("upSideDown"))
-	{
 		$("#media").removeClass("upSideDown");
-	}
 	else
-	{
 		$("#media").addClass("upSideDown");
-	}
-});
+    });
 		 
  //Mirror Youtube player X
-    $(".X").dblclick(function()
-	{
+    $(".X").dblclick(function(){
 	     if($("#media").hasClass("mirrorIt"))
-		 {
 			$("#media").removeClass("mirrorIt");
-		 }
 	     else
-		 {
 		  $("#media").addClass("mirrorIt");
-		 }
     });
  //Mirror Youtube player Y
-$(".Y").dblclick(function()
-{
-	if($("#media").hasClass("mirrorY"))
-	{
+    $(".Y").dblclick(function(){
+	     if($("#media").hasClass("mirrorY"))
 			$("#media").removeClass("mirrorY");
-	}
-	else
-	{
-		$("#media").addClass("mirrorY");
-	}
-});
+	     else
+		  $("#media").addClass("mirrorY");
+    });
 };
 
