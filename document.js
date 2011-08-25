@@ -1,6 +1,5 @@
 // This is a javascript document, the HTML is represented as one very long javascript string.
 // as such every line must be a valid string and appended to the main html string.
-
 var doc_doit = function() 
 {
 	
