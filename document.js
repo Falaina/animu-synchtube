@@ -5,7 +5,7 @@ var doc_doit = function()
 {
 	
 var html = 
-'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />'+
+'<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
 '<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
