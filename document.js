@@ -148,8 +148,8 @@ var html =
 '				<div class="vidSet">Video Settings</div>' +
 '				<ul style="list-style-type: square; margin-left:16px">' +
 ' 					<li class="rotate"><a href="#">rotate 180 degree</a></li>'+ 
-' 					<li class="X"><a href="#">mirror X</a></li>'+ 
-' 					<li class="Y"><a href="#">mirror Y</a></li>'+ 
+' 					<li class="mX"><a href="#">mirror X</a></li>'+ 
+' 					<li class="mY"><a href="#">mirror Y</a></li>'+ 
 ' 				</ul>'+ 
 '			</div>' +
 '		</div>' +
@@ -200,14 +200,14 @@ $(".rotate").click(function(){
     });
 		 
  //Mirror Youtube player X
-    $(".X").dblclick(function(){
-	     if($("#media").hasClass("mirrorIt"))
-			$("#media").removeClass("mirrorIt");
+    $(".mX").dblclick(function(){
+	     if($("#media").hasClass("mirrorX"))
+			$("#media").removeClass("mirrorX");
 	     else
-		  $("#media").addClass("mirrorIt");
+		  $("#media").addClass("mirrorX");
     });
  //Mirror Youtube player Y
-    $(".Y").dblclick(function(){
+    $(".mY").dblclick(function(){
 	     if($("#media").hasClass("mirrorY"))
 			$("#media").removeClass("mirrorY");
 	     else
