@@ -6,6 +6,7 @@ height:170px;
 background-image:url(http://dysto.dyndns.org/synchtube/aBanner.php);
 background-repeat:no-repeat;
 background-size:100%;
+padding-bottom:10px;
 }
 
 .st-descr-avatar, .descr-name, .descr-stats{
