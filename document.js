@@ -104,6 +104,8 @@ var html =
 '						<li>&bull; Steamboy</li>'+
 '						<li>&bull; The Borrower Arrietty</li>'+
 '						<li>&bull; Red Line</li>'+
+'						<li>&bull; Trigun: Badlands Rumble</li>'+
+'						<li>&bull; The Super Dimension Fortress Macross: Do You Remember Love? </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -111,9 +113,7 @@ var html =
 '	</div>'+
 '</div>'+
 '					<br />' +
-'					Animu we are watching: Denpa Onna (to ep 9), Aria (to ep 5), Minami-Ke (to ep 7), Astro Fighter Sunred (Ep 1)<br />' +
-'					<br />' +
-'					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/UaK7G.jpg target="_blank"> click!</a>' +
+'					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/Nz2yv.jpg" target="_blank"> click!</a>' +
 '					<br />' +
 '					<b>Submit your own animu banner. 1000x116 size, .png file, with this font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a>. ' +
 '					Submitted <a href="//animusynchtube.imgur.com/banners" target="_blank">banners!</a>' +
@@ -124,7 +124,7 @@ var html =
 '				<b>Etc:</b>' +
 '				<ul style="list-style-type: square; margin-left:16px">' +
 '					<li>' +
-'						DJZebro collected these all for you. It&#39;s not like he wanted to or anything, just take it! <a href="//tinyurl.ru/g2l0" target="_blank">DJZebro_Pack1</a>, <a href="//tinyurl.ru/gknk" target="_blank">DJZebro_Pack2</a>, <a href="//tinyurl.ru/gtc5" target="_blank"> DystopiaGroundPack</a></li>' +
+'						DJZebro collected these all for you. It&#39;s not like he wanted to or anything, just take it! <a href="//tinyurl.ru/g2l0" target="_blank">DJZebro_Pack1</a>, <a href="//tinyurl.ru/gknk" target="_blank">DJZebro_Pack2</a>, <a href="//tinyurl.ru/gtc5" target="_blank"> DystopiaGroundPack</a>, <a href="//www.mediafire.com/?pbmugymdzya3kp6" target="_blank"> Battle music</a></li>' +
 '					<li>' +
 '						Denwa has uploaded some animu on youtube: <a href="//youtube.com/user/BlkRockShooter" target="_blank">Denwa&#39;s Channel</a></li>' +
 '					<li>' +
