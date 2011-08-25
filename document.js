@@ -15,9 +15,9 @@ var html =
 '			<li>' +
 '				<a href="#box2"><b>Etc</b></a></li>' +
 '			<li>' +
-'				<a id="debuglink" href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
-'			<li>' +
 '				<a href="#box4"><b>Settings</b></a></li>' +
+'			<li>' +
+'				<a id="debuglink" href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
 '		</ul>' +
 '		<div id="box">' +
 '			<div class="box" id="box1">' +
@@ -145,11 +145,11 @@ var html =
 '				<div id="debug"></div>' +
 '			</div>' +
 '			<div class="box" id="box4">' +
-'				<div>Video Settings</div>' +
+'				<div class="vidSet">Video Settings</div>' +
 '				<ul style="list-style-type: square; margin-left:16px">' +
 ' 					<li class="rotate"><a href="#">rotate 180 degree</a></li>'+ 
-' 					<li class="mirrorX"><a href="#">mirror X</a></li>'+ 
-' 					<li class="mirrorY"><a href="#">mirror Y</a></li>'+ 
+' 					<li class="X"><a href="#">mirror X</a></li>'+ 
+' 					<li class="Y"><a href="#">mirror Y</a></li>'+ 
 ' 				</ul>'+ 
 '			</div>' +
 '		</div>' +
