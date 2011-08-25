@@ -200,14 +200,14 @@ $(".rotate").click(function(){
     });
 		 
  //Mirror Youtube player X
-    $(".mX").dblclick(function(){
+    $(".mX").click(function(){
 	     if($("#media").hasClass("mirrorX"))
 			$("#media").removeClass("mirrorX");
 	     else
 		  $("#media").addClass("mirrorX");
     });
  //Mirror Youtube player Y
-    $(".mY").dblclick(function(){
+    $(".mY").click(function(){
 	     if($("#media").hasClass("mirrorY"))
 			$("#media").removeClass("mirrorY");
 	     else
