@@ -111,7 +111,7 @@ var html =
 '					<br />' +
 '					Animu we are watching: Denpa Onna (to ep 9), Aria (to ep 5), Minami-Ke (to ep 7), Astro Fighter Sunred (Ep 1)<br />' +
 '					<br />' +
-'					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/72h7D.png/" target="_blank"> click!</a>' +
+'					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/UaK7G.jpg" target="_blank"> click!</a>' +
 '					<br />' +
 '					<b>Submit your own animu banner. 1000x116 size, .png file, with this font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a>. ' +
 '					Submitted <a href="//animusynchtube.imgur.com/banners" target="_blank">banners!</a>' +
