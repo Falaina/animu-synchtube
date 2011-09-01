@@ -7,6 +7,7 @@ var doc_doit = function()
 var html = 
 '<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
 '<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
+'<div class="customTheme"></div>' +
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
@@ -69,8 +70,8 @@ var html =
 '						<li>&bull; Dokuro-Chan</li>'+
 '						<li>&bull; Rozen Maiden S1</li>'+
 '						<li>&bull; Gaki No Tsukai Yugawara</li>'+
-'                                               <li>&bull; Paranoia Agent</li>' +
-'                                               <li>&bull; Katanagatari</li>' +
+'                       <li>&bull; Paranoia Agent</li>' +
+'                       <li>&bull; Katanagatari</li>' +
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -223,8 +224,8 @@ $(".rotate").click(function(){
     });
 	
  //Miku theme switch
-    $(".description #panelTabs").click(function(){
-		$('head').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"> />');
+    $(".themeMuki").click(function(){
+		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"> />');
     });
 };
 
