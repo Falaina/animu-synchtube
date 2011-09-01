@@ -149,16 +149,16 @@ var html =
 '			</div>' +
 '			<div class="box" id="box4">' +
 '				<div class="boxSetting">'
-'					<div class="vidSet">Video Settings</div>' +
-'						<ul style="list-style-type: square; margin-left:16px">' +
-' 							<li class="rotate"><a href="#">rotate 180 degree</a></li>'+ 
-' 							<li class="mX"><a href="#">mirror X</a></li>'+ 
-' 							<li class="mY"><a href="#">mirror Y</a></li>'+ 
-' 						</ul>'+ 
-'						<div>Room Themes</div>' +
-'						<ul style="list-style-type: square; margin-left:16px">' +
-' 							<li class="themeMuki"><a href="#">Hatsune Miku Theme</a></li>'+ 
-' 						</ul>'+ 
+'					<b>Video Settings</b>' +
+'					<ul style="list-style-type: square; margin-left:16px">' +
+' 						<li class="rotate"><a href="#">rotate 180 degree</a></li>'+ 
+' 						<li class="mX"><a href="#">mirror X</a></li>'+ 
+' 						<li class="mY"><a href="#">mirror Y</a></li>'+ 
+' 					</ul>'+ 
+'					<b>Room Themes</b>' +
+'					<ul style="list-style-type: square; margin-left:16px">' +
+' 						<li class="themeMuki"><a href="#">Hatsune Miku Theme</a></li>'+ 
+' 					</ul>'+ 
 '				</div>' +
 '			</div>' +
 '		</div>' +
