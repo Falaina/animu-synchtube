@@ -7,7 +7,7 @@ var doc_doit = function()
 var html = 
 '<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
 '<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
-'<div id="customTheme"></div>' +
+'<div class="customTheme"></div>' +
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
@@ -224,7 +224,7 @@ $(".rotate").click(function(){
     });
 	
  //Miku theme switch
-    $("#customTheme").click(function(){
+    $("#st-descr .customTheme").click(function(){
 		$('head').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"> />');
     });
 };
