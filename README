@@ -1,10 +1,10 @@
-[Deployment Status] Last attempt: Wed Aug 24 2011 22:22:44 GMT-0700 (PDT)
+[Deployment Status] Last attempt: Wed Aug 31 2011 21:23:39 GMT-0700 (PDT)
 DEPLOY FAILED - Errors below must be fixed before deploy: 
 jslint returned Error: Command failed: 
-jslint:document.js:183:1:Expected '{' and instead saw '$'.
-jslint:document.js:185:1:Expected '{' and instead saw '$'.
-jslint:document.js:191:1:Expected '{' and instead saw '$'.
-jslint:document.js:193:3:Expected '{' and instead saw '$'.
+jslint:document.js:184:1:Expected '{' and instead saw '$'.
+jslint:document.js:186:1:Expected '{' and instead saw '$'.
+jslint:document.js:192:1:Expected '{' and instead saw '$'.
+jslint:document.js:194:3:Expected '{' and instead saw '$'.
 
 jslint:st.js:150:12:'cmd' is already defined.
 jslint:st.js:151:21:Expected '{' and instead saw 'return'.
