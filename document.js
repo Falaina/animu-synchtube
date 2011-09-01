@@ -223,7 +223,7 @@ $(".rotate").click(function(){
     });
 	
  //Miku theme switch
-    $("#st-descr .description").click(function(){
+    $(".description").click(function(){
 		$('head').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"> />');
     });
 };
