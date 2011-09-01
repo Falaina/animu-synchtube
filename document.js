@@ -225,7 +225,7 @@ $(".rotate").click(function(){
 	
  //Miku theme switch
     $(".themeMuki").click(function(){
-		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"> />');
+		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"/>');
     });
 };
 
