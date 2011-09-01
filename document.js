@@ -148,7 +148,7 @@ var html =
 '				<div id="debug"></div>' +
 '			</div>' +
 '			<div class="box" id="box4">' +
-'				<div class="boxSetting">'
+'				<div class="TabBoxSetting">'
 '					<b>Video Settings</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li class="rotate"><a href="#">rotate 180 degree</a></li>'+ 
