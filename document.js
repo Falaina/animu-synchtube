@@ -115,6 +115,8 @@ var html =
 '					<br />' +
 '					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/Nz2yv.jpg" target="_blank"> click!</a>' +
 '					<br />' +
+'                                       <a href="//animu.falaina.net">Room Statistics</a>' +
+'                                       <br />' +
 '					<b>Submit your own animu banner. 1000x116 size, .png file, with this font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a>. ' +
 '					Submitted <a href="//animusynchtube.imgur.com/banners" target="_blank">banners!</a>' +
 '				</ul>' +
