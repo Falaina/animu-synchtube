@@ -119,7 +119,7 @@ var html =
 '					Submitted <a href="//animusynchtube.imgur.com/banners" target="_blank">banners!</a>' +
 '					<br />' +
 '					<br />' +
-'                                       <a href="//animu.falaina.net">Room Statistics</a>' +
+'                                       <a href="//animu.falaina.net"  target="_blank">Room Statistics</a>' +
 '				</ul>' +
 '			</div>' +
 '			<div class="box" id="box2">' +
@@ -153,6 +153,9 @@ var html =
 ' 					<li class="rotate"><a href="#">rotate 180 degree</a></li>'+ 
 ' 					<li class="mX"><a href="#">mirror X</a></li>'+ 
 ' 					<li class="mY"><a href="#">mirror Y</a></li>'+ 
+' 				</ul>'+ 
+'				<ul style="list-style-type: square; margin-left:16px">' +
+' 					<li class="themeMuki"><a href="#">Hatsune Miku Theme</a></li>'+ 
 ' 				</ul>'+ 
 '			</div>' +
 '		</div>' +
@@ -215,6 +218,11 @@ $(".rotate").click(function(){
 			$("#media").removeClass("mirrorY");
 	     else
 		  $("#media").addClass("mirrorY");
+    });
+	
+ //Miku theme switch
+    $(".themeMuki").click(function(){
+		$('head').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"> />');
     });
 };
 
