@@ -70,9 +70,10 @@ var html =
 '						<li>&bull; Dokuro-Chan</li>'+
 '						<li>&bull; Rozen Maiden S1</li>'+
 '						<li>&bull; Gaki No Tsukai Yugawara</li>'+
-'                       <li>&bull; Paranoia Agent</li>' +
-'                       <li>&bull; Katanagatari</li>' +
+'                      				<li>&bull; Paranoia Agent</li>' +
+'                       			<li>&bull; Katanagatari</li>' +
 '						<li>&bull; Ladies vs Butler</li>'+
+'						<li>&bull; Colour Wars!</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
