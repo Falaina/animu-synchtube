@@ -247,7 +247,7 @@ $(".showFullList").click(function(){
 		$("#playlist .playlist").removeClass("makeSizable");
 		$("#playlist .playlist #playlist_items").removeClass("makeSizable");
 		$(".jspContainer").removeClass("makeSizable");
-		$(".jspVerticalBar").addClass("jspCap");		
+		$(".jspVerticalBar").removeClass("jspCap");		
 		
 			
 	}
@@ -256,7 +256,7 @@ $(".showFullList").click(function(){
 		$("#playlist .playlist").addClass("makeSizable");
 		$("#playlist .playlist #playlist_items").addClass("makeSizable");
 		$(".jspContainer").addClass("makeSizable");		
-		$(".jspVerticalBar").removeClass("jspCap");		
+		$(".jspVerticalBar").addClass("jspCap");		
 	}
     });	
 };
