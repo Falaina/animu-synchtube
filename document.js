@@ -167,7 +167,7 @@ var html =
 ' 					<br />'+ 
 '					<b>Other Settings</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li class="showFullList"><a href="#">Show the full List</a></li>'+ 
+' 						<li class="showFullList"><a href="#">Show full video list</a></li>'+ 
 ' 					</ul>'+ 
 '			</div>' +
 '		</div>' +
@@ -246,13 +246,16 @@ $(".showFullList").click(function(){
 		$(".jspPane").removeClass("makeRelative");
 		$("#playlist .playlist").removeClass("makeSizable");
 		$("#playlist .playlist #playlist_items").removeClass("makeSizable");
-		$(".jspContainer").removeClass("makeSizable");	
+		$(".jspContainer").removeClass("makeSizable");
+		$(".jspVerticalBar").addClass("hideIt");
+			
 	}
 	else{
 		$(".jspPane").addClass("makeRelative");
 		$("#playlist .playlist").addClass("makeSizable");
 		$("#playlist .playlist #playlist_items").addClass("makeSizable");
-		$(".jspContainer").addClass("makeSizable");				
+		$(".jspContainer").addClass("makeSizable");		
+		$(".jspVerticalBar").removeClass("hideIt");		
 	}
     });	
 };
