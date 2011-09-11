@@ -164,6 +164,11 @@ var html =
 ' 						<li class="themeEmpty"><a href="#">Standard Theme</a></li>'+ 
 ' 						<li class="themeMuki"><a href="#">Hatsune Miku Theme</a></li>'+ 
 ' 					</ul>'+ 
+' 					<br />'+ 
+'					<b>Other Settings</b>' +
+'					<ul style="list-style-type: square; margin-left:16px">' +
+' 						<li class="showFullList"><a href="#">Show the full List</a></li>'+ 
+' 					</ul>'+ 
 '			</div>' +
 '		</div>' +
 '   </div> ' +
@@ -234,5 +239,21 @@ $(".rotate").click(function(){
     $(".themeMuki").click(function(){
 		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"/>');
     });
+
+//Turn the Youtube player 180 degree when you click on the marquee background
+$(".showFullList").click(function(){
+	if($(".jspPane").hasClass("makeRelative")){
+		$(".jspPane").removeClass("makeRelative");
+		$("#playlist .playlist").removeClass("makeSizable");
+		$("#playlist .playlist #playlist_items").removeClass("makeSizable");
+		$(".jspContainer").removeClass("makeSizable");	
+	}
+	else{
+		$(".jspPane").addClass("makeRelative");
+		$("#playlist .playlist").addClass("makeSizable");
+		$("#playlist .playlist #playlist_items").addClass("makeSizable");
+		$(".jspContainer").addClass("makeSizable");				
+	}
+    });	
 };
 
