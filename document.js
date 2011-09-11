@@ -240,14 +240,15 @@ $(".rotate").click(function(){
 		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"/>');
     });
 
-//Turn the Youtube player 180 degree when you click on the marquee background
+//show the full video list
 $(".showFullList").click(function(){
 	if($(".jspPane").hasClass("makeRelative")){
 		$(".jspPane").removeClass("makeRelative");
 		$("#playlist .playlist").removeClass("makeSizable");
 		$("#playlist .playlist #playlist_items").removeClass("makeSizable");
 		$(".jspContainer").removeClass("makeSizable");
-		$(".jspVerticalBar").addClass("hideIt");
+		$(".jspVerticalBar").addClass("jspCap");		
+		
 			
 	}
 	else{
@@ -255,7 +256,7 @@ $(".showFullList").click(function(){
 		$("#playlist .playlist").addClass("makeSizable");
 		$("#playlist .playlist #playlist_items").addClass("makeSizable");
 		$(".jspContainer").addClass("makeSizable");		
-		$(".jspVerticalBar").removeClass("hideIt");		
+		$(".jspVerticalBar").removeClass("jspCap");		
 	}
     });	
 };
