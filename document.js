@@ -261,10 +261,11 @@ $(".showFullList").click(function(){
 		$(".jspVerticalBar").addClass("jspCap");		
 	}
     });	
-};
-
-//Turn the entire list into right/middle-clickable URLs
+    //Turn the entire list into right/middle-clickable URLs
 $(".linkify").click(function() {
 $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
 });
+};
+
+
 
