@@ -7,8 +7,7 @@ var doc_doit = function()
 var html = 
 '<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
 '<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
-'<link href="//dysto.dyndns.org/synchtube/steinsTheme.css" rel="stylesheet" />'+
-'<div class="customTheme"></div>' +
+'<div class="customTheme"><link href="//dysto.dyndns.org/synchtube/steinsTheme.css" rel="stylesheet" /></div>' +
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
