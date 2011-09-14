@@ -164,6 +164,7 @@ var html =
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li class="themeEmpty"><a href="#">Standard Theme</a></li>'+ 
 ' 						<li class="themeMuki"><a href="#">Hatsune Miku Theme</a></li>'+ 
+' 						<li class="themeSteinsGate"><a href="#">Steins;Gate Theme</a></li>'+ 
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b>Other Settings</b>' +
@@ -240,6 +241,9 @@ $(".rotate").click(function(){
     });
     $(".themeMuki").click(function(){
 		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"/>');
+    });
+    $(".themeSteinsGate").click(function(){
+		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/steinsTheme.css" rel="stylesheet"/>');
     });
 
 //show the full video list
