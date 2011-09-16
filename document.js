@@ -72,6 +72,7 @@ var html =
 '						<li>&bull; Gaki No Tsukai Yugawara</li>'+
 '                      	<li>&bull; Paranoia Agent</li>' +
 '                       <li>&bull; Katanagatari</li>' +
+'                       <li>&bull; Koe de Oshigoto</li>' +
 '						<li>&bull; Ladies vs Butler</li>'+
 '						<li>&bull; Colour Wars!</li>'+
 '						<li>&bull; Alien Nine</li>'+
