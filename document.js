@@ -1,13 +1,11 @@
 // This is a javascript document, the HTML is represented as one very long javascript string.
 // as such every line must be a valid string and appended to the main html string.
-
 var doc_doit = function() 
 {
 	
 var html = 
-'<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
+'<link href="//falaina.github.com/animu-synchtube/animu.css" rel="stylesheet" />'+
 '<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
-'<div class="customTheme"><link href="//dysto.dyndns.org/synchtube/steinsTheme.css" rel="stylesheet" /></div>' +
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
@@ -15,8 +13,6 @@ var html =
 '				<a href="#box1"><b>Main</b></a></li>' +
 '			<li>' +
 '				<a href="#box2"><b>Etc</b></a></li>' +
-'			<li>' +
-'				<a href="#box4"><b>Settings</b></a></li>' +
 '			<li>' +
 '				<a id="debuglink" href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
 '		</ul>' +
@@ -70,10 +66,10 @@ var html =
 '						<li>&bull; Dokuro-Chan</li>'+
 '						<li>&bull; Rozen Maiden S1</li>'+
 '						<li>&bull; Gaki No Tsukai Yugawara</li>'+
-'                      				<li>&bull; Paranoia Agent</li>' +
-'                       			<li>&bull; Katanagatari</li>' +
-'						<li>&bull; Ladies vs Butler</li>'+
-'						<li>&bull; Colour Wars!</li>'+
+'                       <li>&bull; Paranoia Agent</li>' +
+'                       <li>&bull; Katanagatari</li>' +
+'                       <li>&bull; Alien Nine</li>' +
+'                       <li>&bull; Nupu Nupu</li>' +
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -107,8 +103,7 @@ var html =
 '						<li>&bull; Steamboy</li>'+
 '						<li>&bull; The Borrower Arrietty</li>'+
 '						<li>&bull; Red Line</li>'+
-'						<li>&bull; Trigun: Badlands Rumble</li>'+
-'						<li>&bull; The Super Dimension Fortress Macross: Do You Remember Love? </li>'+
+'						<li>&bull; Sword of the Stranger </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -116,13 +111,13 @@ var html =
 '	</div>'+
 '</div>'+
 '					<br />' +
-'					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/Nz2yv.jpg" target="_blank"> click!</a>' +
-'                                       <br />' +
+'					Animu we are watching: Denpa Onna (to ep 9), Aria (to ep 5), Minami-Ke (to ep 7), Astro Fighter Sunred (Ep 1)<br />' +
+'					<br />' +
+'					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/UaK7G.jpg" target="_blank"> click!</a>' +
+'					<br />' +
+'                                       <a href="//animu.falaina.net">Room Statistics</a>' +
 '					<b>Submit your own animu banner. 1000x116 size, .png file, with this font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a>. ' +
 '					Submitted <a href="//animusynchtube.imgur.com/banners" target="_blank">banners!</a>' +
-'					<br />' +
-'					<br />' +
-'                                       <a href="//animu.falaina.net"  target="_blank">Room Statistics</a>' +
 '				</ul>' +
 '			</div>' +
 '			<div class="box" id="box2">' +
@@ -130,7 +125,7 @@ var html =
 '				<b>Etc:</b>' +
 '				<ul style="list-style-type: square; margin-left:16px">' +
 '					<li>' +
-'						DJZebro collected these all for you. It&#39;s not like he wanted to or anything, just take it! <a href="//tinyurl.ru/g2l0" target="_blank">DJZebro_Pack1</a>, <a href="//tinyurl.ru/gknk" target="_blank">DJZebro_Pack2</a>, <a href="//tinyurl.ru/gtc5" target="_blank"> DystopiaGroundPack</a>, <a href="//www.mediafire.com/?pbmugymdzya3kp6" target="_blank"> Battle music</a></li>' +
+'						DJZebro collected these all for you. It&#39;s not like he wanted to or anything, just take it! <a href="//tinyurl.ru/g2l0" target="_blank">DJZebro_Pack1</a>, <a href="//tinyurl.ru/gknk" target="_blank">DJZebro_Pack2</a>, <a href="//tinyurl.ru/gtc5" target="_blank"> DystopiaGroundPack</a></li>' +
 '					<li>' +
 '						Denwa has uploaded some animu on youtube: <a href="//youtube.com/user/BlkRockShooter" target="_blank">Denwa&#39;s Channel</a></li>' +
 '					<li>' +
@@ -146,31 +141,6 @@ var html =
 '                                                (Need to be whitelisted to join. email your ip to Fukkireta( fukireta@gmail.com ) to be ' +
 '                                                whitelisted.) </li>' +
 '				</ul>' +
-'			</div>' +
-'			<div class="box" id="box3">' +
-'				<div id="debug"></div>' +
-'			</div>' +
-'			<div class="box" id="box4">' +
-'					<br />' +
-'					<b>Video Settings</b>' +
-'					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li class="rotate"><a href="#">rotate 180 degree</a></li>'+ 
-' 						<li class="mX"><a href="#">mirror X</a></li>'+ 
-' 						<li class="mY"><a href="#">mirror Y</a></li>'+ 
-' 					</ul>'+ 
-' 					<br />'+ 
-'					<b>Room Themes</b>' +
-'					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li class="themeEmpty"><a href="#">Standard Theme</a></li>'+ 
-' 						<li class="themeMuki"><a href="#">Hatsune Miku Theme</a></li>'+ 
-' 						<li class="themeSteinsGate"><a href="#">Steins;Gate Theme</a></li>'+ 
-' 					</ul>'+ 
-' 					<br />'+ 
-'					<b>Other Settings</b>' +
-'					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li class="showFullList"><a href="#">Show full video list</a></li>'+ 
-' 						<li class="linkify"><a href="#">Linkify playlist</a></li>'+ 
-' 					</ul>'+ 
 '			</div>' +
 '		</div>' +
 '   </div> ' +
@@ -212,63 +182,19 @@ $("h4.trigger").click(function()
 });
 
 //Turn the Youtube player 180 degree when you click on the marquee background
-$(".rotate").click(function(){
+$("marquee").click(function(){
 	if($("#media").hasClass("upSideDown"))
 		$("#media").removeClass("upSideDown");
 	else
 		$("#media").addClass("upSideDown");
     });
 		 
- //Mirror Youtube player X
-    $(".mX").click(function(){
-	     if($("#media").hasClass("mirrorX"))
-			$("#media").removeClass("mirrorX");
+ //Turn the Youtube player 180 degree when you click on the marquee background
+    $("marquee").dblclick(function(){
+	     if($("#media").hasClass("mirrorIt"))
+			$("#media").removeClass("mirrorIt");
 	     else
-		  $("#media").addClass("mirrorX");
-    });
- //Mirror Youtube player Y
-    $(".mY").click(function(){
-	     if($("#media").hasClass("mirrorY"))
-			$("#media").removeClass("mirrorY");
-	     else
-		  $("#media").addClass("mirrorY");
-    });
-	
- //Miku theme switch
-     $(".themeEmpty").click(function(){
-		$('.customTheme').empty();
-    });
-    $(".themeMuki").click(function(){
-		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"/>');
-    });
-    $(".themeSteinsGate").click(function(){
-		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/steinsTheme.css" rel="stylesheet"/>');
+		  $("#media").addClass("mirrorIt");
     });
 
-//show the full video list
-$(".showFullList").click(function(){
-	if($(".jspPane").hasClass("makeRelative")){
-		$(".jspPane").removeClass("makeRelative");
-		$("#playlist .playlist").removeClass("makeSizable");
-		$("#playlist .playlist #playlist_items").removeClass("makeSizable");
-		$(".jspContainer").removeClass("makeSizable");
-		$(".jspVerticalBar").removeClass("jspCap");		
-		
-			
-	}
-	else{
-		$(".jspPane").addClass("makeRelative");
-		$("#playlist .playlist").addClass("makeSizable");
-		$("#playlist .playlist #playlist_items").addClass("makeSizable");
-		$(".jspContainer").addClass("makeSizable");		
-		$(".jspVerticalBar").addClass("jspCap");		
-	}
-    });	
-    //Turn the entire list into right/middle-clickable URLs
-$(".linkify").click(function() {
-$('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a target="_blank" class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
-});
 };
-
-
-
