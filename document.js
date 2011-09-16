@@ -55,8 +55,6 @@ var html =
 '						<li>&bull; REC</li>'+
 '						<li>&bull; Mars of Destruction</li>'+
 '						<li>&bull; Black Rock Shooter OVA </li>'+
-'						<li>&bull; Cosmos: A Personal Voyage</li>'+
-'						<li>&bull; 24 hour tag</li>'+
 '						<li>&bull; Gaki No Tsukai Yugawara Part</li>'+
 '						<li>&bull; The Legend of Koizumi</li>'+
 '						<li>&bull; High School of The Dead</li>'+
@@ -113,6 +111,26 @@ var html =
 '						<li>&bull; Trigun: Badlands Rumble</li>'+
 '						<li>&bull; The Super Dimension Fortress Macross: Do You Remember Love? </li>'+
 '						<li>&bull; Sword of the Stranger </li>'+
+'					</ul>'+
+'				</td>'+
+'			</tr>'+
+'		</table>'+
+'	</div>'+
+'</div>'+
+'<h4 class="trigger"><a href="#">Other shows</a></h4>'+
+'<div class="toggle_container">'+
+'	<div class="block">'+
+		'<table class="defeatedList">'+
+'			<tr>'+
+'				<td>'+
+'					<ul>'+
+'						<li>&bull; 24 hour tag</li>'+
+'						<li>&bull; Shaolin Soccer</li>'+
+'						<li>&bull; Kung Fu Hustle</li>'+
+'						<li>&bull; Cosmos: A Personal Voyage</li>'+
+'						<li>&bull; Mr. Bean Vacation</li>'+
+'						<li>&bull; Cyberbully</li>'+
+'						<li>&bull; Gozu</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
