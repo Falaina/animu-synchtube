@@ -75,6 +75,7 @@ var html =
 '						<li>&bull; Colour Wars!</li>'+
 '						<li>&bull; Alien Nine</li>'+
 '						<li>&bull; Nupu Nupu</li>'+
+'						<li>&bull; Sacred Seven</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
