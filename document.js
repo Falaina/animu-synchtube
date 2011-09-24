@@ -54,6 +54,7 @@ var html =
 '						<li>&bull; Hokago no Pleiades</li>'+
 '						<li>&bull; REC</li>'+
 '						<li>&bull; Mars of Destruction</li>'+
+'						<li>&bull; Neon Genesis Evangeleon</li>'+
 '						<li>&bull; Black Rock Shooter OVA </li>'+
 '						<li>&bull; Gaki No Tsukai Yugawara Part</li>'+
 '						<li>&bull; The Legend of Koizumi</li>'+
