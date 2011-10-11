@@ -30,10 +30,10 @@ var html =
 '		<tr>'+
 '			<td>'+
 '				<ul>'+
-'					<li>【東方】 Bad Apple 10 hours 10時間  </li>'+
-'					<li>FUKKIRETA 10 hours</li>'+
-'					<li>Night of Fire ft. Korikki 10 HOURS LONG</li>'+
-'					<li>(touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
+'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間  </li>'+
+'					<li>&bull; FUKKIRETA 10 hours</li>'+
+'					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
+'					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
 '				</ul>'+
 '			</td>'+
 '		</tr>'+
@@ -46,37 +46,38 @@ var html =
 '			<tr>'+
 '				<td>'+
 '					<ul>'+
-'						<li>Cromartie Highschool dub</li>'+
-'						<li>Nyoron Churuya san</li>'+
-'						<li>Di Gi Charat</li>'+
-'						<li>The Melancholy of Haruhi-Chan</li>'+
-'						<li>Battle Programmer Shirase</li>'+
-'						<li>Hokago no Pleiades</li>'+
-'						<li>REC</li>'+
-'						<li>Mars of Destruction</li>'+
-'						<li>Neon Genesis Evangeleon</li>'+
-'						<li>Black Rock Shooter OVA </li>'+
-'						<li>Gaki No Tsukai Yugawara Part</li>'+
-'						<li>The Legend of Koizumi</li>'+
-'						<li>High School of The Dead</li>'+
-'						<li>Bakemonogatari</li>'+
-'						<li>Toradora!</li>'+
-'						<li>Majokko Tsukune-Chan</li>'+
-'						<li>Clannad</li>'+
-'						<li>Seitokai Yakuindomo</li>'+
-'						<li>.Hack//Quantum</li>'+
-'						<li>Panty &amp; Stocking with Garterbelt</li>'+
-'						<li>Dokuro-Chan</li>'+
-'						<li>Rozen Maiden S1</li>'+
-'						<li>Gaki No Tsukai Yugawara</li>'+
-'                      	<li>Paranoia Agent</li>' +
-'                       <li>Katanagatari</li>' +
-'                       <li>Koe de Oshigoto</li>' +
-'						<li>Ladies vs Butler</li>'+
-'						<li>Colour Wars!</li>'+
-'						<li>Alien Nine</li>'+
-'						<li>Nupu Nupu</li>'+
-'						<li>Sacred Seven</li>'+
+'						<li>&bull; Cromartie Highschool dub</li>'+
+'						<li>&bull; Nyoron Churuya san</li>'+
+'						<li>&bull; Di Gi Charat</li>'+
+'						<li>&bull; The Melancholy of Haruhi-Chan</li>'+
+'						<li>&bull; Battle Programmer Shirase</li>'+
+'						<li>&bull; Hokago no Pleiades</li>'+
+'						<li>&bull; REC</li>'+
+'						<li>&bull; Mars of Destruction</li>'+
+'						<li>&bull; Neon Genesis Evangeleon</li>'+
+'						<li>&bull; Black Rock Shooter OVA </li>'+
+'						<li>&bull; Gaki No Tsukai Yugawara Part</li>'+
+'						<li>&bull; The Legend of Koizumi</li>'+
+'						<li>&bull; High School of The Dead</li>'+
+'						<li>&bull; Bakemonogatari</li>'+
+'						<li>&bull; Toradora!</li>'+
+'						<li>&bull; Majokko Tsukune-Chan</li>'+
+'						<li>&bull; Clannad</li>'+
+'						<li>&bull; Seitokai Yakuindomo</li>'+
+'						<li>&bull; .Hack//Quantum</li>'+
+'						<li>&bull; Panty &amp; Stocking with Garterbelt</li>'+
+'						<li>&bull; Dokuro-Chan</li>'+
+'						<li>&bull; Rozen Maiden S1</li>'+
+'						<li>&bull; Gaki No Tsukai Yugawara</li>'+
+'                      	<li>&bull; Paranoia Agent</li>' +
+'                       <li>&bull; Katanagatari</li>' +
+'                       <li>&bull; Koe de Oshigoto</li>' +
+'						<li>&bull; Ladies vs Butler</li>'+
+'						<li>&bull; Colour Wars!</li>'+
+'						<li>&bull; Alien Nine</li>'+
+'						<li>&bull; Nupu Nupu</li>'+
+'						<li>&bull; Sacred Seven</li>'+ 
+'						<li>&bull; Ebichu</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -90,29 +91,29 @@ var html =
 '			<tr>'+
 '				<td>'+
 '					<ul>'+
-'						<li>The Disappearance Of Haruhi Suzumiya</li>'+
-'						<li>Fate/Stay night UBW </li>'+
-'						<li>Girl who leapt through time</li>'+
-'						<li>5 Centimeters Per Second</li>'+
-'						<li>Interstella 5555 </li>'+
-'						<li>Kikujiro</li>'+
-'						<li>Kara no Kyoukai</li>'+
-'						<li>Fist of the North Star Movie Remastered</li>'+
-'						<li>Funky Forest: The First Contact</li>'+
-'						<li>Eve no Jikan</li>'+
-'						<li>Ah! My Goddess: The Movie</li>'+
-'						<li>Akira</li>'+
-'						<li>Paprika</li>'+
-'						<li>Millennium Actress</li>'+
-'						<li>Princess Arete</li>'+
-'						<li>Summer Wars</li>'+
-'						<li>MD Geist</li>'+
-'						<li>Steamboy</li>'+
-'						<li>The Borrower Arrietty</li>'+
-'						<li>Red Line</li>'+
-'						<li>Trigun: Badlands Rumble</li>'+
-'						<li>The Super Dimension Fortress Macross: Do You Remember Love? </li>'+
-'						<li>Sword of the Stranger </li>'+
+'						<li>&bull; The Disappearance Of Haruhi Suzumiya</li>'+
+'						<li>&bull; Fate/Stay night UBW </li>'+
+'						<li>&bull; Girl who leapt through time</li>'+
+'						<li>&bull; 5 Centimeters Per Second</li>'+
+'						<li>&bull; Interstella 5555 </li>'+
+'						<li>&bull; Kikujiro</li>'+
+'						<li>&bull; Kara no Kyoukai</li>'+
+'						<li>&bull; Fist of the North Star Movie Remastered</li>'+
+'						<li>&bull; Funky Forest: The First Contact</li>'+
+'						<li>&bull; Eve no Jikan</li>'+
+'						<li>&bull; Ah! My Goddess: The Movie</li>'+
+'						<li>&bull; Akira</li>'+
+'						<li>&bull; Paprika</li>'+
+'						<li>&bull; Millennium Actress</li>'+
+'						<li>&bull; Princess Arete</li>'+
+'						<li>&bull; Summer Wars</li>'+
+'						<li>&bull; MD Geist</li>'+
+'						<li>&bull; Steamboy</li>'+
+'						<li>&bull; The Borrower Arrietty</li>'+
+'						<li>&bull; Red Line</li>'+
+'						<li>&bull; Trigun: Badlands Rumble</li>'+
+'						<li>&bull; The Super Dimension Fortress Macross: Do You Remember Love? </li>'+
+'						<li>&bull; Sword of the Stranger </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -126,13 +127,13 @@ var html =
 '			<tr>'+
 '				<td>'+
 '					<ul>'+
-'						<li>24 hour tag</li>'+
-'						<li>Shaolin Soccer</li>'+
-'						<li>Kung Fu Hustle</li>'+
-'						<li>Cosmos: A Personal Voyage</li>'+
-'						<li>Mr. Bean Vacation</li>'+
-'						<li>Cyberbully</li>'+
-'						<li>Gozu</li>'+
+'						<li>&bull; 24 hour tag</li>'+
+'						<li>&bull; Shaolin Soccer</li>'+
+'						<li>&bull; Kung Fu Hustle</li>'+
+'						<li>&bull; Cosmos: A Personal Voyage</li>'+
+'						<li>&bull; Mr. Bean Vacation</li>'+
+'						<li>&bull; Cyberbully</li>'+
+'						<li>&bull; Gozu</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
