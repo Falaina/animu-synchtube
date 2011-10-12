@@ -1,298 +1,273 @@
-// This is a javascript document, the HTML is represented as one very long javascript string.
-// as such every line must be a valid string and appended to the main html string.
+var animu_synchtube = (function() {
+    // 'this'
+    var self = {};
 
-var doc_doit = function() 
-{
+    // Replacement avatars
+    var modvatars = [
+	{ mod : 'Keii',      url : '//i.imgur.com/zJqJI.gif'}, 
+	{ mod : 'DJZebro',   url : '//i.imgur.com/N5DR0.gif'}, 
+	{ mod : 'Nodocchi',  url : '//nodocchi.com/nodocchi'},
+	{ mod : 'RAILGUN',   url : '//oi56.tinypic.com/714eqh.jpg'},
+	{ mod : 'Xiox',      url : '//i.imgur.com/pWCYo.gif'},
+	{ mod : 'Tofutoshi', url : '//i.imgur.com/pOBRZ.gif'},
+	{ mod : 'AnimuXD',   url : '//i.imgur.com/t1YlE.gif'},
+	{ mod : 'Denwa',     url : '//i.imgur.com/imHKi.gif'}
+    ];
+    
+    // Simple word filters
+    var word_filters = [
+	{pat : /madoka/ig,			target : 'meduca'},
+	{pat : /magica/ig,			target : 'meguca'},
+	{pat : /homura/ig,			target : 'hameru'},
+	{pat : /mami/ig,			target : 'mumi'},
+	{pat : /kyoko/ig,			target : 'kyaku'},
+	{pat : /sayaka/ig,			target : 'seyiku'},
+	{pat : /everyone/ig,			target : 'everynyan'},
+	{pat : /plan/ig,			target : 'keikaku'},
+	{pat : /qb/ig,	                        target : '／人◕ ‿‿ ◕人＼'},
+//	{pat : /^(\s*\S+\s*)$/,                 target : '$1 ~de geso'},
+	{pat : /kitaa/ig,			target : 'キタ━━━(゜∀゜)━━━!!!!! '},
+	{pat : /bu-n/ig,			target : '⊂二二二（　＾ω＾）二⊃'},
+	{pat : /grimace/ig,			target : '(╬ ಠ益ಠ)'},
+	{pat : /simper/ig,			target : '(￣ー￣)'},
+	{pat : /kyuubey|kyubey|kyubei/ig,     target : 'coobie'},
+	{pat : /magica/ig,			target : 'meguca'}
 
-var html = 
-'<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
-'<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
-'<div class="customTheme"></div>' +
-'<div id="panelTabs">' +
-'	<div id="ie-test">' +
-'		<ul class="group" id="boxLinks">' +
-'			<li>' +
-'				<a href="#box1"><b>Main</b></a></li>' +
-'			<li>' +
-'				<a href="#box2"><b>Etc</b></a></li>' +
-'			<li>' +
-'				<a href="#box4"><b>Settings</b></a></li>' +
-'			<li>' +
-'				<a id="debuglink" href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
-'		</ul>' +
-'		<div id="box">' +
-'			<div class="box" id="box1">' +
-'				<ul>' +
-'				<br />' +
-'<h4 class="trigger"><a href="#">Defeated loops</a></h4>'+
-'<div class="toggle_container">'+
-'	<table class="defeatedList">'+
-'		<tr>'+
-'			<td>'+
-'				<ul>'+
-'					<li>&bull; 【東方】 Bad Apple 10 hours 10時間  </li>'+
-'					<li>&bull; FUKKIRETA 10 hours</li>'+
-'					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
-'					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
-'				</ul>'+
-'			</td>'+
-'		</tr>'+
-'	</table>'+
-'</div>'+
-'<h4 class="trigger "><a href="#">Watched series</a></h4>'+
-'<div class="toggle_container open">'+
-'	<div class="block">'+
-'		<table class="defeatedList">'+
-'			<tr>'+
-'				<td>'+
-'					<ul>'+
-'						<li>&bull; Cromartie Highschool dub</li>'+
-'						<li>&bull; Nyoron Churuya san</li>'+
-'						<li>&bull; Di Gi Charat</li>'+
-'						<li>&bull; The Melancholy of Haruhi-Chan</li>'+
-'						<li>&bull; Battle Programmer Shirase</li>'+
-'						<li>&bull; Hokago no Pleiades</li>'+
-'						<li>&bull; REC</li>'+
-'						<li>&bull; Mars of Destruction</li>'+
-'						<li>&bull; Neon Genesis Evangeleon</li>'+
-'						<li>&bull; Black Rock Shooter OVA </li>'+
-'						<li>&bull; Gaki No Tsukai Yugawara Part</li>'+
-'						<li>&bull; The Legend of Koizumi</li>'+
-'						<li>&bull; High School of The Dead</li>'+
-'						<li>&bull; Bakemonogatari</li>'+
-'						<li>&bull; Toradora!</li>'+
-'						<li>&bull; Majokko Tsukune-Chan</li>'+
-'						<li>&bull; Clannad</li>'+
-'						<li>&bull; Seitokai Yakuindomo</li>'+
-'						<li>&bull; .Hack//Quantum</li>'+
-'						<li>&bull; Panty &amp; Stocking with Garterbelt</li>'+
-'						<li>&bull; Dokuro-Chan</li>'+
-'						<li>&bull; Rozen Maiden S1</li>'+
-'						<li>&bull; Gaki No Tsukai Yugawara</li>'+
-'                      	<li>&bull; Paranoia Agent</li>' +
-'                       <li>&bull; Katanagatari</li>' +
-'                       <li>&bull; Koe de Oshigoto</li>' +
-'						<li>&bull; Ladies vs Butler</li>'+
-'						<li>&bull; Colour Wars!</li>'+
-'						<li>&bull; Alien Nine</li>'+
-'						<li>&bull; Nupu Nupu</li>'+
-'						<li>&bull; Sacred Seven</li>'+ 
-'						<li>&bull; Ebichu</li>'+
-'					</ul>'+
-'				</td>'+
-'			</tr>'+
-'		</table>'+
-'	</div>'+
-'</div>'+
-'<h4 class="trigger"><a href="#">Watched movies</a></h4>'+
-'<div class="toggle_container">'+
-'	<div class="block">'+
-		'<table class="defeatedList">'+
-'			<tr>'+
-'				<td>'+
-'					<ul>'+
-'						<li>&bull; The Disappearance Of Haruhi Suzumiya</li>'+
-'						<li>&bull; Fate/Stay night UBW </li>'+
-'						<li>&bull; Girl who leapt through time</li>'+
-'						<li>&bull; 5 Centimeters Per Second</li>'+
-'						<li>&bull; Interstella 5555 </li>'+
-'						<li>&bull; Kikujiro</li>'+
-'						<li>&bull; Kara no Kyoukai</li>'+
-'						<li>&bull; Fist of the North Star Movie Remastered</li>'+
-'						<li>&bull; Funky Forest: The First Contact</li>'+
-'						<li>&bull; Eve no Jikan</li>'+
-'						<li>&bull; Ah! My Goddess: The Movie</li>'+
-'						<li>&bull; Akira</li>'+
-'						<li>&bull; Paprika</li>'+
-'						<li>&bull; Millennium Actress</li>'+
-'						<li>&bull; Princess Arete</li>'+
-'						<li>&bull; Summer Wars</li>'+
-'						<li>&bull; MD Geist</li>'+
-'						<li>&bull; Steamboy</li>'+
-'						<li>&bull; The Borrower Arrietty</li>'+
-'						<li>&bull; Red Line</li>'+
-'						<li>&bull; Trigun: Badlands Rumble</li>'+
-'						<li>&bull; The Super Dimension Fortress Macross: Do You Remember Love? </li>'+
-'						<li>&bull; Sword of the Stranger </li>'+
-'					</ul>'+
-'				</td>'+
-'			</tr>'+
-'		</table>'+
-'	</div>'+
-'</div>'+
-'<h4 class="trigger"><a href="#">Other shows</a></h4>'+
-'<div class="toggle_container">'+
-'	<div class="block">'+
-		'<table class="defeatedList">'+
-'			<tr>'+
-'				<td>'+
-'					<ul>'+
-'						<li>&bull; 24 hour tag</li>'+
-'						<li>&bull; Shaolin Soccer</li>'+
-'						<li>&bull; Kung Fu Hustle</li>'+
-'						<li>&bull; Cosmos: A Personal Voyage</li>'+
-'						<li>&bull; Mr. Bean Vacation</li>'+
-'						<li>&bull; Cyberbully</li>'+
-'						<li>&bull; Gozu</li>'+
-'					</ul>'+
-'				</td>'+
-'			</tr>'+
-'		</table>'+
-'	</div>'+
-'</div>'+
-'					<br />' +
-'					Yea so if a drawfag could get on this that would be sugoi. <a href="//i.imgur.com/Nz2yv.jpg" target="_blank"> click!</a>' +
-'                                       <br />' +
-'					<b>Submit your own animu banner. 1000x116 size, .png file, with this font :3</b> <a href="//dafont.com/the-great-escape.font" target="_blank">the-great-escape.font</a>. ' +
-'					Submitted <a href="//animusynchtube.imgur.com/banners" target="_blank">banners!</a>' +
-'					<br />' +
-'					<br />' +
-'                                       <a href="//animu.falaina.net"  target="_blank">Room Statistics</a>' +
-'				</ul>' +
-'			</div>' +
-'			<div class="box" id="box2">' +
-'				<br />' +
-'				<b>Etc:</b>' +
-'				<ul style="list-style-type: square; margin-left:16px">' +
-'					<li>' +
-'						DJZebro collected these all for you. It&#39;s not like he wanted to or anything, just take it! <a href="//tinyurl.ru/g2l0" target="_blank">DJZebro_Pack1</a>, <a href="//tinyurl.ru/gknk" target="_blank">DJZebro_Pack2</a>, <a href="//tinyurl.ru/gtc5" target="_blank"> DystopiaGroundPack</a>, <a href="//www.mediafire.com/?pbmugymdzya3kp6" target="_blank"> Battle music</a></li>' +
-'					<li>' +
-'						Denwa has uploaded some animu on youtube: <a href="//youtube.com/user/BlkRockShooter" target="_blank">Denwa&#39;s Channel</a></li>' +
-'					<li>' +
-'						Live vn wiki: <a href="//livevn.wikia.com" target="_blank"> livevn.wikia.com</a></li>' +
-'					<li>' +
-'						Polls may or may not be posted automatically to: <a href="//livevn.wikia.com/wiki/Polldump" target="_blank">PollDump</a></li>' +
-'					<li>' +
-'						Our <a href="//steamcommunity.com/groups/naitofiyah/" target="_blank">streamGroup</a></li>' +
-'					<li>' +
-'						We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft, Terraria</li>' +
-'					<li>' +
-'						Come play terraria with us: falaina.dlinkddns.com ' +
-'                                                (Need to be whitelisted to join. email your ip to Fukkireta( fukireta@gmail.com ) to be ' +
-'                                                whitelisted.) </li>' +
-'				</ul>' +
-'			</div>' +
-'			<div class="box" id="box3">' +
-'				<div id="debug"></div>' +
-'			</div>' +
-'			<div class="box" id="box4">' +
-'					<br />' +
-'					<b>Video Settings</b>' +
-'					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li class="rotate"><a href="#">rotate 180 degree</a></li>'+ 
-' 						<li class="mX"><a href="#">mirror X</a></li>'+ 
-' 						<li class="mY"><a href="#">mirror Y</a></li>'+ 
-' 					</ul>'+ 
-' 					<br />'+ 
-'					<b>Room Themes</b>' +
-'					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li class="themeEmpty"><a href="#">Standard Theme</a></li>'+ 
-' 						<li class="themeMuki"><a href="#">Hatsune Miku Theme</a></li>'+ 
-' 						<li class="themeSteinsGate"><a href="#">Steins;Gate Theme</a></li>'+ 
-' 					</ul>'+ 
-' 					<br />'+ 
-'					<b>Other Settings</b>' +
-'					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li class="showFullList"><a href="#">Show full video list</a></li>'+ 
-' 						<li class="linkify"><a href="#">Linkify playlist</a></li>'+ 
-' 					</ul>'+ 
-'			</div>' +
-'		</div>' +
-'   </div> ' +
-'</div>' +
-'<br />' +
-'<br />' +
-'<p>' +
-'	<ul class="turnIt"><marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></ul></p>' +
-' ';
+    ];
 
-$(" #description .description").html(html);
+    // Function-based word filters
+    var word_filters_fn = [ ];
 
-// Set up banner and infobox transitions
-$('.box').hide();
-$('ul.group li:first').addClass('active').show();
-$('.box:first').show();
-$('ul.group li').click(function () 
-{
-	$('ul.group li').removeClass('active');
-	$(this).addClass('active');
-	$('.box').hide();
-	var activeTab = $(this).find('a').attr('href');
-	$(activeTab).fadeIn();
-	return false;
-});
-//$("#playlistactions").append('<div id="link" class="basic-btn pl-more basic-btn-btnbar-right round3">Test</div>');
-//$('#link').click(function(){
-//$('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
-//});
-$(".slideshow").css("visibility", "visible");
-$(".toggle_container").hide(); 
-$(".open").show(); 
+    // Custom chat commands
+    var custom_commands = [ 
+	{pat : /^\s*\/link/, 
+	 fn  : function(msg) { animu_synchtube.linkify();}},
+	{pat : /^\s*\/debug/,
+	 fn  : function(msg) { 
+	     $("#debuglink").css("visibility", "visible");	     
+	     st.room.debug = true;
+	 }},
+	{pat : /^\s*\/reload/,
+	 fn  : function(msg) {
+	     // Reload banner HTML. I'd eventually like to reload the scripts
+	     // but I have a feeling things would break horribly.
+	     $.getScript('http://falaina.github.com/animu-synchtube/document.js', 
+			 function() {
+			     doc_doit();
+			     fixHTML();
+			 });}}
+    ];
 
-//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-$("h4.trigger").click(function()
-{
-	$(this).toggleClass("active").next().slideToggle("slow");
-	return false; //Prevent the browser jump to the link anchor
-});
+    // Create the opening tag for a link
+    self.openA = function(url) { return '<a href="'+url+'">'; };
 
-//Turn the Youtube player 180 degree when you click on the marquee background
-$(".rotate").click(function(){
-	if($("#media").hasClass("upSideDown"))
-		$("#media").removeClass("upSideDown");
-	else
-		$("#media").addClass("upSideDown");
-    });
-
- //Mirror Youtube player X
-    $(".mX").click(function(){
-	     if($("#media").hasClass("mirrorX"))
-			$("#media").removeClass("mirrorX");
-	     else
-		  $("#media").addClass("mirrorX");
-    });
- //Mirror Youtube player Y
-    $(".mY").click(function(){
-	     if($("#media").hasClass("mirrorY"))
-			$("#media").removeClass("mirrorY");
-	     else
-		  $("#media").addClass("mirrorY");
-    });
-
- //Miku theme switch
-     $(".themeEmpty").click(function(){
-		$('.customTheme').empty();
-    });
-    $(".themeMuki").click(function(){
-    		$('.customTheme').empty();
-		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"/>');
-    });
-    $(".themeSteinsGate").click(function(){
-    		$('.customTheme').empty();
-		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/steinsTheme.css" rel="stylesheet"/>');
-    });
-
-//show the full video list
-$(".showFullList").click(function(){
-	if($(".jspPane").hasClass("makeRelative")){
-		$(".jspPane").removeClass("makeRelative");
-		$("#playlist .playlist").removeClass("makeSizable");
-		$("#playlist .playlist #playlist_items").removeClass("makeSizable");
-		$(".jspContainer").removeClass("makeSizable");
-		$(".jspVerticalBar").removeClass("jspCap");		
-
-
+    // Convert every playlist entry into a clickable link
+    self.linkify = function() {
+	var vids = st.collections.videos, vid;
+	var YT_BASE = "http://www.youtube.com/watch?v=";	
+	for(vid in vids) {
+	    if(vids.hasOwnProperty(vid) &&
+	       vids[vid] && (!vids[vid].linked)) { 
+		var id = vids[vid].id;
+		var cur = $("#"+id+" .title");
+		var vidHtml = cur.html();
+		if(vidHtml) {
+		    var ytUrl =  YT_BASE + vids[vid].vid;
+		    vidHtml = vidHtml.replace(/.*/, self.openA(ytUrl)+"$&"+"</a>");
+		    cur.html(vidHtml);
+		    vids[vid].linked = true;
+		}
+	    }
 	}
-	else{
-		$(".jspPane").addClass("makeRelative");
-		$("#playlist .playlist").addClass("makeSizable");
-		$("#playlist .playlist #playlist_items").addClass("makeSizable");
-		$(".jspContainer").addClass("makeSizable");		
-		$(".jspVerticalBar").addClass("jspCap");		
+    };
+
+
+    // Convenience function for logging
+    var log = function() {
+	if(window.console && window.console.log) {
+	    console.log(arguments);
 	}
-    });	
-    //Turn the entire list into right/middle-clickable URLs
-$(".linkify").click(function() {
-$('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a target="_blank" class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
-});
-};
+    };
+    var trace = function() {
+	if(window.console && window.console.trace) {
+	    console.trace();
+	}
+    };	
+
+    // Convenience function for invoking a function
+    // that may fail
+    var ignore = function(context, fn) {
+	try {fn.apply(context);} 
+	catch (err) { log("Ignoring error:\n\t" + err); }
+    };
+
+    // Convenience function for hooking a javascript function
+    // A FUNCTION CAN ONLY BE HOOKED BY ONE FUNCTION AT A TIME
+    var instrumentFn = function(context, fn, hook, transformArgs) {
+	try {
+	    // Remove any previous hooks
+	    if(fn.instrumented) {
+		fn = fn.restore();
+	    }
+	    var newFn = function() 
+	    {
+		var fnArgs = arguments;
+		// Apply hook
+		var results = hook.apply(context, arguments); 
+		// Replace arguments with results of hook if necessary
+		if(transformArgs) {
+		    fnArgs = results;
+		}
+		// Apply the original function
+		return fn.apply(context, fnArgs);
+	    };
+	    // Keep a handle to the original function
+	    newFn.restore = function() {return fn;};
+	    // Mark the function as instrumented
+	    newFn.instrumented = true;
+	    return newFn;
+	} catch (err) {
+	    log("Instrumentation failure:");
+	    trace();
+	}
+	return fn;
+    };
+
+
+    var replaceModvatars = function () {
+	var i, mod, url;
+	for(i=0; i < modvatars.length; i++) {
+	    mod = modvatars[i].mod;
+	    url = modvatars[i].url;
+	    $('img.user_id[alt='+mod+']').replaceWith('<img src='+url+' class=user_id alt='+mod+' id='+mod+'>');
+	    $('#'+mod).addClass('mod-avatar');	    
+	}
+    };
+
+    self.wordFilter = function(usr, msg, wat) {
+	var i, newRegex;
+	for(i=0; i < word_filters.length; i++) {
+	    // Construct a regex that'll protect words
+	    newRegex = '(^| )'+word_filters[i].pat.source+'($| )';
+	    msg = msg.replace(RegExp(newRegex, 'ig'), "$1"+word_filters[i].target+"$2");
+	}
+	return [usr, msg, wat];
+    };
+
+    var str_Alert = [
+	{pat  : /[^ ]*synchtube.com\/r\/([^ ]+)/ig, target: '[censored: $1]'},
+        {pat  : /[^ ]*synchtu.be\/([^ ]+)/ig, target: '[censored: $1]'}
+    ];
+
+    var approved_Chans = [
+	{pat : /animu/ig },
+	{pat : /science/ig },
+	{pat : /chiruno/ig },
+        {pat : /mrchess/ig },
+	{pat : /binaryheap/ig }
+    ];
+
+    self.whiteList = function(usr, msg, wat)
+    {
+	var i, j, match;
+	for( i=0; i < str_Alert.length; i++) {
+	    str_Alert[i].pat.lastIndex = 0;
+	    match = str_Alert[i].pat.exec(msg);
+	    if(match && match[1]) {
+		for(j=0; j < approved_Chans.length; j++) {
+		    approved_Chans[j].pat.lastIndex = 0;
+		    if(approved_Chans[j].pat.exec(match[1])) {
+			return [usr, msg, wat];
+		    }
+		}
+		msg = msg.replace(str_Alert[i].pat, str_Alert[i].target);
+		return [usr, msg, wat];
+	    }
+	}
+	return [usr, msg, wat];
+    };
+
+    
+    // Custom beforeSay handler
+    var genBeforeSay = function(oldHandler, oldHandlerCtx) {
+	var i, curCom;
+	// Return closure over the oldHandler.
+	return function(msg) {
+	    // Wrap in a try so we don't break the chat handler if we error out.
+	    try {
+		for(i=0; i< custom_commands.length; i++) {
+		    curCom = custom_commands[i];
+		    if(msg.match(curCom.pat)) {
+			curCom.fn(msg);
+			// Clear message box
+			$("#message").val("");
+			return true;
+		    }
+		}
+	    } catch (err) {
+		self.log("Failure in processSay, ignoring" + err);
+	    }
+	    return oldHandler.apply(oldHandlerCtx, arguments);
+	};
+    };
+
+    // Instrument the synchtube chat message handler with the word filter
+    var replaceChatHandler = function() {
+	// Save the old beforeSay handler
+	var savedHandler = chat.beforeSay;
+	self.wordFilter   = instrumentFn(self, self.wordFilter,   self.whiteList, true);
+	chat.writeMessage = instrumentFn(chat, chat.writeMessage, self.wordFilter, true);
+
+	// Install our new beforeSay handler
+	chat.beforeSay = genBeforeSay(savedHandler, chat);
+    };
+
+    // Let's separate functionality that modifies DOM from functionality that modifies
+    // remove behavior so we can call DOM functionality multiple times without worrying
+    // about breaking chat and handlers and such.
+    var fixHTML = function() {
+	// Set up banner and infobox transitions
+	$.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
+            $('.slideshow').cycle({
+		fx: 'fade',
+		random: 1,
+		timeout: 10000,
+		next: '.slideshow',
+		pause: 1
+            });
+            $('.box').hide();
+            $('ul.group li:first').addClass('active').show();
+            $('.box:first').show();
+            $('ul.group li').click(function () {
+		$('ul.group li').removeClass('active');
+		$(this).addClass('active');
+		$('.box').hide();
+		var activeTab = $(this).find('a').attr('href');
+		$(activeTab).fadeIn();
+		return false;
+            });
+	    $(".slideshow").css("visibility", "visible");
+	    $(".toggle_container").hide(); 
+	    $(".open").show(); 
+
+	    //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+	    $("h4.trigger").click(function(){
+		$(this).toggleClass("active").next().slideToggle("slow");
+		return false; //Prevent the browser jump to the link anchor
+	    });
+ 
+	});
+    };
+
+
+    // Entry point for code (this is probably not idiomatic javascript, apparently
+    // it's standard to wrap the entire file in an anonymous function)
+    self.doit = function (){
+	replaceModvatars();
+	replaceChatHandler();
+	fixHTML();
+    };
+    return self;
+}());
+
+var doit = function() {animu_synchtube.doit();};
