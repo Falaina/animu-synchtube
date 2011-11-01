@@ -7,7 +7,6 @@ var doc_doit = function()
 var html = 
 '<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
 '<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
-'<link href="//dysto.dyndns.org/synchtube/halloweenTheme.css" rel="stylesheet" />'+
 '<div class="customTheme"></div>' +
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
@@ -77,8 +76,8 @@ var html =
 '						<li>&bull; Colour Wars!</li>'+
 '						<li>&bull; Alien Nine</li>'+
 '						<li>&bull; Nupu Nupu</li>'+
-'						<li>&bull; Sacred Seven</li>'+ 
-'						<li>&bull; Ebichu</li>'+
+'						<li>&bull; Sacred Seven</li>'+
+'						<li>&bull; Sky Girls</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -114,7 +113,8 @@ var html =
 '						<li>&bull; Red Line</li>'+
 '						<li>&bull; Trigun: Badlands Rumble</li>'+
 '						<li>&bull; The Super Dimension Fortress Macross: Do You Remember Love? </li>'+
-'						<li>&bull; Sword of the Stranger </li>'+
+'						<li>&bull; Sword of the Stranger</li>'+
+'						<li>&bull; Kakurenbo</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -190,6 +190,7 @@ var html =
 ' 						<li class="themeEmpty"><a href="#">Standard Theme</a></li>'+ 
 ' 						<li class="themeMuki"><a href="#">Hatsune Miku Theme</a></li>'+ 
 ' 						<li class="themeSteinsGate"><a href="#">Steins;Gate Theme</a></li>'+ 
+'						<li class="themeHalloween"><a href="#">Halloween 2011 Theme</a></li>'+
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b>Other Settings</b>' +
@@ -265,12 +266,13 @@ $(".rotate").click(function(){
 		$('.customTheme').empty();
     });
     $(".themeMuki").click(function(){
-    		$('.customTheme').empty();
 		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"/>');
     });
     $(".themeSteinsGate").click(function(){
-    		$('.customTheme').empty();
 		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/steinsTheme.css" rel="stylesheet"/>');
+    });
+    $(".themeHalloween").click(function(){
+		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/HalloweenTheme.css" rel="stylesheet"/>');
     });
 
 //show the full video list
@@ -281,8 +283,6 @@ $(".showFullList").click(function(){
 		$("#playlist .playlist #playlist_items").removeClass("makeSizable");
 		$(".jspContainer").removeClass("makeSizable");
 		$(".jspVerticalBar").removeClass("jspCap");		
-
-
 	}
 	else{
 		$(".jspPane").addClass("makeRelative");
@@ -296,4 +296,6 @@ $(".showFullList").click(function(){
 $(".linkify").click(function() {
 $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a target="_blank" class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
 });
+
+
 };
