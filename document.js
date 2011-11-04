@@ -261,17 +261,20 @@ $(".rotate").click(function(){
 		  $("#media").addClass("mirrorY");
     });
 
- //Miku theme switch
+ //Theme switch
      $(".themeEmpty").click(function(){
 		$('.customTheme').empty();
     });
     $(".themeMuki").click(function(){
+		$('.customTheme').empty();
 		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"/>');
     });
     $(".themeSteinsGate").click(function(){
+		$('.customTheme').empty();
 		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/steinsTheme.css" rel="stylesheet"/>');
     });
     $(".themeHalloween").click(function(){
+		$('.customTheme').empty();
 		$('.customTheme').append('<link href="//dysto.dyndns.org/synchtube/HalloweenTheme.css" rel="stylesheet"/>');
     });
 
