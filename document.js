@@ -30,6 +30,7 @@ var html =
 '		<tr>'+
 '			<td>'+
 '				<ul>'+
+'					<li>&bull; 10 hours Samurai Logic x Nichijou  </li>'+
 '					<li>&bull; 【東方】 Bad Apple 10 hours 10時間  </li>'+
 '					<li>&bull; FUKKIRETA 10 hours</li>'+
 '					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
