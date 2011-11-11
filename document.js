@@ -7,6 +7,7 @@ var doc_doit = function()
 var html = 
 '<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
 '<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
+'<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet" />'+
 '<div class="customTheme"></div>' +
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
@@ -88,7 +89,7 @@ var html =
 '<h4 class="trigger"><a href="#">Watched movies</a></h4>'+
 '<div class="toggle_container">'+
 '	<div class="block">'+
-		'<table class="defeatedList">'+
+'		<table class="defeatedList">'+
 '			<tr>'+
 '				<td>'+
 '					<ul>'+
