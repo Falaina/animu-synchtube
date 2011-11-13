@@ -79,6 +79,7 @@ var html =
 '						<li>&bull; Nupu Nupu</li>'+
 '						<li>&bull; Sacred Seven</li>'+
 '						<li>&bull; Sky Girls</li>'+
+'						<li>&bull; Ga-Rei Zero</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
