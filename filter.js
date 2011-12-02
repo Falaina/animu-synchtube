@@ -45,7 +45,7 @@ var word_filters = [
   {pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-niichan'},      
   {pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'chiruno'},      
   {pat : /(@_@|~_~)/g,                  target : 'XD'},
-  {pat : /(:3)/g,                  target : 'xiox :3'},
+  {pat : /\b(:3)\b/g,                  target : 'xiox :3'},
   {pat : /(u_u)/g,                  target : '^_^'},
   {pat : /\brea(lI)\b/ig,		target : 'fake'},      
   {pat : /\byour\b/ig,		target : 'you\'re'},      
