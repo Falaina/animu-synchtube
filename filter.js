@@ -19,7 +19,8 @@ if(!Message_one.fn.render.$instrumented) {
       this.item.msg = words.join(" ")
     } 
     else {
-      if(!this.item.msg.match(/http:\/\//)) {
+      var urlified = (helpers && helpers.linkify && helpers.linkify(this.item.msg)) || this.item.msg;
+      if(urlified === this.item.msg) {
 	for(var i=0; i < word_filters.length; i++) {
 	  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
 	}
