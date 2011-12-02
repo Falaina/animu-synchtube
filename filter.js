@@ -24,7 +24,7 @@ if(!Message_one.fn.render.$instrumented) {
       	var tokens = this.item.id.split("-")
       	var token = tokens.pop()
       	var randNum = parseInt(token, 16)
-      	console.log(this.item, randNum)
+  //    	console.log(this.item, randNum)
 	for(var i=0; i < word_filters.length; i++) {
 	  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
 	}
