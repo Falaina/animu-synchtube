@@ -21,7 +21,7 @@ if(!Message_one.fn.render.$instrumented) {
     else {
       var urlified = (helpers && helpers.linkify && helpers.linkify(this.item.msg)) || this.item.msg;
       if(urlified === this.item.msg) {
-      	var randNum = this.item.msg.hashCode() * this.item.sid.hashCode();
+      	var randNum = this.item.msg.hashCode() + this.item.sid.hashCode();
 //     	console.log(this.item, randNum)
 	for(var i=0; i < word_filters.length; i++) {
 	  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
