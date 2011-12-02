@@ -25,6 +25,7 @@ if(!Message_one.fn.render.$instrumented) {
 	}
 	if (Math.random() < 0.1) {
 	  this.item.msg = this.item.msg + "~ de geso";
+	}
       }
     }
     return Message_one.fn.renderOld.apply(this, arguments);
