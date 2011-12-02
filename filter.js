@@ -2,14 +2,33 @@ if(!Message_one.fn.render.$instrumented) {
   Message_one.fn.renderOld = Message_one.fn.render
   Message_one.fn.renderOld.$instrumented = true
   Message_one.fn.render = function(){
-    for(var i=0; i < word_filters.length; i++) {
-      this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
+    if(this.item.nick.toLowerCase() === 'yamada') {
+      var words = this.item.msg.split(" ")
+      for(var i=0; i < words.length; i++) {
+	var j = Math.ceil(Math.random()*4)
+	if (j == 1) {
+	  words[i] = "YAMADA"
+	} else if (j == 2) {
+	  words[i] = "yama~da"
+	} else if (j == 3) {
+	  words[i] = "ya~"
+	} else {
+	  words[i] = "yamada"
+	}	
+      }
+      this.item.msg = words.join(" ")
+    } 
+    else {
+      for(var i=0; i < word_filters.length; i++) {
+	this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
+      }
     }
     return Message_one.fn.renderOld.apply(this, arguments);
   }
   Message_one.fn.render.$instrumented = true
   $desc = $("#leader-welcome-message-textarea").val()
   $("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
+
 }
 
 var word_filters = [
