@@ -8,6 +8,8 @@ if(!Message_one.fn.render.$instrumented) {
     return Message_one.fn.renderOld.apply(this, arguments);
   }
   Message_one.fn.render.$instrumented = true
+  $desc = $("#leader-welcome-message-textarea").val()
+  $("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
 }
 
 var word_filters = [
