@@ -21,9 +21,7 @@ if(!Message_one.fn.render.$instrumented) {
     else {
       var urlified = (helpers && helpers.linkify && helpers.linkify(this.item.msg)) || this.item.msg;
       if(urlified === this.item.msg) {
-      	var tokens = this.item.id.split("-")
-      	var token = tokens.pop()
-      	var randNum = parseInt(token, 16)
+      	var randNum = this.item.msg.hashCode() * this.item.sid.hashCode();
   //    	console.log(this.item, randNum)
 	for(var i=0; i < word_filters.length; i++) {
 	  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
@@ -39,6 +37,16 @@ if(!Message_one.fn.render.$instrumented) {
   $desc = $("#leader-welcome-message-textarea").val()
   $("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
 
+}
+String.prototype.hashCode = function(){
+	var hash = 0;
+	if (this.length == 0) return hash;
+	for (i = 0; i < this.length; i++) {
+		char = this.charCodeAt(i);
+		hash = ((hash<<5)-hash)+char;
+		hash = hash & hash; // Convert to 32bit integer
+	}
+	return hash;
 }
 
 var word_filters = [
