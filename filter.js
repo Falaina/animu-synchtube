@@ -23,6 +23,8 @@ if(!Message_one.fn.render.$instrumented) {
 	for(var i=0; i < word_filters.length; i++) {
 	  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
 	}
+	if (Math.random() < 0.1) {
+	  this.item.msg = this.item.msg + "~ de geso";
       }
     }
     return Message_one.fn.renderOld.apply(this, arguments);
@@ -45,7 +47,6 @@ var word_filters = [
   {pat : /kyoko/ig,			target : 'kyaku'},
   {pat : /sayaka/ig,			target : 'seyiku'},
   {pat : /\beveryone\b/ig,			target : 'everynyan'},
-  {pat : /^(\s*\S+\s*)$/,                 target : '$1 ~de geso'},
   {pat : /\bplan\b/ig,			target : 'keikaku'},
   {pat : /\bqb\b/ig,	                        target : '／人◕ ‿‿ ◕人＼'},
   {pat : /kitaa/ig,			target : 'キタ━━━(゜∀゜)━━━!!!!! '},
