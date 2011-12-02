@@ -32,7 +32,7 @@ if(!Message_one.fn.render.$instrumented) {
 }
 
 var word_filters = [
-  {pat : /(b(i|o)nar(y|u)(heap|hump){0,1})/ig,		target : '$1-niichan'},      
+  {pat : /(b(i|o)n(a|e)r(y|u)(heap|hump){0,1})/ig,		target : '$1-niichan'},      
   {pat : /fukki(reta){0,1}/ig,		target : 'chiruno'},      
   {pad : /(@_@|~_~)/g,                  target : 'XD'},
   {pat : /real(\s|$)/ig,		target : 'fake$1'},      
