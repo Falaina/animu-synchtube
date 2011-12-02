@@ -52,9 +52,9 @@ String.prototype.hashCode = function(){
 var word_filters = [
   {pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-niichan'},      
   {pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'chiruno'},      
-  {pat : /(@_@|~_~)/g,                  target : 'XD'},
+  {pat : /(@_+@|~_+~)/g,                  target : 'XD'},
   {pat : /\b(:3)\b/g,                  target : 'xiox :3'},
-  {pat : /(u_u)/g,                  target : '^_^'},
+  {pat : /\b(u_+u)\b/g,                  target : '^_^'},
   {pat : /\brea(l|I)\b/ig,		target : 'fake'},      
   {pat : /\byour\b/ig,		target : 'you\'re'},      
   {pat : /\byou're\b/ig,		target : 'your'},      
