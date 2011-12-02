@@ -23,6 +23,7 @@ var word_filters = [
   {pat : /kyoko/ig,			target : 'kyaku'},
   {pat : /sayaka/ig,			target : 'seyiku'},
   {pat : /everyone/ig,			target : 'everynyan'},
+  {pat : /^(\s*\S+\s*)$/,                 target : '$1 ~de geso'},
   {pat : /plan/ig,			target : 'keikaku'},
   {pat : /qb/ig,	                        target : '／人◕ ‿‿ ◕人＼'},
   {pat : /kitaa/ig,			target : 'キタ━━━(゜∀゜)━━━!!!!! '},
