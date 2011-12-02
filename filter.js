@@ -42,7 +42,7 @@ var word_filters = [
   {pat : /(@_@|~_~)/g,                  target : 'XD'},
   {pat : /(:3)/g,                  target : 'xiox :3'},
   {pat : /(u_u)/g,                  target : '^_^'},
-  {pat : /\breal\b/ig,		target : 'fake'},      
+  {pat : /\brea(lI)\b/ig,		target : 'fake'},      
   {pat : /\byour\b/ig,		target : 'you\'re'},      
   {pat : /\byou're\b/ig,		target : 'your'},      
   {pat : /\btheir\b/ig,		target : 'they\'re'},      
