@@ -21,11 +21,13 @@ if(!Message_one.fn.render.$instrumented) {
     else {
       var urlified = (helpers && helpers.linkify && helpers.linkify(this.item.msg)) || this.item.msg;
       if(urlified === this.item.msg) {
-      	console.log(this.item);
+      	var tokens = this.item.id.split("-")
+      	var token = tokens.pop()
+      	var randNum = parseInt(token, 16)
 	for(var i=0; i < word_filters.length; i++) {
 	  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
 	}
-	if (Math.random() < 0.1) {
+	if ((randNum % 10) === 0) {
 	  this.item.msg = this.item.msg + "~ de geso";
 	}
       }
