@@ -5,16 +5,9 @@ if(!Message_one.fn.render.$instrumented) {
     if(this.item.nick.toLowerCase() === 'yamada') {
       var words = this.item.msg.split(" ")
       for(var i=0; i < words.length; i++) {
-	var j = Math.ceil(Math.random()*4)
-	if (j == 1) {
-	  words[i] = "YAMADA"
-	} else if (j == 2) {
-	  words[i] = "yama~da"
-	} else if (j == 3) {
-	  words[i] = "ya~"
-	} else {
-	  words[i] = "yamada"
-	}	
+      	var rep_words = ["YAMADA", "yama~da", "ya~", "yamada"];
+	var j = Math.floor(Math.random()*rep_words.length)
+	words[i] = rep_words[j]
       }
       this.item.msg = words.join(" ")
     } 
