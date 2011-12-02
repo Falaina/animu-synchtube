@@ -34,7 +34,8 @@ if(!Message_one.fn.render.$instrumented) {
 var word_filters = [
   {pat : /(binary(heap){0,1})/ig,		target : '$1-niichan'},      
   {pat : /fukki(reta){0,1}/ig,		target : 'chiruno'},      
-  {pat : /real(\s|$)/ig,		target : 'fake'},      
+  {pad : /(@_@|~_~)/g,                  target : 'XD'},
+  {pat : /real(\s|$)/ig,		target : 'fake$1'},      
   {pat : /madoka/ig,			target : 'meduca'},
   {pat : /magica/ig,			target : 'meguca'},
   {pat : /homura/ig,			target : 'hameru'},
