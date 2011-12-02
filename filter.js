@@ -19,8 +19,10 @@ if(!Message_one.fn.render.$instrumented) {
       this.item.msg = words.join(" ")
     } 
     else {
-      for(var i=0; i < word_filters.length; i++) {
-	this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
+      if(!this.item.msg.match(/http:\/\//)) {
+	for(var i=0; i < word_filters.length; i++) {
+	  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
+	}
       }
     }
     return Message_one.fn.renderOld.apply(this, arguments);
