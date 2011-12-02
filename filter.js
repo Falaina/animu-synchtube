@@ -37,7 +37,7 @@ var word_filters = [
   {pat : /(b(i|o)n(a|e)r(y|u)(heap|hump){0,1})/ig,		target : '$1-niichan'},      
   {pat : /fukki(reta){0,1}/ig,		target : 'chiruno'},      
   {pad : /(@_@|~_~)/g,                  target : 'XD'},
-  {pat : /\breal\b/ig,		target : 'fake$1'},      
+  {pat : /\breal\b/ig,		target : 'fake'},      
   {pat : /madoka/ig,			target : 'meduca'},
   {pat : /magica/ig,			target : 'meguca'},
   {pat : /homura/ig,			target : 'hameru'},
