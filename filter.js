@@ -2,7 +2,7 @@ if(!Message_one.fn.render.$instrumented) {
   Message_one.fn.renderOld = Message_one.fn.render
   Message_one.fn.renderOld.$instrumented = true
   Message_one.fn.render = function(){
-    if(this.item.nick.toLowerCase() === 'yamada') {
+    if(this.item.nick.toLowerCase() === 'yamada' && false) {
       var words = this.item.msg.split(" ")
       for(var i=0; i < words.length; i++) {
         var rep_words = ["YAMADA", "yama~da", "ya~", "yamada"];
@@ -43,12 +43,12 @@ String.prototype.hashCode = function(){
 }
 
 var word_filters = [
-  {pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-niichan'},      
-  {pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'chiruno'},      
-  {pat : /(@_+@|~_+~)/g,                  target : 'XD'},
-  {pat : /\b(:3)\b/g,                  target : 'xiox :3'},
-  {pat : /\b(u_+u)\b/g,                  target : '^_^'},
-  {pat : /\brea(l|I)\b/ig,		target : 'fake'},      
+  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-niichan'},      
+  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'chiruno'},      
+  //{pat : /(@_+@|~_+~)/g,                  target : 'XD'},
+  //{pat : /\b(:3)\b/g,                  target : 'xiox :3'},
+  //{pat : /\b(u_+u)\b/g,                  target : '^_^'},
+  //{pat : /\brea(l|I)\b/ig,		target : 'fake'},      
   //{pat : /\byour\b/ig,		target : 'you\'re'},      
   //{pat : /\byou're\b/ig,		target : 'your'},      
   //{pat : /\btheir\b/ig,		target : 'they\'re'},      
