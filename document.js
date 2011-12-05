@@ -117,6 +117,7 @@ var html =
 '						<li>&bull; The Super Dimension Fortress Macross: Do You Remember Love? </li>'+
 '						<li>&bull; Sword of the Stranger</li>'+
 '						<li>&bull; Kakurenbo</li>'+
+'						<li>&bull; Hoshi o Ou Kodomo</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
