@@ -17,7 +17,9 @@ if(!Message_one.fn.render.$instrumented) {
       	var randNum = this.item.msg.hashCode() + this.item.sid.hashCode();
 //     	console.log(this.item, randNum)
 	for(var i=0; i < word_filters.length; i++) {
+          var old = this.item.msg;
 	  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
+	  if (old !== this.item.msg) {break; }
 	}
 	if ((randNum % 10) === 0) {
 	  this.item.msg = this.item.msg + " ~ de geso";
@@ -43,7 +45,9 @@ String.prototype.hashCode = function(){
 }
 
 var word_filters = [
-  {pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-niichan'},      
+  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-niichan'},      
+  {pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,		target : 'yuruyuri'},        
+  {pat : /(b(i|o)n(a|e)r(y|u))/ig,		target : 'yuru'},        
   //{pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'chiruno'},      
   //{pat : /(@_+@|~_+~)/g,                  target : 'XD'},
   //{pat : /\b(:3)\b/g,                  target : 'xiox :3'},
