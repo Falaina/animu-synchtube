@@ -72,7 +72,7 @@ var word_filters = [
   {pat : /grimace/ig,			target : '(╬ ಠ益ಠ)'},
   {pat : /simper/ig,			target : '(￣ー￣)'},
   {pat : /flipt/ig,			target : '(╯°□°）╯︵ ┻━┻'},
-  {pat : /flipt2/ig,			target : '(ノಠ益ಠ)ノ彡┻━┻'},
+  {pat : /aflipt/ig,			target : '(ノಠ益ಠ)ノ彡┻━┻'},
   {pat : /unflip/ig,			target : '┬──┬ ﻿ノ( ゜-゜ノ)'},
   {pat : /kyuubey|kyubey|kyubei/ig,     target : 'coobie'},
   {pat : /magica/ig,			target : 'meguca'}
