@@ -119,6 +119,7 @@ var html =
 '						<li>&bull; Sword of the Stranger</li>'+
 '						<li>&bull; Kakurenbo</li>'+
 '						<li>&bull; Hoshi o Ou Kodomo</li>'+
+'						<li>&bull; Tokyo Godfathers</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
