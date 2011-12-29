@@ -45,7 +45,7 @@ String.prototype.hashCode = function(){
 }
 
 var word_filters = [
-  {pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-neechan'},      
+  {pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-neesama'},      
   //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,		target : 'yuruyuri'},        
   //{pat : /(b(i|o)n(a|e)r(y|u))/ig,		target : 'yuru'},        
   //{pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'chiruno'},      
