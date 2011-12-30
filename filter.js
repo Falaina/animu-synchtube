@@ -19,7 +19,7 @@ if(!Message_one.fn.render.$instrumented) {
 	for(var i=0; i < word_filters.length; i++) {
           var old = this.item.msg;
 	  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
-	  if (old !== this.item.msg) {break; }
+	  if (old !== this.item.msg) {}
 	}
 	if ((randNum % 10) === 0) {
 	  this.item.msg = this.item.msg + " ~ de geso";
