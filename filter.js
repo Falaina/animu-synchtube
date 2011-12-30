@@ -52,7 +52,7 @@ var word_filters = [
   //{pat : /(@_+@|~_+~)/g,                  target : 'XD'},
   //{pat : /\b(:3)\b/g,                  target : 'xiox :3'},
   //{pat : /\b(u_+u)\b/g,                  target : '^_^'},
-  {pat : /loli/g,                       target : 'shota'},
+  {pat : /(i|l)o(i|l)+i/ig,                       target : 'shota'},
   {pat : /\|([^\|]*)\|/g,                  target : '[spoiler]$1[/spoiler]'},
   {pat : /\brea(l|I)\b/ig,		target : 'hontou ni'},      
   //{pat : /\byour\b/ig,		target : 'you\'re'},      
