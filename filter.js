@@ -60,7 +60,7 @@ var word_filters = [
   //{pat : /\btheir\b/ig,		target : 'they\'re'},      
   //{pat : /\bthere\b/ig,		target : 'their'},      
   //{pat : /\bthey're\b/ig,		target : 'there'},      
-  {pat : /\banim(u|e)/ig,			target : 'cartoon'},
+  {pat : /\banim(u|e)/ig,			target : 'penis'},
   {pat : /madoka/ig,			target : 'meduca'},
   {pat : /magica/ig,			target : 'meguca'},
   {pat : /homura/ig,			target : 'hameru'},
