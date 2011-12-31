@@ -312,7 +312,7 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 });
 
 //fireworks.js
-$("#stagetools").append("<div class='fireworks'>FIRE</div>");
+//$("#stagetools").append("<div class='fireworks'>FIRE</div>");
 $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 	console.log("enter function");
 	$("#stagetools div.fireworks").live("click", function() {
