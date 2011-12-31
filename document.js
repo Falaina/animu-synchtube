@@ -211,6 +211,7 @@ var html =
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li class="showFullList"><a href="#">Show full video list</a></li>'+ 
 ' 						<li class="linkify"><a href="#">Linkify playlist</a></li>'+ 
+' 						<li class="disableFilters"><a href="#">Disable Wordfilters (not retroactive)</a></li>'+ 
 ' 					</ul>'+ 
 '			</div>' +
 '		</div>' +
@@ -310,6 +311,7 @@ $(".showFullList").click(function(){
 	}
     });	
     //Turn the entire list into right/middle-clickable URLs
+$(".disableFilters").click(function(){word_filters = {};});
 $(".linkify").click(function() {
 $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a target="_blank" class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
 });
