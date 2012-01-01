@@ -6,7 +6,6 @@ var doc_doit = function()
 
 var html = 
 '<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
-'<link href="//dysto.dyndns.org/synchtube/ChristmasTheme.css" rel="stylesheet" />'+
 '<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
 '<div class="customTheme"></div>' +
 
