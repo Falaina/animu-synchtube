@@ -1,6 +1,17 @@
 /* ORIGINAL /a/'s SYNCHTUBE CSS THEME CODE */
-.user_list .m span{color:rgb(76,76,166);}
+.user_list .m span{color:rgb(76,76,166);
 
+}
+.user_list .m :hover{
+
+ 
+}
+.user_list ,.user_list .m {
+
+}
+.user_list :hover{
+
+}
 .top-descr{
 height:170px;
 background-image:url(http://dysto.dyndns.org/synchtube/aBanner.php);
@@ -9,7 +20,7 @@ background-size:100%;
 padding-bottom:10px;
 }
 .descr-name {
-width:290px;
+width:270px;
 }
 .st-descr-avatar, .descr-name, .descr-stats{
 padding-top:120px;
@@ -38,11 +49,12 @@ visibility:hidden;
  position:relative;
  left:1px}   
  #boxLinks li a:hover{color:#fff;background:#000}     
+ #playlist .playlist ul li a{color:white;}
  #boxLinks li.active a{background:#fff;z-index:1;border-bottom: 1px solid #fff;}
  #boxLinks li.active a:hover{background:#000;}
- #box{height:250px;border:1px solid #ccc;overflow:hidden;padding:0px 30px 0px 30px;position:relative;top:-1px}    
+ #box{background-color:#fff;min-height:250px; height:100%;border:1px solid #ccc;overflow:hidden;padding:0px 30px 0px 30px;position:relative;top:-1px; padding-bottom:20px;}    
  #box1:target,#box2:target,#box3:target{display:block}   
- .box{display:none;height:250px;overflow:auto;display:block;position:relative;overflow-x:hidden}
+ .box{min-height:250px;display:none;height:100%;overflow:auto;display:block;position:relative;overflow-x:hidden}
  
 #truemiddle {background: none repeat scroll 0 0 #eef2ff;}
 
@@ -53,6 +65,7 @@ marquee b{-webkit-transition: color 1s ease-in; -moz-transition: color 1s ease-i
 marquee b:hover{ color:#A00000;}
 .defeatedList li{display:inline;-webkit-transition: background-color  1s, color 1s; -moz-transition: background-color  1s, color 1s; transition:background-color  1s, color 1s; -ms-transition:background-color  1s, color 1s; -o-transition:background-color  1s, color 1s;}
 .defeatedList li:hover{ color:#A00000; background-color:#eef1ff; }
+
  #boxLinks li a{ -webkit-transition: background 0.5s, color 0.5s; -moz-transition: background 0.5s, color 0.5s; -ms-transition:background 0.5s, color 0.5s; -o-transition:background 0.5s, color 0.5s;}
 .room-tags a{-webkit-transition: background 0.5s, color 0.5s; -moz-transition: background 0.5s, color 0.5s; -ms-transition:background 0.5s, color 0.5s; -o-transition:background 0.5s, color 0.5s;}
 h4 a{-webkit-transition: color 0.5s;}
@@ -62,23 +75,81 @@ h4 a:hover{color:#A00000;}
 .mirrorX{-webkit-transform: scaleX(-1); -moz-transform:scaleX(-1); transform:scaleX(-1);-ms-transform:scaleX(-1);-o-transform:scaleX(-1);}
 .mirrorY{-webkit-transform: scaleY(-1); -moz-transform:scaleY(-1); transform:scaleY(-1);-ms-transform:scaleY(-1);-o-transform:scaleY(-1);}
 
-/* madoka  img */
-
-p img{
+ img#p{
+padding-top:5px;
 width:400px;
-height:400px;
-}
-/* madoka wider transition */
+-webkit-transition:all 0.5s;
+-moz-transition:all 0.5s;
+-ms-transition: all 0.5s;
 
-#p{
--webkit-transition: padding-left 0.2s, width 0.2s;
--moz-transition: padding-left 0.2s, width 0.2s;
--ms-transition: padding-left 0.2s, width 0.2s;
--o-transition: padding-left 0.2s, width 0.2s;
-height:400px;
+-webkit-animation-timing-function:ease-in-out;
+-webkit-animation-delay: 0s;
+-webkit-animation-duration: 60s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-name:hovering;
 }
-#p:active{
-padding-left:10px;
-width:100%;
-height:400px;
+
+img#p:hover{
+width:410px;
+cursor:pointer;
 }
+#description .description div.cent{
+	margin-left:auto;
+	margin-right:auto;
+}
+p.cent{
+text-align:center;
+}
+
+#centerstage.player-large #chat,#centerstage.player-large #users{
+float:right;
+margin-left:0px;
+margin-right:45px;
+}
+#centerstage.player-large #playlist{
+float:left;
+margin-right:0px;
+margin-left:10px; 
+}
+.makeRelative{
+position:relative;
+}
+.makeSizable{
+height:100% !important;
+}
+
+/*****************************/
+/* 	Denshi's image corner    */
+/*****************************/
+
+/*classic modo */
+#st-vanilla .st-vanilla-lower-ct .st-vanilla-lower{
+background-position:600px 25px;
+background-size:300px;
+background-repeat:no-repeat;
+background-image:url(http://dl.dropbox.com/u/6902930/ChibhDenshi.jpg);
+background-color:white;
+}
+/*large and regular modo */
+#room .room{
+background-position:83% 100%;
+background-size:215px;
+background-repeat:no-repeat;
+background-image:url(http://dl.dropbox.com/u/6902930/ChibhDenshi.jpg);
+}
+/*---------------------------*/
+
+/*Custom spoiler color */
+#chat #chat_list .spoiler,#chat #chat_list .spoiler a{
+background:#B4B4B4;
+color:#B4B4B4;
+}
+#chat #chat_list .spoiler:hover{
+color:black;
+}
+#chat #chat_list .spoiler a:hover{
+color:blue;
+background:white;
+}
+/*---------------------------*/
+
