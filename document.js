@@ -88,6 +88,7 @@ var html =
 '						<li>&bull; Sacred Seven</li>'+
 '						<li>&bull; Sky Girls</li>'+
 '						<li>&bull; Ga-Rei Zero</li>'+
+'						<li>&bull; Hidan no Aria</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
