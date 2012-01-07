@@ -6,7 +6,7 @@ var doc_doit = function()
 //banners
 $(".banner" ).addClass(' slideshow');
 $(".banner" ).css('display', 'block');
-$(".banner" ).css('visibility', 'hidden');
+$(".banner" ).hide();
 var dystoLink = "dysto.dyndns.org/synchtube/banners/" ; 
 var banner =
 ' 	<img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
@@ -360,6 +360,6 @@ $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
       next: '.slideshow',
       pause: 1
     });
-	$(".banner" ).css('visibility', 'visible');
+	$(".banner" ).fadeIn('slow');
 });
 };
