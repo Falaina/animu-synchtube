@@ -3,6 +3,33 @@
 
 var doc_doit = function() 
 {
+//banners
+$(".banner" ).addClass(' slideshow');
+$(".banner" ).css('display', 'block');
+$(".banner" ).css('visibility', 'hidden');
+var dystoLink = "dysto.dyndns.org/synchtube/banners/" ; 
+var banner =
+' 	<img src="//i.imgur.com/ICDjO.png" width="100%" alt="chibi mods"/>' +
+'	<img src="//i.imgur.com/Af3ng.png" width="100%" alt="boku banner"/>' +
+'	<img src="//i.imgur.com/Ry3O7.png" width="100%" alt="black rock shooter banner"/>' +
+'	<img src="//i.imgur.com/Rs03U.png" width="100%" alt="banjo banner"/>' +
+'	<img src="//i.imgur.com/UzMe3.png" width="100%" alt="rolling gal banner"/>' +
+'	<img src="//i.imgur.com/gx8v1.png" width="100%" alt="miku banner"/>' +
+'	<img src="//i.imgur.com/tNzc3.jpg" width="100%" alt="bark banner"/>' +
+'	<img src="//i.imgur.com/3S7lg.jpg" width="100%" alt="cirno"/>' +
+'	<img src="//i.imgur.com/p9knC.png" width="100%" alt="NIGHT OF FIYA"/>' +
+'   <img src="//i.imgur.com/pU23W.png" width="100%" alt="dango"/>' +
+'   <img src="//i.imgur.com/UnBbO.png" width="100%" alt="Sword of loli outcast"/>' +
+'   <img src="//i.imgur.com/eklAA.png" width="100%" alt="Momiji"/>' +
+'   <img src="//i.imgur.com/1MtZ2.png" width="100%" alt="Carlito"/>' +
+'   <img src="//i.imgur.com/PN8AE.gif" width="100%" alt="Billy"/>' +
+'   <img src="//i.imgur.com/BcKQ5.jpg" width="100%" alt="steinsgate">' + 
+'   <img src="//' + dystoLink + 'itFE8.png" width="100%" alt="idolmaster1">' +
+'   <img src="//' + dystoLink + 'itFE8.png" width="100%" alt="idolmaster1">' +
+'   <img src="//' + dystoLink + 'ed3e01573f5.png" width="100%" alt="idolmaster2">' + 
+'   <img src="//' + dystoLink + 'Shotacons%20Gate%20V2.png" width="100%" alt="shotagate">';
+$(".banner" ).html(banner);
+
 
 var html = 
 '<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
@@ -324,5 +351,15 @@ $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 		return false
 	});
 });
-
+//rotating image script
+ $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
+    $('.slideshow').cycle({
+      fx: 'fade',
+      random: 1,
+      timeout: 30000,
+      next: '.slideshow',
+      pause: 1
+    });
+	$(".banner" ).css('visibility', 'visible');
+});
 };
