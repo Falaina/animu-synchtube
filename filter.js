@@ -77,6 +77,7 @@ var word_filters = [
   {pat : /\bflipt\b/ig,			target : '(╯°□°）╯︵ ┻━┻'},
   {pat : /\bflipt2\b/ig,			target : '(ノಠ益ಠ)ノ彡┻━┻'},
   {pat : /\bunflip\b/ig,			target : '┬──┬ ﻿ノ( ゜-゜ノ)'},
+  {pat : /\bunflip2\b/ig,			target : '┬──┬ ﻿ノ(≖益≖ノ)'},
   {pat : /kyuubey|kyubey|kyubei/ig,     target : 'coobie'},
   {pat : /magica/ig,			target : 'meguca'}
 
