@@ -348,7 +348,7 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 });
 
 //fireworks.js
-$("#stagetools").append("<div class='fireworks'><img src='//dysto.dyndns.org/synchtube/images/fire.png' alt='FIRE'  /></div>");
+$("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.org/synchtube/images/fire.png' alt='FIRE'  /></div>");
 $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 	$("#stagetools div.fireworks").live("click", function() {
 		createFirework(24,127,6,2,null,null,null,null,false,true);
