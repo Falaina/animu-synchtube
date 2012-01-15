@@ -67,7 +67,7 @@
 	  {pat : /mami/ig,			target : 'mumi'},
 	  {pat : /kyoko/ig,			target : 'kyaku'},
 	  {pat : /sayaka/ig,			target : 'seyiku'},
-  	{pat : /\blittle girl\b/ig,			target : 'shota'},  
+  	{pat : /\blittle girls*\b/ig,			target : 'shota'},  
 	  {pat : /\barrow\b/ig,			target : 'shota'},
 	  {pat : /\beveryone\b/ig,			target : 'everynyan'},
 	  {pat : /\bplan\b/ig,			target : 'keikaku'},
