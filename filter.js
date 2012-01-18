@@ -45,10 +45,10 @@
 	}
 	
 	var word_filters = [
-	  {pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-neesama'},      
+	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-neesama'},      
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,		target : 'yuruyuri'},        
 	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,		target : 'yuru'},        
-	  {pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'POMF =3'},      
+	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'POMF =3'},      
 	  //{pat : /(@_+@|~_+~)/g,                  target : 'XD'},
 	  //{pat : /\b(:3)\b/g,                  target : 'xiox :3'},
 	  //{pat : /\b(u_+u)\b/g,                  target : '^_^'},
@@ -67,7 +67,7 @@
 	  {pat : /mami/ig,			target : 'mumi'},
 	  {pat : /kyoko/ig,			target : 'kyaku'},
 	  {pat : /sayaka/ig,			target : 'seyiku'},
-  	{pat : /\blittle girls*\b/ig,			target : 'shota'},  
+          {pat : /\blittle girls*\b/ig,			target : 'shota'},  
 	  {pat : /\barrow\b/ig,			target : 'shota'},
 	  {pat : /\beveryone\b/ig,			target : 'everynyan'},
 	  {pat : /\bplan\b/ig,			target : 'keikaku'},
