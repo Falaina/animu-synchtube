@@ -70,6 +70,7 @@
 	  {pat : /\bunflip2\b/ig,			target : '┬──┬ ﻿ノ(≖益≖ノ)'},
 	  {pat : /kyuubey|kyubey|kyubei/ig,     target : 'coobie'},
 	  {pat : /magica/ig,			target : 'meguca'},
+	  {pat : /\btofu\b/ig,                  target : 'ginger'}
 	  	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-neesama'},      
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,		target : 'yuruyuri'},        
 	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,		target : 'yuru'},        
