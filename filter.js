@@ -44,22 +44,10 @@
 		return hash;
 	}
 	
-	var word_filters = [
-	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-neesama'},      
-	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,		target : 'yuruyuri'},        
-	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,		target : 'yuru'},        
-	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'POMF =3'},      
-	  //{pat : /(@_+@|~_+~)/g,                  target : 'XD'},
-	  //{pat : /\b(:3)\b/g,                  target : 'xiox :3'},
-	  //{pat : /\b(u_+u)\b/g,                  target : '^_^'},
+	var word_filters = [  	  
 	  {pat : /\b(i|l)o(li|ii)/ig,                       target : 'shota'},
 	  {pat : /\|([^\|]*)\|/g,                  target : '[spoiler]$1[/spoiler]'},
 	  {pat : /\brea(l|I)\b/ig,		target : 'hontou ni'},      
-	  //{pat : /\byour\b/ig,		target : 'you\'re'},      
-	  //{pat : /\byou're\b/ig,		target : 'your'},      
-	  //{pat : /\btheir\b/ig,		target : 'they\'re'},      
-	  //{pat : /\bthere\b/ig,		target : 'their'},      
-	  //{pat : /\bthey're\b/ig,		target : 'there'},      
 	  {pat : /\banim(u|e)/ig,			target : 'penis'},
 	  {pat : /madoka/ig,			target : 'meduca'},
 	  {pat : /magica/ig,			target : 'meguca'},
@@ -81,6 +69,17 @@
 	  {pat : /\bunflip\b/ig,			target : '┬──┬ ﻿ノ( ゜-゜ノ)'},
 	  {pat : /\bunflip2\b/ig,			target : '┬──┬ ﻿ノ(≖益≖ノ)'},
 	  {pat : /kyuubey|kyubey|kyubei/ig,     target : 'coobie'},
-	  {pat : /magica/ig,			target : 'meguca'}
-	
+	  {pat : /magica/ig,			target : 'meguca'},
+	  	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-neesama'},      
+	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,		target : 'yuruyuri'},        
+	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,		target : 'yuru'},        
+	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,		target : 'POMF =3'},      
+	  //{pat : /(@_+@|~_+~)/g,                  target : 'XD'},
+	  //{pat : /\b(:3)\b/g,                  target : 'xiox :3'},
+	  //{pat : /\b(u_+u)\b/g,                  target : '^_^'},
+	  //{pat : /\byour\b/ig,		target : 'you\'re'},      
+	  //{pat : /\byou're\b/ig,		target : 'your'},      
+	  //{pat : /\btheir\b/ig,		target : 'they\'re'},      
+	  //{pat : /\bthere\b/ig,		target : 'their'},      
+	  //{pat : /\bthey're\b/ig,		target : 'there'},    
 	];
