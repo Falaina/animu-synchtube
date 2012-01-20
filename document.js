@@ -257,8 +257,8 @@ var html =
 ' 						<li> !choose <option 1, option 2, ...> - Randomly chooses from the supplied items.</li>' +
 ' 						<li> !ask <yes or no question> - Randomly answers yes or no</li>' +
 ' 						<li> !8ball <question> - Provides a magic eight-ball style answer</li>' +
-' 						<li> !addrandom <number> - Adds <number> random videos to the playlist </ br> [Note: Limited to 5 videos. Only works if playlist has less than 10 videos.]</li>' +
-' 						<li> !reset - Resets Denshi </ br> [Note: Denshi will attempt to take leader if leader has not typed in last 10 minutes]</li>' +
+' 						<li> !addrandom <number> - Adds <number> random videos to the playlist <br /> [Note: Limited to 5 videos. Only works if playlist has less than 10 videos.]</li>' +
+' 						<li> !reset - Resets Denshi <br /> [Note: Denshi will attempt to take leader if leader has not typed in last 10 minutes]</li>' +
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b> Moderator Commands:</b>' +
