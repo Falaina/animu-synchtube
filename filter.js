@@ -56,7 +56,7 @@
 	  {pat : /kyoko/ig,			target : 'kyaku'},
 	  {pat : /sayaka/ig,			target : 'seyiku'},
           {pat : /\blittle girls*\b/ig,			target : 'shota'},  
-	  {pat : /\barrow\b/ig,			target : 'shota'},
+	  {pat : /\barrows*\b/ig,			target : 'shota'},
 	  {pat : /\beveryone\b/ig,			target : 'everynyan'},
 	  {pat : /\bplan\b/ig,			target : 'keikaku'},
 	  {pat : /\bqb\b/ig,	                        target : '／人◕ ‿‿ ◕人＼'},
