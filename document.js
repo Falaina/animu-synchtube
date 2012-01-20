@@ -245,6 +245,22 @@ var html =
 ' 						<li class="disableFilters"><a href="#">Disable Wordfilters (not retroactive)</a></li>'+ 
 ' 					</ul>'+ 
 '			</div>' +
+'			<div class="box" id="box5">' +
+'					<br />' +
+'					<b> Denshi Commands:</b>' +
+'					<ul style="list-style-type: square; margin-left:16px">' +
+' 						<li> !wolfram <question> - Submits <question> to WolframAlpha</li>' +
+' 						<li> !cleverbot <text> - Submits <text> to CleverBot</li>' +
+' 						<li> !<x>d<y> (!1d6) - Rolls a <y>-sided die <x> times</li>' +
+' 						<li> !choose <option 1, option 2, ...> - Randomly chooses from the supplied items.</li>' +
+' 						<li> !ask <yes or no question> - Randomly answers yes or no</li>' +
+' 						<li> !8ball <question> - Provides a magic eight-ball style answer</li>' +
+' 					</ul>'+ 
+' 					<br />'+ 
+'					<b> Moderator Commands:</b>' +
+'					<ul style="list-style-type: square; margin-left:16px">' +
+' 					</ul>'+ 
+'			</div>' +
 '		</div>' +
 '   </div> ' +
 '</div>' +
