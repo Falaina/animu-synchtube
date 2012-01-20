@@ -57,6 +57,8 @@ var html =
 '			<li>' +
 '				<a href="#box4"><b>Settings</b></a></li>' +
 '			<li>' +
+'				<a href="#box5"><b>Denshi</b></a></li>' +
+'			<li>' +
 '				<a id="debuglink" href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
 '		</ul>' +
 '		<div id="box">' +
