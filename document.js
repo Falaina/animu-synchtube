@@ -247,7 +247,7 @@ var html =
 ' 						<li class="disableFilters"><a href="#">Disable Wordfilters (not retroactive)</a></li>'+ 
 ' 					</ul>'+ 
 '			</div>' +
-'			<div class="box" id="box5" style="background-image: url(http://i.imgur.com/5Nbpq.png); background-position: center; background-repeat: no-repeat;">' +
+'			<div class="box" id="box5" >' +
 '					<br />' +
 '					<b> Denshi Commands:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
