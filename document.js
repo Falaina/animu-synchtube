@@ -222,7 +222,7 @@ var html =
 '			<div class="box" id="box3">' +
 '				<div id="debug"></div>' +
 '			</div>' +
-'			<div class="box" id="box4">' +
+'			<div class="box" id="box4" >' +
 '					<br />' +
 '					<b>Video Settings</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
@@ -247,7 +247,7 @@ var html =
 ' 						<li class="disableFilters"><a href="#">Disable Wordfilters (not retroactive)</a></li>'+ 
 ' 					</ul>'+ 
 '			</div>' +
-'			<div class="box" id="box5">' +
+'			<div class="box" id="box5" style="background-image: url(http://i.imgur.com/0JQvQ.jpg);">' +
 '					<br />' +
 '					<b> Denshi Commands:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
@@ -257,6 +257,8 @@ var html =
 ' 						<li> !choose <option 1, option 2, ...> - Randomly chooses from the supplied items.</li>' +
 ' 						<li> !ask <yes or no question> - Randomly answers yes or no</li>' +
 ' 						<li> !8ball <question> - Provides a magic eight-ball style answer</li>' +
+' 						<li> !addrandom <number> - Adds <number> random videos to the playlist </ br> [Note: Limited to 5 videos. Only works if playlist has less than 10 videos.]</li>' +
+' 						<li> !reset - Resets Denshi </ br> [Note: Denshi will attempt to take leader if leader has not typed in last 10 minutes]</li>' +
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b> Moderator Commands:</b>' +
