@@ -56,7 +56,6 @@
 	  {pat : /kyoko/ig,			target : 'kyaku'},
 	  {pat : /sayaka/ig,			target : 'seyiku'},
           {pat : /\blittle girls*\b/ig,			target : 'shota'},  
-	  {pat : /\barrows*\b/ig,			target : 'shota'},
 	  {pat : /\beveryone\b/ig,			target : 'everynyan'},
 	  {pat : /\bplan\b/ig,			target : 'keikaku'},
 	  {pat : /\bqb\b/ig,	                        target : '／人◕ ‿‿ ◕人＼'},
@@ -71,7 +70,8 @@
 	  {pat : /kyuubey|kyubey|kyubei/ig,     target : 'coobie'},
 	  {pat : /magica/ig,			target : 'meguca'},
 	  {pat : /tsundere/ig,                  target : 'bipolar'},
-	  {pat : /\btofu\b/ig,                  target : 'ginger'}
+	  {pat : /\btofu\b/ig,                  target : 'ginger'},
+	  {pat : /took an arrow to the knee/ig,  target : 'took a dick to the mouth'}
 	  	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-neesama'},      
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,		target : 'yuruyuri'},        
 	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,		target : 'yuru'},        
