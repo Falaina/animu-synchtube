@@ -71,7 +71,8 @@
 	  {pat : /magica/ig,			target : 'meguca'},
 	  {pat : /tsundere/ig,                  target : 'bipolar'},
 	  {pat : /\btofu\b/ig,                  target : 'ginger'},
-	  {pat : /took an arrow to the knee/ig,  target : 'took a dick to the mouth'}
+	  {pat : /\bready\b/ig,  target : 'lady'},
+	  {pat : /arrow to the knee/ig,  target : 'dick to the mouth'}
 	  	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,		target : '$1-neesama'},      
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,		target : 'yuruyuri'},        
 	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,		target : 'yuru'},        
