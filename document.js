@@ -37,6 +37,7 @@ $(".banner" ).html(banner);
 
 var html = 
 '<link href="//dysto.dyndns.org/synchtube/synchAbout.css" rel="stylesheet" />'+
+'<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet" />'+
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
 
 '<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
@@ -276,17 +277,6 @@ var html =
 
 $(" #description .description").html(html);
 
-_gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-28544703-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-
 // Set up banner and infobox transitions
 $('.box').hide();
 $('ul.group li:first').addClass('active').show();
@@ -377,7 +367,7 @@ $(".showFullList").click(function(){
 		$(".jspContainer").addClass("makeSizable");		
 		$(".jspVerticalBar").addClass("jspCap");		
 	}
-    });	
+});	
     //Turn the entire list into right/middle-clickable URLs
 $(".disableFilters").click(function(){word_filters = {};});
 $(".linkify").click(function() {
@@ -386,6 +376,7 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 
 //fireworks.js
 $("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.org/synchtube/images/fire.png' alt='FIRE'  /></div>");
+
 $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 	$("#stagetools div.fireworks").live("click", function() {
 		createFirework(24,127,6,2,null,null,null,null,false,true);
@@ -403,4 +394,16 @@ $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
     });
 	$(".banner" ).fadeIn('slow');
 });
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-28544703-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+
 };
