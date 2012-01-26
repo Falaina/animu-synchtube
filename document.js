@@ -36,9 +36,8 @@ $(".banner" ).html(banner);
 
 
 var html = 
-'<link href="//dysto.dyndns.org/test/cssbanner/synchbanner2.css" rel="stylesheet" />'+
-'<link href="//dysto.dyndns.org/synchtube/special.css" rel="stylesheet" />'+
-'<div class="customTheme"></div>' +
+'<link href="//dysto.dyndns.org/synchtube/synchAbout.css" rel="stylesheet" />'+
+'<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
 
 '<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
@@ -233,12 +232,12 @@ var html =
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b>Room Themes</b>' +
-'					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li class="themeEmpty"><a href="#">Standard Theme</a></li>'+ 
-' 						<li class="themeMuki"><a href="#">Hatsune Miku Theme</a></li>'+ 
-' 						<li class="themeSteinsGate"><a href="#">Steins;Gate Theme</a></li>'+ 
-'						<li class="themeHalloween"><a href="#">Halloween 2011 Theme</a></li>'+
-'						<li class="themeChristmas"><a href="#">Christmas 2011 Theme</a></li>'+
+'					<ul class="themes" style="list-style-type: square; margin-left:16px">' +
+' 						<li><a href="#themeEmpty">Standard Theme</a></li>'+ 
+' 						<li><a href="#themeMuki">Hatsune Miku Theme</a></li>'+ 
+' 						<li><a href="#themeSteinsGate">Steins;Gate Theme</a></li>'+ 
+'						<li><a href="#themeHalloween">Halloween 2011 Theme</a></li>'+
+'						<li><a href="#themeChristmas">Christmas 2011 Theme</a></li>'+
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b>Other Settings</b>' +
@@ -340,21 +339,27 @@ $(".rotate").click(function(){
     });
 
  //Theme switch
-     $(".themeEmpty").click(function(){
-		$('.customTheme').empty();
-    });
-    $(".themeMuki").click(function(){
-		$('.customTheme').html('<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet"/>');
-    });
-    $(".themeSteinsGate").click(function(){
-		$('.customTheme').html('<link href="//dysto.dyndns.org/synchtube/steinsTheme.css" rel="stylesheet"/>');
-    });
-    $(".themeHalloween").click(function(){
-		$('.customTheme').html('<link href="//dysto.dyndns.org/synchtube/HalloweenTheme.css" rel="stylesheet"/>');
-    });
-    $(".themeChristmas").click(function(){
-		$('.customTheme').html('<link href="//dysto.dyndns.org/synchtube/ChristmasTheme.css" rel="stylesheet"/>');
-    });
+$("ul.themes a").click(function(){
+	var theme = $(this).attr("href");
+		
+	switch(theme){
+		case "#themeEmpty" :
+			$(".customTheme link[rel=stylesheet]").attr({href : "#"} );
+		break;
+		case "#themeMuki" :
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/mikuTheme.css"} );
+		break;
+		case "#themeSteinsGate" :
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/steinsTheme.css"} );
+		break;
+		case "#themeHalloween" :
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme.css"} );
+		break;
+		case "#themeChristmas" :
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/ChristmasTheme.css"} );
+		break;
+	}
+});
 	
 //show the full video list
 $(".showFullList").click(function(){
