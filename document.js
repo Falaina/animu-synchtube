@@ -37,7 +37,6 @@ $(".banner" ).html(banner);
 
 var html = 
 '<link href="//dysto.dyndns.org/synchtube/synchAbout.css" rel="stylesheet" />'+
-'<link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet" />'+
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
 
 '<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
