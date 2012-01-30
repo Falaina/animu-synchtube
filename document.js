@@ -32,6 +32,7 @@ var banner =
 '   <img src="//' + dystoLink + '4TAcD.png" alt="idolmaster2">' +
 '   <img src="//' + dystoLink + 'ed3e01573f5.png" alt="idolmaster3">' + 
 '   <img src="//' + dystoLink + 'Shotacons%20Gate%20V2.png" alt="shotagate">';
+'   <img src="//' + dystoLink + 'raw.png" alt="raw">';
 $(".banner" ).html(banner);
 
 
