@@ -45,10 +45,12 @@
 	}
 	
 	var word_filters = [  	  
-	  {pat : /\b(i|l)o(li|ii)/ig,                   target : 'shota'},
+	  {pat : /\b(i|l)o(li|ii)/ig,                  		target : 'shota'},
 	  {pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'},
 	  //{pat : /\brea(l|I)\b/ig,				target : 'hontou ni'},   
 	  {pat : /\bphase/ig,					target : 'p0n0s'},
+	  {pat : /\bcurfew/ig,					target : 'p0n0s'},
+	  {pat : /\bdyson/ig,					target : 'moejets'},
 	  {pat : /\banim(u|e)/ig,				target : 'penis'},
 	  {pat : /madoka/ig,					target : 'meduca'},
 	  {pat : /magica/ig,					target : 'meguca'},
