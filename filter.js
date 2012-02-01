@@ -47,7 +47,8 @@
 	var word_filters = [  	  
 	  {pat : /\b(i|l)o(li|ii)/ig,                   target : 'shota'},
 	  {pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'},
-	  //{pat : /\brea(l|I)\b/ig,				target : 'hontou ni'},      
+	  //{pat : /\brea(l|I)\b/ig,				target : 'hontou ni'},   
+	  {pat : /\bphase/ig,					target : 'p0n0s'},
 	  {pat : /\banim(u|e)/ig,				target : 'penis'},
 	  {pat : /madoka/ig,					target : 'meduca'},
 	  {pat : /magica/ig,					target : 'meguca'},
