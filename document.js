@@ -162,6 +162,7 @@ var html =
 '						<li>&bull; Kakurenbo</li>'+
 '						<li>&bull; Hoshi o Ou Kodomo</li>'+
 '						<li>&bull; Tokyo Godfathers</li>'+
+'						<li>&bull; Dead Leaves</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
