@@ -278,7 +278,7 @@ var html =
 ' 						<li><a target="_blank" href="http://www.youtube.com/user/AnimuOnMySynchtube">Synchtube\'s Channel</a> </li>' +
 ' 					</ul>'+ 
 '					<br />' +
-'					<b> Handy Links:</b>' +
+'					<b> Usefull Links:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li><a target="_blank" href="http://mikudb.com/">Miku albums database</a></li>' +
 ' 					</ul>'+ 
