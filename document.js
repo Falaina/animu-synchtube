@@ -53,11 +53,13 @@ var html =
 '			<li>' +
 '				<a href="#box1"><b>Main</b></a></li>' +
 '			<li>' +
-'				<a href="#box2"><b>Etc</b></a></li>' +
+'				<a href="#box6"><b>Links</b></a></li>' +
+'			<li>' +
+'				<a href="#box5"><b>Denshi</b></a></li>' +
 '			<li>' +
 '				<a href="#box4"><b>Settings</b></a></li>' +
 '			<li>' +
-'				<a href="#box5"><b>Denshi</b></a></li>' +
+'				<a href="#box2"><b>Etc</b></a></li>' +
 '			<li>' +
 '				<a id="debuglink" href="#box3" style="visibility: hidden"><b>Debug</b></a></li>' +
 '		</ul>' +
@@ -112,9 +114,9 @@ var html =
 '						<li>&bull; Dokuro-Chan</li>'+
 '						<li>&bull; Rozen Maiden S1</li>'+
 '						<li>&bull; Gaki No Tsukai Yugawara</li>'+
-'                      	<li>&bull; Paranoia Agent</li>' +
-'                       <li>&bull; Katanagatari</li>' +
-'                       <li>&bull; Koe de Oshigoto</li>' +
+'                      				<li>&bull; Paranoia Agent</li>' +
+'                       			<li>&bull; Katanagatari</li>' +
+'                       			<li>&bull; Koe de Oshigoto</li>' +
 '						<li>&bull; Ladies vs Butler</li>'+
 '						<li>&bull; Colour Wars!</li>'+
 '						<li>&bull; Alien Nine</li>'+
@@ -163,6 +165,7 @@ var html =
 '						<li>&bull; Hoshi o Ou Kodomo</li>'+
 '						<li>&bull; Tokyo Godfathers</li>'+
 '						<li>&bull; Dead Leaves</li>'+
+'						<li>&bull; Animatrix</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -265,6 +268,19 @@ var html =
 ' 					<br />'+ 
 '					<b> Moderator Commands:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
+' 					</ul>'+ 
+'			</div>' +
+'			<div class="box" id="box6" >' +
+'					<br />' +
+'					<b> Tube Channels:</b>' +
+'					<ul style="list-style-type: square; margin-left:16px">' +
+' 						<li><a target="_blank" href="http://www.youtube.com/animuship">Goship\'s Channel 1</a>      <a target="_blank"  href="http://www.youtube.com/mmdship"> 2 </a></li>' +
+' 						<li><a target="_blank" href="http://www.youtube.com/user/AnimuOnMySynchtube">Synchtube\'s Channel</a> </li>' +
+' 					</ul>'+ 
+'					<br />' +
+'					<b> Handy Links:</b>' +
+'					<ul style="list-style-type: square; margin-left:16px">' +
+' 						<li><a target="_blank" href="http://mikudb.com/">Miku albums database</a></li>' +
 ' 					</ul>'+ 
 '			</div>' +
 '		</div>' +
