@@ -73,6 +73,7 @@ var html =
 '		<tr>'+
 '			<td>'+
 '				<ul>'+
+'					<li>&bull; kokorokokoro 3 hours</li>'+
 '					<li>&bull; Victorique sings "Kujo gave me a kimono" for 3 hours</li>'+
 '					<li>&bull; 10 hours Samurai Logic x Nichijou  </li>'+
 '					<li>&bull; 【東方】 Bad Apple 10 hours 10時間  </li>'+
