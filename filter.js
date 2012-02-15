@@ -79,7 +79,7 @@
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,	target : '$1-neesama'},      
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,	target : 'yuruyuri'},        
 	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,			target : 'yuru'},        
-	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'POMF =3'},      
+	  {pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'lee'},      
 	  //{pat : /(@_+@|~_+~)/g,                		target : 'XD'},
 	  //{pat : /\b(:3)\b/g,               			target : 'xiox :3'},
 	  //{pat : /\b(u_+u)\b/g,          			target : '^_^'},
