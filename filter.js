@@ -75,7 +75,6 @@
 	  {pat : /tsundere/ig,					target : 'bipolar'},
 	  {pat : /\btofu\b/ig,					target : 'ginger'},
 	  {pat : /\bready\b/ig,					target : 'l@dy'},
-	  {pat : /arrow to the knee/ig,				target : 'dick to the mouth'}
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,	target : '$1-neesama'},      
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,	target : 'yuruyuri'},        
 	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,			target : 'yuru'},        
@@ -88,4 +87,5 @@
 	  //{pat : /\btheir\b/ig,				target : 'they\'re'},      
 	  //{pat : /\bthere\b/ig,				target : 'their'},      
 	  //{pat : /\bthey're\b/ig,				target : 'there'},    
+	  {pat : /arrow to the knee/ig,				target : 'dick to the mouth'}	  
 	];
