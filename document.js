@@ -126,6 +126,7 @@ var html =
 '						<li>&bull; Sky Girls</li>'+
 '						<li>&bull; Ga-Rei Zero</li>'+
 '						<li>&bull; Hidan no Aria</li>'+
+'						<li>&bull; Moyashimon</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
