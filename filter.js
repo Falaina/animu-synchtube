@@ -2,7 +2,7 @@
 	  Message_one.fn.renderOld = Message_one.fn.render
 	  Message_one.fn.renderOld.$instrumented = true
 	  Message_one.fn.render = function(){
-	    if(this.item.nick.toLowerCase() === 'yamada' && false) {
+	    if(this.item.nick.toLowerCase() === 'yamada' && true) {
 	      var words = this.item.msg.split(" ")
 	      for(var i=0; i < words.length; i++) {
 	        var rep_words = ["YAMADA", "yama~da", "ya~", "yamada"];
