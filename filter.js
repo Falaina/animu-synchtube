@@ -76,6 +76,7 @@
 	  {pat : /\btofu\b/ig,					target : 'ginger'},
 	  {pat : /\bready\b/ig,					target : 'l@dy'},
 	  {pat : /\barc\b/ig,					target : 'kawaiiest boy'},
+	  {pat : /\moe\b/ig,					target : 'autistic'},	  
 	  {pat : /\bautism\b/ig,				target : 'moe'},
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,	target : '$1-neesama'},      
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,	target : 'yuruyuri'},        
