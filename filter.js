@@ -15,11 +15,19 @@
 	      var urlified = (helpers && helpers.linkify && helpers.linkify(this.item.msg)) || this.item.msg;
 	      if(urlified === this.item.msg) {
 	      	var randNum = this.item.msg.hashCode() + this.item.sid.hashCode();
+	      	var visited = {};
 	//     	console.log(this.item, randNum)
-		for(var i=0; i < word_filters.length; i++) {
+		for(var i=0; i < word_filters.length; i++) {			
 	          var old = this.item.msg;
-		  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);
-		  if (old !== this.item.msg) {}
+		  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);		  
+		  if (old !== this.item.msg) {
+		  	if (visited[this.item.msg]) {
+		  		this.item.msg = old;
+		  		continue;
+		  	}
+		  	
+		  }
+		  visited[this.item.msg] = true;
 		}
 		if ((randNum % 10) === 0) {
 		  this.item.msg = this.item.msg + " ~ de geso";
@@ -76,7 +84,7 @@
 	  {pat : /\btofu\b/ig,					target : 'ginger'},
 	  {pat : /\bready\b/ig,					target : 'l@dy'},
 	  {pat : /\barc\b/ig,					target : 'kawaiiest boy'},
-	  {pat : /\moe\b/ig,					target : 'autistic'},	  
+	  {pat : /\moe\b/ig,					target : 'autism'},	  
 	  {pat : /\bautism\b/ig,				target : 'moe'},
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,	target : '$1-neesama'},      
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,	target : 'yuruyuri'},        
