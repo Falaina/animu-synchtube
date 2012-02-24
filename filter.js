@@ -20,7 +20,7 @@
 	    var oldMsg, oldNick;
 	    
 	    if(this.item.nick.toLowerCase() === 'denshi' && 
-	       (match = this.item.msg.match(/^\[(\S+)\] (.*)/)) && true) {
+	       (match = this.item.msg.match(/^\((\S+)\) (.*)/)) && true) {
 	       	oldMsg = this.item.msg;
 	       	oldNick = this.item.nick;
 	       	if(match && match[1] && match[2]) {
@@ -67,7 +67,7 @@
 	    if(this.item.$irc) {
 		    var un = out.el.find("span.cun");
 		    var un_txt = un.html();
-		    un_txt = un_txt.replace(/:/, "(IRC):");
+		    un_txt = un_txt.replace(/:/, "[IRC]:");
 		    un.html(un_txt);
 	    }
 	    return out;
