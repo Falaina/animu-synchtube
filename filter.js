@@ -64,8 +64,10 @@
 	      }
 	    }
 	    var out = Message_one.fn.renderOld.apply(this, arguments);
-	    console.log(out);
-	    console.log(out.el.find("span.cun"));
+	    var un = out.el.find("span.cun");
+	    var un_txt = un.html();
+	    console.log(un_txt);
+	    console.log(un);
 	    return out;
 	  }
 	  Message_one.fn.render.$instrumented = true
