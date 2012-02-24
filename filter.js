@@ -66,6 +66,7 @@
 	    var out = Message_one.fn.renderOld.apply(this, arguments);
 	    var un = out.el.find("span.cun");
 	    var un_txt = un.html();
+	    un_txt.replace(/:/, "[IRC]:");
 	    console.log(un_txt);
 	    console.log(un);
 	    return out;
