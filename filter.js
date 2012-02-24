@@ -2,10 +2,17 @@
 	  Message_one.fn.renderOld = Message_one.fn.render
 	  Message_one.fn.renderOld.$instrumented = true
 	  Message_one.fn.render = function(){
+	    var oldMsg, oldNick;
 	    console.log(this.item);
 	    
 	    if(this.item.nick.toLowerCase() === 'denshi' && 
 	       (match = this.item.msg.match(/^\[(\S+)\] (.*)/)) && true) {
+	       	oldMsg = this.item.msg;
+	       	oldNick = this.item.nick;
+	       	if(match && match[1] && match[2]) {
+	       		this.item.msg = match[2];
+	       		this.item.nick = match[1];
+	       	}
 	       	console.log(this, match)
 	       }
 	    
