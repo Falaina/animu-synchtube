@@ -25,7 +25,7 @@
 	       	oldNick = this.item.nick;
 	       	if(match && match[1] && match[2]) {
 	       		this.item.msg = match[2];
-	       		this.item.nick = match[1] + "IRC";
+	       		this.item.nick = match[1];
 	       		this.item.$irc = true;
 	       		
 	       	}
