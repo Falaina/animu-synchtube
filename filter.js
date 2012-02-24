@@ -4,7 +4,6 @@
 	  Message_one.fn.prepareItem = function(){ 
 	     var old_sid = this.master.last_sid;	  	
 	     if(this.item.$irc || (this.item.nick.toLowerCase() === 'denshi')) {	
-		     console.log("old sid", old_sid);
 		     this.master.last_sid = null;
 		     this.$instrumented = true;	     		     
 	     }
@@ -30,7 +29,6 @@
 	       		this.item.$irc = true;
 	       		
 	       	}
-	       	console.log(this, match)
 	       }
 	    
 	    if(this.item.nick.toLowerCase() === 'yamada' && false) {
@@ -65,7 +63,9 @@
 		}
 	      }
 	    }
-	    return Message_one.fn.renderOld.apply(this, arguments);
+	    var out = Message_one.fn.renderOld.apply(this, arguments);
+	    console.log(out);
+	    return out;
 	  }
 	  Message_one.fn.render.$instrumented = true
 	  $desc = $("#leader-welcome-message-textarea").val()
