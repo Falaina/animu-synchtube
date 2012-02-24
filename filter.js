@@ -2,9 +2,13 @@
 	  Message_one.fn.prepareItemOld = Message_one.fn.prepareItem
 	  Message_one.fn.prepareItemOld.$instrumented = true
 	  Message_one.fn.prepareItem = function(){ 
-	     this.$instrumented = true;
-	     console.log("preparing", this);
-	     return Message_one.fn.prepareItemOld.apply(this, arguments);	  	
+	     var old_sid = this.master.last_sid;
+	     console.log("old sid", old_sid);
+	     this.master.last_sid = null;
+	     this.$instrumented = true;	     
+	     var out = Message_one.fn.prepareItemOld.apply(this, arguments);	  	
+	     console.log("prepared", this, out);
+	     return out;
 	  }
 	}
 	  	
@@ -13,7 +17,6 @@
 	  Message_one.fn.renderOld.$instrumented = true
 	  Message_one.fn.render = function(){
 	    var oldMsg, oldNick;
-	    console.log(this.item);
 	    
 	    if(this.item.nick.toLowerCase() === 'denshi' && 
 	       (match = this.item.msg.match(/^\[(\S+)\] (.*)/)) && true) {
@@ -22,8 +25,8 @@
 	       	if(match && match[1] && match[2]) {
 	       		this.item.msg = match[2];
 	       		this.item.nick = match[1] + "IRC";
-	       		this.last_sid = null;
-	       		this.master.last_Sid = null;
+	       		this.item.$irc = true;
+	       		
 	       	}
 	       	console.log(this, match)
 	       }
