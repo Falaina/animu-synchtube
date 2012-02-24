@@ -12,6 +12,8 @@
 	       	if(match && match[1] && match[2]) {
 	       		this.item.msg = match[2];
 	       		this.item.nick = match[1] + "IRC";
+	       		this.last_sid = null;
+	       		this.master.last_Sid = null;
 	       	}
 	       	console.log(this, match)
 	       }
