@@ -65,6 +65,7 @@
 	    }
 	    var out = Message_one.fn.renderOld.apply(this, arguments);
 	    console.log(out);
+	    console.log(out.el.find("span.cun"));
 	    return out;
 	  }
 	  Message_one.fn.render.$instrumented = true
