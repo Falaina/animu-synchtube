@@ -5,8 +5,8 @@
 	    console.log(this.item);
 	    
 	    if(this.item.nick.toLowerCase() === 'denshi' && 
-	       this.item.msg.match(/^\[\S+\] /) && true) {
-	       	console.log(this);	       	
+	       (match = this.item.msg.match(/^\[(\S+)\] (.*)/)) && true) {
+	       	console.log(this, match)
 	       }
 	    
 	    if(this.item.nick.toLowerCase() === 'yamada' && false) {
