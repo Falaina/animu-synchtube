@@ -2,12 +2,14 @@
 	  Message_one.fn.prepareItemOld = Message_one.fn.prepareItem
 	  Message_one.fn.prepareItemOld.$instrumented = true
 	  Message_one.fn.prepareItem = function(){ 
-	     var old_sid = this.master.last_sid;
-	     console.log("old sid", old_sid);
-	     this.master.last_sid = null;
-	     this.$instrumented = true;	     
+	     var old_sid = this.master.last_sid;	  	
+	     if(this.item.$irc) {	
+		     console.log("old sid", old_sid);
+		     this.master.last_sid = null;
+		     this.$instrumented = true;	     		     
+	     }
 	     var out = Message_one.fn.prepareItemOld.apply(this, arguments);	  	
-	     console.log("prepared", this, out);
+	     if(old_sid) {this.master.last_sid = old_sid;}
 	     return out;
 	  }
 	}
