@@ -1,4 +1,14 @@
-	if(!Message_one.fn.render.$instrumented) {
+	if(!Message_one.fn.prepareItem.$instrumented) {	  		
+	  Message_one.fn.prepareItemOld = Message_one.fn.prepareItem
+	  Message_one.fn.prepareItemOld.$instrumented = true
+	  Message_one.fn.prepareItem = function(){ 
+	     this.$instrumented = true;
+	     console.log("preparing", this);
+	     return Message_one.fn.prepareItemOld.apply(this, arguments);	  	
+	  }
+	}
+	  	
+	if(!Message_one.fn.render.$instrumented) {	  		
 	  Message_one.fn.renderOld = Message_one.fn.render
 	  Message_one.fn.renderOld.$instrumented = true
 	  Message_one.fn.render = function(){
