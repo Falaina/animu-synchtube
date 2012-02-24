@@ -3,7 +3,7 @@
 	  Message_one.fn.prepareItemOld.$instrumented = true
 	  Message_one.fn.prepareItem = function(){ 
 	     var old_sid = this.master.last_sid;	  	
-	     if(this.item.$irc) {	
+	     if(this.item.$irc || (this.item.nick.toLowerCase() === 'denshi')) {	
 		     console.log("old sid", old_sid);
 		     this.master.last_sid = null;
 		     this.$instrumented = true;	     		     
