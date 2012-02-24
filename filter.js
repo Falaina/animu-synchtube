@@ -64,11 +64,12 @@
 	      }
 	    }
 	    var out = Message_one.fn.renderOld.apply(this, arguments);
-	    var un = out.el.find("span.cun");
-	    var un_txt = un.html();
-	    un_txt.replace(/:/, "[IRC]:");
-	    console.log(un_txt);
-	    console.log(un);
+	    if(this.item.$irc) {
+		    var un = out.el.find("span.cun");
+		    var un_txt = un.html();
+		    un_txt = un_txt.replace(/:/, "[IRC]:");
+		    un.html(un_txt);
+	    }
 	    return out;
 	  }
 	  Message_one.fn.render.$instrumented = true
