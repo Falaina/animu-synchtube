@@ -3,6 +3,12 @@
 	  Message_one.fn.renderOld.$instrumented = true
 	  Message_one.fn.render = function(){
 	    console.log(this.item);
+	    
+	    if(this.item.nick.toLowerCase() === 'denshi' && 
+	       this.item.msg.match(/^\[\S+\] /) && true) {
+	       	console.log(this);	       	
+	       }
+	    
 	    if(this.item.nick.toLowerCase() === 'yamada' && false) {
 	      var words = this.item.msg.split(" ")
 	      for(var i=0; i < words.length; i++) {
