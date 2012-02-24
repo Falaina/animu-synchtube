@@ -2,6 +2,7 @@
 	  Message_one.fn.renderOld = Message_one.fn.render
 	  Message_one.fn.renderOld.$instrumented = true
 	  Message_one.fn.render = function(){
+	    console.log(this.item);
 	    if(this.item.nick.toLowerCase() === 'yamada' && false) {
 	      var words = this.item.msg.split(" ")
 	      for(var i=0; i < words.length; i++) {
