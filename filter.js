@@ -67,7 +67,7 @@
 	    if(this.item.$irc) {
 		    var un = out.el.find("span.cun");
 		    var un_txt = un.html();
-		    un_txt = un_txt.replace(/:/, "[IRC]:");
+		    un_txt = un_txt.replace(/:/, "*");
 		    un.html(un_txt);
 	    }
 	    return out;
