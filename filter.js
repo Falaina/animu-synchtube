@@ -124,6 +124,7 @@
 	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
           {pat : /\b(gay|homo)\b/ig,				target : 'pure'},
           {pat : /\b(fag|faggot)\b/ig,				target : 'bro'},
+	  {pat : /\b(dick|cock|penis)\b/ig,			target : 'rampaging stick of meat'},                    
 	  {pat : /\byandere\b/ig,				target : 'shota'},          
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,	target : '$1-neesama'},      
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,	target : 'yuruyuri'},        
