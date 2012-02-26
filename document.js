@@ -127,6 +127,7 @@ var html =
 '						<li>&bull; Ga-Rei Zero</li>'+
 '						<li>&bull; Hidan no Aria</li>'+
 '						<li>&bull; Moyashimon</li>'+
+'						<li>&bull; Golden Boy</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -219,7 +220,7 @@ var html =
 '					<li>' +
 '						Our <a href="//steamcommunity.com/groups/naitofiyah/" target="_blank">streamGroup</a></li>' +
 '					<li>' +
-'						We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft, Terraria</li>' +
+'						We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft, Terraria, Lucent Heart, Tera</li>' +
 '					<li>' +
 '						Come play terraria with us: falaina.dlinkddns.com ' +
 '                                                (Need to be whitelisted to join. email your ip to Fukkireta( fukireta@gmail.com ) to be ' +
