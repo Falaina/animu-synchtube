@@ -124,7 +124,7 @@
 	  {pat : /\waifu\b/ig,					target : 'wife'},	  
 	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
           {pat : /\b(gay|homo)\b/ig,				target : 'pure'},
-          {pat : /\b(fag|faggot)\b/ig,				target : 'bro'},
+          {pat : /\b(fag|faggot)/ig,				target : 'bro'},
 	  {pat : /\b(dick|cock)\b/ig,			target : 'rampaging stick of meat'},                    
           {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},	  
 //	  {pat : /\byandere\b/ig,				target : 'shota'},          
