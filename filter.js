@@ -121,6 +121,7 @@
 	  {pat : /\bready\b/ig,					target : 'l@dy'},
 	  {pat : /\barc\b/ig,					target : 'kawaiiest boy'},
 	  {pat : /\moe\b/ig,					target : 'autistic'},	  
+	  {pat : /\waifu\b/ig,					target : 'wife'},	  
 	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
           {pat : /\b(gay|homo)\b/ig,				target : 'pure'},
           {pat : /\b(fag|faggot)\b/ig,				target : 'bro'},
