@@ -129,8 +129,6 @@
 	  {pat : /\bbitch\b/ig,					target : 'beautiful person'},	  
 	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
           {pat : /\b(gay|homo)\b/ig,				target : 'pure'},
-          {pat : /\b(bitch)\b/ig,				target : 'shota'},          
-          {pat : /\b(bitches)\b/ig,				target : 'shotas'},  
           {pat : /\b(fag|fagg(e|o)t)/ig,			target : 'bro'},
 	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
           {pat : /(fags|fagg(e|o)ts)\b/ig,			target : 'bros'},	  
