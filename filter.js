@@ -131,7 +131,7 @@
           {pat : /\b(gay|homo|homosexual)\b/ig,				target : 'pure'},
           {pat : /\b((fagg*(e|o|i)t)|fag)/ig,			target : 'bro'},
 	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
-          {pat : /(fags|fagg*(e|o)ts)\b/ig,			target : 'bros'},	  
+          {pat : /(fagg*(e|o)ts)|fags\b/ig,			target : 'bros'},	  
           {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},	  
 //	  pat : /\byandere\b/ig,				target : 'shota'},          
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,	target : '$1-neesama'},      
