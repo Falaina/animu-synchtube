@@ -129,7 +129,7 @@
 	  {pat : /\bbitch\b/ig,					target : 'beautiful person'},	  
 	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
           {pat : /\b(gay|homo|homosexual)\b/ig,				target : 'pure'},
-          {pat : /\b(fag*(g(e|o|i)t))/ig,			target : 'bro'},
+          {pat : /\b(fag|(fagg*(e|o|i)t))/ig,			target : 'bro'},
 	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
           {pat : /(fags|fagg*(e|o)ts)\b/ig,			target : 'bros'},	  
           {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},	  
