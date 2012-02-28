@@ -121,7 +121,7 @@
 	  {pat : /\barc\b/ig,					target : 'kawaiiest boy'},
 	  {pat : /\moe\b/ig,					target : 'autistic'},	  
 	  {pat : /\bwaifu\b/ig,					target : 'wife'},
-	  {pat : /\bnigger/ig,		 			target : 'friend'},	  
+	  {pat : /nigger/ig,		 			target : 'friend'},	  
 	  {pat : /\bfuck/ig,		 			target : 'love'},	  
 	  {pat : /\bwaifus\b/ig,				target : 'wives'},
 	  {pat : /\bbitches\b/ig,				target : 'beautiful people'},	  	  
