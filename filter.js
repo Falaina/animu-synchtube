@@ -91,7 +91,6 @@
 	var word_filters = [  	  
 	  {pat : /\b(i|l)o(li|ii)/ig,                  		target : 'shota'},
 	  {pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'},
-	  //{pat : /\brea(l|I)\b/ig,				target : 'hontou ni'},   
 	  {pat : /\bphase/ig,					target : 'p0n0s'},
 	  {pat : /\bcurfew/ig,					target : 'p0n0s'},
 	  {pat : /\bdyson/ig,					target : 'moejets'},
@@ -128,17 +127,18 @@
 	  {pat : /\bbitches\b/ig,				target : 'beautiful people'},	  	  
 	  {pat : /\bbitch\b/ig,					target : 'beautiful person'},	  
 	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
-          {pat : /\b(gay|homo|homosexual)\b/ig,				target : 'pure'},
+          {pat : /\b(gay|homo|homosexual)\b/ig,			target : 'pure'},
           {pat : /\b((fagg*(e|o|i)t)|fag)/ig,			target : 'bro'},
 	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
           {pat : /(fagg*(e|o)ts)|fags\b/ig,			target : 'bros'},	  
-          {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},	  
-//	  pat : /\byandere\b/ig,				target : 'shota'},          
+          {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},
+          {pat : /(b(i|o)n(a|e)r(y|u|in|asaurus)(-*heap|hump){0,1})/ig,	target : 'shota'},
+          {pat : /arrow to the knee/ig,				target : 'dick to the mouth'}
+          //{pat : /\brea(l|I)\b/ig,				target : 'hontou ni'},   
+          //{pat : /\byandere\b/ig,				target : 'shota'},          
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,	target : '$1-neesama'},      
-	  {pat : /(b(i|o)n(a|e)r(y|u|in|asaurus)(-*heap|hump){0,1})/ig,	target : 'shota'},      	  
 	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,	target : 'yuruyuri'},        
 	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,			target : 'yuru'},        
-	  {pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'},      
 	  //{pat : /(@_+@|~_+~)/g,                		target : 'XD'},
 	  //{pat : /\b(:3)\b/g,               			target : 'xiox :3'},
 	  //{pat : /\b(u_+u)\b/g,          			target : '^_^'},
@@ -146,6 +146,6 @@
 	  //{pat : /\byou're\b/ig,				target : 'your'},      
 	  //{pat : /\btheir\b/ig,				target : 'they\'re'},      
 	  //{pat : /\bthere\b/ig,				target : 'their'},      
-	  //{pat : /\bthey're\b/ig,				target : 'there'},    
-	  {pat : /arrow to the knee/ig,				target : 'dick to the mouth'}	  
+	  //{pat : /\bthey're\b/ig,				target : 'there'},   
+	  {pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
 	];
