@@ -133,7 +133,7 @@
 	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
           {pat : /(fagg*(e|o)ts)|fags\b/ig,			target : 'bros'},	  
           {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},
-          {pat : /(b(i|o)n(a|e)r(y|u|in|asaurus)(-*heap|hump){0,1})/ig,	target : 'shota'},
+          {pat : /(b(i|o)n(a|e)r(y|u|in|asaurus|e*)(-*heap|hump){0,1})/ig,	target : 'shota'},
           {pat : /arrow to the knee/ig,				target : 'dick to the mouth'},
           //{pat : /\brea(l|I)\b/ig,				target : 'hontou ni'},   
           //{pat : /\byandere\b/ig,				target : 'shota'},          
