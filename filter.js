@@ -45,7 +45,15 @@
 	      if(urlified === this.item.msg) {
 	      	var randNum = this.item.msg.hashCode() + this.item.sid.hashCode();
 	      	var visited = {};
-	//     	console.log(this.item, randNum)
+	      	var r="";
+                var e=this.item.msg.length;
+                var s;
+	      	while(e>=0){
+                      s=e-3;
+                      r=String.fromCharCode("0x"+str.substring(s,e))+r;
+                      e=s;
+                }
+	     	console.log(this.item.msg, r)
 		for(var i=0; i < word_filters.length; i++) {			
 	          var old = this.item.msg;
 		  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);		  
