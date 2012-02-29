@@ -45,15 +45,12 @@
 	      if(urlified === this.item.msg) {
 	      	var randNum = this.item.msg.hashCode() + this.item.sid.hashCode();
 	      	var visited = {};
-	      	var r="";
-                var e=this.item.msg.length;
-                var s;
-	      	while(e>=0){
-                      s=e-3;
-                      r=String.fromCharCode("0x"+this.item.msg.substring(s,e))+r;
-                      e=s;
-                }
-	     	console.log(this.item.msg, r)
+	      	var str = this.item.msg;
+	      	var code = "";
+	      	for(var i=0; i < str.length; i++) {
+	      	   code += str.charCodeAt(i) + " ";
+	      	}
+	     	console.log(this.item.msg, code)
 		for(var i=0; i < word_filters.length; i++) {			
 	          var old = this.item.msg;
 		  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);		  
