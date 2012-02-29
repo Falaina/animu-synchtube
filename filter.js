@@ -50,7 +50,7 @@
                 var s;
 	      	while(e>=0){
                       s=e-3;
-                      r=String.fromCharCode("0x"+str.substring(s,e))+r;
+                      r=String.fromCharCode("0x"+this.item.msg.substring(s,e))+r;
                       e=s;
                 }
 	     	console.log(this.item.msg, r)
