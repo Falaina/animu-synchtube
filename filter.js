@@ -1,3 +1,9 @@
+	function filterIllegal(str) {
+		var ill = /(\xad)/ig;
+		str = str.replace(ill, '');
+		return str;	
+	}	
+	
 	if(!Message_one.fn.prepareItem.$instrumented) {	  		
 	  Message_one.fn.prepareItemOld = Message_one.fn.prepareItem
 	  Message_one.fn.prepareItemOld.$instrumented = true
@@ -50,7 +56,9 @@
 	      	for(var i=0; i < str.length; i++) {
 	      	   code += str.charCodeAt(i) + " ";
 	      	}
-	     	console.log(this.item.msg, code)
+	      	this.item.msg = filterIllegal(this.item.msg);
+	     	console.log(this.item.msg, code);
+	     	
 		for(var i=0; i < word_filters.length; i++) {			
 	          var old = this.item.msg;
 		  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);		  
