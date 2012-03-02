@@ -221,8 +221,6 @@ var html =
 '						Our <a href="//steamcommunity.com/groups/naitofiyah/" target="_blank">streamGroup</a></li>' +
 '					<li>' +
 '						We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft, Terraria, Lucent Heart, Tera</li>' +
-'					<li>' +
-'					<a href="https://github.com/Falaina/animu-synchtube/blob/gh-pages/filter.js#L104">Word filters"</a></li>' +
 '				</ul>' +
 '			</div>' +
 '			<div class="box" id="box3">' +
@@ -282,6 +280,7 @@ var html =
 '					<b> Usefull Links:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li><a target="_blank" href="http://mikudb.com/">Miku albums database</a></li>' +
+'					        <li><a href="https://github.com/Falaina/animu-synchtube/blob/gh-pages/filter.js#L104">Word filters"</a></li>' +
 ' 					</ul>'+ 
 '			</div>' +
 '		</div>' +
