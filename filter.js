@@ -141,10 +141,10 @@
 	  {pat : /bitches/ig,					target : 'beautiful people'},	  	  
 	  {pat : /bitch/ig,					target : 'beautiful person'},	  
 	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
-          {pat : /\b(gay|homo|homosexual)\b/ig,			target : 'pure'},
-          {pat : /((fagg*(e|o|i)t)|fag)/ig,			target : 'bro'},
+          {pat : /\b(g(@|a)y|h(0|o)m(0|o)|homosexual)\b/ig,			target : 'pure'},
+          {pat : /((f(@|a)gg*(e|o|i)t)|fag)/ig,			target : 'bro'},
 	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
-          {pat : /(fagg*(e|o)ts)|fags\b/ig,			target : 'bros'},	  
+          {pat : /(f(a|@)gg*(e|o)ts)|fags\b/ig,			target : 'bros'},	  
           {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},
           {pat : /(b(i|o)n(a|e)r(y|u|in|asaurus|e*)(-*heap|hump){0,1})/ig,	target : 'Kaworu'},
           {pat : /arrow to the knee/ig,				target : 'dick to the mouth'}
