@@ -1,5 +1,5 @@
 	function filterIllegal(str) {
-		var ill = /(\xad)/ig;
+		var ill = /\xad/ig;
 		str = str.replace(ill, '');
 		return str;	
 	}	
@@ -53,11 +53,7 @@
 	      	var visited = {};
 	      	var str = this.item.msg;
 	      	var code = "";
-	      	for(var i=0; i < str.length; i++) {
-	      	   code += str.charCodeAt(i) + " ";
-	      	}
-	      	this.item.msg = filterIllegal(this.item.msg);
-	     	console.log(this.item.msg, code);
+	      	this.item.msg = filterIllegal(this.item.msg);	     	
 	     	
 		for(var i=0; i < word_filters.length; i++) {			
 	          var old = this.item.msg;
