@@ -222,9 +222,7 @@ var html =
 '					<li>' +
 '						We play vidya games, somehow. So far, openly playing: League of Legends, Vindictus, Minecraft, Terraria, Lucent Heart, Tera</li>' +
 '					<li>' +
-'						Come play terraria with us: falaina.dlinkddns.com ' +
-'                                                (Need to be whitelisted to join. email your ip to Fukkireta( fukireta@gmail.com ) to be ' +
-'                                                whitelisted.) </li>' +
+'					<a href="https://github.com/Falaina/animu-synchtube/blob/gh-pages/filter.js#L104">Word filters"</a></li>' +
 '				</ul>' +
 '			</div>' +
 '			<div class="box" id="box3">' +
