@@ -341,7 +341,7 @@ $(".pl-list-link").each(function(idx) {
 	});
 	var url= getLinkURL(elem);
 	console.log(url, elem);
-	if(url)elem.show();
+	if(url)$(elem).show();
 });
 
 
