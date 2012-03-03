@@ -334,6 +334,12 @@ var getLinkURL = function(item) {
 	return null;
 };
 
+Playlist_one.fn.addItemOld = Playlist_one.fn.addItem;
+Playlist_one.fn.addItem = function() {
+	console.log(arguments, this);
+	return Playlist_one.fn.addItemOld.apply(this, arguments);
+}
+
 $(".pl-list-link").each(function(idx) {
 	var elem = this;
 	$(elem).click(function(){
