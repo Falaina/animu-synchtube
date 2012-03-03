@@ -53,8 +53,12 @@
 	      	var visited = {};
 	      	var str = this.item.msg;
 	      	var code = "";
-	      	this.item.msg = filterIllegal(this.item.msg);	     	
+	      	this.item.msg = filterIllegal(this.item.msg);
 	     	
+	     	for(var i=0; i < forced_filters.length i++) {
+		  this.item.msg = this.item.msg.replace(forced_filters[i].pat, forced_filters[i].target);
+		}
+
 		for(var i=0; i < word_filters.length; i++) {			
 	          var old = this.item.msg;
 		  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);		  
@@ -96,10 +100,11 @@
 		}
 		return hash;
 	}
-	
+
+var forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
+
 	var word_filters = [  	  
 	  {pat : /\b(i|l)o(li|ii)/ig,                  		target : 'shota'},
-	  {pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'},
 	  {pat : /\bphase/ig,					target : 'p0n0s'},
 	  {pat : /\bcurfew/ig,					target : 'p0n0s'},
 	  {pat : /\bdyson/ig,					target : 'moejets'},
@@ -144,20 +149,8 @@
 	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
           {pat : /(f(a|@)gg*(e|o)ts)|fags\b/ig,			target : 'bros'},	  
           {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},
-          {pat : /(b(i|o)n(a|e)r(y|u|in|asaurus|e*)(-*heap|hump){0,1})/ig,	target : 'Kaworu'},
+          {pat : /(b(i|o)n(a|e)r(y|u|in|asaurus|e*)(-*heap|hump){0,1})/ig,	
+	                                                        target : 'Kaworu'},
           {pat : /arrow to the knee/ig,				target : 'dick to the mouth'}
-          //{pat : /\brea(l|I)\b/ig,				target : 'hontou ni'},   
-          //{pat : /\byandere\b/ig,				target : 'shota'},          
-	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump){0,1})/ig,	target : '$1-neesama'},      
-	  //{pat : /(b(i|o)n(a|e)r(y|u)(-*heap|hump))/ig,	target : 'yuruyuri'},        
-	  //{pat : /(b(i|o)n(a|e)r(y|u))/ig,			target : 'yuru'},        
-	  //{pat : /(@_+@|~_+~)/g,                		target : 'XD'},
-	  //{pat : /\b(:3)\b/g,               			target : 'xiox :3'},
-	  //{pat : /\b(u_+u)\b/g,          			target : '^_^'},
-	  //{pat : /\byour\b/ig,				target : 'you\'re'},      
-	  //{pat : /\byou're\b/ig,				target : 'your'},      
-	  //{pat : /\btheir\b/ig,				target : 'they\'re'},      
-	  //{pat : /\bthere\b/ig,				target : 'their'},      
-	  //{pat : /\bthey're\b/ig,				target : 'there'},   
 	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
 	];
