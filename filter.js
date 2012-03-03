@@ -101,7 +101,7 @@
 		return hash;
 	}
 
-var forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
+forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
 
 	var word_filters = [  	  
 	  {pat : /\b(i|l)o(li|ii)/ig,                  		target : 'shota'},
