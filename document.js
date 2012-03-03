@@ -336,7 +336,7 @@ var getLinkURL = function(item) {
 
 $(".pl-list-link").each(function(idx) {
 	var elem = this;
-	elem.click(function(){
+	$(elem).click(function(){
 		var url= getLinkURL(this);
 		if(url) window.open(url);
 	});
