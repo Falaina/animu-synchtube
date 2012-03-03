@@ -323,17 +323,24 @@ $(".pl-info .pl-list-destroy").before('<span class="pl-list-link jq-icon jq-icon
 // Set up some CSS
 $(".pl-list-link").css("background-position", "-240px -112px").css("right", "12px").css("top", "1px").css("position", "absolute");
 
-var addLink = function(item) {
+var getLinkURL = function(item) {
 	var id = $(item).closest('li[id^="media"]').attr('id').replace('media_', '');
 	var vid = Media.records[id]; 
 	if(vid.mtype === 'yt') {
 		var url = 'http://www.youtube.com/watch?v='+vid.mid;
-		window.open(url);		
+		return url;
 	}
-	item.show();
+	return null;
 };
-$(".pl-list-link").click(function(){
-	addLink(this);
+
+$(".pl-list-link").each(function(elem) {
+	elem.click(function(){
+		var url= getLinkURL(this);
+		if(url) window.open(url);
+	});
+	var url= getLinkURL(elem);
+	console.log(url, elem);
+	if(url)elem.show();
 });
 
 
