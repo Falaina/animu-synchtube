@@ -396,7 +396,7 @@ $(".showFullList").click(function(){
 	}
 });	
     //Turn the entire list into right/middle-clickable URLs
-$(".disableFilters").click(function(){word_filters = {};});
+$(".disableFilters").click(function(){word_filters = {};Cookie.createCookie("r_animu_disable_filters", "true");});
 $(".linkify").click(function() {
 $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a target="_blank" class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
 });
