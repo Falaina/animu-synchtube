@@ -402,8 +402,7 @@ $(".disableFilters").click(function(){
 	Cookie.createCookie("r_animu_disable_filters", "true");
 	Message.each(function(m){if(m && m.oldMsg){m.msg = m.oldMsg;}console.log(m);});
 	Message && Message.clear();
-	window.sp && window.sp.messages && window.sp.messages.addAll();		
-});
+	window.sp && window.sp.messages && window.sp.messages.addAll();	
 });
 $(".enableFilters").click(function() {
 	Cookie.eraseCookie("r_animu_disable_filters");
