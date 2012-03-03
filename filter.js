@@ -1,5 +1,11 @@
-setupFilters = function() {        
-        forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
+setupFilters = function() {       
+	forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
+	console.log(Cookie.readCookie("r_animu_disable_filters"));
+	if(Cookie.readCookie("r_animu_disable_filters")) {
+		word_filters = [];
+		return;
+	}
+
 
 	word_filters = [  	  
 	  {pat : /\b(i|l)o(li|ii)/ig,                  		target : 'shota'},
