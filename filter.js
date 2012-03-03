@@ -1,6 +1,7 @@
-forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
+setupFilters = function() {        
+        forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
 
-	var word_filters = [  	  
+	word_filters = [  	  
 	  {pat : /\b(i|l)o(li|ii)/ig,                  		target : 'shota'},
 	  {pat : /\bphase/ig,					target : 'p0n0s'},
 	  {pat : /\bcurfew/ig,					target : 'p0n0s'},
@@ -51,7 +52,8 @@ forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[
           {pat : /arrow to the knee/ig,				target : 'dick to the mouth'}
 	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
 	];
-	
+};
+setupFilters();
 	function filterIllegal(str) {
 		var ill = /\xad/ig;
 		str = str.replace(ill, '');
