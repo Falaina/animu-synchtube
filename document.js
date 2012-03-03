@@ -398,7 +398,7 @@ $(".showFullList").click(function(){
 });	
     //Turn the entire list into right/middle-clickable URLs
 $(".disableFilters").click(function(){word_filters = {};Cookie.createCookie("r_animu_disable_filters", "true");});
-$(".enableFilters").click(function()
+$(".enableFilters").click(function() {
 	Cookie.eraseCookie("r_animu_disable_filters");
 	setupFilters();
 	Message && Message.clear();
