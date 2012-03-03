@@ -131,7 +131,7 @@
 	  {pat : /\moe\b/ig,					target : 'autistic'},	  
 	  {pat : /\bwaifu\b/ig,					target : 'wife'},
 	  {pat : /(nigger|nigga|nigra|niggress)/ig,		target : 'friend'},
-	  {pat : /\bnig\b/ig 					targer : 'frind' },
+	  {pat : /\bnig\b/ig, 					targer : 'friend' },
           {pat : /fucking/ig,		 			target : 'loving'},	  
 	  {pat : /\bfuck\b/ig,		 			target : 'gently caress'},	  
 	  {pat : /fuck/ig,		 			target : 'love'},	  
