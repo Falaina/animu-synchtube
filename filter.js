@@ -86,7 +86,7 @@ setupFilters();
 	  Message_one.fn.render = function(){
 	    var oldMsg, oldNick;
 	    
-	    if(this.item.nick.toLowerCase() === 'denshi' && 
+	    if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'denshi' && 
 	       (match = this.item.msg.match(/^\((\S+)\) (.*)/)) && true) {
 	       	oldMsg = this.item.msg;
 	       	oldNick = this.item.nick;
@@ -98,7 +98,7 @@ setupFilters();
 	       	}
 	       }
 	    
-	    if(this.item.nick.toLowerCase() === 'yamada' && false) {
+	    if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'yamada' && false) {
 	      var words = this.item.msg.split(" ")
 	      for(var i=0; i < words.length; i++) {
 	        var rep_words = ["YAMADA", "yama~da", "ya~", "yamada"];
