@@ -1,4 +1,3 @@
-
 forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
 
 	var word_filters = [  	  
@@ -58,7 +57,7 @@ forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[
 		str = str.replace(ill, '');
 		return str;	
 	}	
-	
+	console.log("Testing", socket, this);
 	if(!Message_one.fn.prepareItem.$instrumented) {	  		
 	  Message_one.fn.prepareItemOld = Message_one.fn.prepareItem
 	  Message_one.fn.prepareItemOld.$instrumented = true
