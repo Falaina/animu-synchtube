@@ -87,10 +87,7 @@
 	  }
 	  Message_one.fn.render.$instrumented = true
 	  $desc = $("#leader-welcome-message-textarea").val()
-	  $("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
-	  Message && Message.clear();
-	  window.sp && window.sp.messages && window.sp.messages.addAll();
-	}
+	  
 	String.prototype.hashCode = function(){
 		var hash = 0;
 		if (this.length == 0) return hash;
@@ -100,7 +97,13 @@
 			hash = hash & hash; // Convert to 32bit integer
 		}
 		return hash;
+	}	  
+	  
+	  $("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
+	  Message && Message.clear();
+	  window.sp && window.sp.messages && window.sp.messages.addAll();
 	}
+
 
 forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
 
