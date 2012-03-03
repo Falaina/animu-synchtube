@@ -1,3 +1,58 @@
+
+forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
+
+	var word_filters = [  	  
+	  {pat : /\b(i|l)o(li|ii)/ig,                  		target : 'shota'},
+	  {pat : /\bphase/ig,					target : 'p0n0s'},
+	  {pat : /\bcurfew/ig,					target : 'p0n0s'},
+	  {pat : /\bdyson/ig,					target : 'moejets'},
+	  {pat : /\banim(u|e)/ig,				target : 'penis'},
+	  {pat : /madoka/ig,					target : 'meduca'},
+	  {pat : /magica/ig,					target : 'meguca'},
+	  {pat : /homura/ig,					target : 'hameru'},
+	  {pat : /mami/ig,					target : 'mumi'},
+	  {pat : /kyoko/ig,					target : 'kyaku'},
+	  {pat : /sayaka/ig,					target : 'seyiku'},
+          {pat : /\blittle girls*\b/ig,				target : 'shota'},  
+	  {pat : /\beveryone\b/ig,				target : 'everynyan'},
+	  {pat : /\bplan\b/ig,					target : 'keikaku'},
+	  {pat : /\bqb\b/ig,					target : '／人◕ ‿‿ ◕人＼'},
+	  {pat : /kitaa/ig,					target : 'キタ━━━(゜∀゜)━━━!!!!! '},
+	  {pat : /bu-n/ig,					target : '⊂二二二（　＾ω＾）二⊃'},
+	  {pat : /grimace/ig,					target : '(╬ ಠ益ಠ)'},
+	  {pat : /simper/ig,					target : '(￣ー￣)'},
+	  {pat : /\bflipt\b/ig,					target : '(╯°□°）╯︵ ┻━┻'},
+	  {pat : /\bflipt2\b/ig,				target : '(ノಠ益ಠ)ノ彡┻━┻'},
+	  {pat : /\bunflip\b/ig,				target : '┬──┬ ﻿ノ( ゜-゜ノ)'},
+	  {pat : /\bunflip2\b/ig,				target : '┬──┬ ﻿ノ(≖益≖ノ)'},
+	  {pat : /kyuubey|kyubey|kyubei/ig,			target : 'coobie'},
+	  {pat : /magica/ig,					target : 'meguca'},
+	  {pat : /tsundere/ig,					target : 'bipolar'},
+	  {pat : /\btofu\b/ig,					target : 'ginger'},
+	  {pat : /\bready\b/ig,					target : 'l@dy'},
+	  {pat : /\barc\b/ig,					target : 'kawaiiest boy'},
+	  {pat : /\moe\b/ig,					target : 'autistic'},	  
+	  {pat : /\bwaifu\b/ig,					target : 'wife'},
+	  {pat : /(nigger|nigga|nigra|niggress)/ig,		target : 'friend'},
+	  {pat : /\bnig\b/ig, 					targer : 'friend' },
+          {pat : /fucking/ig,		 			target : 'loving'},	  
+	  {pat : /\bfuck\b/ig,		 			target : 'gently caress'},	  
+	  {pat : /fuck/ig,		 			target : 'love'},	  
+	  {pat : /waifus/ig,					target : 'wives'},
+	  {pat : /bitches/ig,					target : 'beautiful people'},	  	  
+	  {pat : /bitch/ig,					target : 'beautiful person'},	  
+	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
+          {pat : /\b(g(@|a)y|h(0|o)m(0|o)|homosexual)\b/ig,	target : 'pure'},
+          {pat : /((f(@|a)gg*(e|o|i)t)|fag)/ig,			target : 'bro'},
+	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
+          {pat : /(f(a|@)gg*(e|o)ts)|fags\b/ig,			target : 'bros'},	  
+          {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},
+          {pat : /(b(i|o)n(a|e)r(y|u|in|asaurus|e*)(-*heap|hump){0,1})/ig,	
+	                                                        target : 'Kaworu'},
+          {pat : /arrow to the knee/ig,				target : 'dick to the mouth'}
+	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
+	];
+	
 	function filterIllegal(str) {
 		var ill = /\xad/ig;
 		str = str.replace(ill, '');
@@ -104,57 +159,3 @@
 	  window.sp && window.sp.messages && window.sp.messages.addAll();
 	}
 
-
-forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
-
-	var word_filters = [  	  
-	  {pat : /\b(i|l)o(li|ii)/ig,                  		target : 'shota'},
-	  {pat : /\bphase/ig,					target : 'p0n0s'},
-	  {pat : /\bcurfew/ig,					target : 'p0n0s'},
-	  {pat : /\bdyson/ig,					target : 'moejets'},
-	  {pat : /\banim(u|e)/ig,				target : 'penis'},
-	  {pat : /madoka/ig,					target : 'meduca'},
-	  {pat : /magica/ig,					target : 'meguca'},
-	  {pat : /homura/ig,					target : 'hameru'},
-	  {pat : /mami/ig,					target : 'mumi'},
-	  {pat : /kyoko/ig,					target : 'kyaku'},
-	  {pat : /sayaka/ig,					target : 'seyiku'},
-          {pat : /\blittle girls*\b/ig,				target : 'shota'},  
-	  {pat : /\beveryone\b/ig,				target : 'everynyan'},
-	  {pat : /\bplan\b/ig,					target : 'keikaku'},
-	  {pat : /\bqb\b/ig,					target : '／人◕ ‿‿ ◕人＼'},
-	  {pat : /kitaa/ig,					target : 'キタ━━━(゜∀゜)━━━!!!!! '},
-	  {pat : /bu-n/ig,					target : '⊂二二二（　＾ω＾）二⊃'},
-	  {pat : /grimace/ig,					target : '(╬ ಠ益ಠ)'},
-	  {pat : /simper/ig,					target : '(￣ー￣)'},
-	  {pat : /\bflipt\b/ig,					target : '(╯°□°）╯︵ ┻━┻'},
-	  {pat : /\bflipt2\b/ig,				target : '(ノಠ益ಠ)ノ彡┻━┻'},
-	  {pat : /\bunflip\b/ig,				target : '┬──┬ ﻿ノ( ゜-゜ノ)'},
-	  {pat : /\bunflip2\b/ig,				target : '┬──┬ ﻿ノ(≖益≖ノ)'},
-	  {pat : /kyuubey|kyubey|kyubei/ig,			target : 'coobie'},
-	  {pat : /magica/ig,					target : 'meguca'},
-	  {pat : /tsundere/ig,					target : 'bipolar'},
-	  {pat : /\btofu\b/ig,					target : 'ginger'},
-	  {pat : /\bready\b/ig,					target : 'l@dy'},
-	  {pat : /\barc\b/ig,					target : 'kawaiiest boy'},
-	  {pat : /\moe\b/ig,					target : 'autistic'},	  
-	  {pat : /\bwaifu\b/ig,					target : 'wife'},
-	  {pat : /(nigger|nigga|nigra|niggress)/ig,		target : 'friend'},
-	  {pat : /\bnig\b/ig, 					targer : 'friend' },
-          {pat : /fucking/ig,		 			target : 'loving'},	  
-	  {pat : /\bfuck\b/ig,		 			target : 'gently caress'},	  
-	  {pat : /fuck/ig,		 			target : 'love'},	  
-	  {pat : /waifus/ig,					target : 'wives'},
-	  {pat : /bitches/ig,					target : 'beautiful people'},	  	  
-	  {pat : /bitch/ig,					target : 'beautiful person'},	  
-	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
-          {pat : /\b(g(@|a)y|h(0|o)m(0|o)|homosexual)\b/ig,	target : 'pure'},
-          {pat : /((f(@|a)gg*(e|o|i)t)|fag)/ig,			target : 'bro'},
-	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
-          {pat : /(f(a|@)gg*(e|o)ts)|fags\b/ig,			target : 'bros'},	  
-          {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},
-          {pat : /(b(i|o)n(a|e)r(y|u|in|asaurus|e*)(-*heap|hump){0,1})/ig,	
-	                                                        target : 'Kaworu'},
-          {pat : /arrow to the knee/ig,				target : 'dick to the mouth'}
-	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
-	];
