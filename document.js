@@ -340,8 +340,7 @@ $(".pl-list-link").each(function(idx) {
 		var url= getLinkURL(this);
 		if(url) window.open(url);
 	});
-	var url= getLinkURL(elem);
-	console.log(url, elem);
+	var url= getLinkURL(elem);	
 	if(url)$(elem).show();
 });
 
