@@ -1,6 +1,5 @@
 setupFilters = function() {       
 	forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
-	console.log(Cookie.readCookie("r_animu_disable_filters"));
 	if(Cookie.readCookie("r_animu_disable_filters")) {
 		word_filters = [];
 		return;
@@ -65,7 +64,7 @@ setupFilters();
 		str = str.replace(ill, '');
 		return str;	
 	}	
-	console.log("Testing", socket, this);
+	
 	if(!Message_one.fn.prepareItem.$instrumented) {	  		
 	  Message_one.fn.prepareItemOld = Message_one.fn.prepareItem
 	  Message_one.fn.prepareItemOld.$instrumented = true
