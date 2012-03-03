@@ -322,8 +322,23 @@ $('ul.group li').click(function ()
 $(".pl-info .pl-list-destroy").before('<span class="pl-list-link jq-icon jq-icon-closethick link-elem"></span>'); 
 // Set up some CSS
 $(".pl-list-link").css("background-position", "-240px -112px").css("right", "12px").css("top", "1px").css("position", "absolute");
+
+var addLink = function(item) {
+	var id = $(item).closest('li[id^="media"]').attr('id').replace('media_', '');
+	var vid = Media.records[id]; 
+	if(vid.mtype === 'yt') {
+		var url = 'http://www.youtube.com/watch?v='+vid.mid;
+		window.open(url);		
+	}
+	item.show();
+};
+$(".pl-list-link").click(function(){
+	addLink(this);
+});
 // Hide for now
 $(".pl-list-link").hide();
+
+
 
 //$("#playlistactions").append('<div id="link" class="basic-btn pl-more basic-btn-btnbar-right round3">Test</div>');
 //$('#link').click(function(){
