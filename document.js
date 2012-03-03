@@ -318,6 +318,13 @@ $('ul.group li').click(function ()
 	$(activeTab).fadeIn();
 	return false;
 });
+// Add link button
+$(".pl-info .pl-list-destroy").before('<span class="pl-list-link jq-icon jq-icon-closethick link-elem"></span>'); 
+// Set up some CSS
+$(".pl-list-link").css("background-position", "-240px -112px").css("right", "12px").css("top", "1px").css("position", "absolute");
+// Hide for now
+$(".pl-list-link").hide();
+
 //$("#playlistactions").append('<div id="link" class="basic-btn pl-more basic-btn-btnbar-right round3">Test</div>');
 //$('#link').click(function(){
 //$('#playlist .items li').each(function() {var id = $(this).attr('id').replace('media_', ''); var vid = Media.records[id]; if(vid.mtype === 'yt') {var url = 'http://www.youtube.com/watch?v='+vid.mid;console.log(url); var title = $(".title", this).html(); title = '<a class="play title" href="'+url+'">'+title+'</a>'; console.log(title); $(".title", this).html(title);}})
