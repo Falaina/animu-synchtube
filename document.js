@@ -319,7 +319,8 @@ $('ul.group li').click(function ()
 	return false;
 });
 // Add link button
-$(".pl-info .pl-list-destroy").before('<span class="pl-list-link jq-icon jq-icon-closethick link-elem" style="visibility: hidden;"></span>'); 
+$(".pl-info .pl-list-destroy").before('<span class="pl-list-link jq-icon jq-icon-closethick link-elem"></span>'); 
+$(".pl-list-link").hide()
 // Set up some CSS
 $(".pl-list-link").css("background-position", "-240px -112px").css("right", "12px").css("top", "1px").css("position", "absolute");
 
