@@ -55,7 +55,7 @@
 	      	var code = "";
 	      	this.item.msg = filterIllegal(this.item.msg);
 	     	
-	     	for(var i=0; i < forced_filters.length i++) {
+	     	for(var i=0; i < forced_filters.length; i++) {
 		  this.item.msg = this.item.msg.replace(forced_filters[i].pat, forced_filters[i].target);
 		}
 
