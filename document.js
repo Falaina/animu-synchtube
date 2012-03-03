@@ -397,7 +397,14 @@ $(".showFullList").click(function(){
 	}
 });	
     //Turn the entire list into right/middle-clickable URLs
-$(".disableFilters").click(function(){word_filters = {};Cookie.createCookie("r_animu_disable_filters", "true");});
+$(".disableFilters").click(function(){
+	word_filters = {};
+	Cookie.createCookie("r_animu_disable_filters", "true");
+	Message.each(function(m){if(m && m.oldMsg){m.msg = m.oldMsg;}console.log(m);});
+	Message && Message.clear();
+	window.sp && window.sp.messages && window.sp.messages.addAll();		
+});
+});
 $(".enableFilters").click(function() {
 	Cookie.eraseCookie("r_animu_disable_filters");
 	setupFilters();
