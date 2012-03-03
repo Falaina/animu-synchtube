@@ -119,7 +119,7 @@ setupFilters();
 	     	for(var i=0; i < forced_filters.length; i++) {
 		  this.item.msg = this.item.msg.replace(forced_filters[i].pat, forced_filters[i].target);
 		}
-
+                this.item.origMsg = this.item.msg;
 		for(var i=0; i < word_filters.length; i++) {			
 	          var old = this.item.msg;
 		  this.item.msg = this.item.msg.replace(word_filters[i].pat, word_filters[i].target);		  
