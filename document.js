@@ -333,7 +333,8 @@ var getLinkURL = function(item) {
 	return null;
 };
 
-$(".pl-list-link").each(function(elem) {
+$(".pl-list-link").each(function(idx) {
+	var elem = this;
 	elem.click(function(){
 		var url= getLinkURL(this);
 		if(url) window.open(url);
