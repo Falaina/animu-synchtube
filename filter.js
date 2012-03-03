@@ -88,7 +88,7 @@
 	  Message_one.fn.render.$instrumented = true
 	  $desc = $("#leader-welcome-message-textarea").val()
 	  $("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
-	  Messages && Messages.clear();
+	  Message && Message.clear();
 	  Window.sp && Window.sp.messages && Window.sp.messages.addAll();
 	}
 	String.prototype.hashCode = function(){
