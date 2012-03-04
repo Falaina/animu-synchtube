@@ -169,6 +169,8 @@ var html =
 '						<li>&bull; Tokyo Godfathers</li>'+
 '						<li>&bull; Dead Leaves</li>'+
 '						<li>&bull; Animatrix</li>'+
+'						<li>&bull; Gyo</li>'+
+'						<li>&bull; Evangelion 2.22 You Can (Not) Advance</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
