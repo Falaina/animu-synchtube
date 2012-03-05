@@ -360,12 +360,16 @@ Playlist_one.fn.addItem = function(item) {
 	}
 	console.log(url, vid, sel, arguments);
 	var out = Playlist_one.fn.addItemOld.apply(this, arguments);
-	$(sel + ".pl-info .pl-list-destroy").before(newSpan); 
-	$(sel + ".pl-list-link").hide()
+	var desSel = sel + " .pl-info .pl-list-destroy";
+	$(desSel).before(newSpan); 
+	console.log(desSel, $(desSel));
+	var linkSel = sel + " .pl-list-link";
+	console.log(linkSel, $(linkSel));
+	$(linkSel).hide()
 	// Set up some CSS
-	$(sel + ".pl-list-link").css("background-position", "-240px -112px").css("right", "12px").css("top", "1px").css("position", "absolute");
+	$(linkSel).css("background-position", "-240px -112px").css("right", "12px").css("top", "1px").css("position", "absolute");
 	
-	$(sel + ".pl-list-link").each(addLink);
+	$(linkSel).each(addLink);
 	return out;
 }
 
