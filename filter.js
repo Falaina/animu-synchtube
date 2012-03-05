@@ -1,6 +1,6 @@
 setupFilters = function() {       
 	forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
-	if(Cookie.readCookie("r_animu_disable_filters")) {
+	if(window.Cookie && Cookie.readCookie("r_animu_disable_filters")) {
 		word_filters = [];
 		return;
 	}
