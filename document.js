@@ -37,6 +37,9 @@ $(".banner" ).html(banner);
 
 
 var html = 
+' <style> #st-vanilla .st-vanilla-lower-ct .st-vanilla-lower > .playlist #playlist #playlist_items .pllist .title {' +
+'            width:450px;' +
+'         }' +
 '<link href="//dysto.dyndns.org/synchtube/synchAbout.css" rel="stylesheet" />'+
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
 
@@ -293,9 +296,6 @@ var html =
 '<br />' +
 '<p>' +
 '	<ul class="turnIt"><marquee bgcolor="#eef2ff" loop="-1" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="1" width="100%"><b>(✖&#39;___&#39;) (&#39;______________________________________________________________________________________________________________________________&#39;✖)</b>      </marquee></ul></p>' +
-' <style> #st-vanilla .st-vanilla-lower-ct .st-vanilla-lower > .playlist #playlist #playlist_items .pllist .title {' +
-'            width:450px;' +
-'         }' +
 ' ';
 
 $(" #description .description").html(html);
