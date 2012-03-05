@@ -8,8 +8,6 @@ setupFilters = function() {
 
 	word_filters = [  	  
 	  {pat : /\b(i|l)o(li|ii)/ig,                  		target : 'shota'},
-	  {pat : /\bphase/ig,					target : 'p0n0s'},
-	  {pat : /\bcurfew/ig,					target : 'p0n0s'},
 	  {pat : /\bdyson/ig,					target : 'moejets'},
 	  {pat : /\banim(u|e)/ig,				target : 'penis'},
 	  {pat : /madoka/ig,					target : 'meduca'},
