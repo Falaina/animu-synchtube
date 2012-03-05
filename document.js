@@ -335,6 +335,17 @@ var getLinkURL = function(item) {
 	}
 	return null;
 };
+
+var addLink = function(idx) {
+	var elem = this;
+	$(elem).click(function(){
+		var url= getLinkURL(this);
+		if(url) window.open(url);
+	});
+	var url= getLinkURL(elem);	
+	if(url)$(elem).show();	
+};
+
 Playlist_one.fn.addItemOld = Playlist_one.fn.addItem;
 Playlist_one.fn.addItem = function(item) {
 	var url = null;
@@ -348,18 +359,11 @@ Playlist_one.fn.addItem = function(item) {
 	}
 	console.log(url, vid, sel, arguments);
 	var out = Playlist_one.fn.addItemOld.apply(this, arguments);
+	$(sel).each(addLink);
 	return out;
 }
 
-$(".pl-list-link").each(function(idx) {
-	var elem = this;
-	$(elem).click(function(){
-		var url= getLinkURL(this);
-		if(url) window.open(url);
-	});
-	var url= getLinkURL(elem);	
-	if(url)$(elem).show();
-});
+$(".pl-list-link").each(addLink);
 
 
 
