@@ -370,7 +370,7 @@ Playlist_one.fn.addItem = function(item) {
 	console.log(linkSel, $(linkSel));
 	$(linkSel).hide()
 	// Set up some CSS
-	$(linkSel).css("background-position", "-240px -112px").css("right", "12px").css("top", "1px").css("position", "absolute");
+	$(linkSel).css("background-position", "-240px -112px").css("right", "16px").css("top", "1px").css("position", "absolute");
 	
 	$(linkSel).each(addLink);
 	return out;
