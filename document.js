@@ -335,11 +335,19 @@ var getLinkURL = function(item) {
 	}
 	return null;
 };
-
 Playlist_one.fn.addItemOld = Playlist_one.fn.addItem;
-Playlist_one.fn.addItem = function() {
-	console.log(arguments, this);
-	return Playlist_one.fn.addItemOld.apply(this, arguments);
+Playlist_one.fn.addItem = function(vid) {
+	var url = null;
+	vid = vid && vid.media;
+ 	var id  = vid && vid.id;
+	vid = id && Media.records[id]; 
+	if(vid.mtype === 'yt') {
+		url = 'http://www.youtube.com/watch?v='+vid.mid;
+		
+	}
+	console.log(url, vid);
+	var out = Playlist_one.fn.addItemOld.apply(this, arguments);
+	return out;
 }
 
 $(".pl-list-link").each(function(idx) {
