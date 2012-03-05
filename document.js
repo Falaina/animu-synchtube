@@ -73,7 +73,6 @@ var html =
 '		<tr>'+
 '			<td>'+
 '				<ul>'+
-'					<li>&bull; Pururin 10 hours</li>'+
 '					<li>&bull; kokorokokoro 3 hours</li>'+
 '					<li>&bull; Victorique sings "Kujo gave me a kimono" for 3 hours</li>'+
 '					<li>&bull; 10 hours Samurai Logic x Nichijou  </li>'+
@@ -337,16 +336,17 @@ var getLinkURL = function(item) {
 	return null;
 };
 Playlist_one.fn.addItemOld = Playlist_one.fn.addItem;
-Playlist_one.fn.addItem = function(vid) {
+Playlist_one.fn.addItem = function(item) {
 	var url = null;
-	vid = vid && vid.media;
+	var vid = item && item.media;
  	var id  = vid && vid.id;
+ 	var sel = 'li[id^="media_'+id+'"]';
 	vid = id && Media.records[id]; 
 	if(vid.mtype === 'yt') {
 		url = 'http://www.youtube.com/watch?v='+vid.mid;
 		
 	}
-	console.log(url, vid);
+	console.log(url, vid, sec, arguments);
 	var out = Playlist_one.fn.addItemOld.apply(this, arguments);
 	return out;
 }
