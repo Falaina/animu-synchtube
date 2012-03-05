@@ -346,7 +346,7 @@ Playlist_one.fn.addItem = function(item) {
 		url = 'http://www.youtube.com/watch?v='+vid.mid;
 		
 	}
-	console.log(url, vid, sec, arguments);
+	console.log(url, vid, sel, arguments);
 	var out = Playlist_one.fn.addItemOld.apply(this, arguments);
 	return out;
 }
