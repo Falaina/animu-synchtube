@@ -323,59 +323,6 @@ $('ul.group li').click(function ()
 	$(activeTab).fadeIn();
 	return false;
 });
-// Add link button
-var newSpan = '<span class="pl-list-link jq-icon jq-icon-closethick link-elem"></span>';
-$(".pl-info .pl-list-destroy").before(newSpan); 
-$(".pl-list-link").hide()
-// Set up some CSS
-$(".pl-list-link").css("background-position", "-240px -112px").css("right", "16px").css("top", "1px").css("position", "absolute");
-
-var getLinkURL = function(item) {
-	var id = $(item).closest('li[id^="media"]').attr('id').replace('media_', '');
-	var vid = Media.records[id]; 
-	if(vid.mtype === 'yt') {
-		var url = 'http://www.youtube.com/watch?v='+vid.mid;
-		return url;
-	}
-	return null;
-};
-
-var addLink = function(idx) {
-	var elem = this;
-	$(elem).click(function(){
-		var url= getLinkURL(this);
-		if(url) window.open(url);
-	});
-	var url= getLinkURL(elem);	
-	if(url)$(elem).show();	
-};
-
-Playlist_one.fn.addItemOld = Playlist_one.fn.addItem;
-Playlist_one.fn.addItem = function(item) {
-	var url = null;
-	var vid = item && item.media;
- 	var id  = vid && vid.id;
- 	var sel = 'li[id^="media_'+id+'"]';
-	vid = id && Media.records[id]; 
-	if(vid.mtype === 'yt') {
-		url = 'http://www.youtube.com/watch?v='+vid.mid;
-		
-	}	
-	var out = Playlist_one.fn.addItemOld.apply(this, arguments);
-	var desSel = sel + " .pl-info .pl-list-destroy";
-	$(desSel).before(newSpan); 
-	var linkSel = sel + " .pl-list-link";
-	$(linkSel).hide()
-	// Set up some CSS
-	$(linkSel).css("background-position", "-240px -112px").css("right", "16px").css("top", "1px").css("position", "absolute");
-	
-	$(linkSel).each(addLink);
-	return out;
-}
-
-$(".pl-list-link").each(addLink);
-
-
 
 //$("#playlistactions").append('<div id="link" class="basic-btn pl-more basic-btn-btnbar-right round3">Test</div>');
 //$('#link').click(function(){
