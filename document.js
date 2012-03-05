@@ -321,7 +321,8 @@ $('ul.group li').click(function ()
 	return false;
 });
 // Add link button
-$(".pl-info .pl-list-destroy").before('<span class="pl-list-link jq-icon jq-icon-closethick link-elem"></span>'); 
+var newSpan = '<span class="pl-list-link jq-icon jq-icon-closethick link-elem"></span>';
+$(".pl-info .pl-list-destroy").before(newSpan); 
 $(".pl-list-link").hide()
 // Set up some CSS
 $(".pl-list-link").css("background-position", "-240px -112px").css("right", "12px").css("top", "1px").css("position", "absolute");
@@ -359,7 +360,12 @@ Playlist_one.fn.addItem = function(item) {
 	}
 	console.log(url, vid, sel, arguments);
 	var out = Playlist_one.fn.addItemOld.apply(this, arguments);
-	$(sel).each(addLink);
+	$(sel + ".pl-info .pl-list-destroy").before(newSpan); 
+	$(sel + ".pl-list-link").hide()
+	// Set up some CSS
+	$(sel + ".pl-list-link").css("background-position", "-240px -112px").css("right", "12px").css("top", "1px").css("position", "absolute");
+	
+	$(sel + ".pl-list-link").each(addLink);
 	return out;
 }
 
