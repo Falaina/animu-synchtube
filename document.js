@@ -39,7 +39,7 @@ $(".banner" ).html(banner);
 var html = 
 ' <style> #st-vanilla .st-vanilla-lower-ct .st-vanilla-lower > .playlist #playlist #playlist_items .pllist .title {' +
 '            width:450px;' +
-'         }' +
+'         }</style>' +
 '<link href="//dysto.dyndns.org/synchtube/synchAbout.css" rel="stylesheet" />'+
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
 
