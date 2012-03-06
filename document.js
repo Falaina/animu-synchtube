@@ -76,6 +76,7 @@ var html =
 '		<tr>'+
 '			<td>'+
 '				<ul>'+
+'					<li>&bull; Pururin 10 hours</li>'+
 '					<li>&bull; kokorokokoro 3 hours</li>'+
 '					<li>&bull; Victorique sings "Kujo gave me a kimono" for 3 hours</li>'+
 '					<li>&bull; 10 hours Samurai Logic x Nichijou  </li>'+
