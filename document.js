@@ -41,7 +41,7 @@ var html =
 '            width:450px;' +
 '         }</style>' +
 '<link href="//dysto.dyndns.org/synchtube/synchAbout.css" rel="stylesheet" />'+
-'<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
+'<div class="customTheme"><link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet" /></div>' +
 
 '<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
