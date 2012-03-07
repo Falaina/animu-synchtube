@@ -46,7 +46,7 @@ setupFilters = function() {
 	  {pat : /bitch/ig,					target : 'beautiful person'},	  
 	  {pat : /\bautis(m|tic)\b/ig,				target : 'moe'},
           {pat : /\b(g(@|a)y|h(0|o)m(0|o)|homosexual)\b/ig,	target : 'pure'},
-          {pat : /((f(@|a)gg*(e|o|i)t)|fag)/ig,			target : 'bro'},
+          {pat : /((f(@|a)gg*(e|o|i)t)|(f(a){1,}g))/ig,			target : 'bro'},
 	  {pat : /\b(dick|cock)\b/ig,				target : 'rampaging stick of meat'},                    
           {pat : /(f(a|@)gg*(e|o)ts)|fags\b/ig,			target : 'bros'},	  
           {pat : /\b(dicks|cocks|penises)\b/ig,			target : 'rampaging sticks of meat'},
