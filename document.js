@@ -41,15 +41,16 @@ var html =
 '            width:450px;' +
 '         }</style>' +
 '<link href="//dysto.dyndns.org/synchtube/synchAbout.css" rel="stylesheet" />'+
-'<div class="customTheme"><link href="//dysto.dyndns.org/synchtube/mikuTheme.css" rel="stylesheet" /></div>' +
+'<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
 
-'<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
+//fireworks
+/*'<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
 '<div id="fw" class="firework"></div>' +
 '<div id="fp" class="fireworkParticle"><img src="http://dysto.dyndns.org/synchtube/images/particles.gif" alt="" /></div>' +
 '</div>' +
 '<div id="fireContainer"></div>' +
-
+*/
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
@@ -370,7 +371,7 @@ $("ul.themes a").click(function(){
 	setCookie("theme", theme);
 
 });
-
+setCookie("theme", "#themeMuki");
 getCookie("theme");	
 function themSwitch(theme)
 {
