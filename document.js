@@ -365,7 +365,15 @@ $(".rotate").click(function(){
  //Theme switch
 $("ul.themes a").click(function(){
 	var theme = $(this).attr("href");
-		
+	themSwitch(theme);	
+		console.log("set to" + theme);
+	setCookie("theme", theme);
+
+});
+
+getCookie("theme");	
+function themSwitch(theme)
+{
 	switch(theme){
 		case "#themeEmpty" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "#"} );
@@ -383,8 +391,30 @@ $("ul.themes a").click(function(){
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/ChristmasTheme.css"} );
 		break;
 	}
-});
-	
+}
+
+function setCookie(theme, themeName)
+{
+	var exdate=new Date();
+	exdate.setMonth(exdate.getFullYear() + 1); 
+	document.cookie= theme + "=" + themeName+";expires="+exdate+";path=/"; 
+}
+
+function getCookie(c_name)
+{
+var i,x,y,ARRcookies=document.cookie.split(";");
+for (i=0;i<ARRcookies.length;i++)
+{
+  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  x=x.replace(/^\s+|\s+$/g,"");
+  if (x==c_name)
+    {
+    themSwitch(unescape(y));
+    }
+  }
+}
+
 //show the full video list
 $(".showFullList").click(function(){
 	if($(".jspPane").hasClass("makeRelative")){
@@ -421,6 +451,7 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 });
 
 //fireworks.js
+/*
 $("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.org/synchtube/images/fire.png' alt='FIRE'  /></div>");
 
 $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
@@ -429,6 +460,7 @@ $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 		return false
 	});
 });
+*/
 //rotating image script
  $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
     $('.slideshow').cycle({
