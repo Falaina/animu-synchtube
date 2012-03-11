@@ -398,7 +398,6 @@ function setCookie(theme, themeName)
 {
 	var exdate=new Date();
 	exdate.setMonth(exdate.getFullYear() + 1); 
-	exdate.setMonth(exdate.getDay() + 1); 
 	document.cookie= theme + "=" + themeName+";expires="+exdate+";path=/"; 
 }
 
