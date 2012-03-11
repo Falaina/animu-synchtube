@@ -371,9 +371,8 @@ $("ul.themes a").click(function(){
 	setCookie("theme", theme);
 
 });
-setCookie("theme", "#themeMuki");
-//getCookie("theme");	
-themSwitch("#themeMuki")
+getCookie("theme");	
+
 function themSwitch(theme)
 {
 	switch(theme){
@@ -398,7 +397,7 @@ function themSwitch(theme)
 function setCookie(theme, themeName)
 {
 	var exdate=new Date();
-//	exdate.setMonth(exdate.getFullYear() + 1); 
+	exdate.setMonth(exdate.getFullYear() + 1); 
 	exdate.setMonth(exdate.getDay() + 1); 
 	document.cookie= theme + "=" + themeName+";expires="+exdate+";path=/"; 
 }
