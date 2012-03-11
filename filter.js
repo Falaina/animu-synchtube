@@ -14,7 +14,6 @@ setupFilters = function() {
 	  {pat : /homura/ig,					target : 'hameru'},
 	  {pat : /mami/ig,					target : 'mumi'},
 	  {pat : /kyoko/ig,					target : 'kyaku'},
-          {pat : /\blittle girls*\b/ig,				target : 'shota'},  
 	  {pat : /\beveryone\b/ig,				target : 'everynyan'},
 	  {pat : /\bplan\b/ig,					target : 'keikaku'},
 	  {pat : /\bqb\b/ig,					target : '／人◕ ‿‿ ◕人＼'},
