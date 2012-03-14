@@ -260,6 +260,7 @@ var html =
 '			</div>' +
 '			<div class="box" id="box5" >' +
 '					<br />' +
+'                                       <b> Partial source for Denshi can be found at:</b> <a href="https://github.com/Falaina/Denshi"></a><br />'+
 '					<b> Denshi Commands:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li> !wolfram <question> - Submits <question> to WolframAlpha</li>' +
