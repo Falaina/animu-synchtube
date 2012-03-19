@@ -71,7 +71,7 @@ var html =
 '			<div class="box" id="box1">' +
 '				<ul>' +
 '				<br />' +
-'<b> The room turns one year old on 2012-04-03. Omedetou! ~ The management </b><br/>'
+'<b> The room turns one year old on 2012-04-03. Omedetou! ~ The management </b><br/>' + 
 '<h4 class="trigger"><a href="#">Defeated loops</a></h4>'+
 '<div class="toggle_container">'+
 '	<table class="defeatedList">'+
