@@ -61,7 +61,7 @@ setupFilters();
 	  Message_one.fn.render = function(){
 	    var oldMsg, oldNick;
 	    
-	    if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'denshi' && 
+	    if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'desuwa' && 
 	       (match = this.item.msg.match(/^\((\S+)\) (.*)/)) && true) {
 	       	oldMsg = this.item.msg;
 	       	oldNick = this.item.nick;
