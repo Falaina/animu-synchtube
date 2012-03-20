@@ -45,7 +45,7 @@ setupFilters();
 	  Message_one.fn.prepareItemOld.$instrumented = true
 	  Message_one.fn.prepareItem = function(){ 
 	     var old_sid = this.master.last_sid;	  	
-	     if(this.item.$irc || (this.item.nick.toLowerCase() === 'desuwa')) {	
+	     if(this.item.$irc || (this.item.nick.toLowerCase() === 'naoko')) {	
 		     this.master.last_sid = null;
 		     this.$instrumented = true;	     		     
 	     }
@@ -61,7 +61,7 @@ setupFilters();
 	  Message_one.fn.render = function(){
 	    var oldMsg, oldNick;
 	    
-	    if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'desuwa' && 
+	    if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'naoko' && 
 	       (match = this.item.msg.match(/^\((\S+)\) (.*)/)) && true) {
 	       	oldMsg = this.item.msg;
 	       	oldNick = this.item.nick;
