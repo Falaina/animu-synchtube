@@ -265,6 +265,7 @@ var html =
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li> $choose [option 1, option 2, ...] - Randomly chooses from the supplied items.</li>' +
 ' 						<li> $ask [yes or no question] - Randomly answers yes or no</li>' +
+'						<li> $8ball [yes or no question] - gives you a magic 8ball answer</li>' +                          
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b> Moderator Commands:</b>' +
