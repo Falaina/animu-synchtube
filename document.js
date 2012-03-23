@@ -263,8 +263,8 @@ var html =
 '					<br />' +
 '					<b> Naoko Commands (more to be added):</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li> $choose <option 1, option 2, ...> - Randomly chooses from the supplied items.</li>' +
-' 						<li> $ask <yes or no question> - Randomly answers yes or no</li>' +
+' 						<li> "$choose" <option 1, option 2, ...> - Randomly chooses from the supplied items.</li>' +
+' 						<li> "$ask" <yes or no question> - Randomly answers yes or no</li>' +
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b> Moderator Commands:</b>' +
