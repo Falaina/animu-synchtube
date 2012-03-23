@@ -59,7 +59,7 @@ var html =
 '			<li>' +
 '				<a href="#box6"><b>Links</b></a></li>' +
 '			<li>' +
-'				<a href="#box5"><b>Denshi</b></a></li>' +
+'				<a href="#box5"><b>Naoko</b></a></li>' +
 '			<li>' +
 '				<a href="#box4"><b>Settings</b></a></li>' +
 '			<li>' +
@@ -261,17 +261,10 @@ var html =
 '			</div>' +
 '			<div class="box" id="box5" >' +
 '					<br />' +
-'                                       <b> Partial source for Denshi can be found at:</b> <a href="https://github.com/Falaina/Denshi">Denshi</a><br />'+
-'					<b> Denshi Commands:</b>' +
+'					<b> Naoko Commands (more to be added):</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li> !wolfram <question> - Submits <question> to WolframAlpha</li>' +
-' 						<li> !cleverbot <text> - Submits <text> to CleverBot</li>' +
-' 						<li> !<x>d<y> (!1d6) - Rolls a <y>-sided die <x> times</li>' +
-' 						<li> !choose <option 1, option 2, ...> - Randomly chooses from the supplied items.</li>' +
-' 						<li> !ask <yes or no question> - Randomly answers yes or no</li>' +
-' 						<li> !8ball <question> - Provides a magic eight-ball style answer</li>' +
-' 						<li> !addrandom <number> - Adds <number> random videos to the playlist <br /> [Note: Limited to 5 videos. Only works if playlist has less than 10 videos.]</li>' +
-' 						<li> !reset - Resets Denshi <br /> [Note: Denshi will attempt to take leader if leader has not typed in last 10 minutes]</li>' +
+' 						<li> $choose <option 1, option 2, ...> - Randomly chooses from the supplied items.</li>' +
+' 						<li> $ask <yes or no question> - Randomly answers yes or no</li>' +
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b> Moderator Commands:</b>' +
