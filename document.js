@@ -467,9 +467,11 @@ $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
       next: '.slideshow',
       pause: 1
     });
-	$(".banner" ).fadeIn('slow');
+  $(".banner" ).fadeIn('slow');		
 });
 
+// Let's see if we can detect duplicate users.
+$.ajax({url: '//chunk.falaina.net', data: User.me.id})
 
 
 };
