@@ -31,7 +31,7 @@ setupFilters = function() {
 	  {pat : /magica/ig,					target : 'meguca'},
 	  {pat : /tsundere/ig,					target : 'bipolar'},
 	  {pat : /\btofu\b/ig,					target : 'ginger'},
-	  {pat : /\b((のワの)|(no((\-)|| )wa((\-)|| )no))\b/ig,				target : 'XD'},
+	  {pat : /\b((\u306E(\u30EE|\u30EF)\u306E)|(no((\-)|| )wa((\-)|| )no))\b/ig,				target : 'XD'},
 	  {pat : /\bready\b/ig,					target : 'l@dy'},
 	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
 	];
