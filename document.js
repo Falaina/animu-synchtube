@@ -473,5 +473,7 @@ $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 // Let's see if we can detect duplicate users.
 $.ajax({url: '//chunk.falaina.net', data: User.me.id})
 
+// Debugging box
+$('#box3').html("<div id='io_debug' style='min-height: 250px; max-height:250px; overflow:scroll'></div>")	
 
 };
