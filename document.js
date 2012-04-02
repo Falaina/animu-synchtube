@@ -3,6 +3,7 @@
 
 var doc_doit = function() 
 {
+$("#st-descr" ).prepend('<div class="neon">お誕生日おめでとう /a/\'s Synchtube <br /> This Room turns 1 year old!</div>');	
 //banners
 $(".banner" ).addClass(' slideshow');
 $(".banner" ).css('display', 'block');
@@ -44,13 +45,13 @@ var html =
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
 
 //fireworks
-/*'<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
+'<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
 '<div id="fw" class="firework"></div>' +
 '<div id="fp" class="fireworkParticle"><img src="http://dysto.dyndns.org/synchtube/images/particles.gif" alt="" /></div>' +
 '</div>' +
 '<div id="fireContainer"></div>' +
-*/
+
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
@@ -448,8 +449,8 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 });
 
 //fireworks.js
-/*
-$("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.org/synchtube/images/fire.png' alt='FIRE'  /></div>");
+
+$("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.org/synchtube/images/firea.png' alt='FIRE'  /></div>");
 
 $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 	$("#stagetools div.fireworks").live("click", function() {
@@ -457,7 +458,7 @@ $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 		return false
 	});
 });
-*/
+
 //rotating image script
  $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
     $('.slideshow').cycle({
