@@ -13,8 +13,8 @@ var banner =
 ' 	<img src="//' + dystoLink + 'eKwdg.png" alt="World Order"/>' +
 ' 	<img src="//' + dystoLink + '9Rz3E.png" alt="Shirts"/>' +
 ' 	<img src="//' + dystoLink + 'apacq.png" alt="Madoka"/>' +
-' 	<img src="//i.imgur.com/ICDjO.png" alt="chibi mods"/>' +
-'	<img src="//i.imgur.com/Af3ng.png" alt="boku banner"/>' +
+' 	<img src="//' + dystoLink + 'ICDjO.png" alt="chibi mods"/>' +
+'	<img src="//' + dystoLink + 'Af3ng.png" alt="boku banner"/>' +
 '	<img src="//i.imgur.com/Ry3O7.png" alt="black rock shooter banner"/>' +
 '	<img src="//i.imgur.com/Rs03U.png" alt="banjo banner"/>' +
 '	<img src="//i.imgur.com/UzMe3.png" alt="rolling gal banner"/>' +
@@ -24,8 +24,8 @@ var banner =
 '	<img src="//i.imgur.com/p9knC.png" alt="NIGHT OF FIYA"/>' +
 '   <img src="//i.imgur.com/pU23W.png" alt="dango"/>' +
 '   <img src="//i.imgur.com/UnBbO.png" alt="Sword of loli outcast"/>' +
-'   <img src="//i.imgur.com/eklAA.png" alt="Momiji"/>' +
-'   <img src="//i.imgur.com/1MtZ2.png" alt="Carlito"/>' +
+'   <img src="//' + dystoLink + '" alt="Momiji"/>' +
+'   <img src="//' + dystoLink + '1MtZ2.png" alt="Carlito"/>' +
 '   <img src="//i.imgur.com/PN8AE.gif" alt="Billy"/>' +
 '   <img src="//i.imgur.com/BcKQ5.jpg" alt="steinsgate">' + 
 '   <img src="//' + dystoLink + 'Dickbat.png" alt="GAL">' + 
