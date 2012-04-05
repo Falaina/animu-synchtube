@@ -28,7 +28,6 @@ setupFilters = function() {
 	  {pat : /kyuubey|kyubey|kyubei/ig,			target : 'coobie'},
 	  {pat : /\b *www\.synchtube\.com\\.\\/ig,
 	  							target : 'p0n0s'},
-	  {pat : /synchtube/ig,					target : 'test'},
 	  {pat : /magica/ig,					target : 'meguca'},
 	  {pat : /tsundere/ig,					target : 'bipolar'},
 	  {pat : /\btofu\b/ig,					target : 'ginger'},
