@@ -26,7 +26,7 @@ setupFilters = function() {
 	  {pat : /\bunflip\b/ig,				target : '┬──┬ ﻿ノ( ゜-゜ノ)'},
 	  {pat : /\bunflip2\b/ig,				target : '┬──┬ ﻿ノ(≖益≖ノ)'},
 	  {pat : /kyuubey|kyubey|kyubei/ig,			target : 'coobie'},
-	  {pat : /www\.synchtube\.com\/r\/DatelineNBC/ig,
+	  {pat : /\b *www\.synchtube\.com\\.\\/ig,
 	  							target : 'p0n0s'},
 	  {pat : /magica/ig,					target : 'meguca'},
 	  {pat : /tsundere/ig,					target : 'bipolar'},
