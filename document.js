@@ -43,12 +43,13 @@ var html =
 '         }</style>' +
 '<link href="//dysto.dyndns.org/synchtube/synchAbout.css" rel="stylesheet" />'+
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
-'<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
+/*'<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
 '<div id="fw" class="firework"></div>' +
 '<div id="fp" class="fireworkParticle"><img src="http://dysto.dyndns.org/synchtube/images/particles.gif" alt="" /></div>' +
 '</div>' +
 '<div id="fireContainer"></div>' +
+*/
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
@@ -446,7 +447,7 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 });
 
 //fireworks.js
-
+/*
 $("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.org/synchtube/images/fire5.png' alt='FIRE'  /></div>");
 
 $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
@@ -456,6 +457,7 @@ $.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 		return false
 	});
 });
+*/
 
 //rotating image script
  $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
