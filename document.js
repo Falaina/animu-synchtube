@@ -3,7 +3,7 @@
 
 var doc_doit = function() 
 {
-$("#st-descr" ).prepend('<div class="neon">お誕生日おめでとう /a/\'s Synchtube <br /> This Room turns 1 year old!</div>');	
+//$("#st-descr" ).prepend('<div class="neon">お誕生日おめでとう /a/\'s Synchtube <br /> This Room turns 1 year old!</div>');	
 //banners
 $(".banner" ).addClass(' slideshow');
 $(".banner" ).css('display', 'block');
