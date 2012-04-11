@@ -483,6 +483,6 @@ if($('a.strawberry').hasClass('active'))
 	var chatBackground = '#room .room';
 //	$(chatBackground).css('background-position','0% 100%');
 //	$(chatBackground).css('background-size','100%');
-	$(chatBackground).css('background-image','url(http://dysto.dyndns.org/synchtube/images/ChibhDenshi.png)');
+	$(chatBackground).css('background-image','url(http://dysto.dyndns.org/synchtube/images/ChibhDenshi.jpg)');
 }
 };
