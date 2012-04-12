@@ -481,9 +481,8 @@ $('#box3').html("<div id='io_debug' style='min-height: 250px; max-height:250px; 
 if($('a.strawberry').hasClass('active'))
 {
 	var chatBackground = '#room .room';
-//	$(chatBackground).css('background-position','0% 100%');
-	$(chatBackground).css('background-position','10% 110%, 95% 100%');
-//	$(chatBackground).css('background-size','100%');
-	$(chatBackground).css('background-image','url(http://dysto.dyndns.org/synchtube/images/ChibhDenshi.jpg),url(http://dysto.dyndns.org/synchtube/images/ChibhDenshiStar.jpg)');
+	$(chatBackground).css('background-position','0% 100%');
+	$(chatBackground).css('background-size','100%');
+	$(chatBackground).css('background-image','url(http://dysto.dyndns.org/synchtube/images/wideFace.png)');
 }
 };
