@@ -70,7 +70,7 @@ var html =
 '			<div class="box" id="box1">' +
 '				<ul>' +
 '				<br />' +
-'<b> The room turns one year old on 2012-04-03. Omedetou! ~ The management </b><br/><br/>' + 
+//'<b> The room turns one year old on 2012-04-03. Omedetou! ~ The management </b><br/><br/>' + 
 '<h4 class="trigger"><a href="#">Defeated loops</a></h4>'+
 '<div class="toggle_container">'+
 '	<table class="defeatedList">'+
@@ -275,8 +275,8 @@ var html =
 '					<br />' +
 '					<b> Tube Channels:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li><a target="_blank" href="http://www.youtube.com/animuship">Goship\'s Channel 1</a>      <a target="_blank"  href="http://www.youtube.com/mmdship"> 2 </a></li>' +
-' 						<li><a target="_blank" href="http://www.youtube.com/user/AnimuOnMySynchtube">Synchtube\'s Channel</a> </li>' +
+' 						<li><a target="_blank" href="http://www.youtube.com/animuship">Goship\'s Channel 1</a>      <a target="_blank"  href="http://www.youtube.com/mmdship"> 2 </a> <a target="_blank"  href="http://www.youtube.com/animuship3"> 3 </a></li>' +
+' 						<li><a target="_blank" href="http://www.youtube.com/user/AnimuOnMySynchtube">Denwa\'s Channel</a> </li>' +
 ' 					</ul>'+ 
 '					<br />' +
 '					<b> Usefull Links:</b>' +
