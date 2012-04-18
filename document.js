@@ -133,6 +133,7 @@ var html =
 '						<li>&bull; Hidan no Aria</li>'+
 '						<li>&bull; Moyashimon</li>'+
 '						<li>&bull; Golden Boy</li>'+
+'						<li>&bull; Queens Blade S1 & S2</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
