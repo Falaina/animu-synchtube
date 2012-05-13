@@ -134,7 +134,8 @@ var html =
 '						<li>&bull; Moyashimon</li>'+
 '						<li>&bull; Golden Boy</li>'+
 '						<li>&bull; Koihime S1-3</li>'+
-'						<li>&bull; Queens Blade S1 & S2</li>'+
+'						<li>&bull; Queens Blade S1 & S2</li>'+ 
+'						<li>&bull; Wasurenagumo</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
