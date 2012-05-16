@@ -278,14 +278,14 @@ var html =
 ' 					<br />'+ 
 '					<b> Moderator Commands:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-'						<li>see <a target="_blank" href="https://github.com/Suwako/Naoko/blob/master/commands.txt">Naoko</a> for more detail</li>';
+'						<li>see <a target="_blank" href="https://github.com/Suwako/Naoko/blob/master/commands.txt">Naoko</a> for more detail</li>'+
 ' 					</ul>'+ 
 '			</div>' +
 '			<div class="box" id="box6" >' +
 '					<br />' +
 '					<b> Tube Channels:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li><a target="_blank" href="http://www.youtube.com/animuship">Goship\'s Channel 1</a>  <a target="_blank"  href="http://www.youtube.com/animuship3"> 2 </a> <a target="_blank"  href="http://www.youtube.com/eroship4"> 3 </a></li>' +
+' 						<li><a target="_blank" href="http://www.youtube.com/animuship">Goship\'s Channel 1</a> <a target="_blank"  href="http://www.youtube.com/animuship3"> 2 </a> <a target="_blank"  href="http://www.youtube.com/eroship4"> 3 </a></li>' +
 ' 						<li><a target="_blank" href="http://www.youtube.com/user/AnimuOnMySynchtube">Denwa\'s Channel</a> </li>' +
 ' 					</ul>'+ 
 '					<br />' +
