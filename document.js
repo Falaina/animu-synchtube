@@ -266,14 +266,14 @@ var html =
 '					<b> Naoko Commands (more to be added):</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li> $choose [option 1, option 2, ...] - Randomly chooses from the supplied items.</li>' +
-' 						<li> $ask [yes or no question] - Randomly answers yes or no</li>' +
+' 						<li> $ask [yes or no question] - randomly answers yes or no</li>' +
 '						<li> $8ball [yes or no question] - gives you a magic 8ball answer</li>' +        
-'						<li> $dice X Y Rolls X Y-sided dice.</li>' +    
-'						<li> $cleverbot [message] -  Sends the message to cleverbot</li>' +      
+'						<li> $dice [X Y] - rolls X Y-sided dice.</li>' +    
+'						<li> $cleverbot [message] -  sends the message to cleverbot</li>' +      
 '						<li> $translate [message] - translate the given message in english</li>' +      
-'						<li> $wolfram [query] - Sends the given query to the Wolfram</li>' +    
-'						<li> $addrandom [number] add random video\'s to the playlist </li>' +    
-'						<li> $delete - Deletes the last video added by the user who calls this command.  </li>' +           
+'						<li> $wolfram [query] - sends the given query to the Wolfram</li>' +    
+'						<li> $addrandom [number] add random video\'s to the playlist</li>' +    
+'						<li> $delete - deletes the last video added by the user who calls this command</li>' +           
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b> Moderator Commands:</b>' +
