@@ -263,7 +263,7 @@ var html =
 '			</div>' +
 '			<div class="box" id="box5" >' +
 '					<br />' +
-'					<b> Naoko Commands (more to be added):</b>' +
+'					<b> Naoko Commands:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li> $choose [option 1, option 2, ...] - Randomly chooses from the supplied items.</li>' +
 ' 						<li> $ask [yes or no question] - randomly answers yes or no</li>' +
