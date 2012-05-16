@@ -8,7 +8,7 @@ var doc_doit = function()
 $(".banner" ).addClass(' slideshow');
 $(".banner" ).css('display', 'block');
 $(".banner" ).hide();
-var dystoLink = "dl.dropbox.com/u/78728596/synchtube/banners/" ; 
+var dystoLink = "dysto.dyndns.org/synchtube/banners/" ; 
 var banner =
 ' 	<img src="//' + dystoLink + 'eKwdg.png" alt="World Order"/>' +
 ' 	<img src="//' + dystoLink + '9Rz3E.png" alt="Shirts"/>' +
@@ -41,12 +41,12 @@ var html =
 ' <style> #st-vanilla .st-vanilla-lower-ct .st-vanilla-lower > .playlist #playlist #playlist_items .pllist .title {' +
 '            width:450px;' +
 '         }</style>' +
-'<link href="//dl.dropbox.com/u/78728596/synchtube/synchAbout.css" rel="stylesheet" />'+
+'<link href="//dysto.dyndns.org/synchtube/synchAbout.css" rel="stylesheet" />'+
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
-/*'<link href="//dl.dropbox.com/u/78728596/synchtube/style/fireworks.css" rel="stylesheet" />'+
+/*'<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
 '<div id="fw" class="firework"></div>' +
-'<div id="fp" class="fireworkParticle"><img src="http://dl.dropbox.com/u/78728596/synchtube/images/particles.gif" alt="" /></div>' +
+'<div id="fp" class="fireworkParticle"><img src="http://dysto.dyndns.org/synchtube/images/particles.gif" alt="" /></div>' +
 '</div>' +
 '<div id="fireContainer"></div>' +
 */
@@ -267,18 +267,25 @@ var html =
 '					<ul style="list-style-type: square; margin-left:16px">' +
 ' 						<li> $choose [option 1, option 2, ...] - Randomly chooses from the supplied items.</li>' +
 ' 						<li> $ask [yes or no question] - Randomly answers yes or no</li>' +
-'						<li> $8ball [yes or no question] - gives you a magic 8ball answer</li>' +                          
+'						<li> $8ball [yes or no question] - gives you a magic 8ball answer</li>' +        
+'						<li> $dice X Y Rolls X Y-sided dice.</li>' +    
+'						<li> $cleverbot [message] -  Sends the message to cleverbot</li>' +      
+'						<li> $translate [message] - translate the given message in english</li>' +      
+'						<li> $wolfram [query] - Sends the given query to the Wolfram</li>' +    
+'						<li> $addrandom [number] add random video\'s to the playlist </li>' +    
+'						<li> $delete - Deletes the last video added by the user who calls this command.  </li>' +           
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b> Moderator Commands:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
+'						<li>see <a target="_blank" href="https://github.com/Suwako/Naoko/blob/master/commands.txt">Naoko</a> for more detail</li>';
 ' 					</ul>'+ 
 '			</div>' +
 '			<div class="box" id="box6" >' +
 '					<br />' +
 '					<b> Tube Channels:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li><a target="_blank" href="http://www.youtube.com/animuship">Goship\'s Channel 1</a>      <a target="_blank"  href="http://www.youtube.com/mmdship"> 2 </a> <a target="_blank"  href="http://www.youtube.com/animuship3"> 3 </a></li>' +
+' 						<li><a target="_blank" href="http://www.youtube.com/animuship">Goship\'s Channel 1</a>  <a target="_blank"  href="http://www.youtube.com/animuship3"> 2 </a> <a target="_blank"  href="http://www.youtube.com/eroship4"> 3 </a></li>' +
 ' 						<li><a target="_blank" href="http://www.youtube.com/user/AnimuOnMySynchtube">Denwa\'s Channel</a> </li>' +
 ' 					</ul>'+ 
 '					<br />' +
@@ -378,16 +385,16 @@ function themSwitch(theme)
 			$(".customTheme link[rel=stylesheet]").attr({href : "#"} );
 		break;
 		case "#themeMuki" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/mikuTheme.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/mikuTheme.css"} );
 		break;
 		case "#themeSteinsGate" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/steinsTheme.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/steinsTheme.css"} );
 		break;
 		case "#themeHalloween" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/HalloweenTheme.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme.css"} );
 		break;
 		case "#themeChristmas" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/ChristmasTheme.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/ChristmasTheme.css"} );
 		break;
 	}
 }
@@ -451,9 +458,9 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 
 //fireworks.js
 /*
-$("#stagetools").append("<div class='fireworks toggle'><img src='//dl.dropbox.com/u/78728596/synchtube/images/fire5.png' alt='FIRE'  /></div>");
+$("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.org/synchtube/images/fire5.png' alt='FIRE'  /></div>");
 
-$.getScript('http://dl.dropbox.com/u/78728596/synchtube/script/fireworks.js', function(){
+$.getScript('http://dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 	$("#stagetools div.fireworks").live("click", function() {
 		console.log("fire firework");
 		createFirework(24,127,6,2,null,null,null,null,false,true);
@@ -486,6 +493,6 @@ if($('a.strawberry').hasClass('active'))
 	var chatBackground = '#room .room';
 	$(chatBackground).css('background-position','0% 100%');
 	$(chatBackground).css('background-size','100%');
-	$(chatBackground).css('background-image','url(http://dl.dropbox.com/u/78728596/synchtube/images/wideFace.png)');
+	$(chatBackground).css('background-image','url(http://dysto.dyndns.org/synchtube/images/wideFace.png)');
 }
 };
