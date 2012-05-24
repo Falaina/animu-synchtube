@@ -137,6 +137,7 @@ var html =
 '						<li>&bull; Queens Blade S1 & S2</li>'+ 
 '						<li>&bull; Wasurenagumo</li>'+
 '						<li>&bull; Dears</li>'+
+'						<li>&bull; Yumekui Merry </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
