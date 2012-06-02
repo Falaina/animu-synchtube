@@ -182,6 +182,7 @@ var html =
 '						<li>&bull; Gyo</li>'+
 '						<li>&bull; Evangelion 2.22 You Can (Not) Advance</li>'+
 '						<li>&bull; Macross Frontier the Movie ~Sayonara no Tsubasa</li>'+
+'						<li>&bull; Macross Frontier the Movie Itsuwari no Utahime</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
