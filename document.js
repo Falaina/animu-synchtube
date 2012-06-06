@@ -73,7 +73,6 @@ var html =
 //'<b> The room turns one year old on 2012-04-03. Omedetou! ~ The management </b><br/><br/>' + 
 '<h4 class="trigger"><a href="#">Defeated loops</a></h4>'+
 '<div class="toggle_container">'+
-'<a href="http://animu.falaina.net/chan/" target="_blank"> /a/nimu Synchtube Chan Board </a><br/><br/>'+
 '	<table class="defeatedList">'+
 '		<tr>'+
 '			<td>'+
@@ -218,7 +217,7 @@ var html =
 '					Submitted <a href="//animusynchtube.imgur.com/banners" target="_blank">banners!</a>' +
 '					<br />' +
 '					<br />' +
-'                                       <a href="//animu.falaina.net/chan/a"  target="_blank">Image board</a>' +
+'                                       <a href="//animu.falaina.net/chan/a"  target="_blank">/a/nimu Synchtube Image Board</a>' +
 '					<br />' +
 '                                       <a href="//animu.falaina.net"  target="_blank">Room Statistics</a>' +
 '				</ul>' +
