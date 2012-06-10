@@ -139,7 +139,6 @@ var html =
 '						<li>&bull; Dears</li>'+
 '						<li>&bull; Yumekui Merry </li>'+
 '						<li>&bull; Dog Days </li>'+
-						<li>&bull; Usagi Drop </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
