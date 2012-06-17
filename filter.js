@@ -10,6 +10,7 @@ setupFilters = function() {
 	  {pat : /\bdyson/ig,					target : 'moejets'},
 	  {pat : /\banim(u|e)/ig,				target : 'penis'},
 	  {pat : /loli/ig,					target : 'shota'},
+	  {pat : /little girl/ig,				target : 'shota'},
 	  {pat : /madoka/ig,					target : 'meduca'},
 	  {pat : /magica/ig,					target : 'meguca'},
 	  {pat : /homura/ig,					target : 'hameru'},
