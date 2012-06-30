@@ -299,7 +299,8 @@ var html =
 '					<br />' +
 '					<b> Usefull Links:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li><a target="_blank" href="http://mikudb.com/">Miku albums database</a></li>' +
+' 						<li><a target="_blank" href="http://mikudb.com/">Miku albums</a></li>' +
+' 						<li><a target="_blank" href="http://vocadb.net/">Vocaloid Database</a></li>' +
 '					        <li><a href="https://github.com/Falaina/animu-synchtube/blob/gh-pages/filter.js#L104">Word filters"</a></li>' +
 ' 					</ul>'+ 
 '			</div>' +
