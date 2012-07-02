@@ -28,7 +28,7 @@ var banner =
 '   <img src="//' + imgur + '1MtZ2.png" alt="Carlito"/>' +
 '   <img src="//' + imgur + 'PN8AE.gif" alt="Billy"/>' +
 '   <img src="//' + imgur + 'BcKQ5.jpg" alt="steinsgate">' + 
-'   <img src="//' + imgur + 'Dickbat.png" alt="GAL">' + 
+'   <img src="//' + imgur + 'Th5zh.png" alt="GAL">' + 
 '   <img src="//' + imgur + 'uSGmq.png" alt="idolmaster1">' +
 '   <img src="//' + imgur + '4TAcD.png" alt="idolmaster2">' +
 '   <img src="//' + imgur + 'w9wne.png" alt="idolmaster3">' + 
