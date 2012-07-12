@@ -11,29 +11,6 @@ $(".banner" ).hide();
 var imgur = "i.imgur.com/" ; 
 var banner =
 ' 	<img src="//' + imgur + 'eKwdg.png" alt="World Order"/>' +
-' 	<img src="//' + imgur + '9Rz3E.png" alt="Shirts"/>' +
-' 	<img src="//' + imgur + 'apacq.png" alt="Madoka"/>' +
-' 	<img src="//' + imgur + 'ICDjO.png" alt="chibi mods"/>' +
-'	<img src="//' + imgur + 'Af3ng.png" alt="boku banner"/>' +
-'	<img src="//' + imgur + 'Ry3O7.png" alt="black rock shooter banner"/>' +
-'	<img src="//' + imgur + 'Rs03U.png" alt="banjo banner"/>' +
-'	<img src="//' + imgur + 'UzMe3.png" alt="rolling gal banner"/>' +
-'	<img src="//' + imgur + 'gx8v1.png" alt="miku banner"/>' +
-'	<img src="//' + imgur + 'tNzc3.jpg" alt="bark banner"/>' +
-'	<img src="//' + imgur + '3S7lg.jpg" alt="cirno"/>' +
-'	<img src="//' + imgur + 'p9knC.png" alt="NIGHT OF FIYA"/>' +
-'   <img src="//' + imgur + 'pU23W.png" alt="dango"/>' +
-'   <img src="//' + imgur + 'UnBbO.png" alt="Sword of loli outcast"/>' +
-'   <img src="//' + imgur + 'eklAA.png" alt="Momiji"/>' +
-'   <img src="//' + imgur + '1MtZ2.png" alt="Carlito"/>' +
-'   <img src="//' + imgur + 'PN8AE.gif" alt="Billy"/>' +
-'   <img src="//' + imgur + 'BcKQ5.jpg" alt="steinsgate">' + 
-'   <img src="//' + imgur + 'Th5zh.png" alt="GAL">' + 
-'   <img src="//' + imgur + 'uSGmq.png" alt="idolmaster1">' +
-'   <img src="//' + imgur + '4TAcD.png" alt="idolmaster2">' +
-'   <img src="//' + imgur + 'w9wne.png" alt="idolmaster3">' + 
-'   <img src="//' + imgur + 'EHwQy.png" alt="shotagate">'+
-'   <img src="//' + imgur + 'Th5zh.png" alt="raw">';
 $(".banner" ).html(banner);
 
 
