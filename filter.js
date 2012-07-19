@@ -17,6 +17,7 @@ setupFilters = function() {
 	  {pat : /fuck/ig,					target : 'gently caress'},
 	  {pat : /arc/ig,					target : 'kawaiiest boy'},
 	  {pat : /magica/ig,					target : 'meguca'},
+	  {pat : /\bnigger\b/ig,				target : 'I AM A FAGGOT'},
 	  {pat : /homura/ig,					target : 'hameru'},
 	  {pat : /mami/ig,					target : 'mumi'},
 	  {pat : /kyoko/ig,					target : 'kyaku'},
