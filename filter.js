@@ -15,7 +15,7 @@ setupFilters = function() {
 	  {pat : /madoka/ig,					target : 'meduca'},
 	  {pat : /gay/ig,					target : 'pure'},
 	  {pat : /fuck/ig,					target : 'gently caress'},
-	  {pat : /arc/ig,					target : 'kawaiiest boy'},
+	  //{pat : /arc/ig,					target : 'kawaiiest boy'},
 	  {pat : /magica/ig,					target : 'meguca'},
 	  {pat : /\bnigger\b/ig,				target : 'I AM A FAGGOT'},
 	  {pat : /homura/ig,					target : 'hameru'},
