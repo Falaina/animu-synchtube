@@ -68,13 +68,13 @@ setupFilters();
 	  }
 	}
 	  	
-	/*if(!Message_one.fn.render.$instrumented) {	  		
+	if(!Message_one.fn.render.$instrumented) {	  		
 	  Message_one.fn.renderOld = Message_one.fn.render
 	  Message_one.fn.renderOld.$instrumented = true
 	  Message_one.fn.render = function(){
 	    var oldMsg, oldNick;
 	    
-	    if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'naoko' && 
+	    /*if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'naoko' && 
 	       (match = this.item.msg.match(/^\((\S+)\) (.*)/)) && true) {
 	       	oldMsg = this.item.msg;
 	       	oldNick = this.item.nick;
@@ -133,10 +133,11 @@ setupFilters();
 		    un.html(un_txt);
 	    }
 	    return out;
+	    */
 	  }
 	  Message_one.fn.render.$instrumented = true
 	  $desc = $("#leader-welcome-message-textarea").val()
-	  */
+	  
 	String.prototype.hashCode = function(){
 		var hash = 0;
 		if (this.length == 0) return hash;
