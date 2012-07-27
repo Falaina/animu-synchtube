@@ -71,10 +71,10 @@ setupFilters();
 	if(!Message_one.fn.render.$instrumented) {	  		
 	  Message_one.fn.renderOld = Message_one.fn.render
 	  Message_one.fn.renderOld.$instrumented = true
-	  Message_one.fn.render = function(){
+	  /*Message_one.fn.render = function(){
 	    var oldMsg, oldNick;
 	    
-	    /*if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'naoko' && 
+	    if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'naoko' && 
 	       (match = this.item.msg.match(/^\((\S+)\) (.*)/)) && true) {
 	       	oldMsg = this.item.msg;
 	       	oldNick = this.item.nick;
