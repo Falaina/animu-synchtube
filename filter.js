@@ -1,4 +1,4 @@
-/*setupFilters = function() {       
+setupFilters = function() {       
 	forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
 	if(window.Cookie && Cookie.readCookie("r_animu_disable_filters")) {
 		word_filters = [];
@@ -47,7 +47,7 @@
 	];
 };
 setupFilters();
-	function filterIllegal(str) {
+/*	function filterIllegal(str) {
 		var ill = /\xad/ig;
 		str = str.replace(ill, '');
 		return str;	
