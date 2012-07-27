@@ -47,7 +47,7 @@ setupFilters = function() {
 	];
 };
 setupFilters();
-/*	function filterIllegal(str) {
+	function filterIllegal(str) {
 		var ill = /\xad/ig;
 		str = str.replace(ill, '');
 		return str;	
@@ -154,7 +154,7 @@ setupFilters();
 	}
 	
 	
-
+/*
 // Add link button
 var newSpan = '<span class="pl-list-link jq-icon jq-icon-closethick link-elem"></span>';
 $(".pl-info .pl-list-destroy").before(newSpan); 
