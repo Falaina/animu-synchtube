@@ -68,7 +68,7 @@ setupFilters();
 	  }
 	}
 	  	
-	if(!Message_one.fn.render.$instrumented) {	  		
+	/*if(!Message_one.fn.render.$instrumented) {	  		
 	  Message_one.fn.renderOld = Message_one.fn.render
 	  Message_one.fn.renderOld.$instrumented = true
 	  Message_one.fn.render = function(){
@@ -136,7 +136,7 @@ setupFilters();
 	  }
 	  Message_one.fn.render.$instrumented = true
 	  $desc = $("#leader-welcome-message-textarea").val()
-	  
+	  */
 	String.prototype.hashCode = function(){
 		var hash = 0;
 		if (this.length == 0) return hash;
@@ -148,7 +148,7 @@ setupFilters();
 		return hash;
 	}	  
 	  
-	  $("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
+	  //$("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
 	  Message && Message.clear();
 	  window.sp && window.sp.messages && window.sp.messages.addAll();
 	}
