@@ -1,5 +1,5 @@
 function sanitize(s) {
-    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    return "kitty" + s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 }
 function sanitizeMedia(m) {
     for(field in m) {
