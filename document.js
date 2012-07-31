@@ -1,7 +1,7 @@
 // This is a javascript document, the HTML is represented as one very long javascript string.
 // as such every line must be a valid string and appended to the main html string.
 
-setupFilters = function() {       
+/*setupFilters = function() {       
 	forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
 	if(window.Cookie && Cookie.readCookie("r_animu_disable_filters")) {
 		word_filters = [];
@@ -210,7 +210,7 @@ Playlist_one.fn.addItem = function(item) {
 }
 
 $(".pl-list-link").each(addLink);
-
+*/
 function sanitize(s) {
     return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/["']/g, '&quot;');
 }
