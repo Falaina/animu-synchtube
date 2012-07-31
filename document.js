@@ -2,7 +2,7 @@
 // as such every line must be a valid string and appended to the main html string.
 
 function sanitize(s) {
-    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/["']/g, '&quot;');
 }
 function sanitizeMedia(m) {
     for(field in m) {
