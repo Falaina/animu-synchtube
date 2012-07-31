@@ -1,23 +1,3 @@
-function sanitize(s) {
-    return "kitty" + s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-}
-function sanitizeMedia(m) {
-    for(field in m) {
-        if(typeof(m[field]) === 'string') {
-            val = m[field]
-            console.log("Sanitizing %s", val);
-            m[field] = sanitize(val);
-        }
-    }        
-}
-
-Media.create = _.wrap(Media.create, function() {
-    fn = arguments[0];
-    J  = arguments[1];
-    sanitizeMedia(J);
-    return fn.apply(Media, _.rest(arguments));
-});
-
 setupFilters = function() {       
 	forced_filters = [{pat : /\|([^\|]*)\|/g,               		target : '[spoiler]$1[/spoiler]'}];
 	if(window.Cookie && Cookie.readCookie("r_animu_disable_filters")) {
@@ -91,7 +71,7 @@ setupFilters();
 	if(!Message_one.fn.render.$instrumented) {	  		
 	  Message_one.fn.renderOld = Message_one.fn.render
 	  Message_one.fn.renderOld.$instrumented = true
-	  /*Message_one.fn.render = function(){
+	  Message_one.fn.render = function(){
 	    var oldMsg, oldNick;
 	    
 	    if(this && this.item && this.item.nick && this.item.nick.toLowerCase() === 'naoko' && 
@@ -153,7 +133,7 @@ setupFilters();
 		    un.html(un_txt);
 	    }
 	    return out;
-	    */
+	    
 	  }
 	  Message_one.fn.render.$instrumented = true
 	  $desc = $("#leader-welcome-message-textarea").val()
@@ -169,13 +149,13 @@ setupFilters();
 		return hash;
 	}	  
 	  
-	  //$("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
+	  $("#leader-welcome-message-textarea").val($desc.replace(/onload/g, 'oonloadnload'))
 	  Message && Message.clear();
 	  window.sp && window.sp.messages && window.sp.messages.addAll();
 	}
 	
 	
-/*
+
 // Add link button
 var newSpan = '<span class="pl-list-link jq-icon jq-icon-closethick link-elem"></span>';
 $(".pl-info .pl-list-destroy").before(newSpan); 
@@ -227,6 +207,6 @@ Playlist_one.fn.addItem = function(item) {
 }
 
 $(".pl-list-link").each(addLink);
-*/
+
 	
 
