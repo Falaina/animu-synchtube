@@ -137,6 +137,7 @@ var html =
 '						<li>&bull; Yumekui Merry </li>'+
 '						<li>&bull; Dog Days </li>'+
 '						<li>&bull; Usagi Drop </li>'+
+'						<li>&bull; Strike Witches </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -182,6 +183,8 @@ var html =
 '						<li>&bull; Evangelion 2.22 You Can (Not) Advance</li>'+
 '						<li>&bull; Macross Frontier the Movie ~Sayonara no Tsubasa</li>'+
 '						<li>&bull; Macross Frontier the Movie Itsuwari no Utahime</li>'+
+'						<li>&bull; K-on the Movie</li>'+
+'						<li>&bull; Mind Game/li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
