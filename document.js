@@ -47,8 +47,7 @@ var html =
 '</div>' +
 '<div id="fireContainer"></div>' +
 */
-'<div style="color:#077E84; font-size:30px; text-align:center">Hatsune Miku&rsquo;s 5th anniversary</div>' +
-'<div style="text-align:center"><img width="300px" src="//dysto.dyndns.org/synchtube/images/miku5a.jpg" alt="mikuBday" /> </div>'+
+'<div style="text-align:center"><img width="500px" src="//dysto.dyndns.org/synchtube/images/miku5a.jpg" alt="mikuBday" /> </div>'+
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
