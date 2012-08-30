@@ -47,6 +47,7 @@ var html =
 '</div>' +
 '<div id="fireContainer"></div>' +
 */
+'<div style="color:#077E84; font-size:24px; text-align:center">Hatsune Miku 5th anniversary' +
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
