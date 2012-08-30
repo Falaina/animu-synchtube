@@ -385,7 +385,9 @@ $("ul.themes a").click(function(){
 	setCookie("theme", theme);
 
 });
-getCookie("theme");	
+getCookie("theme");
+
+themSwitch("#themeMuki");
 
 function themSwitch(theme)
 {
@@ -394,7 +396,9 @@ function themSwitch(theme)
 			$(".customTheme link[rel=stylesheet]").attr({href : "#"} );
 		break;
 		case "#themeMuki" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/mikuTheme.css"} );
+		//	$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/mikuTheme.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/mikuTheme.css"} );
+	
 		break;
 		case "#themeSteinsGate" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/steinsTheme.css"} );
