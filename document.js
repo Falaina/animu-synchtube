@@ -47,7 +47,7 @@ var html =
 '</div>' +
 '<div id="fireContainer"></div>' +
 */
-'<div style="text-align:center; padding-bottom:5px;"><img width="500px" src="//dysto.dyndns.org/synchtube/images/miku5a.jpg" alt="mikuBday" /> </div>'+
+//'<div style="text-align:center; padding-bottom:5px;"><img width="500px" src="//dysto.dyndns.org/synchtube/images/miku5a.jpg" alt="mikuBday" /> </div>'+
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
 '		<ul class="group" id="boxLinks">' +
@@ -388,8 +388,7 @@ $("ul.themes a").click(function(){
 });
 getCookie("theme");
 
-themSwitch("#themeMuki");
-
+//themSwitch("#themeMuki");
 function themSwitch(theme)
 {
 	switch(theme){
