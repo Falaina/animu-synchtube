@@ -17,7 +17,7 @@ setupFilters = function() {
 	  {pat : /fuck/ig,					target : 'gently caress'},
 	  //{pat : /arc/ig,					target : 'kawaiiest boy'},
 	  {pat : /magica/ig,					target : 'meguca'},
-	  {pat : /\bnigger\b/ig,				target : 'I AM A FAGGOT'},
+	  {pat : /\bnigger\b/ig,				target : 'caucasian'},
 	  {pat : /homura/ig,					target : 'hameru'},
 	  {pat : /mami/ig,					target : 'mumi'},
 	  {pat : /kyoko/ig,					target : 'kyaku'},
@@ -40,7 +40,7 @@ setupFilters = function() {
 	  //{pat : /tama/ig,					target : 'best girl'},
 	  {pat : /tsundere/ig,					target : 'bipolar'},
 	  {pat : /\btofu\b/ig,					target : 'ginger'},
-	  {pat : /\b((\u306E(\u30EE|\u30EF)\u306E)|((no)((\-)|| )(wa|no)((\-)|| )(no|wa)))\b/ig,	
+	  //{pat : /\b((\u306E(\u30EE|\u30EF)\u306E)|((no)((\-)|| )(wa)((\-)|| )(no)))\b/ig,	
 	  							target : 'XD'},
 	  {pat : /\bready\b/ig,					target : 'l@dy'},
 	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
