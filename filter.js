@@ -39,7 +39,7 @@ setupFilters = function() {
 	  							target : 'p0n0s'},
 	  {pat : /magica/ig,					target : 'meguca'},
 	  {pat : /enemy|enemies/ig,				target : 'BETA'},
-	  {pat : /\b(l|i)e(l|i)\b/, 					target : 'XD'},
+	  {pat : /\b(l|i)e(l|i)\b/ig, 					target : 'XD'},
 	  //{pat : /tama/ig,					target : 'best girl'},
 	  {pat : /tsundere/ig,					target : 'bipolar'},
 	  {pat : /\btofu\b/ig,					target : 'ginger'},
