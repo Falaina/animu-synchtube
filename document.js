@@ -139,6 +139,8 @@ var html =
 '						<li>&bull; Dog Days </li>'+
 '						<li>&bull; Usagi Drop </li>'+
 '						<li>&bull; Strike Witches </li>'+
+'						<li>&bull; Dantalian no Shoka </li>'+
+'						<li>&bull; Mashiro-Iro Symphony  </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
