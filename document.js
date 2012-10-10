@@ -140,7 +140,9 @@ var html =
 '						<li>&bull; Usagi Drop </li>'+
 '						<li>&bull; Strike Witches </li>'+
 '						<li>&bull; Dantalian no Shoka </li>'+
-'						<li>&bull; Mashiro-Iro Symphony  </li>'+
+'						<li>&bull; Mashiro-Iro Symphony </li>'+
+'						<li>&bull; Senki Zesshō Symphogear </li>'+
+'						<li>&bull; They Are My Noble Masters </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
