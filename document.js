@@ -143,6 +143,7 @@ var html =
 '						<li>&bull; Mashiro-Iro Symphony </li>'+
 '						<li>&bull; Senki Zesshō Symphogear </li>'+
 '						<li>&bull; They Are My Noble Masters </li>'+
+'						<li>&bull; Horizon in the Middle of Nowhere </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
