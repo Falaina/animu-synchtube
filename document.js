@@ -144,6 +144,7 @@ var html =
 '						<li>&bull; Senki Zesshō Symphogear </li>'+
 '						<li>&bull; They Are My Noble Masters </li>'+
 '						<li>&bull; Horizon in the Middle of Nowhere </li>'+
+'						<li>&bull; Kyouran Kazoku Nikki  </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
