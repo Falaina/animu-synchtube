@@ -13,14 +13,14 @@ function sanitizeMedia(m) {
         }
     }        
 }
-*/
+
 Media.create = _.wrap(Media.create, function() {
     fn = arguments[0];
     J  = arguments[1];
     sanitizeMedia(J);
     return fn.apply(Media, _.rest(arguments));
 });
-
+*/
 var doc_doit = function() 
 {
 //$("#st-descr" ).prepend('<div class="neon">お誕生日おめでとう /a/\'s Synchtube <br /> This Room turns 1 year old!</div>');	
