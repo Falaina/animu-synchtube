@@ -25,6 +25,7 @@ Media.create = _.wrap(Media.create, function() {
 //{
 //$("#st-descr" ).prepend('<div class="neon">お誕生日おめでとう /a/\'s Synchtube <br /> This Room turns 1 year old!</div>');	
 //banners
+$(document).ready(function(){
 $(".banner" ).addClass(' slideshow');
 $(".banner" ).css('display', 'block');
 $(".banner" ).hide();
@@ -514,5 +515,5 @@ if($('a.strawberry').hasClass('active'))
 	$(chatBackground).css('background-size','100%');
 	$(chatBackground).css('background-image','url(http://dl.dropbox.com/u/78728596/synchtube/images/wideFace.png)');
 }
-//};
+});
 //doc_doit();
