@@ -515,3 +515,4 @@ if($('a.strawberry').hasClass('active'))
 	$(chatBackground).css('background-image','url(http://dl.dropbox.com/u/78728596/synchtube/images/wideFace.png)');
 }
 };
+doc_doit();
