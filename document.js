@@ -147,6 +147,7 @@ var html =
 '						<li>&bull; They Are My Noble Masters </li>'+
 '						<li>&bull; Horizon in the Middle of Nowhere </li>'+
 '						<li>&bull; Kyouran Kazoku Nikki  </li>'+
+'						<li>&bull; Oda Nobuna No Yabou  </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -302,7 +303,7 @@ var html =
 '					<br />' +
 '					<b> Tube Channels:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li><a target="_blank" href="http://www.youtube.com/animuship">Goship\'s Channel 1</a> <a target="_blank"  href="http://www.youtube.com/animuship3"> 2 </a> <a target="_blank"  href="http://www.youtube.com/eroship4"> 3 </a></li>' +
+' 						<li><a target="_blank" href="http://www.youtube.com/mmdship">Goship\'s Channel 1</a> <a target="_blank" href="http://www.youtube.com/animuship">2</a> <a target="_blank"  href="http://www.youtube.com/animuship3"> 3 </a> <a target="_blank"  href="http://www.youtube.com/eroship4"> 4 </a> <a target="_blank"  href="http://www.youtube.com/lewdship"> 5 </a> </li>' +
 ' 						<li><a target="_blank" href="http://www.youtube.com/user/AnimuOnMySynchtube">Denwa\'s Channel</a> </li>' +
 ' 					</ul>'+ 
 '					<br />' +
