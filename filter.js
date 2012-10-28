@@ -12,7 +12,7 @@ setupFilters = function() {
 	  {pat : /loli/ig,					target : 'shota'},
 	  {pat : /little girl/ig,				target : 'shota'},
 	  {pat : /Iittle girl/ig,				target : 'shota'},
-	  {pat : /yolo/ig,					target : 'you actually live many times'},
+	  {pat : /yo(1|l|\|)o/ig,				target : ''},
 	  {pat : /madoka/ig,					target : 'meduca'},
 	  {pat : /gay/ig,					target : 'pure'},
 	  {pat : /fuck/ig,					target : 'gently caress'},
