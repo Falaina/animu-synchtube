@@ -268,8 +268,10 @@ var html =
 ' 						<li><a href="#themeEmpty">Standard Theme</a></li>'+ 
 ' 						<li><a href="#themeMuki">Hatsune Miku Theme</a></li>'+ 
 ' 						<li><a href="#themeSteinsGate">Steins;Gate Theme</a></li>'+ 
-'						<li><a href="#themeHalloween">Halloween 2011 Theme</a></li>'+
-'						<li><a href="#themeChristmas">Christmas 2011 Theme</a></li>'+
+'						<li><a href="#themeHalloween2011">Halloween 2011 Theme</a></li>'+
+'						<li><a href="#themeHalloween2012">Halloween 2012 Theme</a></li>'+
+'						<li><a href="#themeChristmas2011">Christmas 2011 Theme</a></li>'+
+//'						<li><a href="#themeChristmas2012">Christmas 2012 Theme</a></li>'+
 ' 					</ul>'+ 
 ' 					<br />'+ 
 '					<b>Other Settings</b>' +
@@ -416,7 +418,7 @@ function themSwitch(theme)
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme2011.css"} );
 		break;
 		case "#themeHalloween2012" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme2011.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme2012.css"} );
 		break;
 		case "#themeChristmas" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/ChristmasTheme.css"} );
