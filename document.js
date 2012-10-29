@@ -397,7 +397,7 @@ $("ul.themes a").click(function(){
 });
 getCookie("theme");
 
-themSwitch("#themeHalloween");
+themSwitch("#themeHalloween2011");
 function themSwitch(theme)
 {
 	switch(theme){
@@ -412,8 +412,11 @@ function themSwitch(theme)
 		case "#themeSteinsGate" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org//synchtube/steinsTheme.css"} );
 		break;
-		case "#themeHalloween" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme.css"} );
+		case "#themeHalloween2011" :
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme2011.css"} );
+		break;
+		case "#themeHalloween2012" :
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme2011.css"} );
 		break;
 		case "#themeChristmas" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/ChristmasTheme.css"} );
