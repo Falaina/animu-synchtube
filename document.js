@@ -399,7 +399,7 @@ $("ul.themes a").click(function(){
 });
 getCookie("theme");
 
-themSwitch("#themeHalloween2011");
+themSwitch("#themeHalloween2012");
 function themSwitch(theme)
 {
 	switch(theme){
