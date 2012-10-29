@@ -148,6 +148,7 @@ var html =
 '						<li>&bull; Horizon in the Middle of Nowhere </li>'+
 '						<li>&bull; Kyouran Kazoku Nikki  </li>'+
 '						<li>&bull; Oda Nobuna No Yabou  </li>'+
+'						<li>&bull; Kono Naka ni Hitori, Imouto ga Iru!  </li>'+
 '						<li>&bull; Campione  </li>'+
 '					</ul>'+
 '				</td>'+
