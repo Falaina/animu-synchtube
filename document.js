@@ -413,7 +413,7 @@ function themSwitch(theme)
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/steinsTheme.css"} );
 		break;
 		case "#themeHalloween" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme.cssss"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme.css"} );
 		break;
 		case "#themeChristmas" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/ChristmasTheme.css"} );
