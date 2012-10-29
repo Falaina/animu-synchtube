@@ -415,7 +415,8 @@ function themSwitch(theme)
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org//synchtube/steinsTheme.css"} );
 		break;
 		case "#themeHalloween2011" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme2011.css"} );
+			//$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme2011.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "https://dl.dropbox.com/u/19053870/animu/themeHalloween2012Denshi.css"});
 		break;
 		case "#themeHalloween2012" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme2012.css"} );
