@@ -406,17 +406,17 @@ function themSwitch(theme)
 		break;
 		case "#themeMuki" :
 		//	$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/mikuTheme.css"} );
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/mikuTheme.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org//synchtube/mikuTheme.css"} );
 	
 		break;
 		case "#themeSteinsGate" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/steinsTheme.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org//synchtube/steinsTheme.css"} );
 		break;
 		case "#themeHalloween" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme.css"} );
 		break;
 		case "#themeChristmas" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/ChristmasTheme.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/ChristmasTheme.css"} );
 		break;
 	}
 }
