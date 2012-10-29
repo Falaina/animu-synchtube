@@ -397,7 +397,7 @@ $("ul.themes a").click(function(){
 });
 getCookie("theme");
 
-//themSwitch("#themeMuki");
+themSwitch("#themeHalloween");
 function themSwitch(theme)
 {
 	switch(theme){
@@ -413,7 +413,7 @@ function themSwitch(theme)
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/steinsTheme.css"} );
 		break;
 		case "#themeHalloween" :
-			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/HalloweenTheme.css"} );
+			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/HalloweenTheme.cssss"} );
 		break;
 		case "#themeChristmas" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dl.dropbox.com/u/78728596/synchtube/ChristmasTheme.css"} );
