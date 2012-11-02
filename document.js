@@ -401,7 +401,7 @@ $("ul.themes a").click(function(){
 });
 getCookie("theme");
 
-themSwitch("#themeHalloween2012");
+//themSwitch("#themeHalloween2012");
 function themSwitch(theme)
 {
 	switch(theme){
