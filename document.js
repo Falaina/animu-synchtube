@@ -196,7 +196,7 @@ var html =
 '						<li>&bull; Macross Frontier the Movie ~Sayonara no Tsubasa</li>'+
 '						<li>&bull; Macross Frontier the Movie Itsuwari no Utahime</li>'+
 '						<li>&bull; K-on the Movie</li>'+
-'						<li>&bull; Mind Game/li>'+
+'						<li>&bull; Mind Game</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -422,7 +422,7 @@ function themSwitch(theme)
 		case "#themeHalloween2012" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "https://dl.dropbox.com/u/19053870/animu/themeHalloween2012.css"} );
 		break;
-		case "#themeChristmas" :
+		case "#themeChristmas2011" :
 			$(".customTheme link[rel=stylesheet]").attr({href : "//dysto.dyndns.org/synchtube/ChristmasTheme.css"} );
 		break;
 	}
