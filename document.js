@@ -35,7 +35,7 @@ var banner =
 ' 	<img src="//' + imgur + 'eKwdg.png" alt="World Order"/>' +
 $(".banner" ).html(banner);
 
-$(".st-room-link").append('<a href="http://animu.desuwa.net"><span class="st-room-link st-room-link-recent">Statistics</span></a>');
+$(".st-room-links").append('<a href="http://animu.desuwa.net"><span class="st-room-link st-room-link-recent">Statistics</span></a>');
 
 
 var html = 
