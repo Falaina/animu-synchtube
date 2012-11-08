@@ -36,7 +36,7 @@ var banner =
 $(".banner" ).html(banner);
 
 $(".st-room-links").append('<a href="http://animu.desuwa.net"><span class="st-room-link st-room-link-recent">Statistics</span></a>');
-
+$(".st-room-links").width("400px");
 
 var html = 
 ' <style> #st-vanilla .st-vanilla-lower-ct .st-vanilla-lower > .playlist #playlist #playlist_items .pllist .title {' +
