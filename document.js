@@ -199,6 +199,7 @@ var html =
 '						<li>&bull; Macross Frontier the Movie Itsuwari no Utahime</li>'+
 '						<li>&bull; K-on the Movie</li>'+
 '						<li>&bull; Mind Game</li>'+
+'						<li>&bull; Strike Witches The Movie</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
