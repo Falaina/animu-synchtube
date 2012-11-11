@@ -152,6 +152,7 @@ var html =
 '						<li>&bull; Oda Nobuna No Yabou  </li>'+
 '						<li>&bull; Kono Naka ni Hitori, Imouto ga Iru!  </li>'+
 '						<li>&bull; Campione  </li>'+
+'						<li>&bull; Tari Tari  </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
