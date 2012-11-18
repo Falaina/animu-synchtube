@@ -25,6 +25,11 @@ Media.create = _.wrap(Media.create, function() {
 //{
 //$("#st-descr" ).prepend('<div class="neon">お誕生日おめでとう /a/\'s Synchtube <br /> This Room turns 1 year old!</div>');	
 //banners
+
+// Force jquery 1.8.2 to work with jquery-ui 1.8
+$.curCSS = $.css
+
+
 $(document).ready(function(){
 $.getScript('https://raw.github.com/Falaina/animu-synchtube/gh-pages/filter.js');
 $(".banner" ).addClass(' slideshow');
