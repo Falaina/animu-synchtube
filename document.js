@@ -27,7 +27,7 @@ Media.create = _.wrap(Media.create, function() {
 //banners
 
 // Force jquery 1.8.2 to work with jquery-ui 1.8
-$.curCSS = $.css
+//$.curCSS = $.css
 
 
 $(document).ready(function(){
