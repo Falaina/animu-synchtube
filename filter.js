@@ -8,7 +8,8 @@ setupFilters = function() {
 
 	word_filters = [  	  
 	  {pat : /\bdyson/ig,					target : 'moejets'},
-	  {pat : /\banim(u|e)/ig,				target : 'penis'},
+	  {pat : /\banim(u|e)/ig,				target : 'anime'},
+	  {pat : /\bpen(u|i)s\b/ig,				target : 'anime'},
 	  {pat : /loli/ig,					target : 'shota'},
 	  {pat : /little girl/ig,				target : 'shota'},
 	  {pat : /Iittle girl/ig,				target : 'shota'},
@@ -23,7 +24,7 @@ setupFilters = function() {
 	  {pat : /homura/ig,					target : 'hameru'},
 	  {pat : /mami/ig,					target : 'mumi'},
 	  {pat : /kyoko/ig,					target : 'kyaku'},
-	  {pat : /\b(everybody|everyone)\b/ig,				target : 'everynyan'},
+	  {pat : /\b(everybody|everyone)\b/ig,				target : 'everypony'},
 	  {pat : /\bplan\b/ig,					target : 'keikaku'},
 	  {pat : /\bqb\b/ig,					target : '／人◕ ‿‿ ◕人＼'},
 	  {pat : /kitaa/ig,					target : 'キタ━━━(゜∀゜)━━━!!!!! '},
