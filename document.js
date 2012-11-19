@@ -158,6 +158,7 @@ var html =
 '						<li>&bull; Kono Naka ni Hitori, Imouto ga Iru!  </li>'+
 '						<li>&bull; Campione  </li>'+
 '						<li>&bull; Tari Tari  </li>'+
+'						<li>&bull; Nisemonogatari  </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
