@@ -49,7 +49,7 @@ setupFilters = function() {
 	  							//target : 'XD'},
 	  {pat : /\bready\b/ig,					target : 'l@dy'},
 	  {pat : /\( ͡° ͜ʖ ͡°\)/ig,
-					target : 'le wanker face'},
+					target : ''},
 	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
 	];
 };
