@@ -48,7 +48,7 @@ setupFilters = function() {
 	  //{pat : /\b((\u306E(\u30EE|\u30EF)\u306E)|((no)((\-)|| )(wa)((\-)|| )(no)))\b/ig,	
 	  							//target : 'XD'},
 	  {pat : /\bready\b/ig,					target : 'l@dy'},
-	  (pat : /\b\( \u0361\xb0 \u035c\u0296 \u0361\xb0\)'/ig,
+	  (pat : /\b\( \u0361\xb0 \u035c\u0296 \u0361\xb0\)/ig,
 					target : 'le wanker face'},
 	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
 	];
