@@ -317,7 +317,12 @@ var html =
 '					<br />' +
 '					<b> Tube Channels:</b>' +
 '					<ul style="list-style-type: square; margin-left:16px">' +
-' 						<li><a target="_blank" href="http://www.youtube.com/mmdship">Goship\'s Channel 1</a> <a target="_blank" href="http://www.youtube.com/animuship">2</a> <a target="_blank"  href="http://www.youtube.com/animuship3"> 3 </a> <a target="_blank"  href="http://www.youtube.com/eroship4"> 4 </a> <a target="_blank"  href="http://www.youtube.com/lewdship"> 5 </a> </li>' +
+' 						<li>Goship\'s Channel <a target="_blank" href="http://www.youtube.com/mmdship">MMD</a> |' +
+'						    <a target="_blank" href="http://www.youtube.com/animuship">random stuff</a> | ' +
+' 						    <a target="_blank"  href="http://www.youtube.com/animuship3"> random stuff 2 </a> | ' +
+' 						    <a target="_blank"  href="http://www.youtube.com/eroship4"> billy </a> | ' +
+' 						    <a target="_blank"  href="http://www.youtube.com/lewdship"> lewdstuff </a> | </li> |' +
+' 						    <a target="_blank"  href="http://www.youtube.com/madoship"> MAD </a> </li>' +
 ' 						<li><a target="_blank" href="http://www.youtube.com/user/AnimuOnMySynchtube">Denwa\'s Channel</a> </li>' +
 ' 					</ul>'+ 
 '					<br />' +
