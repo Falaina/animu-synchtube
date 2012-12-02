@@ -92,6 +92,7 @@ var html =
 '					<li>&bull; FUKKIRETA 10 hours</li>'+
 '					<li>&bull; Night of Fire ft. Korikki 10 HOURS LONG</li>'+
 '					<li>&bull; (touhou) Myomyomyomyomyomyomyon! (HD) 3 HOURS LONG</li>'+
+'					<li>&bull; Courage to Tell A Lie 10 hours </li>'+
 '				</ul>'+
 '			</td>'+
 '		</tr>'+
@@ -158,7 +159,9 @@ var html =
 '						<li>&bull; Kono Naka ni Hitori, Imouto ga Iru!  </li>'+
 '						<li>&bull; Campione  </li>'+
 '						<li>&bull; Tari Tari  </li>'+
+'						<li>&bull; Persona 4: the Animation  </li>'+
 '						<li>&bull; Nisemonogatari  </li>'+
+'						<li>&bull; Dog Days I & II  </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
