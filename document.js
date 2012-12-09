@@ -162,6 +162,7 @@ var html =
 '						<li>&bull; Persona 4: the Animation  </li>'+
 '						<li>&bull; Nisemonogatari  </li>'+
 '						<li>&bull; Dog Days I & II  </li>'+
+'						<li>&bull; Sora no Woro </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
@@ -207,6 +208,7 @@ var html =
 '						<li>&bull; Evangelion 2.22 You Can (Not) Advance</li>'+
 '						<li>&bull; Macross Frontier the Movie ~Sayonara no Tsubasa</li>'+
 '						<li>&bull; Macross Frontier the Movie Itsuwari no Utahime</li>'+
+'						<li>&bull; The End of Evangelion</li>'+
 '						<li>&bull; K-on the Movie</li>'+
 '						<li>&bull; Mind Game</li>'+
 '						<li>&bull; Strike Witches The Movie</li>'+
