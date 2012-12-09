@@ -162,7 +162,7 @@ var html =
 '						<li>&bull; Persona 4: the Animation  </li>'+
 '						<li>&bull; Nisemonogatari  </li>'+
 '						<li>&bull; Dog Days I & II  </li>'+
-'						<li>&bull; Sora no Woro </li>'+
+'						<li>&bull; Sora no Woto </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
