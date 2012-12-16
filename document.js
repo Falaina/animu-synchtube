@@ -212,6 +212,7 @@ var html =
 '						<li>&bull; K-on the Movie</li>'+
 '						<li>&bull; Mind Game</li>'+
 '						<li>&bull; Strike Witches The Movie</li>'+
+'						<li>&bull; Kyoukaisenjou no Horizon S1</li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
