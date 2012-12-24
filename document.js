@@ -420,7 +420,7 @@ $("ul.themes a").click(function(){
 });
 getCookie("theme");
 
-//themSwitch("#themeHalloween2012");
+themSwitch("#themeChristmas2011");
 function themSwitch(theme)
 {
 	switch(theme){
