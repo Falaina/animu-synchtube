@@ -146,14 +146,12 @@ var html =
 '						<li>&bull; Wasurenagumo</li>'+
 '						<li>&bull; Dears</li>'+
 '						<li>&bull; Yumekui Merry </li>'+
-'						<li>&bull; Dog Days </li>'+
 '						<li>&bull; Usagi Drop </li>'+
 '						<li>&bull; Strike Witches </li>'+
 '						<li>&bull; Dantalian no Shoka </li>'+
 '						<li>&bull; Mashiro-Iro Symphony </li>'+
 '						<li>&bull; Senki Zesshō Symphogear </li>'+
 '						<li>&bull; They Are My Noble Masters </li>'+
-'						<li>&bull; Horizon in the Middle of Nowhere </li>'+
 '						<li>&bull; Kyouran Kazoku Nikki  </li>'+
 '						<li>&bull; Oda Nobuna No Yabou  </li>'+
 '						<li>&bull; Kono Naka ni Hitori, Imouto ga Iru!  </li>'+
@@ -163,7 +161,7 @@ var html =
 '						<li>&bull; Nisemonogatari  </li>'+
 '						<li>&bull; Dog Days I & II  </li>'+
 '						<li>&bull; Sora no Woto </li>'+
-'						<li>&bull; Kyoukaisenjou no Horizon S1</li>'+
+'						<li>&bull; Kyoukaisenjou no Horizon I & II </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
