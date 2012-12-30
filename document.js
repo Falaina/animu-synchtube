@@ -49,13 +49,14 @@ var html =
 '         }</style>' +
 '<link href="//dl.dropbox.com/u/78728596/synchtube/synchAbout.css" rel="stylesheet" />'+
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
-/*'<link href="//dl.dropbox.com/u/78728596/synchtube/style/fireworks.css" rel="stylesheet" />'+
+//fireworkbutton
+'<link href="//dl.dropbox.com/u/78728596/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
 '<div id="fw" class="firework"></div>' +
 '<div id="fp" class="fireworkParticle"><img src="http://dl.dropbox.com/u/78728596/synchtube/images/particles.gif" alt="" /></div>' +
 '</div>' +
 '<div id="fireContainer"></div>' +
-*/
+
 //'<div style="text-align:center; padding-bottom:5px;"><img width="500px" src="//dysto.dyndns.org/synchtube/images/miku5a.jpg" alt="mikuBday" /> </div>'+
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
