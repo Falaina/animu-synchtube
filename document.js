@@ -50,7 +50,7 @@ var html =
 '<link href="//dl.dropbox.com/u/78728596/synchtube/synchAbout.css" rel="stylesheet" />'+
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
 //fireworkbutton
-'<link href="//dl.dropbox.com/u/78728596/synchtube/style/fireworks.css" rel="stylesheet" />'+
+'<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
 '<div id="fw" class="firework"></div>' +
 '<div id="fp" class="fireworkParticle"><img src="//dysto.dyndns.org/synchtube/images/particles.gif" alt="" /></div>' +
