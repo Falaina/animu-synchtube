@@ -53,7 +53,7 @@ var html =
 '<link href="//dl.dropbox.com/u/78728596/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
 '<div id="fw" class="firework"></div>' +
-'<div id="fp" class="fireworkParticle"><img src="http://dl.dropbox.com/u/78728596/synchtube/images/particles.gif" alt="" /></div>' +
+'<div id="fp" class="fireworkParticle"><img src="//dysto.dyndns.org/synchtube/images/particles.gif" alt="" /></div>' +
 '</div>' +
 '<div id="fireContainer"></div>' +
 
@@ -507,9 +507,9 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 
 //fireworks.js
 
-$("#stagetools").append("<div class='fireworks toggle'><img src='//dl.dropbox.com/u/78728596/synchtube/images/fire5.png' alt='FIRE'  /></div>");
+$("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.org/synchtube/images/fire5.png' alt='FIRE'  /></div>");
 
-$.getScript('http://dl.dropbox.com/u/78728596/synchtube/script/fireworks.js', function(){
+$.getScript('//dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 	$("#stagetools div.fireworks").live("click", function() {
 		console.log("fire firework");
 		createFirework(24,127,6,2,null,null,null,null,false,true);
