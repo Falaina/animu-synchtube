@@ -505,7 +505,7 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 });
 
 //fireworks.js
-/*
+
 $("#stagetools").append("<div class='fireworks toggle'><img src='//dl.dropbox.com/u/78728596/synchtube/images/fire5.png' alt='FIRE'  /></div>");
 
 $.getScript('http://dl.dropbox.com/u/78728596/synchtube/script/fireworks.js', function(){
@@ -515,7 +515,6 @@ $.getScript('http://dl.dropbox.com/u/78728596/synchtube/script/fireworks.js', fu
 		return false
 	});
 });
-*/
 
 //rotating image script
  $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
