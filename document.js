@@ -512,7 +512,10 @@ $("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.
 $.getScript('//dysto.dyndns.org/synchtube/script/fireworks.js', function(){
 	$("#stagetools div.fireworks").live("click", function() {
 		console.log("fire firework");
-		createFirework(24,127,6,2,null,null,null,null,false,true);
+		for (var i=0;i< 5;i++)
+		{
+			createFirework(24,127,6,2,null,null,null,null,false,true);
+		}
 		return false
 	});
 });
