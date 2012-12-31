@@ -8,8 +8,8 @@ setupFilters = function() {
 
 	word_filters = [  	  
 	  {pat : /\bdyson/ig,					target : 'moejets'},
-	  {pat : /\banim(u|e)/ig,				target : 'anime'},
-	  {pat : /\bpen(u|i)s\b/ig,				target : 'anime'},
+	  {pat : /\banim(u|e)/ig,				target : 'animu'},
+	  {pat : /\bpen(u|i)s\b/ig,				target : 'animu'},
 	  {pat : /loli/ig,					target : 'shota'},
 	  {pat : /little girl/ig,				target : 'shota'},
 	  {pat : /Iittle girl/ig,				target : 'shota'},
