@@ -26,6 +26,7 @@ setupFilters = function() {
 	  {pat : /kyoko/ig,					target : 'kyaku'},
 	  {pat : /\b(everybody|everyone)\b/ig,			target : 'everynyan'},
 	  {pat : /\bplan\b/ig,					target : 'keikaku'},
+	  {pat : /shark tank/ig,				target : 'Jew Tank'},
 	  {pat : /\bqb\b/ig,					target : '／人◕ ‿‿ ◕人＼'},
 	  {pat : /kitaa/ig,					target : 'キタ━━━(゜∀゜)━━━!!!!! '},
 	  {pat : /bu-n/ig,					target : '⊂二二二（　＾ω＾）二⊃'},
