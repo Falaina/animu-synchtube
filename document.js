@@ -1,7 +1,7 @@
 // This is a javascript document, the HTML is represented as one very long javascript string.
 // as such every line must be a valid string and appended to the main html string.
 
-function sanitize(s) {
+/*function sanitize(s) {
     return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/["']/g, '&quot;');
 }
 function sanitizeMedia(m) {
@@ -20,7 +20,7 @@ Media.create = _.wrap(Media.create, function() {
     sanitizeMedia(J);
     return fn.apply(Media, _.rest(arguments));
 });
-
+*/
 //var doc_doit = function() 
 //{
 //$("#st-descr" ).prepend('<div class="neon">お誕生日おめでとう /a/\'s Synchtube <br /> This Room turns 1 year old!</div>');	
