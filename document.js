@@ -164,7 +164,11 @@ var html =
 '						<li>&bull; Nisemonogatari  </li>'+
 '						<li>&bull; Dog Days I & II  </li>'+
 '						<li>&bull; Sora no Woto </li>'+
-'						<li>&bull; Kyoukaisenjou no Horizon I & II </li>'+
+'						<li>&bull; Bottle Fairy </li>'+
+'						<li>&bull; OniAi </li>'+
+'						<li>&bull; Busou Shinki </li>'+
+'						<li>&bull; Ro-Kyu-Bu </li>'+
+'						<li>&bull; Hagure </li>'+
 '					</ul>'+
 '				</td>'+
 '			</tr>'+
