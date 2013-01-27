@@ -51,7 +51,8 @@ setupFilters = function() {
 	  {pat : /\bready\b/ig,					target : 'l@dy'},
 	  {pat : /\( ͡° ͜ʖ ͡°\)/ig,
 					target : ''},
-	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}       
+	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}  
+	  {pat : /\bmistake\b/ig,				target : 'misteak'},
 	];
 };
 setupFilters();
