@@ -52,7 +52,7 @@ setupFilters = function() {
 	  {pat : /\( ͡° ͜ʖ ͡°\)/ig,
 					target : ''},
 	  //{pat : /fuk(k){0,1}i(reta){0,1}/ig,			target : 'shota'}  
-	  {pat : /\bmistake\b/ig,				target : 'misteak'},
+	  {pat : /\bmistake/ig,					target : 'misteak'},
 	];
 };
 setupFilters();
