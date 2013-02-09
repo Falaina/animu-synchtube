@@ -50,14 +50,14 @@ var html =
 '<link href="//dl.dropbox.com/u/78728596/synchtube/synchAbout.css" rel="stylesheet" />'+
 '<div class="customTheme"><link href="#" rel="stylesheet" /></div>' +
 //fireworkbutton
-/*
+
 '<link href="//dysto.dyndns.org/synchtube/style/fireworks.css" rel="stylesheet" />'+
 '<div  id="fireworks-template">' +
 '<div id="fw" class="firework"></div>' +
 '<div id="fp" class="fireworkParticle"><img src="//dysto.dyndns.org/synchtube/images/particles.gif" alt="" /></div>' +
 '</div>' +
 '<div id="fireContainer"></div>' +
-*/
+
 //'<div style="text-align:center; padding-bottom:5px;"><img width="500px" src="//dysto.dyndns.org/synchtube/images/miku5a.jpg" alt="mikuBday" /> </div>'+
 '<div id="panelTabs">' +
 '	<div id="ie-test">' +
@@ -513,7 +513,7 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 });
 
 //fireworks.js
-/*
+
 	$("#stagetools").append("<div class='fireworks toggle'><img src='//dysto.dyndns.org/synchtube/images/fire5.png' alt='FIRE'  /></div>");
 	
 	$.getScript('//dysto.dyndns.org/synchtube/script/fireworks.js', function(){
@@ -526,7 +526,7 @@ $('#playlist .items li').each(function() {var id = $(this).attr('id').replace('m
 			return false
 		});
 	});
-*/
+
 //rotating image script
  $.getScript('//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js', function () {
     $('.slideshow').cycle({
