@@ -252,9 +252,9 @@ var html =
 '					Submitted <a href="//animusynchtube.imgur.com/banners" target="_blank">banners!</a>' +
 '					<br />' +
 '					<br />' +
-'                                       <a href="//animu.falaina.net/chan/a"  target="_blank">/a/nimu Synchtube Image Board</a>' +
-'					<br />' +
-'                                       <a href="//animu.falaina.net"  target="_blank">Room Statistics</a>' +
+//'                                       <a href="//animu.falaina.net/chan/a"  target="_blank">/a/nimu Synchtube Image Board</a>' +
+//'					<br />' +
+'                                       <a href="//animu.desuwa.net"  target="_blank">Room Statistics</a>' +
 '				</ul>' +
 '			</div>' +
 '			<div class="box" id="box2">' +
